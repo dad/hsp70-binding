@@ -11,10 +11,11 @@ motif:
 
 sum:
 #	$(PY) hsp70-motif-finder.py --database test.fa --report --out test.out
-#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold -5.0 --out scer-hsp70-motifs-summary-5.txt
-#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold -10.0 --out scer-hsp70-motifs-summary-10.txt
-	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold -3.0 --out scer-hsp70-motifs-summary-3.txt
-#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_coding.fasta --translate --report --threshold 0.0 --out scer-hsp70-motifs-summary-0.txt
+#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_coding.fasta --translate --report --threshold 0.0 --out $(DATA)/scer-hsp70-motifs-summary-0.txt
+#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold -3.0 --out $(DATA)/scer-hsp70-motifs-summary-3.txt
+#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold -5.0 --out $(DATA)/scer-hsp70-motifs-summary-5.txt
+	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold -7.0 --out $(DATA)/scer-hsp70-motifs-summary-7.txt
+#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold -10.0 --out $(DATA)/scer-hsp70-motifs-summary-10.txt
 	
 hsf:
 	$(PY) hsp70-motif-finder.py --database $(CUPR)/hsf-all-manual.fa --mask --threshold -5.0 --out $(DATA)/hsf-hsp70-binding-sites.fa

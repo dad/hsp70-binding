@@ -111,7 +111,8 @@ if __name__=='__main__':
 		sys.exit()
 		
 	if options.write_report and not orf_dict is None:
-		header = "orf\tnum.sites\tnum.motifs\tprop.sites\tmin.score\t" + '\t'.join(['num.motifs.{:d}'.format(i+1) for i in range(n_freqs)]) + '\tnum.motifs.longer\n'
+		header = "orf\tnum.sites\tnum.motifs\tprop.sites\tmin.score\t" + \
+			'\t'.join(['num.motifs.{:d}'.format(i+1) for i in range(options.maximum_frequency_bin)]) + '\tnum.motifs.longer\n'
 		outs.write(header)
 		for (hdr,rawseq) in zip(headers,sequences):
 			orf = biofile.firstField(hdr)
@@ -129,7 +130,7 @@ if __name__=='__main__':
 			line = "{orf}\t{nsites}\t{nmotifs}\t{propsite}\t{ms}\t{freq}\t{nlonger}\n".format(
 				orf = orf, ms = score_summary.min_score,
 				nsites = score_summary.num_sites, nmotifs = score_summary.num_motifs, propsite=score_summary.num_sites/float(len(seq)),
-				freq = '\t'.join(["{:d}".format(score_summary.run_frequency[i]) for i in range(n_freqs)]),
+				freq = '\t'.join(["{:d}".format(score_summary.run_frequency[i]) for i in range(options.maximum_frequency_bin)]),
 				nlonger = score_summary.num_longer_runs
 				)
 			outs.write(line)

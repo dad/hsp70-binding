@@ -1,3 +1,12 @@
+3/6/2013
+========
+Did conservation of HSF1 binding.
+Need to do:
+	- Surface exposure of binding sites
+	- How do the types/strengths of binding sites change as a function of protein level? Stronger/weaker?
+	- Selection *against* exposed binding sites, increasing with abundance. What is the model? Selection as a function of RSA.
+	- Selection *for* buried binding sites, increasing with abundance.
+
 3/5/2013
 ========
 
