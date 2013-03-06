@@ -9,6 +9,29 @@ import scipy as sp
 #	Write out, for each protein:
 # 1) For each length n = 1..., number of regions in protein with n contiguous sites below threshold
 
+def maskSequence(seq, mask, mask_char):
+	masked_seq = ''
+	for i in range(len(seq)):
+		if mask[i]:
+			masked_seq += mask_char
+		else:
+			masked_seq += seq[i]
+	return masked_seq
+
+def realignSequence(seq, aligned_seq, gap='-'):
+	alseq_pos = 0
+	seq_pos = 0
+	realigned_seq = ''
+	while alseq_pos < len(aligned_seq):
+		aa = aligned_seq[alseq_pos]
+		if aa == gap:
+			realigned_seq += gap
+		else:
+			realigned_seq += seq[seq_pos]
+			seq_pos += 1
+		alseq_pos += 1
+	assert len(realigned_seq) == len(aligned_seq)
+	return realigned_seq
 
 if __name__=='__main__':
 	parser = argparse.ArgumentParser(description="Extraction of evidence from MaxQuant evidence files")
@@ -19,6 +42,7 @@ if __name__=='__main__':
 	parser.add_argument("-t", "--threshold", type=float, dest="score_threshold", default=-5.0, help="score threshold defining a putative binding site")
 	parser.add_argument("--max-frequency-bin", dest="maximum_frequency_bin", default=10, help="maximum number of sequential binding sites to count")
 	parser.add_argument("-r", "--report", dest="write_report", action="store_true", default=False, help="write out specific report for each protein?")
+	parser.add_argument("-m", "--mask", dest="mask_sequences", action="store_true", default=False, help="mask input sequences?")
 	parser.add_argument("-o", "--out", dest="out_fname", default=None, help="output (summary) filename")
 	options = parser.parse_args()
 	
@@ -34,7 +58,8 @@ if __name__=='__main__':
 	orf_dict = None
 	if not options.fasta_fname is None:
 		fname = os.path.expanduser(options.fasta_fname)
-		orf_dict = biofile.readFASTADict(fname)
+		(headers, sequences) = biofile.readFASTA(fname)
+		orf_dict = zip([biofile.firstField(h) for h in headers], sequences)
 	
 	# Set the weight matrix
 	matrix = motif.hsp70_weight_matrix
@@ -86,22 +111,21 @@ if __name__=='__main__':
 		sys.exit()
 		
 	if options.write_report and not orf_dict is None:
-		orfs = sorted(orf_dict.keys())
-		n_freqs = options.maximum_frequency_bin
 		header = "orf\tnum.sites\tnum.motifs\tprop.sites\tmin.score\t" + '\t'.join(['num.motifs.{:d}'.format(i+1) for i in range(n_freqs)]) + '\tnum.motifs.longer\n'
 		outs.write(header)
-		for orf in orfs:
-			rawseq = orf_dict[orf]
+		for (hdr,rawseq) in zip(headers,sequences):
+			orf = biofile.firstField(hdr)
 			if options.translate:
 				seq = translate.translate(rawseq)
 				if seq is None:
+					outs.write("# Skipping {} -- bad translation\n".format(orf))
 					continue
 			else:
 				seq = rawseq
 			if seq[-1] == '*':
 				seq = seq[0:-1]
 			residue_scores = motif.getResidueScores(seq, matrix)
-			score_summary = motif.summarizeScores(residue_scores, options.score_threshold, n_freqs)
+			score_summary = motif.summarizeScores(residue_scores, options.score_threshold, options.maximum_frequency_bin)
 			line = "{orf}\t{nsites}\t{nmotifs}\t{propsite}\t{ms}\t{freq}\t{nlonger}\n".format(
 				orf = orf, ms = score_summary.min_score,
 				nsites = score_summary.num_sites, nmotifs = score_summary.num_motifs, propsite=score_summary.num_sites/float(len(seq)),
@@ -110,6 +134,23 @@ if __name__=='__main__':
 				)
 			outs.write(line)
 			
-		
+	if options.mask_sequences:
+		# To accept gapped alignments;
+		# Make shadow alignment
+		# Detect sites
+		# Restore alignment, masking all but binding sites
+		for (hdr, rawseq) in zip(headers,sequences):
+			seq = rawseq.replace('-','')
+			if options.translate:
+				seq = translate.translate(seq)
+				if seq is None:
+					outs.write("# Skipping due to bad translation: {}\n".format(hdr))
+					continue
+			residue_scores = motif.getResidueScores(seq, matrix)
+			masked_seq = maskSequence(seq, [x>options.score_threshold for x in residue_scores], mask_char='x')
+			realigned_seq = realignSequence(masked_seq, rawseq)
+			line = ">{}\n{}\n".format(hdr, realigned_seq)
+			outs.write(line)
+			
 	
 
