@@ -107,11 +107,7 @@ def scoreRegion(seq, matrix): #, exclude_from_left=0, exclude_from_right=0):
 	"""
 	n = len(seq)
 	assert(n <= len(matrix.values()[0]))
-	try:
-		scores = [matrix[x][i] for (x,i) in zip([a for a in seq], range(n))]
-	except KeyError, ke:
-		# Go through and be more careful if necessary
-		scores = [matrix[x][i] for (x,i) in zip([a for a in seq], range(n)) if matrix.has_key(x)]
+	scores = [matrix[x][i] for (x,i) in zip([a for a in seq], range(n)) if x in matrix]
 	return sum(scores)
 	
 def scoreWindows(seq, matrix, return_regions=False):
