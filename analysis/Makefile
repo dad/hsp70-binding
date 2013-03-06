@@ -24,4 +24,4 @@ seq:
 #	$(PY) hsp70-motif-finder.py --sequence RYLLKNRANDSTSS --report
 
 test:
-	nosetests --verbosity=3 motif.py
+	nosetests --verbosity=3
