@@ -198,10 +198,8 @@ class test_scoreResidues(unittest.TestCase):
 		matrix = hsp70_weight_matrix
 		window_size = len(matrix.values()[0])
 		scores = scoreWindows(seq, matrix)
-		resscores = scoreResidues(seq, scores, window_size, summaryFunction=min)
+		resscores = scoreResidues(seq, scores, window_size)
 		self.assertTrue(len(resscores)==len(seq))
-		for i in range(len(scores)):
-			print i, scores.scores[i], scores.scores[i+6], resscores[i-6]
 
 class test_scoreResidues_hsf(unittest.TestCase):
 	def test_run(self):
@@ -209,7 +207,7 @@ class test_scoreResidues_hsf(unittest.TestCase):
 		matrix = hsp70_weight_matrix
 		window_size = len(matrix.values()[0])
 		scores = scoreWindows(seq, matrix)
-		resscores = scoreResidues(seq, scores, window_size, summaryFunction=min)
+		resscores = scoreResidues(seq, scores, window_size)
 		print scores
 		print resscores
 		self.assertTrue(len(resscores)==len(seq))
