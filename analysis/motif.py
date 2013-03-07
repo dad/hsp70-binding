@@ -6,9 +6,14 @@ import scipy as sp
 class ScoreEntry:
 	def __init__(self, pos, score, residue, window):
 		self.score = score
-		self.pos = pos
+		self.pos = pos # 1-based index!
 		self.window = window
 		self.residue = residue
+
+class ScoreSummary:
+	def __init__(self):
+		self.run_frequency = None
+		self.min_score = None
 
 class ScoreResult:
 	def __init__(self, seq, matrix):
@@ -34,6 +39,48 @@ class ScoreResult:
 	
 	def addWindow(self, window):
 		self._windows.append(window)
+
+	def summary(self, threshold, num_freqs):
+		score_sum = ScoreSummary()
+		# Retrieve histogram of lengths
+		score_string = ''
+		good_char = 'Y'
+		for s in self.results:
+			if s.pos>0 & s.pos<=len(self._sequence):
+				if s.score >= threshold:
+					score_string += good_char
+				else:
+					score_string += ' '
+		runs = score_string.split()
+		run_frequency = [0]*num_freqs
+		for i in range(num_freqs):
+			ny = good_char*(i+1)
+			run_frequency[i] = runs.count(ny)
+		score_sum.run_frequency = run_frequency
+		# Check to see if we've covered all sites
+		if sum(run_frequency) < len(runs):
+			score_sum.num_longer_runs = len(runs) - sum(run_frequency)
+		else:
+			assert sum(run_frequency) == len(runs)
+			score_sum.num_longer_runs = 0
+
+		score_sum.min_score = min(self._scores)
+		score_sum.max_score = max(self._scores)
+		score_sum.num_motifs = len(runs)
+		score_sum.num_sites = score_string.count(good_char)
+		return score_sum
+	
+	def maskSequence(self, threshold, mask_char='x', cmp=lambda x,t: x<t):
+		assert len(mask_char)==1
+		mask = [cmp(s,threshold) for s in self.residue_scores]
+		masked_seq = ''
+		seq = self._sequence
+		for i in range(len(seq)):
+			if mask[i]:
+				masked_seq += mask_char
+			else:
+				masked_seq += seq[i]
+		return masked_seq
 	
 	def __getitem__(self, id):
 		return self._scores[id]
@@ -42,6 +89,14 @@ class ScoreResult:
 	def scores(self):
 		for s in self._scores:
 			yield s
+
+	@property
+	def residue_scores(self):
+		seqstart = self._mid_window
+		seqend = self._mid_window + len(self._sequence)
+		for s in self._scores[seqstart:seqend]:
+			yield s
+
 	@property
 	def window_size(self):
 		return self._window_size
@@ -65,67 +120,42 @@ class ScoreResult:
 			residue = '-'
 			if seqpos >= 0 and seqpos < len(self._sequence):
 				residue = self._sequence[seqpos]
-			entry = ScoreEntry(seqpos+1, self._scores[pos], residue, window)
+			entry = ScoreEntry(seqpos, self._scores[pos], residue, window)
 			yield entry
 	
-class ScoreSummary:
-	def __init__(self):
-		self.run_frequency = None
-		self.min_score = None
-		
-def summarizeScores(residue_scores, threshold, num_freqs):
-	score_sum = ScoreSummary()
-	# Retrieve histogram of lengths
-	score_string = ''
-	good_char = 'Y'
-	for s in residue_scores:
-		if s <= threshold:
-			score_string += good_char
-		else:
-			score_string += ' '
-	runs = score_string.split()
-	run_frequency = [0]*num_freqs
-	for i in range(num_freqs):
-		ny = good_char*(i+1)
-		run_frequency[i] = runs.count(ny)
-	score_sum.run_frequency = run_frequency
-	# Check to see if we've covered all sites
-	if sum(run_frequency) < len(runs):
-		score_sum.num_longer_runs = len(runs) - sum(run_frequency)
-	else:
-		assert sum(run_frequency) == len(runs)
-		score_sum.num_longer_runs = 0
-	
-	score_sum.min_score = min(residue_scores)
-	score_sum.num_motifs = len(runs)
-	score_sum.num_sites = score_string.count(good_char)
-	return score_sum
+	@property
+	def residue_results(self):
+		for sentry in self.results:
+			seqpos = sentry.pos-self._mid_window
+			if seqpos >= 0 and seqpos < len(self._sequence):
+				yield sentry
+
 
 
 # From Rudiger S, Germeroth L, Schneider-Mergener J, Bukau B (1997) Substrate specificity of the DnaK chaperone determined by screening cellulose-bound peptide libraries. EMBO J 16: 1501-1507. 
 rudiger_hsp70_weight_matrix = {
-	'A':[-0.02,-0.05,-0.07,-0.11,0.79,0.79,0.79,0.79,0.79,0.69,0.46,0.3,0.15],
-	'C':[1.61,3.21,4.87,7.3,6.35,6.35,6.35,6.35,6.35,0.37,0.25,0.16,0.08],
-	'D':[0.14,0.29,0.44,0.65,4.91,4.91,4.91,4.91,4.91,0.53,0.35,0.23,0.12],
-	'E':[0.49,0.98,1.48,2.22,5.14,5.14,5.14,5.14,5.14,2.47,1.65,1.09,0.54],
-	'F':[0.05,0.09,0.14,0.21,-1.17,-1.17,-1.17,-1.17,-1.17,0.79,0.53,0.35,0.17],
-	'G':[-0.11,-0.22,-0.33,-0.5,1.95,1.95,1.95,1.95,1.95,0.05,0.03,0.02,0.01],
-	'H':[-0.08,-0.16,-0.24,-0.37,1.74,1.74,1.74,1.74,1.74,0.13,0.09,0.06,0.03],
-	'I':[0.34,0.69,1.04,1.56,-2.05,-2.05,-2.05,-2.05,-2.05,0.17,0.11,0.08,0.04],
-	'K':[-0.28,-0.56,-0.85,-1.28,0.4,0.4,0.4,0.4,0.4,-1.62,-1.08,-0.71,-0.36],
-	'L':[0.56,1.12,1.7,2.54,-3.62,-3.62,-3.62,-3.62,-3.62,-0.03,-0.02,-0.01,-0.01],
-	'M':[0.03,0.05,0.08,0.12,1.1,1.1,1.1,1.1,1.1,0.26,0.17,0.11,0.06],
-	'N':[0.25,0.49,0.74,1.12,2.36,2.36,2.36,2.36,2.36,-0.44,-0.29,-0.19,-0.1],
-	'P':[0.05,0.1,0.15,0.22,1.63,1.63,1.63,1.63,1.63,-0.42,-0.28,-0.18,-0.09],
-	'Q':[-0.37,-0.74,-1.13,-1.69,1.6,1.6,1.6,1.6,1.6,-0.22,-0.15,-0.1,-0.05],
-	'R':[-0.39,-0.78,-1.19,-1.78,-0.79,-0.79,-0.79,-0.79,-0.79,-2.58,-1.72,-1.14,-0.57],
-	'S':[-0.04,-0.09,-0.13,-0.2,1.27,1.27,1.27,1.27,1.27,-0.34,-0.23,-0.15,-0.07],
-	'T':[-0.3,-0.6,-0.91,-1.36,0.27,0.27,0.27,0.27,0.27,-0.73,-0.48,-0.32,-0.16],
-	'V':[-0.08,-0.17,-0.26,-0.39,-1.75,-1.75,-1.75,-1.75,-1.75,1.05,0.7,0.46,0.23],
-	'W':[-0.14,-0.29,-0.43,-0.65,3.49,3.49,3.49,3.49,3.49,0.17,0.12,0.08,0.04],
+	'A':[0.02,0.05,0.07,0.11,-0.79,-0.79,-0.79,-0.79,-0.79,-0.69,-0.46,-0.3,-0.15],
+	'C':[-1.61,-3.21,-4.87,-7.3,-6.35,-6.35,-6.35,-6.35,-6.35,-0.37,-0.25,-0.16,-0.08],
+	'D':[-0.14,-0.29,-0.44,-0.65,-4.91,-4.91,-4.91,-4.91,-4.91,-0.53,-0.35,-0.23,-0.12],
+	'E':[-0.49,-0.98,-1.48,-2.22,-5.14,-5.14,-5.14,-5.14,-5.14,-2.47,-1.65,-1.09,-0.54],
+	'F':[-0.05,-0.09,-0.14,-0.21,1.17,1.17,1.17,1.17,1.17,-0.79,-0.53,-0.35,-0.17],
+	'G':[0.11,0.22,0.33,0.5,-1.95,-1.95,-1.95,-1.95,-1.95,-0.05,-0.03,-0.02,-0.01],
+	'H':[0.08,0.16,0.24,0.37,-1.74,-1.74,-1.74,-1.74,-1.74,-0.13,-0.09,-0.06,-0.03],
+	'I':[-0.34,-0.69,-1.04,-1.56,2.05,2.05,2.05,2.05,2.05,-0.17,-0.11,-0.08,-0.04],
+	'K':[0.28,0.56,0.85,1.28,-0.4,-0.4,-0.4,-0.4,-0.4,1.62,1.08,0.71,0.36],
+	'L':[-0.56,-1.12,-1.7,-2.54,3.62,3.62,3.62,3.62,3.62,0.03,0.02,0.01,0.01],
+	'M':[-0.03,-0.05,-0.08,-0.12,-1.1,-1.1,-1.1,-1.1,-1.1,-0.26,-0.17,-0.11,-0.06],
+	'N':[-0.25,-0.49,-0.74,-1.12,-2.36,-2.36,-2.36,-2.36,-2.36,0.44,0.29,0.19,0.1],
+	'P':[-0.05,-0.1,-0.15,-0.22,-1.63,-1.63,-1.63,-1.63,-1.63,0.42,0.28,0.18,0.09],
+	'Q':[0.37,0.74,1.13,1.69,-1.6,-1.6,-1.6,-1.6,-1.6,0.22,0.15,0.1,0.05],
+	'R':[0.39,0.78,1.19,1.78,0.79,0.79,0.79,0.79,0.79,2.58,1.72,1.14,0.57],
+	'S':[0.04,0.09,0.13,0.2,-1.27,-1.27,-1.27,-1.27,-1.27,0.34,0.23,0.15,0.07],
+	'T':[0.3,0.6,0.91,1.36,-0.27,-0.27,-0.27,-0.27,-0.27,0.73,0.48,0.32,0.16],
+	'V':[0.08,0.17,0.26,0.39,1.75,1.75,1.75,1.75,1.75,-1.05,-0.7,-0.46,-0.23],
+	'W':[0.14,0.29,0.43,0.65,-3.49,-3.49,-3.49,-3.49,-3.49,-0.17,-0.12,-0.08,-0.04],
 	'X':[0,0,0,0,0,0,0,0,0,0,0,0,0],
 	'-':[0,0,0,0,0,0,0,0,0,0,0,0,0],
-	'Y':[0.06,0.13,0.19,0.29,-1.88,-1.88,-1.88,-1.88,-1.88,1.73,1.15,0.76,0.38]
+	'Y':[-0.06,-0.13,-0.19,-0.29,1.88,1.88,1.88,1.88,1.88,-1.73,-1.15,-0.76,-0.38]
 }
 
 # From http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000475

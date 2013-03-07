@@ -11,10 +11,11 @@ master.fname <- paste(raw.data.dirname,"scer-raw-extended.Rdata",sep='/')
 
 if (load.data) {
 	yres <- get(load(master.fname))
-	x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-5.txt", header=T)
+	#x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-5.txt", header=T)
+	x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-vd0.txt", header=T)
 	z <- match(yres$bg$orf, x$orf)
 	d <- data.frame(yres$bg, yres$est, x[z,])
-	rc <- rcormat(d[,c('prot','mrna','cai','length','num.sites','num.motifs','min.score','prop.sites',p.0('num.motifs',1:10))])
+	rc <- rcormat(d[,c('prot','mrna','cai','length','num.sites','num.motifs','max.score','prop.sites',p.0('num.motifs',1:10))])
 }
 
 if (fig.abund.vs.sites) {
