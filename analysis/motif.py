@@ -3,18 +3,71 @@ import unittest
 import scipy as sp
 
 
+class ScoreEntry:
+	def __init__(self, pos, score, residue, window):
+		self.score = score
+		self.pos = pos
+		self.window = window
+		self.residue = residue
+
 class ScoreResult:
-	def __init__(self):
-		self.scores = []
-		self.regions = None
-		self.window_size = None
+	def __init__(self, seq, matrix):
+		self._scores = []
+		self._sequence = seq
+		self._matrix = matrix
+		self._windows = []
+		self._window_size = len(matrix.values()[0])
+		self._mid_window = int(math.floor(self._window_size/2.0))
 	
 	def len(self):
-		return len(self.scores)
+		return len(self._scores)
+	
+	def positionScores(self):
+		for s in self._scores:
+			yield s
 	
 	def __len__(self):
-		return len(self.scores)
+		return len(self._scores)
+	
+	def addScore(self, score):
+		self._scores.append(score)
+	
+	def addWindow(self, window):
+		self._windows.append(window)
+	
+	def __getitem__(self, id):
+		return self._scores[id]
+	
+	@property
+	def scores(self):
+		for s in self._scores:
+			yield s
+	@property
+	def window_size(self):
+		return self._window_size
 
+	@property
+	def mid_window(self):
+		return self._mid_window
+
+	@property
+	def windows(self):
+		for s in self._windows:
+			yield s
+	
+	@property
+	def results(self):
+		for pos in range(len(self._scores)):
+			seqpos = pos-self._mid_window
+			window = None
+			if len(self._windows) > 0:
+				window = self._windows[pos]
+			residue = '-'
+			if seqpos >= 0 and seqpos < len(self._sequence):
+				residue = self._sequence[seqpos]
+			entry = ScoreEntry(seqpos+1, self._scores[pos], residue, window)
+			yield entry
+	
 class ScoreSummary:
 	def __init__(self):
 		self.run_frequency = None
@@ -48,7 +101,9 @@ def summarizeScores(residue_scores, threshold, num_freqs):
 	score_sum.num_sites = score_string.count(good_char)
 	return score_sum
 
-hsp70_weight_matrix = {
+
+# From Rudiger S, Germeroth L, Schneider-Mergener J, Bukau B (1997) Substrate specificity of the DnaK chaperone determined by screening cellulose-bound peptide libraries. EMBO J 16: 1501-1507. 
+rudiger_hsp70_weight_matrix = {
 	'A':[-0.02,-0.05,-0.07,-0.11,0.79,0.79,0.79,0.79,0.79,0.69,0.46,0.3,0.15],
 	'C':[1.61,3.21,4.87,7.3,6.35,6.35,6.35,6.35,6.35,0.37,0.25,0.16,0.08],
 	'D':[0.14,0.29,0.44,0.65,4.91,4.91,4.91,4.91,4.91,0.53,0.35,0.23,0.12],
@@ -73,31 +128,61 @@ hsp70_weight_matrix = {
 	'Y':[0.06,0.13,0.19,0.29,-1.88,-1.88,-1.88,-1.88,-1.88,1.73,1.15,0.76,0.38]
 }
 
+# From http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000475
+# van Durme et al. PLoS Computational Biology 2009
+van_durme_hsp70_weight_matrix = {
+	'A':[-1.60,-8.43,-0.67,-8.43,-0.37,0.11,-0.14],
+	'C':[-6.13,-6.23,-5.81,-5.30,-4.75,-6.35,-6.26],
+	'D':[0.05,-1.23,-8.71,-9.61,-1.24,-8.60,-1.30],
+	'E':[1.15,-8.12,0.35,-9.61,-0.37,-2.24,-0.54],
+	'F':[0.04,2.87,4.03,-0.11,2.78,3.36,2.03],
+	'G':[-1.25,-2.06,-8.85,-9.15,-0.10,-8.87,0.43],
+	'H':[0.22,0.08,0.51,-6.31,-5.78,0.19,0.72],
+	'I':[0.54,2.80,0.47,4.60,0.63,1.59,-0.70],
+	'K':[1.54,2.00,-6.92,0.16,0.48,1.25,0.25],
+	'L':[0.37,3.00,4.51,5.67,2.37,2.12,-0.36],
+	'M':[-0.17,-5.63,-4.55,5.22,2.68,1.41,0.44],
+	'N':[0.58,0.30,-7.35,-7.15,-0.02,0.39,1.22],
+	'P':[-7.76,-7.51,-6.70,-8.39,1.83,1.43,1.14],
+	'Q':[1.47,-7.02,0.79,-5.60,0.50,1.02,-0.32],
+	'R':[0.15,1.83,1.66,0.87,1.99,-0.08,2.34],
+	'S':[0.34,-8.36,-8.61,-8.65,-0.86,-1.54,-0.33],
+	'T':[0.47,-7.91,-0.49,1.46,0.22,0.88,0.72],
+	'V':[-0.44,0.86,1.68,1.79,1.45,-0.45,-1.87],
+	'W':[10.07,-2.05,2.89,-10.15,-2.19,10.45,-4.31],
+	'Y':[1.46,3.39,5.08,-12.11,3.42,2.63,1.29],
+	'-':[0,0,0,0,0,0,0],
+	'X':[0,0,0,0,0,0,0]
+}
+
 # For testing
 flat_weight_matrix = {
-	'A':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'C':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'D':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'E':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'F':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'G':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'H':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'I':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'K':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'L':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'M':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'N':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'P':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'Q':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'R':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'S':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'T':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'V':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'W':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'X':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'-':[1,1,1,1,1,1,1,1,1,1,1,1,1],
-	'Y':[1,1,1,1,1,1,1,1,1,1,1,1,1]
+	'A':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'C':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'D':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'E':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'F':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'G':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'H':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'I':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'K':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'L':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'M':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'N':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'P':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'Q':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'R':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'S':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'T':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'V':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'W':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'X':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'-':[0,0,0,0,0,0,0,0,0,0,0,0,0],
+	'Y':[0,0,0,0,0,0,0,0,0,0,0,0,0]
 }
+
+weight_matrices = {'rudiger':rudiger_hsp70_weight_matrix, 'vandurme':van_durme_hsp70_weight_matrix, 'flat':flat_weight_matrix}
+
 
 def scoreRegion(seq, matrix): #, exclude_from_left=0, exclude_from_right=0):
 	"""Score a region of the protein. This sequence assumes that the input sequence is no longer than the window-size
@@ -110,7 +195,7 @@ def scoreRegion(seq, matrix): #, exclude_from_left=0, exclude_from_right=0):
 	scores = [matrix[x][i] for (x,i) in zip([a for a in seq], range(n)) if x in matrix]
 	return sum(scores)
 	
-def scoreWindows(seq, matrix, return_regions=False):
+def _scoreWindows(seq, matrix, return_windows=False):
 	# Scan sequence
 	window_size = len(matrix.values()[0])
 	# Pad the sequence so that sliding window does not require any special-casing
@@ -118,18 +203,15 @@ def scoreWindows(seq, matrix, return_regions=False):
 	assert(matrix[pad][0] == 0) # Check to make sure padding does not alter the score.
 	padded_seq = pad*window_size + seq + pad*window_size
 	n = len(seq)
-	res = ScoreResult()
-	res.window_size = window_size
-	#scores = []
-	if return_regions:
-		res.regions = []
+	res = ScoreResult(seq, matrix)
+	window_size = res.window_size
 	for i in range(len(seq)+window_size-1):
-		region = padded_seq[(i+1):(i+window_size+1)]
-		assert len(region) == window_size
-		region_score = scoreRegion(region, matrix)
-		res.scores.append(region_score)
-		if return_regions:
-			res.regions.append(region)
+		window = padded_seq[(i+1):(i+window_size+1)]
+		assert len(window) == window_size
+		window_score = scoreRegion(window, matrix)
+		res.addScore(window_score)
+		if return_windows:
+			res.addWindow(window)
 	return res
 
 def scoreResidues(seq, scoreresult, window_size): #, summaryFunction=sp.mean):
@@ -147,7 +229,9 @@ def getResidueScores(seq, matrix):
 	score_result = scoreWindows(seq, matrix, return_regions=False)
 	residue_scores = scoreResidues(seq, score_result, window_size=len(matrix.values()[0]))
 	return residue_scores
-	
+
+def score(seq, matrix, return_windows=False):
+	return _scoreWindows(seq, matrix, return_windows)
 
 ########################
 # TEST CASES

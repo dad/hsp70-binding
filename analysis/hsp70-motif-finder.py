@@ -35,9 +35,10 @@ def realignSequence(seq, aligned_seq, gap='-'):
 
 if __name__=='__main__':
 	parser = argparse.ArgumentParser(description="Extraction of evidence from MaxQuant evidence files")
-	parser.add_argument("--d", "--database", dest="fasta_fname", default=None, help="filename of FASTA database containing proteins to score")
+	parser.add_argument("-d", "--database", dest="fasta_fname", default=None, help="filename of FASTA database containing proteins to score")
 	parser.add_argument("--id", dest="protein_id", default=None, help="particular protein identifier to score")
-	parser.add_argument("--s", "--sequence", dest="sequence", default=None, help="particular protein sequence to score")
+	parser.add_argument("-s", "--sequence", dest="sequence", default=None, help="particular protein sequence to score")
+	parser.add_argument("--pssm", dest="pssm_name", default='rudiger', help="position-specific scoring matrix name [rudiger, vandurme, flat]")
 	parser.add_argument("--translate", dest="translate",action="store_true", default=False, help="translate incoming sequences?")
 	parser.add_argument("-t", "--threshold", type=float, dest="score_threshold", default=-5.0, help="score threshold defining a putative binding site")
 	parser.add_argument("--max-frequency-bin", dest="maximum_frequency_bin", default=10, help="maximum number of sequential binding sites to count")
@@ -62,7 +63,10 @@ if __name__=='__main__':
 		orf_dict = dict(zip([biofile.firstField(h) for h in headers], sequences))
 	
 	# Set the weight matrix
-	matrix = motif.hsp70_weight_matrix
+	try:
+		matrix = motif.weight_matrices[options.pssm_name]
+	except KeyError, ke:
+		outs.write("# Unable to find weight matrix {}; try one of {}\n".format(options.pssm_name, ','.join(motif.weight_matrices.keys())))
 	window_size = len(matrix.values()[0])
 	# for associating windows with residues, center them
 	mid_window = int(math.floor(window_size/2.0))
@@ -86,29 +90,38 @@ if __name__=='__main__':
 	if options.write_report and not seq is None:
 		# DAD: eliminate scoreResidues; make score results iterable, and return amino acid position
 		# as part of the iteration.
-		score_res = motif.scoreWindows(seq, matrix, return_regions=True)
-		residue_scores = motif.scoreResidues(seq, score_res, window_size)
-		for pos in range(len(seq)+window_size-1):
+		score_res = motif.score(seq, matrix, return_windows=True)
+		header = 'pos\taa\taa.score\taa.below.threshold\twindow\n'
+		outs.write(header)
+		for sentry in score_res.results:
 			aa = '-'
-			resscore_out = 'NA'
 			resthresh_out = ' '
-			aai = pos-mid_window
-			if aai >= 0 and aai < len(seq):
+			#aai = pos-mid_window
+			aa = sentry.residue
+			if sentry.score <= options.score_threshold:
+				resthresh_out = "*"
+			'''
+			if sentry.aai >= 0 and aai < len(seq):
 				aa = seq[aai]
 				resscore_out = residue_scores[aai]
 				if resscore_out <= options.score_threshold:
 					resthresh_out = "*"
+			'''
 			# Window results
 			winthresh_out = ' '
-			window = score_res.regions[pos]
-			winscore_out = score_res.scores[pos]
-			if winscore_out <= options.score_threshold:
-				winthresh_out = "*"
-			line = "{pos}\t{aa}\t{resscore}\t{resthresh}\t{win}\t{winscore}\t{winthresh}\n".format(
-				#os=pos+1, 
-				pos=aai+1,
-				aa=aa, resscore=na.formatNA(resscore_out,"{:1.2f}"), resthresh=resthresh_out,
-				win=window, winscore=na.formatNA(winscore_out,"{:1.2f}"), winthresh=winthresh_out)
+			window = sentry.window #score_res.regions[pos]
+			#winscore_out = score_res.scores[pos]
+			#if winscore_out <= options.score_threshold:
+			#	winthresh_out = "*"
+			#line = "{pos}\t{aa}\t{resscore}\t{resthresh}\t{win}\t{winscore}\t{winthresh}\n".format(
+			#	#os=pos+1, 
+			#	pos=aai+1,
+			#	aa=aa, resscore=na.formatNA(resscore_out,"{:1.2f}"), resthresh=resthresh_out,
+			#	win=window, winscore=na.formatNA(winscore_out,"{:1.2f}"), winthresh=winthresh_out)
+			line = "{pos}\t{aa}\t{resscore}\t{resthresh}\t{win}\n".format(
+				pos=sentry.pos,
+				aa=sentry.residue, resscore=na.formatNA(sentry.score,"{:1.2f}"), resthresh=resthresh_out,
+				win=window)
 			outs.write(line)
 		sys.exit()
 		
