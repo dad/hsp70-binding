@@ -59,7 +59,7 @@ if __name__=='__main__':
 	if not options.fasta_fname is None:
 		fname = os.path.expanduser(options.fasta_fname)
 		(headers, sequences) = biofile.readFASTA(fname)
-		orf_dict = zip([biofile.firstField(h) for h in headers], sequences)
+		orf_dict = dict(zip([biofile.firstField(h) for h in headers], sequences))
 	
 	# Set the weight matrix
 	matrix = motif.hsp70_weight_matrix
@@ -84,8 +84,10 @@ if __name__=='__main__':
 		seq = options.sequence
 	
 	if options.write_report and not seq is None:
+		# DAD: eliminate scoreResidues; make score results iterable, and return amino acid position
+		# as part of the iteration.
 		score_res = motif.scoreWindows(seq, matrix, return_regions=True)
-		residue_scores = motif.scoreResidues(seq, score_res, window_size) #, min)
+		residue_scores = motif.scoreResidues(seq, score_res, window_size)
 		for pos in range(len(seq)+window_size-1):
 			aa = '-'
 			resscore_out = 'NA'
@@ -127,7 +129,7 @@ if __name__=='__main__':
 				seq = seq[0:-1]
 			residue_scores = motif.getResidueScores(seq, matrix)
 			score_summary = motif.summarizeScores(residue_scores, options.score_threshold, options.maximum_frequency_bin)
-			line = "{orf}\t{nsites}\t{nmotifs}\t{propsite}\t{ms}\t{freq}\t{nlonger}\n".format(
+			line = "{orf}\t{nsites}\t{nmotifs}\t{propsite:1.3f}\t{ms:1.3f}\t{freq}\t{nlonger}\n".format(
 				orf = orf, ms = score_summary.min_score,
 				nsites = score_summary.num_sites, nmotifs = score_summary.num_motifs, propsite=score_summary.num_sites/float(len(seq)),
 				freq = '\t'.join(["{:d}".format(score_summary.run_frequency[i]) for i in range(options.maximum_frequency_bin)]),

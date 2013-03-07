@@ -7,7 +7,7 @@ CUPR = ../../cupr/data/hsf-alignment
 all: motif
 
 motif:
-	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --id YGL073W --report --out hsf1.out
+	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --id YGL073W --report --out $(DATA)/hsf1-motifs.txt
 
 sum:
 #	$(PY) hsp70-motif-finder.py --database test.fa --report --out test.out
