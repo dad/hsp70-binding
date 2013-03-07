@@ -69,8 +69,6 @@ if __name__=='__main__':
 	
 	seq = None
 	if not options.protein_id is None and not orf_dict is None: # analyze specific protein pulled from DB
-		header = 'pos\taa\taa.score\taa.below.threshold\tregion\twindow.score\twindow.below.threshold\n'
-		outs.write(header)
 		try:
 			seq = orf_dict[options.protein_id]
 		except KeyError, ke:
@@ -83,7 +81,7 @@ if __name__=='__main__':
 		# DAD: eliminate scoreResidues; make score results iterable, and return amino acid position
 		# as part of the iteration.
 		score_res = motif.score(seq, matrix, return_windows=True)
-		header = 'pos\tresidue\tscore\tbelow.threshold\twindow\n'
+		header = 'pos\tresidue\tscore\tabove.threshold\twindow\n'
 		outs.write(header)
 		for sentry in score_res.results:
 			resthresh_out = ' '
