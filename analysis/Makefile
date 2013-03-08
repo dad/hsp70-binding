@@ -14,9 +14,9 @@ sum:
 #	$(PY) hsp70-motif-finder.py --database test.fa --threshold 0.0 --pssm vandurme --report --out test.out
 #	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_coding.fasta --translate --report --threshold 0.0 --out $(DATA)/scer-hsp70-motifs-summary-0.txt
 #	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 3.0 --out $(DATA)/scer-hsp70-motifs-summary-3.txt
-#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm rudiger --report --threshold 5.0 --out $(DATA)/scer-hsp70-motifs-summary-r5.txt
+	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm rudiger --report --threshold 5.0 --out $(DATA)/scer-hsp70-motifs-summary-r5.txt
 #	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 0.0 --out $(DATA)/scer-hsp70-motifs-summary-vd0.txt
-	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 5.0 --out $(DATA)/scer-hsp70-motifs-summary-vd5.txt
+#	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 5.0 --out $(DATA)/scer-hsp70-motifs-summary-vd5.txt
 #	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 7.0 --out $(DATA)/scer-hsp70-motifs-summary-7.txt
 #	$(PY) hsp70-motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 10.0 --out $(DATA)/scer-hsp70-motifs-summary-10.txt
 	
@@ -31,4 +31,4 @@ seq:
 #	$(PY) hsp70-motif-finder.py --sequence RYLLKNRANDSTSS --report
 
 test:
-	nosetests --verbosity=3
+	nosetests --verbosity=3 motif.py

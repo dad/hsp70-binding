@@ -78,8 +78,6 @@ if __name__=='__main__':
 		seq = options.sequence
 	
 	if options.write_report and not seq is None:
-		# DAD: eliminate scoreResidues; make score results iterable, and return amino acid position
-		# as part of the iteration.
 		score_res = motif.score(seq, matrix, return_windows=True)
 		header = 'pos\tresidue\tscore\tabove.threshold\twindow\n'
 		outs.write(header)
@@ -105,6 +103,7 @@ if __name__=='__main__':
 					continue
 			else:
 				seq = rawseq
+			# Remove trailing '*' (stop codon) if present
 			if seq[-1] == '*':
 				seq = seq[0:-1]
 			score_res = motif.score(seq, matrix)
