@@ -1,4 +1,4 @@
-import sys, os, math, string, argparse, re
+import sys, os, math, argparse
 import stats, util, biofile, na, translate
 import motif
 import scipy as sp
@@ -26,7 +26,7 @@ def realignSequence(seq, aligned_seq, gap='-'):
 	return realigned_seq
 
 if __name__=='__main__':
-	parser = argparse.ArgumentParser(description="Extraction of evidence from MaxQuant evidence files")
+	parser = argparse.ArgumentParser(description="Detection of Hsp70 binding sites using position-specific scoring matrices")
 	parser.add_argument("-d", "--database", dest="fasta_fname", default=None, help="filename of FASTA database containing proteins to score")
 	parser.add_argument("--id", dest="protein_id", default=None, help="particular protein identifier to score")
 	parser.add_argument("-s", "--sequence", dest="sequence", default=None, help="particular protein sequence to score")

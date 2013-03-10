@@ -1,4 +1,4 @@
-import math, string, random
+import math, string
 import unittest
 import scipy as sp
 
