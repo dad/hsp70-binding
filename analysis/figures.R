@@ -1,20 +1,21 @@
-setwd("~/research/spearman/analysis")
+setwd("~/research/hsp70-binding/analysis")
 
 file.out = F
 output.type = 'svg'
 
-load.data = T
+load.data = F
 fig.abund.vs.sites = F
 fig.motif.avoidance = F
-fig.paralog = T
+fig.paralog = F
+fig.pdb = T
 
 master.fname <- paste(raw.data.dirname,"scer-raw-extended.Rdata",sep='/')
 
 if (load.data) {
 	yres <- get(load(master.fname))
-	x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-vd0.txt", header=T)
+	#x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-vd0.txt", header=T)
 	#x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-vd5.txt", header=T)
-	#x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-r5.txt", header=T)
+	x <- read.table("~/research/hsp70-binding/data/scer-hsp70-motifs-summary-r5.txt", header=T)
 	z <- match(yres$bg$orf, x$orf)
 	d <- data.frame(yres$bg, yres$est, x[z,])
 	rc <- rcormat(d[,c('prot','mrna','cai','length','num.sites','num.motifs','max.score','prop.sites',p.0('num.motifs',1:10))])
@@ -53,4 +54,19 @@ if (fig.paralog) {
 	pcor(cortest(dp$ratio.prot, dp$ratio.num.sites))
 	pcor(cortest(dp$ratio.mrna, dp$ratio.prop.sites))
 	pcor(cortest(dp$ratio.mrna, dp$ratio.num.sites))
+}
+
+
+if (fig.pdb) {
+	p <- read.table("../data/scer-pdb.txt", header=T, sep='\t', quote="", stringsAsFactors=F)
+	u <- read.table("../data/sgd-uniprot-mapping.txt", header=T, stringsAsFactors=F)
+	
+	z <- match(yres$bg$orf, u$orf)
+	zp <- match(u$swissprot.acc, p$DB.ID)
+	d <- data.frame(yres$bg[,c('orf','gene','pair.orf','length')], yres$raw.avg[,c('mrna','prot')], u[z,], p[match(u[z,'swissprot.acc'],p$DB.ID),])
+	d$struct.prop <- d$Chain.Length/d$length
+	cat("# Found", nrow(subset(d, structsolved)), "with structure supposedly solved\n")
+	cat("# Found", nrow(subset(d, structsolved & !is.na(PDB.ID))), "with structure supposedly solved and with PDB ID\n")
+	cat("# Found", nrow(subset(d, structsolved & !is.na(PDB.ID) & struct.prop>=0.7)), "with structure supposedly solved and with PDB ID and 70% coverage\n")
+	write.table(subset(d, !is.na(PDB.ID)), file='~/Dropbox/o2-aggregation/data/scer-pdb-entries.txt', quote=F, sep='\t', row.names=F)
 }
