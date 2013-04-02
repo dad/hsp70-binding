@@ -25,6 +25,8 @@ def realignSequence(seq, aligned_seq, gap='-'):
 	assert len(realigned_seq) == len(aligned_seq)
 	return realigned_seq
 
+# DAD: need more comments here!
+
 if __name__=='__main__':
 	parser = argparse.ArgumentParser(description="Detection of Hsp70 binding sites using position-specific scoring matrices")
 	parser.add_argument("-d", "--database", dest="fasta_fname", default=None, help="filename of FASTA database containing proteins to score")
