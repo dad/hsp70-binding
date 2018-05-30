@@ -2,7 +2,6 @@ import math, string
 import unittest
 import scipy as sp
 
-
 class ScoreEntry:
 	def __init__(self, pos, score, residue, window):
 		self.score = score
@@ -21,7 +20,7 @@ class ScoreResult:
 		self._sequence = seq
 		self._matrix = matrix
 		self._windows = []
-		self._window_size = len(matrix.values()[0])
+		self._window_size = len(matrix['A']) #len(matrix.values()[0])
 		self._mid_window = int(math.floor(self._window_size/2.0))
 	
 	def len(self):
@@ -221,13 +220,13 @@ def _scoreRegion(seq, matrix): #, exclude_from_left=0, exclude_from_right=0):
 		@return a number, the sum of the scores.
 	"""
 	n = len(seq)
-	assert(n == len(matrix.values()[0]))
+	assert(n == len(matrix['A'])) #len(matrix.values()[0]))
 	scores = [matrix[x][i] for (x,i) in zip([a for a in seq], range(n)) if x in matrix]
 	return sum(scores)
 	
 def _scoreWindows(seq, matrix, return_windows=False):
 	# Scan sequence
-	window_size = len(matrix.values()[0])
+	window_size = len(matrix['A']) #len(matrix.values()[0])
 	# Pad the sequence so that sliding window does not require any special-casing
 	pad = '-'
 	assert(matrix[pad][0] == 0) # Check to make sure padding does not alter the score.
@@ -247,75 +246,6 @@ def _scoreWindows(seq, matrix, return_windows=False):
 def score(seq, matrix, return_windows=False):
 	return _scoreWindows(seq, matrix, return_windows)
 
-########################
-# TEST CASES
-########################
-	
-class test_scoreRegion(unittest.TestCase):
-	def test_run(self):
-		seq = 'DALLANSANDREI'
-		s = _scoreRegion(seq, rudiger_hsp70_weight_matrix)
-		self.assertTrue(abs(s+11.84) < 0.001)
 
-class test_scoreRegion_randomAA(unittest.TestCase):
-	def test_run(self):
-		seq = 'DALLAN@ANDREI'
-		# Don't throw an error if there's a character you don't know, just
-		# score it as zero.
-		s = score(seq, rudiger_hsp70_weight_matrix)
-
-class test_scoreWindows(unittest.TestCase):
-	def test_run(self):
-		seq = 'DALLANSANDREI'
-		matrix = hsp70_weight_matrix
-		window_size1 = len(matrix.values()[0])
-
-		s = _scoreWindows(seq, matrix)
-		self.assertTrue(s.window_size == window_size1)
-		self.assertTrue(len(s) == len(seq)+window_size1-1)
-		self.assertTrue(abs(s[window_size-1]-11.84) < 0.001)
-
-class test_scoreWindows(unittest.TestCase):
-	def test_run(self):
-		seq = 'MNNAANTGTTNESNV'
-		matrix = rudiger_hsp70_weight_matrix
-		window_size = len(matrix.values()[0])
-
-		score_res = score(seq, matrix, return_windows=True)
-		self.assertTrue(score_res._windows[0]=='-'*(window_size-1)+seq[0])
-		self.assertTrue(score_res._windows[-1]==seq[-1]+'-'*(window_size-1))
-		#for (s,r) in zip(scores,regions):
-		#	print s,r
-
-class test_scoreResidues(unittest.TestCase):
-	def test_run(self):
-		seq = 'DALLANSANDREI'
-		matrix = rudiger_hsp70_weight_matrix
-		window_size = len(matrix.values()[0])
-		res = score(seq, matrix)
-		rs = [s for s in res.residue_scores]
-		self.assertTrue(len(rs)==len(seq))
-
-class test_scoreResidues_hsf(unittest.TestCase):
-	def test_run(self):
-		seq = 'MNNAANTGTTNESNV'
-		matrix = rudiger_hsp70_weight_matrix
-		window_size = len(matrix.values()[0])
-		res = score(seq, matrix)
-		rs = [s for s in res.residue_scores]
-		self.assertTrue(len(rs)==len(seq))
-
-class test_scoreWindows_individual(unittest.TestCase):
-	def test_run(self):
-		matrix = rudiger_hsp70_weight_matrix
-		window_size = len(matrix.values()[0])
-		for aa in 'ACDEFGHIKLMNPQRSTVWY':
-			res = score(aa, matrix)
-			self.assertTrue(res._scores[0] == matrix[aa][-1]) # score in first window should always be the score for the first residue in the last position.
-			#print scores
-
-if __name__=="__main__":
-	# Run tests
-	unittest.main(verbosity=3)
 	
 	

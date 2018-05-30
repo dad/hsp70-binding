@@ -61,7 +61,7 @@ if __name__=='__main__':
 	# Set the weight matrix
 	try:
 		matrix = motif.weight_matrices[options.pssm_name]
-	except KeyError, ke:
+	except KeyError as ke:
 		outs.write("# Unable to find weight matrix {}; try one of {}\n".format(options.pssm_name, ','.join(motif.weight_matrices.keys())))
 	window_size = len(matrix.values()[0])
 	# for associating windows with residues, center them
@@ -79,7 +79,7 @@ if __name__=='__main__':
 	if not options.protein_id is None and not orf_dict is None: # analyze specific protein pulled from DB
 		try:
 			seq = orf_dict[options.protein_id]
-		except KeyError, ke:
+		except KeyError as ke:
 			raise KeyError, "# No protein found for ID {}".format(options.protein_id)
 	
 	if not options.sequence is None:
