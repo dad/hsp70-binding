@@ -1,0 +1,109 @@
+---
+title: "Hsp70 binding sites in the yeast proteome"
+author: "D. Allan Drummond"
+date: "5/25/2018"
+output: html_document
+---
+
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+---
+
+
+
+```{r setup,warning=FALSE,message=FALSE,echo=FALSE}
+
+## knitr options for report generation
+knitr::opts_chunk$set(warning=FALSE,message=FALSE,echo=TRUE,cache=TRUE,
+                      results="show",
+                      fig.path="figure/control-for-length-",
+                      cache.path="cache/control-for-length-")
+
+
+## data processing options, packages, functions
+options(stringsAsFactors=FALSE)  # load character strings as strings
+library(plyr)
+library(reshape2) # data manipulation
+library(tidyverse) # more data manipulation
+library(stringr)
+library(ggrepel)
+library(plotly) # interactive graphics
+library(lmodel2)
+
+library(cowplot) # extensions and nice defaults
+ # set default theme for graphics
+# theme_set(theme_bw() %+replace% theme(panel.grid.minor=element_blank())) 
+theme_set(theme_cowplot(font_size=11) %+replace% 
+              theme(# panel.grid.major=element_line(size=0.15,colour="grey50"),
+                  panel.border=element_rect(colour = "grey50",
+                                            linetype = "solid",size=0.5),
+                    strip.background = element_blank()))
+
+graycol <- "#333333cc"
+orangecol <- "#cc5500cc"
+bluecol <- "#0000aacc"
+greencol <- "#22cc00cc"
+purplecol <- "#cc22cccc"
+cyancol <- "#2aa198cc"
+
+```
+
+```{r utility, child="../scripts_processing/utilityFunctions.Rmd"}
+```
+
+```{r load_data, echo=FALSE, warning=FALSE}
+# setwd("~/Repos/HeatShockQmRNA/scripts_analysis/")
+psup_levels <- c('30C','42C','42CR','46C')
+
+h70 <- read_tsv("../data/scer-motifs-summary-r12_15.txt", comment='#')
+
+smpae <- read_tsv("../../HeatShockQmRNA/src/scer-mrna-protein-absolute-estimate.txt",comment="#") %>%
+    dplyr::rename(ORF=orf)
+bg <- read_tsv("../../HeatShockQmRNA/index/scer_orf_transcript_length.txt") %>% left_join(smpae,by="ORF")
+
+# Labeling
+glyc <- read_tsv("../../HeatShockQmRNA/src/scer-glycolytic-proteins.txt", comment='#')
+rib <- read_tsv("../../HeatShockQmRNA/src/scer-ribosomal-proteins.txt", comment='#')
+#hs <- read_tsv("../src/scer-heat-shock-proteins.txt", comment='#')
+hs <- read_tsv("../../HeatShockQmRNA/src/heat-shock-42C-up-genes-auto.txt", comment='#')
+agg <- read_tsv("../../HeatShockQmRNA/src/heat_aggregators.txt", comment='#')
+
+h70$label <- NA
+h70[!is.na(match(h70$orf, agg$orf)),'label'] <- 'aggregator'
+h70[!is.na(match(h70$orf, rib$orf)),'label'] <- 'ribosomal'
+h70[!is.na(match(h70$orf, glyc$orf)),'label'] <- 'glycolytic'
+h70[!is.na(match(h70$orf, hs$orf)),'label'] <- 'heat-shock'
+h70[!is.na(match(h70$orf, subset(agg, superaggregator)$orf)),'label'] <- 'superaggregator'
+#h70$label <- factor(h70$label, levels=names(sort(table(h70$label))))
+
+h70 <- h70 %>% left_join(bg, by=c(orf='ORF'))
+```
+
+```{r categories, dependson="load_data", echo=FALSE, warning=FALSE}
+score.thresh <- as.numeric(quantile(h70$max.score, probs=c(0.975)))
+g <- ggplot(h70, aes(x=max.score, colour=label)) + stat_ecdf()
+ggdraw(g)
+
+tops <- h70 %>% filter(max.score>=score.thresh)
+```
+
+```{r profile, echo=FALSE, warning=FALSE}
+plot_profile <- function(x, cutoff=10) {
+  g <- ggplot(x, aes(pos, y=score)) + geom_hline(yintercept = cutoff, linetype='dotted') + geom_line()
+  y <- x %>% filter(score >= cutoff)
+  if (nrow(y)>0) {
+    keysite <-  y[y$score==max(y$score),]
+    g <- g + geom_label_repel(data=keysite, aes(label=window, y=1.3*score), segment.color = 'black')
+  }
+  g
+}
+
+hsf <- read_tsv("../data/hsf1-motifs-r10.txt", comment='#')
+nug <- read_tsv("../data/nug1-motifs-r10.txt", comment='#')
+ggdraw(g <- plot_grid(
+  ghsf <- plot_profile(hsf), 
+  gnug <- plot_profile(nug), 
+  ncol=1))
+```

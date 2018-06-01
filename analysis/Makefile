@@ -1,21 +1,24 @@
-PY = $$PYTHONEXE
+PY = python3
 
+DROPBOX = "/Users/dad/Dropbox (Drummond Lab)"
 DATA = ../data
-GENOMES = ../../../bio/genomes
+GENOMES = $(DROPBOX)/bio/genomes
 CUPR = ../../cupr/data
 
 all: motif
 
 motif:
-#	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 5.0 --id YGL073W --report --out $(DATA)/hsf1-motifs-r5.txt
-#	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm vandurme --threshold 5.0 --id YGL073W --report --out $(DATA)/hsf1-motifs-vd5.txt
-	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 5.0 --id YAL005C --report --out $(DATA)/ssa1-motifs-r5.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YGL073W --report --out $(DATA)/hsf1-motifs-r10.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YER165W --report --out $(DATA)/pab1-motifs-r10.txt
+#	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm vandurme --threshold 10.0 --id YGL073W --report --out $(DATA)/hsf1-motifs-vd5.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YAL005C --report --out $(DATA)/ssa1-motifs-r10.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YER006W --report --out $(DATA)/nug1-motifs-r10.txt
 
 sum:
 #	$(PY) motif-finder.py --database test.fa --threshold 0.0 --pssm vandurme --report --out test.out
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_coding.fasta --translate --report --threshold 0.0 --out $(DATA)/scer-motifs-summary-0.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 3.0 --out $(DATA)/scer-motifs-summary-3.txt
-	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm rudiger --report --threshold 5.0 --out $(DATA)/scer-motifs-summary-r5.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --report --threshold 12.15 --out $(DATA)/scer-motifs-summary-r12_15.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 0.0 --out $(DATA)/scer-motifs-summary-vd0.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 5.0 --out $(DATA)/scer-motifs-summary-vd5.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 7.0 --out $(DATA)/scer-motifs-summary-7.txt
@@ -34,4 +37,4 @@ seq:
 #	$(PY) motif-finder.py --sequence RYLLKNRANDSTSS --report
 
 test:
-	nosetests --verbosity=3 motif.py
+	nosetests --verbosity=3 motif_test.py

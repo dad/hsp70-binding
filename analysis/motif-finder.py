@@ -47,7 +47,7 @@ if __name__=='__main__':
 	outs = util.OutStreams()
 	params_outs = util.OutStreams([outs])
 	if not options.out_fname is None:
-		outf = file(os.path.expanduser(options.out_fname),'w')
+		outf = open(os.path.expanduser(options.out_fname),'w')
 		outs.addStream(outf)
 	else:
 		outs.addStream(sys.stdout)
@@ -63,7 +63,7 @@ if __name__=='__main__':
 		matrix = motif.weight_matrices[options.pssm_name]
 	except KeyError as ke:
 		outs.write("# Unable to find weight matrix {}; try one of {}\n".format(options.pssm_name, ','.join(motif.weight_matrices.keys())))
-	window_size = len(matrix.values()[0])
+	window_size = len(matrix['A']) #len(matrix.values()[0])
 	# for associating windows with residues, center them
 	mid_window = int(math.floor(window_size/2.0))
 	
@@ -80,7 +80,7 @@ if __name__=='__main__':
 		try:
 			seq = orf_dict[options.protein_id]
 		except KeyError as ke:
-			raise KeyError, "# No protein found for ID {}".format(options.protein_id)
+			raise KeyError("# No protein found for ID {}".format(options.protein_id))
 	
 	if not options.sequence is None:
 		seq = options.sequence
