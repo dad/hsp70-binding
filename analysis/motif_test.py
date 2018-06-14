@@ -11,7 +11,7 @@ class test_scoreRegion(unittest.TestCase):
 	def test_run(self):
 		seq = 'DALLANSANDREI'
 		s = motif._scoreRegion(seq, motif.rudiger_hsp70_weight_matrix)
-		self.assertTrue(abs(s+11.84) < 0.001)
+		self.assertAlmostEqual(s, -11.84)
 
 class test_scoreRegion_randomAA(unittest.TestCase):
 	def test_run(self):

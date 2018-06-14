@@ -246,6 +246,8 @@ def _scoreWindows(seq, matrix, return_windows=False):
 def score(seq, matrix, return_windows=False):
 	return _scoreWindows(seq, matrix, return_windows)
 
-
+if __name__=="__main__":
+	# Run tests
+	print("Hello, world!")
 	
 	
