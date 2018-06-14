@@ -2,7 +2,7 @@ PY = python3
 
 DROPBOX = "/Users/dad/Dropbox (Drummond Lab)"
 DATA = ../data
-GENOMES = $(DROPBOX)/bio/genomes
+GENOMES = ../../gtpase-sensor/data
 CUPR = ../../cupr/data
 
 all: motif
