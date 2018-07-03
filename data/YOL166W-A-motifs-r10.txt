@@ -1,0 +1,79 @@
+# Run started 2018-06-30 09:12:33 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOL166W-A --report --out ../data/YOL166W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOL166W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOL166W-A-motifs-r10.txt
+# Found ORF YOL166W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.14	 	-----------MH
+-3	-	-0.24	 	----------MHG
+-2	-	-0.52	 	---------MHGA
+-1	-	-1.64	 	--------MHGAC
+0	-	-3.50	 	-------MHGACL
+1	M	-5.65	 	------MHGACLS
+2	H	-5.79	 	-----MHGACLSG
+3	G	-11.68	 	----MHGACLSGL
+4	A	-7.39	 	---MHGACLSGLY
+5	C	-7.15	 	--MHGACLSGLYP
+6	L	-6.98	 	-MHGACLSGLYPL
+7	S	-3.11	 	MHGACLSGLYPLP
+8	G	-0.58	 	HGACLSGLYPLPF
+9	L	-6.48	 	GACLSGLYPLPFT
+10	Y	1.03	 	ACLSGLYPLPFTH
+11	P	3.75	 	CLSGLYPLPFTHK
+12	L	1.91	 	LSGLYPLPFTHKF
+13	P	0.10	 	SGLYPLPFTHKFH
+14	F	0.64	 	GLYPLPFTHKFHD
+15	T	-7.74	 	LYPLPFTHKFHDY
+16	H	-3.38	 	YPLPFTHKFHDYL
+17	K	-6.21	 	PLPFTHKFHDYLH
+18	F	-9.00	 	LPFTHKFHDYLHF
+19	H	-3.17	 	PFTHKFHDYLHFN
+20	D	1.58	 	FTHKFHDYLHFNI
+21	Y	-2.75	 	THKFHDYLHFNIY
+22	L	0.42	 	HKFHDYLHFNIYI
+23	H	1.02	 	KFHDYLHFNIYIS
+24	F	0.26	 	FHDYLHFNIYISF
+25	N	-2.24	 	HDYLHFNIYISFG
+26	I	2.97	 	DYLHFNIYISFGG
+27	Y	0.45	 	YLHFNIYISFGGP
+28	I	4.68	 	LHFNIYISFGGPK
+29	S	0.13	 	HFNIYISFGGPKY
+30	F	-3.16	 	FNIYISFGGPKYC
+31	G	-8.05	 	NIYISFGGPKYCI
+32	G	-7.97	 	IYISFGGPKYCIT
+33	P	-5.19	 	YISFGGPKYCITA
+34	K	-8.32	 	ISFGGPKYCITAL
+35	Y	-3.29	 	SFGGPKYCITALN
+36	C	-3.13	 	FGGPKYCITALNT
+37	I	-1.76	 	GGPKYCITALNTY
+38	T	-1.24	 	GPKYCITALNTYV
+39	A	-5.65	 	PKYCITALNTYVI
+40	L	-8.85	 	KYCITALNTYVIL
+41	N	-2.19	 	YCITALNTYVILF
+42	T	2.46	 	CITALNTYVILFY
+43	Y	-0.26	 	ITALNTYVILFYT
+44	V	4.71	 	TALNTYVILFYTV
+45	I	7.90	 	ALNTYVILFYTVY
+46	L	9.31	 	LNTYVILFYTVY-
+47	F	6.80	 	NTYVILFYTVY--
+48	Y	5.29	 	TYVILFYTVY---
+49	T	2.94	 	YVILFYTVY----
+50	V	2.72	 	VILFYTVY-----
+51	Y	1.47	 	ILFYTVY------
+52	-	4.15	 	LFYTVY-------
+53	-	3.00	 	FYTVY--------
+54	-	0.51	 	YTVY---------
+55	-	0.28	 	TVY----------
+56	-	-0.05	 	VY-----------
+57	-	-0.06	 	Y------------

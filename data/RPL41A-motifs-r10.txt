@@ -1,0 +1,53 @@
+# Run started 2018-06-29 14:39:58 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id RPL41A --report --out ../data/RPL41A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: RPL41A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/RPL41A-motifs-r10.txt
+# Found gene RPL41A = YDL184C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.46	 	-----------MR
+-3	-	0.82	 	----------MRA
+-2	-	1.52	 	---------MRAK
+-1	-	1.69	 	--------MRAKW
+0	-	0.57	 	-------MRAKWR
+1	M	1.90	 	------MRAKWRK
+2	R	1.12	 	-----MRAKWRKK
+3	A	-0.05	 	----MRAKWRKKR
+4	K	0.78	 	---MRAKWRKKRT
+5	W	1.64	 	--MRAKWRKKRTR
+6	R	2.12	 	-MRAKWRKKRTRR
+7	K	2.99	 	MRAKWRKKRTRRL
+8	K	7.12	 	RAKWRKKRTRRLK
+9	R	7.18	 	AKWRKKRTRRLKR
+10	T	7.35	 	KWRKKRTRRLKRK
+11	R	13.39	*	WRKKRTRRLKRKR
+12	R	13.48	*	RKKRTRRLKRKRR
+13	L	13.82	*	KKRTRRLKRKRRK
+14	K	12.93	*	KRTRRLKRKRRKV
+15	R	12.13	*	RTRRLKRKRRKVR
+16	K	3.21	 	TRRLKRKRRKVRA
+17	R	3.26	 	RRLKRKRRKVRAR
+18	R	7.76	 	RLKRKRRKVRARS
+19	K	7.73	 	LKRKRRKVRARSK
+20	V	9.35	 	KRKRRKVRARSK-
+21	R	7.48	 	RKRRKVRARSK--
+22	A	6.42	 	KRRKVRARSK---
+23	R	1.53	 	RRKVRARSK----
+24	S	1.32	 	RKVRARSK-----
+25	K	0.87	 	KVRARSK------
+26	-	1.04	 	VRARSK-------
+27	-	1.43	 	RARSK--------
+28	-	2.21	 	ARSK---------
+29	-	1.33	 	RSK----------
+30	-	0.60	 	SK-----------
+31	-	0.28	 	K------------

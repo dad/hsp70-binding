@@ -1,0 +1,87 @@
+# Run started 2018-06-30 08:53:53 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HOR7 --report --out ../data/HOR7-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: HOR7
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/HOR7-motifs-r10.txt
+# Found gene HOR7 = YMR251W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.55	 	----------MKL
+-2	-	0.90	 	---------MKLS
+-1	-	0.74	 	--------MKLSQ
+0	-	-1.37	 	-------MKLSQV
+1	M	1.92	 	------MKLSQVV
+2	K	-0.32	 	-----MKLSQVVV
+3	L	-2.89	 	----MKLSQVVVS
+4	S	0.23	 	---MKLSQVVVSA
+5	Q	4.10	 	--MKLSQVVVSAV
+6	V	-0.09	 	-MKLSQVVVSAVA
+7	V	-0.45	 	MKLSQVVVSAVAF
+8	V	2.47	 	KLSQVVVSAVAFT
+9	S	3.33	 	LSQVVVSAVAFTG
+10	A	1.76	 	SQVVVSAVAFTGL
+11	V	1.74	 	QVVVSAVAFTGLV
+12	A	1.36	 	VVVSAVAFTGLVS
+13	F	-0.27	 	VVSAVAFTGLVSA
+14	T	1.14	 	VSAVAFTGLVSAA
+15	G	4.46	 	SAVAFTGLVSAAN
+16	L	1.04	 	AVAFTGLVSAANS
+17	V	2.53	 	VAFTGLVSAANSS
+18	S	4.78	 	AFTGLVSAANSSN
+19	A	-4.29	 	FTGLVSAANSSNS
+20	A	-6.42	 	TGLVSAANSSNSS
+21	N	-6.14	 	GLVSAANSSNSSS
+22	S	-7.41	 	LVSAANSSNSSSS
+23	S	-7.10	 	VSAANSSNSSSSK
+24	N	-7.02	 	SAANSSNSSSSKN
+25	S	-6.45	 	AANSSNSSSSKNA
+26	S	-6.12	 	ANSSNSSSSKNAA
+27	S	-6.90	 	NSSNSSSSKNAAQ
+28	S	-7.94	 	SSNSSSSKNAAQP
+29	K	-6.61	 	SNSSSSKNAAQPI
+30	N	-5.17	 	NSSSSKNAAQPIA
+31	A	-5.48	 	SSSSKNAAQPIAG
+32	A	-6.27	 	SSSKNAAQPIAGL
+33	Q	-3.51	 	SSKNAAQPIAGLN
+34	P	-2.53	 	SKNAAQPIAGLNN
+35	I	-3.45	 	KNAAQPIAGLNNG
+36	A	3.93	 	NAAQPIAGLNNGK
+37	G	2.44	 	AAQPIAGLNNGKV
+38	L	-4.37	 	AQPIAGLNNGKVA
+39	N	-5.05	 	QPIAGLNNGKVAG
+40	N	-5.30	 	PIAGLNNGKVAGA
+41	G	-8.99	 	IAGLNNGKVAGAA
+42	K	-7.15	 	AGLNNGKVAGAAG
+43	V	-7.61	 	GLNNGKVAGAAGV
+44	A	-4.80	 	LNNGKVAGAAGVA
+45	G	-2.74	 	NNGKVAGAAGVAL
+46	A	-6.71	 	NGKVAGAAGVALA
+47	A	-3.67	 	GKVAGAAGVALAG
+48	G	-2.15	 	KVAGAAGVALAGA
+49	V	1.40	 	VAGAAGVALAGAL
+50	A	1.61	 	AGAAGVALAGALA
+51	L	1.43	 	GAAGVALAGALAF
+52	A	-0.68	 	AAGVALAGALAFL
+53	G	3.07	 	AGVALAGALAFLI
+54	A	-3.74	 	GVALAGALAFLI-
+55	L	-0.28	 	VALAGALAFLI--
+56	A	6.13	 	ALAGALAFLI---
+57	F	9.60	 	LAGALAFLI----
+58	L	3.82	 	AGALAFLI-----
+59	I	5.41	 	GALAFLI------
+60	-	4.43	 	ALAFLI-------
+61	-	-1.14	 	LAFLI--------
+62	-	-3.33	 	AFLI---------
+63	-	-2.21	 	FLI----------
+64	-	-1.25	 	LI-----------
+65	-	-0.34	 	I------------

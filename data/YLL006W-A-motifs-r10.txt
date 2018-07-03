@@ -1,0 +1,86 @@
+# Run started 2018-06-29 16:03:59 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YLL006W-A --report --out ../data/YLL006W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YLL006W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YLL006W-A-motifs-r10.txt
+# Found ORF YLL006W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.20	 	----------MTQ
+-2	-	0.33	 	---------MTQL
+-1	-	-0.14	 	--------MTQLS
+0	-	-0.93	 	-------MTQLSQ
+1	M	-2.54	 	------MTQLSQS
+2	T	1.39	 	-----MTQLSQSN
+3	Q	-0.21	 	----MTQLSQSNV
+4	L	-1.61	 	---MTQLSQSNVE
+5	S	-1.62	 	--MTQLSQSNVER
+6	Q	-2.12	 	-MTQLSQSNVERV
+7	S	-6.95	 	MTQLSQSNVERVA
+8	N	-7.49	 	TQLSQSNVERVAL
+9	V	-6.89	 	QLSQSNVERVALV
+10	E	-3.86	 	LSQSNVERVALVY
+11	R	-3.32	 	SQSNVERVALVYI
+12	V	-1.87	 	QSNVERVALVYIS
+13	A	2.79	 	SNVERVALVYISV
+14	L	7.65	 	NVERVALVYISVY
+15	V	7.90	 	VERVALVYISVYF
+16	Y	5.97	 	ERVALVYISVYFF
+17	I	1.71	 	RVALVYISVYFFS
+18	S	3.86	 	VALVYISVYFFSC
+19	V	3.69	 	ALVYISVYFFSCI
+20	Y	2.64	 	LVYISVYFFSCIS
+21	F	3.49	 	VYISVYFFSCISL
+22	F	-3.60	 	YISVYFFSCISLI
+23	S	-3.46	 	ISVYFFSCISLIV
+24	C	-6.78	 	SVYFFSCISLIVY
+25	I	-5.42	 	VYFFSCISLIVYF
+26	S	-2.71	 	YFFSCISLIVYFF
+27	L	-1.56	 	FFSCISLIVYFFT
+28	I	0.47	 	FSCISLIVYFFTF
+29	V	5.72	 	SCISLIVYFFTFC
+30	Y	3.36	 	CISLIVYFFTFCL
+31	F	1.23	 	ISLIVYFFTFCLS
+32	F	2.96	 	SLIVYFFTFCLSV
+33	T	-4.52	 	LIVYFFTFCLSVS
+34	F	-1.48	 	IVYFFTFCLSVSI
+35	C	-4.31	 	VYFFTFCLSVSIP
+36	L	0.76	 	YFFTFCLSVSIPK
+37	S	-2.04	 	FFTFCLSVSIPKN
+38	V	0.25	 	FTFCLSVSIPKNR
+39	S	-4.47	 	TFCLSVSIPKNRQ
+40	I	-2.03	 	FCLSVSIPKNRQH
+41	P	-3.06	 	CLSVSIPKNRQHP
+42	K	-1.29	 	LSVSIPKNRQHPI
+43	N	-5.99	 	SVSIPKNRQHPIK
+44	R	-5.42	 	VSIPKNRQHPIKI
+45	Q	-5.27	 	SIPKNRQHPIKII
+46	H	-1.79	 	IPKNRQHPIKIIY
+47	P	-2.71	 	PKNRQHPIKIIYN
+48	I	1.97	 	KNRQHPIKIIYNN
+49	K	5.26	 	NRQHPIKIIYNNK
+50	I	10.14	*	RQHPIKIIYNNKC
+51	I	3.49	 	QHPIKIIYNNKCP
+52	Y	3.10	 	HPIKIIYNNKCPS
+53	N	-2.58	 	PIKIIYNNKCPS-
+54	N	-11.32	 	IKIIYNNKCPS--
+55	K	-14.50	 	KIIYNNKCPS---
+56	C	-14.35	 	IIYNNKCPS----
+57	P	-11.98	 	IYNNKCPS-----
+58	S	-9.26	 	YNNKCPS------
+59	-	-10.09	 	NNKCPS-------
+60	-	-6.05	 	NKCPS--------
+61	-	-2.88	 	KCPS---------
+62	-	-1.58	 	CPS----------
+63	-	0.04	 	PS-----------
+64	-	0.04	 	S------------

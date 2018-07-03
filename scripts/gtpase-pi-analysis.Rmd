@@ -1,0 +1,26 @@
+---
+title: "gtpase-pi-analysis"
+author: "Sammy Keyport"
+date: "July 3, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r}
+gtpase.pi <- as.data.frame(read_tsv("C:/Users/brandon/Desktop/research/gtpase-sensor/data/gtpase_pi.txt", 
+                                    col_names = T))
+gtpase.pi$Category[gtpase.pi$Category == "slow"] <- "Aggregator"
+gtpase.pi$Category[gtpase.pi$Category == "fast"] <- "SuperAggregator"
+gtpase.pi$Category[gtpase.pi$Category == "none"] <- "Non-Aggregator"
+p <- ggplot(data = gtpase.pi, aes(x = Category, y = pI)) + geom_point() + 
+  ggtitle("Isoelectric Point of GTPases") +
+  theme(plot.title = element_text(hjust = 0.5))
+p
+```
+

@@ -1,0 +1,91 @@
+# Run started 2018-06-30 09:24:41 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YPL038W-A --report --out ../data/YPL038W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YPL038W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YPL038W-A-motifs-r10.txt
+# Found ORF YPL038W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.34	 	-----------MV
+-3	-	-0.71	 	----------MVC
+-2	-	-0.55	 	---------MVCR
+-1	-	-1.43	 	--------MVCRF
+0	-	1.42	 	-------MVCRFV
+1	M	-4.14	 	------MVCRFVH
+2	V	-6.49	 	-----MVCRFVHH
+3	C	-4.87	 	----MVCRFVHHS
+4	R	-0.51	 	---MVCRFVHHSR
+5	F	-3.06	 	--MVCRFVHHSRV
+6	V	-5.30	 	-MVCRFVHHSRVI
+7	H	-3.15	 	MVCRFVHHSRVIF
+8	H	-5.91	 	VCRFVHHSRVIFI
+9	S	-3.50	 	CRFVHHSRVIFIS
+10	R	1.72	 	RFVHHSRVIFISI
+11	V	4.82	 	FVHHSRVIFISIY
+12	I	7.84	 	VHHSRVIFISIYD
+13	F	6.18	 	HHSRVIFISIYDF
+14	I	5.38	 	HSRVIFISIYDFL
+15	S	4.42	 	SRVIFISIYDFLS
+16	I	-1.35	 	RVIFISIYDFLST
+17	Y	-2.45	 	VIFISIYDFLSTK
+18	D	4.06	 	IFISIYDFLSTKG
+19	F	0.47	 	FISIYDFLSTKGK
+20	L	-0.58	 	ISIYDFLSTKGKK
+21	S	3.20	 	SIYDFLSTKGKKN
+22	T	1.44	 	IYDFLSTKGKKNM
+23	K	-5.90	 	YDFLSTKGKKNMY
+24	G	-5.54	 	DFLSTKGKKNMYN
+25	K	-6.79	 	FLSTKGKKNMYNY
+26	K	-6.53	 	LSTKGKKNMYNYT
+27	N	-0.73	 	STKGKKNMYNYTQ
+28	M	-3.56	 	TKGKKNMYNYTQE
+29	Y	0.72	 	KGKKNMYNYTQEK
+30	N	0.07	 	GKKNMYNYTQEKK
+31	Y	-1.01	 	KKNMYNYTQEKKT
+32	T	-4.69	 	KNMYNYTQEKKTK
+33	Q	-4.28	 	NMYNYTQEKKTKQ
+34	E	-6.73	 	MYNYTQEKKTKQK
+35	K	-4.61	 	YNYTQEKKTKQKN
+36	K	-2.74	 	NYTQEKKTKQKNT
+37	T	-1.56	 	YTQEKKTKQKNTF
+38	K	-1.50	 	TQEKKTKQKNTFT
+39	Q	-2.94	 	QEKKTKQKNTFTQ
+40	K	-3.11	 	EKKTKQKNTFTQA
+41	N	0.22	 	KKTKQKNTFTQAS
+42	T	1.16	 	KTKQKNTFTQASI
+43	F	-0.98	 	TKQKNTFTQASIY
+44	T	-1.92	 	KQKNTFTQASIYY
+45	Q	-3.83	 	QKNTFTQASIYYE
+46	A	-5.26	 	KNTFTQASIYYEN
+47	S	-1.52	 	NTFTQASIYYENF
+48	I	3.86	 	TFTQASIYYENFF
+49	Y	0.21	 	FTQASIYYENFFE
+50	Y	-2.72	 	TQASIYYENFFES
+51	E	-6.25	 	QASIYYENFFESY
+52	N	-6.93	 	ASIYYENFFESYR
+53	F	-10.94	 	SIYYENFFESYRT
+54	F	-9.04	 	IYYENFFESYRTI
+55	E	-1.93	 	YYENFFESYRTIS
+56	S	-3.87	 	YENFFESYRTISC
+57	Y	-5.43	 	ENFFESYRTISCL
+58	R	0.58	 	NFFESYRTISCL-
+59	T	1.41	 	FFESYRTISCL--
+60	I	-6.21	 	FESYRTISCL---
+61	S	-1.03	 	ESYRTISCL----
+62	C	0.51	 	SYRTISCL-----
+63	L	-3.93	 	YRTISCL------
+64	-	-2.58	 	RTISCL-------
+65	-	-3.94	 	TISCL--------
+66	-	-7.66	 	ISCL---------
+67	-	-4.87	 	SCL----------
+68	-	-2.73	 	CL-----------
+69	-	-0.56	 	L------------

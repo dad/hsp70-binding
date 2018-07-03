@@ -1,0 +1,68 @@
+# Run started 2018-06-29 14:32:34 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PMP1 --report --out ../data/PMP1-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: PMP1
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/PMP1-motifs-r10.txt
+# Found gene PMP1 = YCR024C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.16	 	----------MTL
+-2	-	0.32	 	---------MTLP
+-1	-	-0.18	 	--------MTLPG
+0	-	-1.09	 	-------MTLPGG
+1	M	2.39	 	------MTLPGGV
+2	T	0.04	 	-----MTLPGGVI
+3	L	-2.15	 	----MTLPGGVIL
+4	P	-3.68	 	---MTLPGGVILV
+5	G	0.34	 	--MTLPGGVILVF
+6	G	-4.47	 	-MTLPGGVILVFI
+7	V	0.52	 	MTLPGGVILVFIL
+8	I	5.63	 	TLPGGVILVFILV
+9	L	9.89	 	LPGGVILVFILVG
+10	V	10.85	*	PGGVILVFILVGL
+11	F	10.02	*	GGVILVFILVGLA
+12	I	6.63	 	GVILVFILVGLAC
+13	L	4.09	 	VILVFILVGLACI
+14	V	6.51	 	ILVFILVGLACIA
+15	G	3.34	 	LVFILVGLACIAI
+16	L	-8.06	 	VFILVGLACIAII
+17	A	-6.50	 	FILVGLACIAIIA
+18	C	-3.38	 	ILVGLACIAIIAT
+19	I	-6.78	 	LVGLACIAIIATI
+20	A	-2.61	 	VGLACIAIIATII
+21	I	-3.51	 	GLACIAIIATIIY
+22	I	-5.16	 	LACIAIIATIIYR
+23	A	1.15	 	ACIAIIATIIYRK
+24	T	1.96	 	CIAIIATIIYRKW
+25	I	5.66	 	IAIIATIIYRKWQ
+26	I	6.35	 	AIIATIIYRKWQA
+27	Y	7.02	 	IIATIIYRKWQAR
+28	R	0.84	 	IATIIYRKWQARQ
+29	K	-3.10	 	ATIIYRKWQARQR
+30	W	-3.35	 	TIIYRKWQARQRG
+31	Q	-3.00	 	IIYRKWQARQRGL
+32	A	-2.08	 	IYRKWQARQRGLQ
+33	R	0.45	 	YRKWQARQRGLQR
+34	Q	1.46	 	RKWQARQRGLQRF
+35	R	5.05	 	KWQARQRGLQRF-
+36	G	4.04	 	WQARQRGLQRF--
+37	L	4.16	 	QARQRGLQRF---
+38	Q	5.74	 	ARQRGLQRF----
+39	R	6.80	 	RQRGLQRF-----
+40	F	-0.70	 	QRGLQRF------
+41	-	2.56	 	RGLQRF-------
+42	-	3.07	 	GLQRF--------
+43	-	1.16	 	LQRF---------
+44	-	1.01	 	QRF----------
+45	-	0.30	 	RF-----------
+46	-	-0.05	 	F------------

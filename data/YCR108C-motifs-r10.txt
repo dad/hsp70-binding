@@ -1,0 +1,91 @@
+# Run started 2018-06-29 14:34:49 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YCR108C --report --out ../data/YCR108C-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YCR108C
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YCR108C-motifs-r10.txt
+# Found ORF YCR108C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.02	 	-----------MP
+-3	-	-0.37	 	----------MPY
+-2	-	-0.67	 	---------MPYS
+-1	-	-1.59	 	--------MPYSP
+0	-	-3.98	 	-------MPYSPS
+1	M	-0.07	 	------MPYSPSL
+2	P	-1.50	 	-----MPYSPSLI
+3	Y	-3.46	 	----MPYSPSLIL
+4	S	-4.17	 	---MPYSPSLILM
+5	P	0.76	 	--MPYSPSLILMG
+6	S	0.82	 	-MPYSPSLILMGH
+7	L	6.08	 	MPYSPSLILMGHT
+8	I	6.80	 	PYSPSLILMGHTH
+9	L	6.77	 	YSPSLILMGHTHT
+10	M	-0.75	 	SPSLILMGHTHTD
+11	G	-4.69	 	PSLILMGHTHTDA
+12	H	-11.22	 	SLILMGHTHTDAT
+13	T	-9.94	 	LILMGHTHTDATV
+14	H	-11.02	 	ILMGHTHTDATVY
+15	T	-8.46	 	LMGHTHTDATVYT
+16	D	-7.91	 	MGHTHTDATVYTT
+17	A	-3.86	 	GHTHTDATVYTTL
+18	T	1.52	 	HTHTDATVYTTLK
+19	V	4.49	 	THTDATVYTTLKL
+20	Y	4.38	 	HTDATVYTTLKLP
+21	T	9.59	 	TDATVYTTLKLPY
+22	T	5.39	 	DATVYTTLKLPYS
+23	L	6.28	 	ATVYTTLKLPYSH
+24	K	5.18	 	TVYTTLKLPYSHT
+25	L	9.97	 	VYTTLKLPYSHTP
+26	P	1.60	 	YTTLKLPYSHTPI
+27	Y	2.24	 	TTLKLPYSHTPIH
+28	S	-5.30	 	TLKLPYSHTPIHG
+29	H	-5.14	 	LKLPYSHTPIHGP
+30	T	-4.29	 	KLPYSHTPIHGPF
+31	P	-4.03	 	LPYSHTPIHGPFS
+32	I	-3.17	 	PYSHTPIHGPFSL
+33	H	-3.72	 	YSHTPIHGPFSLN
+34	G	-0.61	 	SHTPIHGPFSLNQ
+35	P	-6.41	 	HTPIHGPFSLNQY
+36	F	-0.65	 	TPIHGPFSLNQYQ
+37	S	-1.36	 	PIHGPFSLNQYQM
+38	L	-2.23	 	IHGPFSLNQYQMH
+39	N	0.29	 	HGPFSLNQYQMHP
+40	Q	-0.19	 	GPFSLNQYQMHPH
+41	Y	-7.27	 	PFSLNQYQMHPHH
+42	Q	-7.05	 	FSLNQYQMHPHHY
+43	M	-5.45	 	SLNQYQMHPHHYA
+44	H	-9.03	 	LNQYQMHPHHYAR
+45	P	-7.04	 	NQYQMHPHHYARH
+46	H	-2.74	 	QYQMHPHHYARHL
+47	H	-0.46	 	YQMHPHHYARHLP
+48	Y	-1.14	 	QMHPHHYARHLPQ
+49	A	-0.27	 	MHPHHYARHLPQR
+50	R	6.13	 	HPHHYARHLPQRS
+51	H	2.36	 	PHHYARHLPQRSI
+52	L	2.42	 	HHYARHLPQRSIP
+53	P	1.57	 	HYARHLPQRSIPC
+54	Q	1.26	 	YARHLPQRSIPCA
+55	R	-3.33	 	ARHLPQRSIPCAI
+56	S	-4.32	 	RHLPQRSIPCAIY
+57	I	-7.38	 	HLPQRSIPCAIYP
+58	P	-6.88	 	LPQRSIPCAIYP-
+59	C	-4.04	 	PQRSIPCAIYP--
+60	A	-4.70	 	QRSIPCAIYP---
+61	I	-5.62	 	RSIPCAIYP----
+62	Y	-6.59	 	SIPCAIYP-----
+63	P	-2.90	 	IPCAIYP------
+64	-	-4.50	 	PCAIYP-------
+65	-	-4.52	 	CAIYP--------
+66	-	-1.08	 	AIYP---------
+67	-	-0.62	 	IYP----------
+68	-	-0.16	 	YP-----------
+69	-	-0.05	 	P------------

@@ -1,0 +1,94 @@
+# Run started 2018-06-29 14:27:49 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR230W-A --report --out ../data/YBR230W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR230W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR230W-A-motifs-r10.txt
+# Found ORF YBR230W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.46	 	-----------MR
+-3	-	1.07	 	----------MRN
+-2	-	1.11	 	---------MRNE
+-1	-	0.69	 	--------MRNEL
+0	-	-1.89	 	-------MRNELY
+1	M	-5.83	 	------MRNELYQ
+2	R	-8.82	 	-----MRNELYQL
+3	N	-5.80	 	----MRNELYQLW
+4	E	-1.25	 	---MRNELYQLWC
+5	L	-2.38	 	--MRNELYQLWCV
+6	Y	1.37	 	-MRNELYQLWCVA
+7	Q	0.52	 	MRNELYQLWCVAS
+8	L	-11.57	 	RNELYQLWCVASA
+9	W	-10.20	 	NELYQLWCVASAA
+10	C	-5.22	 	ELYQLWCVASAAR
+11	V	-12.27	 	LYQLWCVASAARG
+12	A	-7.04	 	YQLWCVASAARGV
+13	S	-7.57	 	QLWCVASAARGVA
+14	A	-8.29	 	LWCVASAARGVAK
+15	A	-7.44	 	WCVASAARGVAKS
+16	R	-1.55	 	CVASAARGVAKSS
+17	G	1.21	 	VASAARGVAKSSF
+18	V	-0.32	 	ASAARGVAKSSFV
+19	A	-0.80	 	SAARGVAKSSFVR
+20	K	-0.72	 	AARGVAKSSFVRA
+21	S	-0.57	 	ARGVAKSSFVRAN
+22	S	3.34	 	RGVAKSSFVRANS
+23	F	2.40	 	GVAKSSFVRANSA
+24	V	3.14	 	VAKSSFVRANSAM
+25	R	1.16	 	AKSSFVRANSAMC
+26	A	-3.15	 	KSSFVRANSAMCE
+27	N	-6.02	 	SSFVRANSAMCEY
+28	S	-7.33	 	SFVRANSAMCEYV
+29	A	-13.96	 	FVRANSAMCEYVR
+30	M	-15.97	 	VRANSAMCEYVRT
+31	C	-10.54	 	RANSAMCEYVRTS
+32	E	-5.88	 	ANSAMCEYVRTSN
+33	Y	-6.36	 	NSAMCEYVRTSNV
+34	V	-8.10	 	SAMCEYVRTSNVL
+35	R	-4.42	 	AMCEYVRTSNVLS
+36	T	-6.68	 	MCEYVRTSNVLSR
+37	S	-2.39	 	CEYVRTSNVLSRW
+38	N	5.03	 	EYVRTSNVLSRWT
+39	V	6.48	 	YVRTSNVLSRWTR
+40	L	5.83	 	VRTSNVLSRWTRD
+41	S	4.19	 	RTSNVLSRWTRDR
+42	R	2.84	 	TSNVLSRWTRDRQ
+43	W	-4.93	 	SNVLSRWTRDRQW
+44	T	-6.56	 	NVLSRWTRDRQWE
+45	R	-7.36	 	VLSRWTRDRQWEA
+46	D	-6.10	 	LSRWTRDRQWEAA
+47	R	-8.68	 	SRWTRDRQWEAAK
+48	Q	-11.57	 	RWTRDRQWEAAKA
+49	W	-8.85	 	WTRDRQWEAAKAL
+50	E	-8.15	 	TRDRQWEAAKALS
+51	A	-8.10	 	RDRQWEAAKALSQ
+52	A	-4.56	 	DRQWEAAKALSQR
+53	K	1.59	 	RQWEAAKALSQRV
+54	A	1.50	 	QWEAAKALSQRVK
+55	L	1.85	 	WEAAKALSQRVKK
+56	S	1.86	 	EAAKALSQRVKKE
+57	Q	5.55	 	AAKALSQRVKKEY
+58	R	-3.56	 	AKALSQRVKKEYA
+59	V	-5.10	 	KALSQRVKKEYAA
+60	K	-5.07	 	ALSQRVKKEYAAN
+61	K	-0.83	 	LSQRVKKEYAAN-
+62	E	-2.89	 	SQRVKKEYAAN--
+63	Y	-2.11	 	QRVKKEYAAN---
+64	A	-4.51	 	RVKKEYAAN----
+65	A	-2.79	 	VKKEYAAN-----
+66	N	-4.87	 	KKEYAAN------
+67	-	-3.93	 	KEYAAN-------
+68	-	-2.80	 	EYAAN--------
+69	-	-1.06	 	YAAN---------
+70	-	-0.67	 	AAN----------
+71	-	-0.47	 	AN-----------
+72	-	-0.25	 	N------------

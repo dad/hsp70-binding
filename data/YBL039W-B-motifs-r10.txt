@@ -1,0 +1,87 @@
+# Run started 2018-06-29 14:18:53 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBL039W-B --report --out ../data/YBL039W-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBL039W-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBL039W-B-motifs-r10.txt
+# Found ORF YBL039W-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.12	 	-----------MG
+-3	-	-0.36	 	----------MGF
+-2	-	-0.81	 	---------MGFF
+-1	-	-1.93	 	--------MGFFN
+0	-	-4.08	 	-------MGFFNN
+1	M	-2.09	 	------MGFFNNN
+2	G	0.30	 	-----MGFFNNNP
+3	F	-2.39	 	----MGFFNNNPV
+4	F	-4.23	 	---MGFFNNNPVI
+5	N	-5.22	 	--MGFFNNNPVIE
+6	N	-9.89	 	-MGFFNNNPVIEF
+7	N	-9.46	 	MGFFNNNPVIEFF
+8	P	-7.17	 	GFFNNNPVIEFFH
+9	V	-8.14	 	FFNNNPVIEFFHR
+10	I	-3.98	 	FNNNPVIEFFHRI
+11	E	0.97	 	NNNPVIEFFHRIT
+12	F	0.37	 	NNPVIEFFHRITR
+13	F	-3.59	 	NPVIEFFHRITRK
+14	H	3.55	 	PVIEFFHRITRKP
+15	R	3.61	 	VIEFFHRITRKPS
+16	I	2.16	 	IEFFHRITRKPST
+17	T	3.54	 	EFFHRITRKPSTI
+18	R	3.01	 	FFHRITRKPSTIA
+19	K	-2.78	 	FHRITRKPSTIAM
+20	P	-2.38	 	HRITRKPSTIAMW
+21	S	-0.30	 	RITRKPSTIAMWV
+22	T	-0.19	 	ITRKPSTIAMWVF
+23	I	-1.04	 	TRKPSTIAMWVFA
+24	A	-4.49	 	RKPSTIAMWVFAG
+25	M	-1.17	 	KPSTIAMWVFAGL
+26	W	-3.82	 	PSTIAMWVFAGLI
+27	V	-2.94	 	STIAMWVFAGLIC
+28	F	-3.92	 	TIAMWVFAGLICS
+29	A	3.88	 	IAMWVFAGLICSS
+30	G	5.06	 	AMWVFAGLICSST
+31	L	-2.39	 	MWVFAGLICSSTF
+32	I	-3.53	 	WVFAGLICSSTFY
+33	C	-3.21	 	VFAGLICSSTFYL
+34	S	-11.31	 	FAGLICSSTFYLM
+35	S	-13.00	 	AGLICSSTFYLMF
+36	T	-9.66	 	GLICSSTFYLMFM
+37	F	-1.62	 	LICSSTFYLMFMS
+38	Y	1.34	 	ICSSTFYLMFMSS
+39	L	6.92	 	CSSTFYLMFMSSP
+40	M	6.21	 	SSTFYLMFMSSPT
+41	F	2.43	 	STFYLMFMSSPTI
+42	M	-5.39	 	TFYLMFMSSPTID
+43	S	-5.88	 	FYLMFMSSPTIDF
+44	S	-7.78	 	YLMFMSSPTIDFN
+45	P	-4.06	 	LMFMSSPTIDFNS
+46	T	-6.02	 	MFMSSPTIDFNSK
+47	I	-1.91	 	FMSSPTIDFNSKS
+48	D	-2.42	 	MSSPTIDFNSKSK
+49	F	-1.06	 	SSPTIDFNSKSKK
+50	N	-5.99	 	SPTIDFNSKSKKK
+51	S	-1.76	 	PTIDFNSKSKKKN
+52	K	-3.97	 	TIDFNSKSKKKND
+53	S	-3.59	 	IDFNSKSKKKNDK
+54	K	-2.84	 	DFNSKSKKKNDK-
+55	K	-3.41	 	FNSKSKKKNDK--
+56	K	-5.96	 	NSKSKKKNDK---
+57	N	-6.46	 	SKSKKKNDK----
+58	D	-5.57	 	KSKKKNDK-----
+59	K	-4.94	 	SKKKNDK------
+60	-	-4.74	 	KKKNDK-------
+61	-	-0.95	 	KKNDK--------
+62	-	0.63	 	KNDK---------
+63	-	0.31	 	NDK----------
+64	-	0.42	 	DK-----------
+65	-	0.28	 	K------------

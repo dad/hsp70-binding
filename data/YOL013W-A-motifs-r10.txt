@@ -1,0 +1,91 @@
+# Run started 2018-06-30 09:08:10 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOL013W-A --report --out ../data/YOL013W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOL013W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOL013W-A-motifs-r10.txt
+# Found ORF YOL013W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.17	 	-----------MM
+-3	-	-0.36	 	----------MMC
+-2	-	-0.63	 	---------MMCI
+-1	-	-1.73	 	--------MMCII
+0	-	-2.66	 	-------MMCIIN
+1	M	-8.57	 	------MMCIINS
+2	M	-6.77	 	-----MMCIINSE
+3	C	-4.80	 	----MMCIINSES
+4	I	-7.16	 	---MMCIINSESF
+5	I	-8.70	 	--MMCIINSESFH
+6	N	-12.36	 	-MMCIINSESFHG
+7	S	-15.33	 	MMCIINSESFHGS
+8	E	-14.67	 	MCIINSESFHGSQ
+9	S	-12.07	 	CIINSESFHGSQK
+10	F	-8.73	 	IINSESFHGSQKR
+11	H	-5.47	 	INSESFHGSQKRS
+12	G	-3.35	 	NSESFHGSQKRSG
+13	S	-5.42	 	SESFHGSQKRSGV
+14	Q	-4.79	 	ESFHGSQKRSGVW
+15	K	-3.82	 	SFHGSQKRSGVWS
+16	R	-4.74	 	FHGSQKRSGVWSS
+17	S	1.24	 	HGSQKRSGVWSSG
+18	G	-1.07	 	GSQKRSGVWSSGM
+19	V	-2.66	 	SQKRSGVWSSGMI
+20	W	-4.20	 	QKRSGVWSSGMIL
+21	S	-5.05	 	KRSGVWSSGMILA
+22	S	-8.32	 	RSGVWSSGMILAL
+23	G	-2.80	 	SGVWSSGMILALG
+24	M	1.45	 	GVWSSGMILALGD
+25	I	2.13	 	VWSSGMILALGDF
+26	L	7.52	 	WSSGMILALGDFL
+27	A	5.80	 	SSGMILALGDFLI
+28	L	-2.54	 	SGMILALGDFLIN
+29	G	-5.70	 	GMILALGDFLINR
+30	D	0.49	 	MILALGDFLINRG
+31	F	-1.65	 	ILALGDFLINRGT
+32	L	1.09	 	LALGDFLINRGTK
+33	I	4.96	 	ALGDFLINRGTKH
+34	N	2.76	 	LGDFLINRGTKHA
+35	R	-2.80	 	GDFLINRGTKHAR
+36	G	-7.14	 	DFLINRGTKHARG
+37	T	-5.80	 	FLINRGTKHARGP
+38	K	-2.64	 	LINRGTKHARGPG
+39	H	-1.51	 	INRGTKHARGPGF
+40	A	-1.73	 	NRGTKHARGPGFN
+41	R	-2.84	 	RGTKHARGPGFNS
+42	G	-3.90	 	GTKHARGPGFNSQ
+43	P	-1.58	 	TKHARGPGFNSQL
+44	G	-4.08	 	KHARGPGFNSQLA
+45	F	-4.19	 	HARGPGFNSQLAP
+46	N	-5.52	 	ARGPGFNSQLAPF
+47	S	-0.41	 	RGPGFNSQLAPFF
+48	Q	-2.57	 	GPGFNSQLAPFFT
+49	L	-3.80	 	PGFNSQLAPFFTI
+50	A	-0.68	 	GFNSQLAPFFTIE
+51	P	4.71	 	FNSQLAPFFTIEK
+52	F	-3.41	 	NSQLAPFFTIEKY
+53	F	-0.40	 	SQLAPFFTIEKYS
+54	T	-1.53	 	QLAPFFTIEKYSV
+55	I	-4.85	 	LAPFFTIEKYSVR
+56	E	-0.96	 	APFFTIEKYSVRR
+57	K	0.08	 	PFFTIEKYSVRRS
+58	Y	0.48	 	FFTIEKYSVRRS-
+59	S	2.85	 	FTIEKYSVRRS--
+60	V	3.69	 	TIEKYSVRRS---
+61	R	0.03	 	IEKYSVRRS----
+62	R	2.14	 	EKYSVRRS-----
+63	S	0.98	 	KYSVRRS------
+64	-	1.59	 	YSVRRS-------
+65	-	1.91	 	SVRRS--------
+66	-	2.25	 	VRRS---------
+67	-	1.30	 	RRS----------
+68	-	0.48	 	RS-----------
+69	-	0.04	 	S------------

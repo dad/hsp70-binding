@@ -1,0 +1,84 @@
+# Run started 2018-06-29 14:36:25 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id RPS29B --report --out ../data/RPS29B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: RPS29B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/RPS29B-motifs-r10.txt
+# Found gene RPS29B = YDL061C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.26	 	-----------MA
+-3	-	-0.50	 	----------MAH
+-2	-	-1.32	 	---------MAHE
+-1	-	-2.87	 	--------MAHEN
+0	-	-3.71	 	-------MAHENV
+1	M	-6.31	 	------MAHENVW
+2	A	-9.28	 	-----MAHENVWF
+3	H	-12.58	 	----MAHENVWFS
+4	E	-8.98	 	---MAHENVWFSH
+5	N	-11.48	 	--MAHENVWFSHP
+6	V	-6.68	 	-MAHENVWFSHPR
+7	W	-4.30	 	MAHENVWFSHPRR
+8	F	-2.89	 	AHENVWFSHPRRF
+9	S	-4.27	 	HENVWFSHPRRFG
+10	H	-0.36	 	ENVWFSHPRRFGK
+11	P	-3.04	 	NVWFSHPRRFGKG
+12	R	0.89	 	VWFSHPRRFGKGS
+13	R	2.03	 	WFSHPRRFGKGSR
+14	F	1.83	 	FSHPRRFGKGSRQ
+15	G	1.57	 	SHPRRFGKGSRQC
+16	K	1.69	 	HPRRFGKGSRQCR
+17	G	-2.19	 	PRRFGKGSRQCRV
+18	S	-2.09	 	RRFGKGSRQCRVC
+19	R	-6.68	 	RFGKGSRQCRVCS
+20	Q	-7.20	 	FGKGSRQCRVCSS
+21	C	-3.44	 	GKGSRQCRVCSSH
+22	R	-8.68	 	KGSRQCRVCSSHT
+23	V	-7.79	 	GSRQCRVCSSHTG
+24	C	-11.36	 	SRQCRVCSSHTGL
+25	S	-10.36	 	RQCRVCSSHTGLV
+26	S	-12.08	 	QCRVCSSHTGLVR
+27	H	-13.54	 	CRVCSSHTGLVRK
+28	T	-4.72	 	RVCSSHTGLVRKY
+29	G	1.39	 	VCSSHTGLVRKYD
+30	L	3.17	 	CSSHTGLVRKYDL
+31	V	3.57	 	SSHTGLVRKYDLN
+32	R	8.89	 	SHTGLVRKYDLNI
+33	K	-2.26	 	HTGLVRKYDLNIC
+34	Y	0.93	 	TGLVRKYDLNICR
+35	D	-0.37	 	GLVRKYDLNICRQ
+36	L	3.73	 	LVRKYDLNICRQC
+37	N	-4.13	 	VRKYDLNICRQCF
+38	I	-1.95	 	RKYDLNICRQCFR
+39	C	-10.60	 	KYDLNICRQCFRE
+40	R	-14.43	 	YDLNICRQCFREK
+41	Q	-14.41	 	DLNICRQCFREKA
+42	C	-16.18	 	LNICRQCFREKAN
+43	F	-13.93	 	NICRQCFREKAND
+44	R	-11.27	 	ICRQCFREKANDI
+45	E	-11.37	 	CRQCFREKANDIG
+46	K	-12.68	 	RQCFREKANDIGF
+47	A	-15.38	 	QCFREKANDIGFH
+48	N	-9.42	 	CFREKANDIGFHK
+49	D	-7.98	 	FREKANDIGFHKY
+50	I	-4.87	 	REKANDIGFHKYR
+51	G	-4.75	 	EKANDIGFHKYR-
+52	F	-1.94	 	KANDIGFHKYR--
+53	H	-0.93	 	ANDIGFHKYR---
+54	K	0.62	 	NDIGFHKYR----
+55	Y	-0.18	 	DIGFHKYR-----
+56	R	2.38	 	IGFHKYR------
+57	-	4.21	 	GFHKYR-------
+58	-	1.46	 	FHKYR--------
+59	-	2.23	 	HKYR---------
+60	-	1.34	 	KYR----------
+61	-	0.72	 	YR-----------
+62	-	0.39	 	R------------

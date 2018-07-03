@@ -1,0 +1,76 @@
+# Run started 2018-06-30 09:17:05 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOR161C-C --report --out ../data/YOR161C-C-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOR161C-C
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOR161C-C-motifs-r10.txt
+# Found ORF YOR161C-C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	-0.40	 	----------MSY
+-2	-	-0.63	 	---------MSYT
+-1	-	-1.02	 	--------MSYTR
+0	-	-2.71	 	-------MSYTRV
+1	M	1.38	 	------MSYTRVD
+2	S	0.86	 	-----MSYTRVDH
+3	Y	-1.34	 	----MSYTRVDHP
+4	T	2.48	 	---MSYTRVDHPT
+5	R	-0.18	 	--MSYTRVDHPTG
+6	V	-3.35	 	-MSYTRVDHPTGK
+7	D	-3.16	 	MSYTRVDHPTGKM
+8	H	-3.43	 	SYTRVDHPTGKMA
+9	P	-7.31	 	YTRVDHPTGKMAC
+10	T	-6.21	 	TRVDHPTGKMACH
+11	G	-5.85	 	RVDHPTGKMACHL
+12	K	-4.58	 	VDHPTGKMACHLR
+13	M	-8.28	 	DHPTGKMACHLRQ
+14	A	-7.18	 	HPTGKMACHLRQI
+15	C	-1.54	 	PTGKMACHLRQIL
+16	H	-3.25	 	TGKMACHLRQILA
+17	L	-4.96	 	GKMACHLRQILAS
+18	R	-4.07	 	KMACHLRQILASP
+19	Q	3.73	 	MACHLRQILASPL
+20	I	-0.96	 	ACHLRQILASPLF
+21	L	0.56	 	CHLRQILASPLFF
+22	A	2.82	 	HLRQILASPLFFA
+23	S	1.82	 	LRQILASPLFFAN
+24	P	-2.79	 	RQILASPLFFANY
+25	L	-0.24	 	QILASPLFFANYV
+26	F	1.19	 	ILASPLFFANYVL
+27	F	-0.24	 	LASPLFFANYVLH
+28	A	-2.75	 	ASPLFFANYVLHA
+29	N	-0.83	 	SPLFFANYVLHAA
+30	Y	1.65	 	PLFFANYVLHAAI
+31	V	1.21	 	LFFANYVLHAAIH
+32	L	2.29	 	FFANYVLHAAIHY
+33	H	0.09	 	FANYVLHAAIHYP
+34	A	1.05	 	ANYVLHAAIHYPS
+35	A	-6.90	 	NYVLHAAIHYPSS
+36	I	0.07	 	YVLHAAIHYPSSD
+37	H	-0.62	 	VLHAAIHYPSSDI
+38	Y	-0.45	 	LHAAIHYPSSDIR
+39	P	-4.90	 	HAAIHYPSSDIRG
+40	S	-6.39	 	AAIHYPSSDIRGD
+41	S	-5.47	 	AIHYPSSDIRGDI
+42	D	-5.67	 	IHYPSSDIRGDIL
+43	I	-5.92	 	HYPSSDIRGDIL-
+44	R	-8.91	 	YPSSDIRGDIL--
+45	G	-2.42	 	PSSDIRGDIL---
+46	D	-2.27	 	SSDIRGDIL----
+47	I	-0.70	 	SDIRGDIL-----
+48	L	1.62	 	DIRGDIL------
+49	-	5.79	 	IRGDIL-------
+50	-	2.23	 	RGDIL--------
+51	-	-3.76	 	GDIL---------
+52	-	-2.53	 	DIL----------
+53	-	-1.46	 	IL-----------
+54	-	-0.56	 	L------------

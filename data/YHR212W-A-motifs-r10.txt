@@ -1,0 +1,95 @@
+# Run started 2018-06-29 15:34:41 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YHR212W-A --report --out ../data/YHR212W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YHR212W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YHR212W-A-motifs-r10.txt
+# Found ORF YHR212W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.02	 	-----------MP
+-3	-	-0.37	 	----------MPY
+-2	-	-0.77	 	---------MPYH
+-1	-	-2.27	 	--------MPYHY
+0	-	-5.30	 	-------MPYHYL
+1	M	-2.29	 	------MPYHYLF
+2	P	-4.64	 	-----MPYHYLFL
+3	Y	-1.35	 	----MPYHYLFLA
+4	H	2.83	 	---MPYHYLFLAL
+5	Y	5.92	 	--MPYHYLFLALF
+6	L	7.20	 	-MPYHYLFLALFT
+7	F	8.99	 	MPYHYLFLALFTY
+8	L	9.95	 	PYHYLFLALFTYL
+9	A	5.60	 	YHYLFLALFTYLA
+10	L	3.54	 	HYLFLALFTYLAT
+11	F	1.71	 	YLFLALFTYLATS
+12	T	7.82	 	LFLALFTYLATSN
+13	Y	2.89	 	FLALFTYLATSNV
+14	L	1.69	 	LALFTYLATSNVV
+15	A	2.64	 	ALFTYLATSNVVS
+16	T	-2.71	 	LFTYLATSNVVSG
+17	S	-5.89	 	FTYLATSNVVSGS
+18	N	-1.20	 	TYLATSNVVSGST
+19	V	-0.60	 	YLATSNVVSGSTQ
+20	V	-0.71	 	LATSNVVSGSTQA
+21	S	-0.86	 	ATSNVVSGSTQAC
+22	G	-3.36	 	TSNVVSGSTQACL
+23	S	-7.00	 	SNVVSGSTQACLP
+24	T	-5.90	 	NVVSGSTQACLPV
+25	Q	-9.56	 	VVSGSTQACLPVG
+26	A	-4.90	 	VSGSTQACLPVGP
+27	C	-5.33	 	SGSTQACLPVGPR
+28	L	1.13	 	GSTQACLPVGPRK
+29	P	0.27	 	STQACLPVGPRKN
+30	V	-2.19	 	TQACLPVGPRKNG
+31	G	-7.83	 	QACLPVGPRKNGM
+32	P	-6.15	 	ACLPVGPRKNGMN
+33	R	-8.30	 	CLPVGPRKNGMNV
+34	K	-5.78	 	LPVGPRKNGMNVN
+35	N	-5.03	 	PVGPRKNGMNVNF
+36	G	-7.73	 	VGPRKNGMNVNFY
+37	M	-4.03	 	GPRKNGMNVNFYK
+38	N	-7.17	 	PRKNGMNVNFYKY
+39	V	-3.53	 	RKNGMNVNFYKYS
+40	N	0.71	 	KNGMNVNFYKYSL
+41	F	-0.67	 	NGMNVNFYKYSLL
+42	Y	2.13	 	GMNVNFYKYSLLD
+43	K	1.77	 	MNVNFYKYSLLDS
+44	Y	4.67	 	NVNFYKYSLLDST
+45	S	6.79	 	VNFYKYSLLDSTT
+46	L	4.45	 	NFYKYSLLDSTTY
+47	L	0.69	 	FYKYSLLDSTTYS
+48	D	0.65	 	YKYSLLDSTTYSY
+49	S	-7.53	 	KYSLLDSTTYSYP
+50	T	-9.63	 	YSLLDSTTYSYPQ
+51	T	-6.36	 	SLLDSTTYSYPQY
+52	Y	-0.22	 	LLDSTTYSYPQYM
+53	S	0.35	 	LDSTTYSYPQYMT
+54	Y	-0.03	 	DSTTYSYPQYMTS
+55	P	0.88	 	STTYSYPQYMTSG
+56	Q	0.90	 	TTYSYPQYMTSGY
+57	Y	-3.31	 	TYSYPQYMTSGYA
+58	M	-4.17	 	YSYPQYMTSGYAS
+59	T	-3.20	 	SYPQYMTSGYASN
+60	S	-2.34	 	YPQYMTSGYASNW
+61	G	-1.37	 	PQYMTSGYASNWN
+62	Y	-1.37	 	QYMTSGYASNWN-
+63	A	-3.37	 	YMTSGYASNWN--
+64	S	-4.39	 	MTSGYASNWN---
+65	N	-9.84	 	TSGYASNWN----
+66	W	-9.30	 	SGYASNWN-----
+67	N	-7.96	 	GYASNWN------
+68	-	-6.85	 	YASNWN-------
+69	-	-2.34	 	ASNWN--------
+70	-	-1.14	 	SNWN---------
+71	-	-0.70	 	NWN----------
+72	-	-0.35	 	WN-----------
+73	-	-0.25	 	N------------

@@ -1,0 +1,64 @@
+# Run started 2018-06-29 14:41:18 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id OST4 --report --out ../data/OST4-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: OST4
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/OST4-motifs-r10.txt
+# Found gene OST4 = YDL232W
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.18	 	----------MIS
+-2	-	-0.34	 	---------MISD
+-1	-	-1.81	 	--------MISDE
+0	-	-0.10	 	-------MISDEQ
+1	M	-2.39	 	------MISDEQL
+2	I	-7.44	 	-----MISDEQLN
+3	S	-9.87	 	----MISDEQLNS
+4	D	-10.51	 	---MISDEQLNSL
+5	E	-10.41	 	--MISDEQLNSLA
+6	Q	-11.26	 	-MISDEQLNSLAI
+7	L	-8.34	 	MISDEQLNSLAIT
+8	N	-1.55	 	ISDEQLNSLAITF
+9	S	2.73	 	SDEQLNSLAITFG
+10	L	-1.14	 	DEQLNSLAITFGI
+11	A	-0.36	 	EQLNSLAITFGIV
+12	I	3.81	 	QLNSLAITFGIVM
+13	T	-4.29	 	LNSLAITFGIVMM
+14	F	0.13	 	NSLAITFGIVMMT
+15	G	0.08	 	SLAITFGIVMMTL
+16	I	1.92	 	LAITFGIVMMTLI
+17	V	0.12	 	AITFGIVMMTLIV
+18	M	1.37	 	ITFGIVMMTLIVI
+19	M	0.55	 	TFGIVMMTLIVIY
+20	T	0.77	 	FGIVMMTLIVIYH
+21	L	4.08	 	GIVMMTLIVIYHA
+22	I	6.48	 	IVMMTLIVIYHAV
+23	V	11.49	*	VMMTLIVIYHAVD
+24	I	2.73	 	MMTLIVIYHAVDS
+25	Y	-0.63	 	MTLIVIYHAVDST
+26	H	1.64	 	TLIVIYHAVDSTM
+27	A	-5.58	 	LIVIYHAVDSTMS
+28	V	-7.66	 	IVIYHAVDSTMSP
+29	D	-5.41	 	VIYHAVDSTMSPK
+30	S	-4.49	 	IYHAVDSTMSPKN
+31	T	-6.57	 	YHAVDSTMSPKN-
+32	M	-3.89	 	HAVDSTMSPKN--
+33	S	-4.28	 	AVDSTMSPKN---
+34	P	-5.48	 	VDSTMSPKN----
+35	K	-4.92	 	DSTMSPKN-----
+36	N	-3.63	 	STMSPKN------
+37	-	-2.60	 	TMSPKN-------
+38	-	-1.17	 	MSPKN--------
+39	-	-0.33	 	SPKN---------
+40	-	-0.23	 	PKN----------
+41	-	-0.21	 	KN-----------
+42	-	-0.25	 	N------------

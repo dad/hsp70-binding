@@ -53,10 +53,13 @@ if __name__=='__main__':
 		outs.addStream(sys.stdout)
 
 	orf_dict = None
+	gene_orf_map = None
 	if not options.fasta_fname is None:
 		fname = os.path.expanduser(options.fasta_fname)
 		(headers, sequences) = biofile.readFASTA(fname)
 		orf_dict = dict(zip([biofile.firstField(h) for h in headers], sequences))
+		gene_orf_map = dict([(biofile.secondField(h), biofile.firstField(h)) for h in headers])
+
 	
 	# Set the weight matrix
 	try:
@@ -76,11 +79,18 @@ if __name__=='__main__':
 		params_outs.write("#\t{k}: {v}\n".format(k=k, v=v))
 	
 	seq = None
-	if not options.protein_id is None and not orf_dict is None: # analyze specific protein pulled from DB
+	if not orf_dict is None and not options.protein_id is None:
 		try:
 			seq = orf_dict[options.protein_id]
+			outs.write("# Found ORF {}\n".format(options.protein_id))
 		except KeyError as ke:
-			raise KeyError("# No protein found for ID {}".format(options.protein_id))
+			# Maybe the user passed in a gene name.
+			try:
+				orf = gene_orf_map[options.protein_id]
+				outs.write("# Found gene {} = {}\n".format(options.protein_id, orf))
+				seq = orf_dict[orf]
+			except KeyError:
+				raise KeyError("# No protein found for ID {}".format(protein_id))
 	
 	if not options.sequence is None:
 		seq = options.sequence

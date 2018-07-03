@@ -1,0 +1,94 @@
+# Run started 2018-06-29 15:23:11 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id QCR9 --report --out ../data/QCR9-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: QCR9
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/QCR9-motifs-r10.txt
+# Found gene QCR9 = YGR183C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	-0.19	 	----------MSF
+-2	-	-0.31	 	---------MSFS
+-1	-	-1.07	 	--------MSFSS
+0	-	-2.77	 	-------MSFSSL
+1	M	-1.00	 	------MSFSSLY
+2	S	-2.51	 	-----MSFSSLYK
+3	F	-3.99	 	----MSFSSLYKT
+4	S	0.36	 	---MSFSSLYKTF
+5	S	5.83	 	--MSFSSLYKTFF
+6	L	2.64	 	-MSFSSLYKTFFK
+7	Y	3.64	 	MSFSSLYKTFFKR
+8	K	7.81	 	SFSSLYKTFFKRN
+9	T	4.56	 	FSSLYKTFFKRNA
+10	F	1.75	 	SSLYKTFFKRNAV
+11	F	1.82	 	SLYKTFFKRNAVF
+12	K	-0.08	 	LYKTFFKRNAVFV
+13	R	-2.44	 	YKTFFKRNAVFVG
+14	N	-1.83	 	KTFFKRNAVFVGT
+15	A	1.11	 	TFFKRNAVFVGTI
+16	V	4.19	 	FFKRNAVFVGTIF
+17	F	2.63	 	FKRNAVFVGTIFA
+18	V	1.87	 	KRNAVFVGTIFAG
+19	G	1.69	 	RNAVFVGTIFAGA
+20	T	1.41	 	NAVFVGTIFAGAF
+21	I	-0.44	 	AVFVGTIFAGAFV
+22	F	-0.89	 	VFVGTIFAGAFVF
+23	A	-0.29	 	FVGTIFAGAFVFQ
+24	G	-2.86	 	VGTIFAGAFVFQT
+25	A	-1.70	 	GTIFAGAFVFQTV
+26	F	1.00	 	TIFAGAFVFQTVF
+27	V	1.40	 	IFAGAFVFQTVFD
+28	F	1.01	 	FAGAFVFQTVFDT
+29	Q	1.93	 	AGAFVFQTVFDTA
+30	T	2.24	 	GAFVFQTVFDTAI
+31	V	-3.53	 	AFVFQTVFDTAIT
+32	F	-1.27	 	FVFQTVFDTAITS
+33	D	-0.15	 	VFQTVFDTAITSW
+34	T	-0.26	 	FQTVFDTAITSWY
+35	A	-4.25	 	QTVFDTAITSWYE
+36	I	-3.18	 	TVFDTAITSWYEN
+37	T	-6.08	 	VFDTAITSWYENH
+38	S	-2.56	 	FDTAITSWYENHN
+39	W	-8.42	 	DTAITSWYENHNK
+40	Y	-8.85	 	TAITSWYENHNKG
+41	E	-8.55	 	AITSWYENHNKGK
+42	N	-6.37	 	ITSWYENHNKGKL
+43	H	-10.47	 	TSWYENHNKGKLW
+44	N	-8.97	 	SWYENHNKGKLWK
+45	K	-8.94	 	WYENHNKGKLWKD
+46	G	-2.45	 	YENHNKGKLWKDV
+47	K	-3.31	 	ENHNKGKLWKDVK
+48	L	-2.84	 	NHNKGKLWKDVKA
+49	W	-4.34	 	HNKGKLWKDVKAR
+50	K	0.75	 	NKGKLWKDVKARI
+51	D	-7.84	 	KGKLWKDVKARIA
+52	V	-3.11	 	GKLWKDVKARIAA
+53	K	-3.63	 	KLWKDVKARIAAG
+54	A	2.04	 	LWKDVKARIAAGD
+55	R	0.55	 	WKDVKARIAAGDG
+56	I	1.46	 	KDVKARIAAGDGD
+57	A	-0.61	 	DVKARIAAGDGDD
+58	A	-4.65	 	VKARIAAGDGDDD
+59	G	-11.66	 	KARIAAGDGDDDD
+60	D	-16.29	 	ARIAAGDGDDDDE
+61	G	-20.72	 	RIAAGDGDDDDE-
+62	D	-23.49	 	IAAGDGDDDDE--
+63	D	-24.31	 	AAGDGDDDDE---
+64	D	-24.48	 	AGDGDDDDE----
+65	D	-20.37	 	GDGDDDDE-----
+66	E	-15.97	 	DGDDDDE------
+67	-	-11.32	 	GDDDDE-------
+68	-	-6.66	 	DDDDE--------
+69	-	-3.09	 	DDDE---------
+70	-	-1.91	 	DDE----------
+71	-	-1.12	 	DE-----------
+72	-	-0.49	 	E------------

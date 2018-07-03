@@ -1,0 +1,44 @@
+# Run started 2018-06-29 15:52:09 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YJR151W-A --report --out ../data/YJR151W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YJR151W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YJR151W-A-motifs-r10.txt
+# Found ORF YJR151W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	-0.09	 	----------MLS
+-2	-	-0.08	 	---------MLSL
+-1	-	-0.87	 	--------MLSLI
+0	-	2.63	 	-------MLSLIF
+1	M	0.44	 	------MLSLIFY
+2	L	3.42	 	-----MLSLIFYL
+3	S	5.56	 	----MLSLIFYLR
+4	L	8.33	 	---MLSLIFYLRF
+5	I	6.32	 	--MLSLIFYLRFP
+6	F	13.09	*	-MLSLIFYLRFPS
+7	Y	5.21	 	MLSLIFYLRFPSY
+8	L	4.75	 	LSLIFYLRFPSYI
+9	R	3.18	 	SLIFYLRFPSYIR
+10	F	0.29	 	LIFYLRFPSYIRG
+11	P	-0.69	 	IFYLRFPSYIRG-
+12	S	4.65	 	FYLRFPSYIRG--
+13	Y	1.57	 	YLRFPSYIRG---
+14	I	1.36	 	LRFPSYIRG----
+15	R	3.12	 	RFPSYIRG-----
+16	G	0.58	 	FPSYIRG------
+17	-	-2.87	 	PSYIRG-------
+18	-	-1.30	 	SYIRG--------
+19	-	0.94	 	YIRG---------
+20	-	0.77	 	IRG----------
+21	-	0.61	 	RG-----------
+22	-	0.11	 	G------------

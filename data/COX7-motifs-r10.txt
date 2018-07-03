@@ -1,0 +1,88 @@
+# Run started 2018-06-30 08:54:01 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id COX7 --report --out ../data/COX7-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: COX7
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/COX7-motifs-r10.txt
+# Found gene COX7 = YMR256C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.26	 	-----------MA
+-3	-	-0.37	 	----------MAN
+-2	-	-0.17	 	---------MANK
+-1	-	-1.02	 	--------MANKV
+0	-	-0.87	 	-------MANKVI
+1	M	-3.36	 	------MANKVIQ
+2	A	-5.70	 	-----MANKVIQL
+3	N	-2.86	 	----MANKVIQLQ
+4	K	0.83	 	---MANKVIQLQK
+5	V	0.32	 	--MANKVIQLQKI
+6	I	5.37	 	-MANKVIQLQKIF
+7	Q	5.99	 	MANKVIQLQKIFQ
+8	L	2.31	 	ANKVIQLQKIFQS
+9	Q	0.66	 	NKVIQLQKIFQSS
+10	K	6.70	 	KVIQLQKIFQSST
+11	I	-1.15	 	VIQLQKIFQSSTK
+12	F	1.96	 	IQLQKIFQSSTKP
+13	Q	2.74	 	QLQKIFQSSTKPL
+14	S	-1.90	 	LQKIFQSSTKPLW
+15	S	-4.81	 	QKIFQSSTKPLWW
+16	T	-3.30	 	KIFQSSTKPLWWR
+17	K	1.77	 	IFQSSTKPLWWRH
+18	P	0.43	 	FQSSTKPLWWRHP
+19	L	-0.20	 	QSSTKPLWWRHPR
+20	W	-0.52	 	SSTKPLWWRHPRS
+21	W	-0.90	 	STKPLWWRHPRSA
+22	R	-8.87	 	TKPLWWRHPRSAL
+23	H	-6.64	 	KPLWWRHPRSALY
+24	P	-4.57	 	PLWWRHPRSALYL
+25	R	-4.19	 	LWWRHPRSALYLY
+26	S	0.33	 	WWRHPRSALYLYP
+27	A	4.06	 	WRHPRSALYLYPF
+28	L	7.06	 	RHPRSALYLYPFY
+29	Y	10.56	*	HPRSALYLYPFYA
+30	L	8.06	 	PRSALYLYPFYAI
+31	Y	2.49	 	RSALYLYPFYAIF
+32	P	3.72	 	SALYLYPFYAIFA
+33	F	-2.55	 	ALYLYPFYAIFAV
+34	Y	-1.86	 	LYLYPFYAIFAVA
+35	A	1.97	 	YLYPFYAIFAVAV
+36	I	0.27	 	LYPFYAIFAVAVV
+37	F	1.11	 	YPFYAIFAVAVVT
+38	A	1.83	 	PFYAIFAVAVVTP
+39	V	1.04	 	FYAIFAVAVVTPL
+40	A	3.44	 	YAIFAVAVVTPLL
+41	V	3.56	 	AIFAVAVVTPLLY
+42	V	0.09	 	IFAVAVVTPLLYI
+43	T	4.48	 	FAVAVVTPLLYIP
+44	P	6.18	 	AVAVVTPLLYIPN
+45	L	8.15	 	VAVVTPLLYIPNA
+46	L	11.72	*	AVVTPLLYIPNAI
+47	Y	10.95	*	VVTPLLYIPNAIR
+48	I	1.88	 	VTPLLYIPNAIRG
+49	P	-3.40	 	TPLLYIPNAIRGI
+50	N	-1.01	 	PLLYIPNAIRGIK
+51	A	-4.97	 	LLYIPNAIRGIKA
+52	I	-3.24	 	LYIPNAIRGIKAK
+53	R	2.36	 	YIPNAIRGIKAKK
+54	G	2.42	 	IPNAIRGIKAKKA
+55	I	0.07	 	PNAIRGIKAKKA-
+56	K	0.21	 	NAIRGIKAKKA--
+57	A	0.39	 	AIRGIKAKKA---
+58	K	-3.57	 	IRGIKAKKA----
+59	K	-1.53	 	RGIKAKKA-----
+60	A	-1.21	 	GIKAKKA------
+61	-	0.38	 	IKAKKA-------
+62	-	1.67	 	KAKKA--------
+63	-	1.54	 	AKKA---------
+64	-	0.91	 	KKA----------
+65	-	0.33	 	KA-----------
+66	-	0.02	 	A------------

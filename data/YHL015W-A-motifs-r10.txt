@@ -1,0 +1,55 @@
+# Run started 2018-06-29 15:26:50 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YHL015W-A --report --out ../data/YHL015W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YHL015W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YHL015W-A-motifs-r10.txt
+# Found ORF YHL015W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.00	 	----------MTA
+-2	-	-0.25	 	---------MTAF
+-1	-	-1.33	 	--------MTAFA
+0	-	-2.82	 	-------MTAFAS
+1	M	-3.25	 	------MTAFASL
+2	T	-0.87	 	-----MTAFASLR
+3	A	-0.82	 	----MTAFASLRE
+4	F	-1.32	 	---MTAFASLREP
+5	A	4.34	 	--MTAFASLREPL
+6	S	2.08	 	-MTAFASLREPLV
+7	L	-2.37	 	MTAFASLREPLVL
+8	R	-4.12	 	TAFASLREPLVLA
+9	E	0.23	 	AFASLREPLVLAN
+10	P	-3.25	 	FASLREPLVLANL
+11	L	2.38	 	ASLREPLVLANLK
+12	V	5.59	 	SLREPLVLANLKI
+13	L	5.75	 	LREPLVLANLKIK
+14	A	4.55	 	REPLVLANLKIKV
+15	N	2.21	 	EPLVLANLKIKVH
+16	L	-0.51	 	PLVLANLKIKVHI
+17	K	-1.07	 	LVLANLKIKVHIY
+18	I	4.10	 	VLANLKIKVHIYR
+19	K	-2.77	 	LANLKIKVHIYRM
+20	V	3.06	 	ANLKIKVHIYRMK
+21	H	5.15	 	NLKIKVHIYRMKR
+22	I	6.93	 	LKIKVHIYRMKR-
+23	Y	6.05	 	KIKVHIYRMKR--
+24	R	6.65	 	IKVHIYRMKR---
+25	M	1.09	 	KVHIYRMKR----
+26	K	-1.01	 	VHIYRMKR-----
+27	R	0.27	 	HIYRMKR------
+28	-	0.99	 	IYRMKR-------
+29	-	2.71	 	YRMKR--------
+30	-	2.97	 	RMKR---------
+31	-	1.72	 	MKR----------
+32	-	1.06	 	KR-----------
+33	-	0.39	 	R------------

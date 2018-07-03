@@ -1,0 +1,60 @@
+# Run started 2018-06-30 09:27:55 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YPL152W-A --report --out ../data/YPL152W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YPL152W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YPL152W-A-motifs-r10.txt
+# Found ORF YPL152W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.17	 	-----------MM
+-3	-	-0.51	 	----------MMV
+-2	-	-0.92	 	---------MMVH
+-1	-	-2.11	 	--------MMVHL
+0	-	-3.17	 	-------MMVHLT
+1	M	-0.23	 	------MMVHLTL
+2	M	-1.31	 	-----MMVHLTLK
+3	V	2.96	 	----MMVHLTLKS
+4	H	3.37	 	---MMVHLTLKSH
+5	L	8.58	 	--MMVHLTLKSHL
+6	T	5.31	 	-MMVHLTLKSHLI
+7	L	6.02	 	MMVHLTLKSHLIK
+8	K	-2.13	 	MVHLTLKSHLIKE
+9	S	3.01	 	VHLTLKSHLIKEE
+10	H	-1.52	 	HLTLKSHLIKEEL
+11	L	-2.22	 	LTLKSHLIKEELL
+12	I	-3.86	 	TLKSHLIKEELLW
+13	K	-4.57	 	LKSHLIKEELLWH
+14	E	-7.24	 	KSHLIKEELLWHA
+15	E	-7.05	 	SHLIKEELLWHAL
+16	L	-7.84	 	HLIKEELLWHALS
+17	L	-6.18	 	LIKEELLWHALSP
+18	W	-1.75	 	IKEELLWHALSPS
+19	H	-3.11	 	KEELLWHALSPSY
+20	A	-9.42	 	EELLWHALSPSYS
+21	L	-5.21	 	ELLWHALSPSYSC
+22	S	-3.31	 	LLWHALSPSYSCR
+23	P	2.26	 	LWHALSPSYSCRY
+24	S	-5.17	 	WHALSPSYSCRYH
+25	Y	-8.65	 	HALSPSYSCRYHG
+26	S	-8.68	 	ALSPSYSCRYHGR
+27	C	-2.51	 	LSPSYSCRYHGR-
+28	R	-5.24	 	SPSYSCRYHGR--
+29	Y	-4.74	 	PSYSCRYHGR---
+30	H	-7.49	 	SYSCRYHGR----
+31	G	-4.08	 	YSCRYHGR-----
+32	R	-5.17	 	SCRYHGR------
+33	-	-1.81	 	CRYHGR-------
+34	-	1.79	 	RYHGR--------
+35	-	2.21	 	YHGR---------
+36	-	1.49	 	HGR----------
+37	-	0.89	 	GR-----------
+38	-	0.39	 	R------------

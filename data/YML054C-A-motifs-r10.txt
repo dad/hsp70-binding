@@ -1,0 +1,80 @@
+# Run started 2018-06-30 08:44:59 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YML054C-A --report --out ../data/YML054C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YML054C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YML054C-A-motifs-r10.txt
+# Found ORF YML054C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.16	 	----------MIP
+-2	-	-0.36	 	---------MIPF
+-1	-	-1.25	 	--------MIPFP
+0	-	0.87	 	-------MIPFPA
+1	M	-1.44	 	------MIPFPAQ
+2	I	0.52	 	-----MIPFPAQH
+3	P	-2.28	 	----MIPFPAQHE
+4	F	-1.95	 	---MIPFPAQHEI
+5	P	-8.15	 	--MIPFPAQHEIF
+6	A	-8.86	 	-MIPFPAQHEIFH
+7	Q	-12.89	 	MIPFPAQHEIFHA
+8	H	-9.58	 	IPFPAQHEIFHAY
+9	E	-6.83	 	PFPAQHEIFHAYI
+10	I	-5.72	 	FPAQHEIFHAYIG
+11	F	-4.24	 	PAQHEIFHAYIGR
+12	H	2.25	 	AQHEIFHAYIGRI
+13	A	1.81	 	QHEIFHAYIGRIT
+14	Y	0.18	 	HEIFHAYIGRITP
+15	I	1.49	 	EIFHAYIGRITPH
+16	G	5.76	 	IFHAYIGRITPHS
+17	R	3.11	 	FHAYIGRITPHSS
+18	I	-1.81	 	HAYIGRITPHSSR
+19	T	0.18	 	AYIGRITPHSSRC
+20	P	0.36	 	YIGRITPHSSRCI
+21	H	-4.57	 	IGRITPHSSRCIA
+22	S	-4.59	 	GRITPHSSRCIAN
+23	S	-9.95	 	RITPHSSRCIANM
+24	R	-6.12	 	ITPHSSRCIANMW
+25	C	-4.77	 	TPHSSRCIANMWH
+26	I	-6.59	 	PHSSRCIANMWHS
+27	A	-6.73	 	HSSRCIANMWHSA
+28	N	-11.90	 	SSRCIANMWHSAH
+29	M	-15.44	 	SRCIANMWHSAHF
+30	W	-15.01	 	RCIANMWHSAHFF
+31	H	-12.78	 	CIANMWHSAHFFH
+32	S	-12.10	 	IANMWHSAHFFHE
+33	A	-6.14	 	ANMWHSAHFFHEN
+34	H	-2.48	 	NMWHSAHFFHENS
+35	F	-3.25	 	MWHSAHFFHENSL
+36	F	-4.99	 	WHSAHFFHENSLS
+37	H	-5.82	 	HSAHFFHENSLSI
+38	E	-9.10	 	SAHFFHENSLSIM
+39	N	-6.58	 	AHFFHENSLSIMK
+40	S	-5.67	 	HFFHENSLSIMKT
+41	L	-0.20	 	FFHENSLSIMKTL
+42	S	1.42	 	FHENSLSIMKTLV
+43	I	1.84	 	HENSLSIMKTLVP
+44	M	-4.91	 	ENSLSIMKTLVPW
+45	K	1.55	 	NSLSIMKTLVPWT
+46	T	1.72	 	SLSIMKTLVPWTL
+47	L	1.76	 	LSIMKTLVPWTL-
+48	V	1.28	 	SIMKTLVPWTL--
+49	P	1.83	 	IMKTLVPWTL---
+50	W	-1.12	 	MKTLVPWTL----
+51	T	-2.20	 	KTLVPWTL-----
+52	L	-0.92	 	TLVPWTL------
+53	-	3.46	 	LVPWTL-------
+54	-	5.39	 	VPWTL--------
+55	-	-1.39	 	PWTL---------
+56	-	-0.96	 	WTL----------
+57	-	-0.82	 	TL-----------
+58	-	-0.56	 	L------------

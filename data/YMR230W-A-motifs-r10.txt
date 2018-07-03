@@ -1,0 +1,90 @@
+# Run started 2018-06-30 08:53:14 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR230W-A --report --out ../data/YMR230W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR230W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR230W-A-motifs-r10.txt
+# Found ORF YMR230W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.19	 	-----------MC
+-3	-	-0.37	 	----------MCI
+-2	-	-0.63	 	---------MCII
+-1	-	-1.89	 	--------MCIIV
+0	-	-7.83	 	-------MCIIVK
+1	M	-5.94	 	------MCIIVKY
+2	C	-4.01	 	-----MCIIVKYS
+3	I	-0.93	 	----MCIIVKYSQ
+4	I	-2.50	 	---MCIIVKYSQC
+5	V	0.38	 	--MCIIVKYSQCN
+6	K	-2.30	 	-MCIIVKYSQCNL
+7	Y	-5.72	 	MCIIVKYSQCNLF
+8	S	-10.75	 	CIIVKYSQCNLFF
+9	Q	-9.99	 	IIVKYSQCNLFFQ
+10	C	-8.91	 	IVKYSQCNLFFQD
+11	N	-5.97	 	VKYSQCNLFFQDV
+12	L	-1.36	 	KYSQCNLFFQDVL
+13	F	-4.79	 	YSQCNLFFQDVLR
+14	F	-5.73	 	SQCNLFFQDVLRC
+15	Q	-6.38	 	QCNLFFQDVLRCR
+16	D	-0.54	 	CNLFFQDVLRCRH
+17	V	-1.01	 	NLFFQDVLRCRHV
+18	L	-2.16	 	LFFQDVLRCRHVL
+19	R	0.04	 	FFQDVLRCRHVLC
+20	C	-3.50	 	FQDVLRCRHVLCM
+21	R	-7.28	 	QDVLRCRHVLCML
+22	H	-2.52	 	DVLRCRHVLCMLF
+23	V	-9.60	 	VLRCRHVLCMLFS
+24	L	-7.08	 	LRCRHVLCMLFSI
+25	C	-0.59	 	RCRHVLCMLFSIV
+26	M	0.30	 	CRHVLCMLFSIVV
+27	L	-7.02	 	RHVLCMLFSIVVH
+28	F	-6.26	 	HVLCMLFSIVVHF
+29	S	0.37	 	VLCMLFSIVVHFR
+30	I	-0.45	 	LCMLFSIVVHFRL
+31	V	-0.02	 	CMLFSIVVHFRLS
+32	V	6.71	 	MLFSIVVHFRLSS
+33	H	1.88	 	LFSIVVHFRLSSF
+34	F	4.97	 	FSIVVHFRLSSFV
+35	R	1.99	 	SIVVHFRLSSFVS
+36	L	1.93	 	IVVHFRLSSFVSV
+37	S	1.96	 	VVHFRLSSFVSVC
+38	S	5.35	 	VHFRLSSFVSVCG
+39	F	-3.80	 	HFRLSSFVSVCGV
+40	V	1.07	 	FRLSSFVSVCGVR
+41	S	-3.00	 	RLSSFVSVCGVRI
+42	V	-6.09	 	LSSFVSVCGVRIM
+43	C	-3.41	 	SSFVSVCGVRIMC
+44	G	-4.00	 	SFVSVCGVRIMCN
+45	V	-3.47	 	FVSVCGVRIMCNC
+46	R	-5.61	 	VSVCGVRIMCNCI
+47	I	-6.81	 	SVCGVRIMCNCIN
+48	M	-9.75	 	VCGVRIMCNCINC
+49	C	-13.43	 	CGVRIMCNCINCS
+50	N	-13.29	 	GVRIMCNCINCSR
+51	C	-14.84	 	VRIMCNCINCSRF
+52	I	-21.38	 	RIMCNCINCSRFI
+53	N	-18.72	 	IMCNCINCSRFIH
+54	C	-19.28	 	MCNCINCSRFIHN
+55	S	-16.66	 	CNCINCSRFIHNI
+56	R	-9.05	 	NCINCSRFIHNIN
+57	F	-8.82	 	CINCSRFIHNIN-
+58	I	-5.47	 	INCSRFIHNIN--
+59	H	0.06	 	NCSRFIHNIN---
+60	N	-2.90	 	CSRFIHNIN----
+61	I	-5.29	 	SRFIHNIN-----
+62	N	-3.04	 	RFIHNIN------
+63	-	-1.93	 	FIHNIN-------
+64	-	-4.84	 	IHNIN--------
+65	-	-2.57	 	HNIN---------
+66	-	-1.68	 	NIN----------
+67	-	-0.83	 	IN-----------
+68	-	-0.25	 	N------------

@@ -1,0 +1,97 @@
+# Run started 2018-06-29 15:57:16 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HSK3 --report --out ../data/HSK3-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: HSK3
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/HSK3-motifs-r10.txt
+# Found gene HSK3 = YKL138C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.01	 	-----------MN
+-3	-	-0.13	 	----------MNA
+-2	-	-0.17	 	---------MNAN
+-1	-	-0.57	 	--------MNANK
+0	-	-3.10	 	-------MNANKQ
+1	M	-2.06	 	------MNANKQR
+2	N	-3.65	 	-----MNANKQRQ
+3	A	-5.35	 	----MNANKQRQY
+4	N	-5.56	 	---MNANKQRQYN
+5	K	-6.25	 	--MNANKQRQYNQ
+6	Q	-7.18	 	-MNANKQRQYNQL
+7	R	-2.05	 	MNANKQRQYNQLA
+8	Q	-2.64	 	NANKQRQYNQLAH
+9	Y	-1.85	 	ANKQRQYNQLAHE
+10	N	1.30	 	NKQRQYNQLAHEL
+11	Q	3.45	 	KQRQYNQLAHELR
+12	L	-2.73	 	QRQYNQLAHELRE
+13	A	-5.16	 	RQYNQLAHELREL
+14	H	1.75	 	QYNQLAHELRELQ
+15	E	-7.41	 	YNQLAHELRELQT
+16	L	-8.11	 	NQLAHELRELQTN
+17	R	-1.66	 	QLAHELRELQTNL
+18	E	-0.12	 	LAHELRELQTNLQ
+19	L	-6.42	 	AHELRELQTNLQE
+20	Q	-7.32	 	HELRELQTNLQET
+21	T	-0.58	 	ELRELQTNLQETT
+22	N	-7.32	 	LRELQTNLQETTK
+23	L	-4.38	 	RELQTNLQETTKQ
+24	Q	-2.95	 	ELQTNLQETTKQL
+25	E	-2.03	 	LQTNLQETTKQLD
+26	T	-10.02	 	QTNLQETTKQLDI
+27	T	-8.34	 	TNLQETTKQLDIM
+28	K	-2.06	 	NLQETTKQLDIMS
+29	Q	-3.33	 	LQETTKQLDIMSK
+30	L	1.15	 	QETTKQLDIMSKQ
+31	D	1.80	 	ETTKQLDIMSKQC
+32	I	3.54	 	TTKQLDIMSKQCN
+33	M	-6.56	 	TKQLDIMSKQCNE
+34	S	-4.72	 	KQLDIMSKQCNEN
+35	K	-14.48	 	QLDIMSKQCNENL
+36	Q	-16.39	 	LDIMSKQCNENLV
+37	C	-16.57	 	DIMSKQCNENLVG
+38	N	-17.43	 	IMSKQCNENLVGQ
+39	E	-10.96	 	MSKQCNENLVGQL
+40	N	-9.96	 	SKQCNENLVGQLG
+41	L	-8.47	 	KQCNENLVGQLGK
+42	V	-5.86	 	QCNENLVGQLGKV
+43	G	1.28	 	CNENLVGQLGKVH
+44	Q	-3.79	 	NENLVGQLGKVHG
+45	L	-5.66	 	ENLVGQLGKVHGS
+46	G	0.76	 	NLVGQLGKVHGSW
+47	K	3.02	 	LVGQLGKVHGSWL
+48	V	-5.21	 	VGQLGKVHGSWLI
+49	H	-4.20	 	GQLGKVHGSWLIG
+50	G	-5.87	 	QLGKVHGSWLIGS
+51	S	-4.36	 	LGKVHGSWLIGSY
+52	W	-0.36	 	GKVHGSWLIGSYI
+53	L	-1.12	 	KVHGSWLIGSYIY
+54	I	-3.25	 	VHGSWLIGSYIYY
+55	G	3.27	 	HGSWLIGSYIYYM
+56	S	-2.68	 	GSWLIGSYIYYME
+57	Y	-3.28	 	SWLIGSYIYYMEQ
+58	I	3.03	 	WLIGSYIYYMEQM
+59	Y	3.45	 	LIGSYIYYMEQML
+60	Y	-0.66	 	IGSYIYYMEQMLG
+61	M	-5.53	 	GSYIYYMEQMLGK
+62	E	-7.61	 	SYIYYMEQMLGKT
+63	Q	-5.15	 	YIYYMEQMLGKTQ
+64	M	-4.75	 	IYYMEQMLGKTQ-
+65	L	-3.04	 	YYMEQMLGKTQ--
+66	G	0.22	 	YMEQMLGKTQ---
+67	K	-0.60	 	MEQMLGKTQ----
+68	T	-6.59	 	EQMLGKTQ-----
+69	Q	-3.15	 	QMLGKTQ------
+70	-	-1.41	 	MLGKTQ-------
+71	-	0.27	 	LGKTQ--------
+72	-	3.27	 	GKTQ---------
+73	-	2.01	 	KTQ----------
+74	-	1.04	 	TQ-----------
+75	-	0.37	 	Q------------

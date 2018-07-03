@@ -1,0 +1,72 @@
+# Run started 2018-06-29 15:42:40 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YJL047C-A --report --out ../data/YJL047C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YJL047C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YJL047C-A-motifs-r10.txt
+# Found ORF YJL047C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.50	 	----------MKI
+-2	-	1.10	 	---------MKIK
+-1	-	1.08	 	--------MKIKI
+0	-	-0.60	 	-------MKIKIS
+1	M	2.17	 	------MKIKISI
+2	K	-0.41	 	-----MKIKISIE
+3	I	1.30	 	----MKIKISIEI
+4	K	0.08	 	---MKIKISIEIS
+5	I	3.26	 	--MKIKISIEISL
+6	S	-3.33	 	-MKIKISIEISLS
+7	I	1.03	 	MKIKISIEISLSL
+8	E	-4.42	 	KIKISIEISLSLL
+9	I	1.13	 	IKISIEISLSLLS
+10	S	-4.19	 	KISIEISLSLLSE
+11	L	2.38	 	ISIEISLSLLSEH
+12	S	2.88	 	SIEISLSLLSEHY
+13	L	3.20	 	IEISLSLLSEHYK
+14	L	-4.03	 	EISLSLLSEHYKR
+15	S	-2.07	 	ISLSLLSEHYKRN
+16	E	-3.15	 	SLSLLSEHYKRNE
+17	H	-9.50	 	LSLLSEHYKRNEN
+18	Y	-8.29	 	SLLSEHYKRNENC
+19	K	-7.98	 	LLSEHYKRNENCI
+20	R	-6.63	 	LSEHYKRNENCIS
+21	N	-10.69	 	SEHYKRNENCISN
+22	E	-14.47	 	EHYKRNENCISNM
+23	N	-11.05	 	HYKRNENCISNML
+24	C	-12.45	 	YKRNENCISNMLV
+25	I	-12.93	 	KRNENCISNMLVI
+26	S	-12.49	 	RNENCISNMLVIG
+27	N	-10.05	 	NENCISNMLVIGE
+28	M	-8.07	 	ENCISNMLVIGEG
+29	L	-1.97	 	NCISNMLVIGEGP
+30	V	-0.67	 	CISNMLVIGEGPR
+31	I	0.58	 	ISNMLVIGEGPRG
+32	G	-6.73	 	SNMLVIGEGPRGE
+33	E	-8.61	 	NMLVIGEGPRGET
+34	G	-13.75	 	MLVIGEGPRGETI
+35	P	-13.11	 	LVIGEGPRGETIV
+36	R	-12.76	 	VIGEGPRGETIVE
+37	G	-10.69	 	IGEGPRGETIVER
+38	E	-7.01	 	GEGPRGETIVERF
+39	T	-3.30	 	EGPRGETIVERF-
+40	I	-3.00	 	GPRGETIVERF--
+41	V	-2.77	 	PRGETIVERF---
+42	E	1.11	 	RGETIVERF----
+43	R	-2.95	 	GETIVERF-----
+44	F	-3.72	 	ETIVERF------
+45	-	-0.39	 	TIVERF-------
+46	-	1.30	 	IVERF--------
+47	-	0.08	 	VERF---------
+48	-	0.15	 	ERF----------
+49	-	0.30	 	RF-----------
+50	-	-0.05	 	F------------

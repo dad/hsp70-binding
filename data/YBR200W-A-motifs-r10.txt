@@ -1,0 +1,82 @@
+# Run started 2018-06-29 14:26:52 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR200W-A --report --out ../data/YBR200W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR200W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR200W-A-motifs-r10.txt
+# Found ORF YBR200W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	-0.15	 	----------MLL
+-2	-	-0.31	 	---------MLLC
+-1	-	-1.38	 	--------MLLCF
+0	-	1.92	 	-------MLLCFH
+1	M	5.12	 	------MLLCFHM
+2	L	-1.28	 	-----MLLCFHMC
+3	L	0.55	 	----MLLCFHMCQ
+4	C	0.36	 	---MLLCFHMCQR
+5	F	-6.14	 	--MLLCFHMCQRI
+6	H	-16.86	 	-MLLCFHMCQRIM
+7	M	-17.45	 	MLLCFHMCQRIMW
+8	C	-17.17	 	LLCFHMCQRIMWL
+9	Q	-10.03	 	LCFHMCQRIMWLP
+10	R	-7.93	 	CFHMCQRIMWLPF
+11	I	-10.78	 	FHMCQRIMWLPFD
+12	M	-1.61	 	HMCQRIMWLPFDL
+13	W	-2.07	 	MCQRIMWLPFDLM
+14	L	-2.93	 	CQRIMWLPFDLMK
+15	P	-4.72	 	QRIMWLPFDLMKW
+16	F	3.45	 	RIMWLPFDLMKWR
+17	D	-2.14	 	IMWLPFDLMKWRR
+18	L	-0.76	 	MWLPFDLMKWRRF
+19	M	-3.70	 	WLPFDLMKWRRFH
+20	K	-0.12	 	LPFDLMKWRRFHC
+21	W	-7.58	 	PFDLMKWRRFHCG
+22	R	-3.85	 	FDLMKWRRFHCGA
+23	R	-3.47	 	DLMKWRRFHCGAV
+24	F	-5.41	 	LMKWRRFHCGAVL
+25	H	-6.95	 	MKWRRFHCGAVLV
+26	C	-7.62	 	KWRRFHCGAVLVG
+27	G	-7.71	 	WRRFHCGAVLVGT
+28	A	-3.07	 	RRFHCGAVLVGTL
+29	V	-1.87	 	RFHCGAVLVGTLS
+30	L	1.03	 	FHCGAVLVGTLSL
+31	V	3.05	 	HCGAVLVGTLSLR
+32	G	7.44	 	CGAVLVGTLSLRN
+33	T	2.27	 	GAVLVGTLSLRNR
+34	L	6.71	 	AVLVGTLSLRNRS
+35	S	8.61	 	VLVGTLSLRNRSP
+36	L	9.05	 	LVGTLSLRNRSPK
+37	R	1.53	 	VGTLSLRNRSPKI
+38	N	2.21	 	GTLSLRNRSPKIL
+39	R	-5.32	 	TLSLRNRSPKILS
+40	S	-5.25	 	LSLRNRSPKILSL
+41	P	-1.58	 	SLRNRSPKILSLY
+42	K	3.06	 	LRNRSPKILSLYF
+43	I	2.15	 	RNRSPKILSLYFI
+44	L	5.79	 	NRSPKILSLYFIS
+45	S	10.64	*	RSPKILSLYFISD
+46	L	8.65	 	SPKILSLYFISDR
+47	Y	5.67	 	PKILSLYFISDRT
+48	F	7.04	 	KILSLYFISDRTG
+49	I	-1.91	 	ILSLYFISDRTG-
+50	S	-3.93	 	LSLYFISDRTG--
+51	D	-5.14	 	SLYFISDRTG---
+52	R	-10.00	 	LYFISDRTG----
+53	T	-7.33	 	YFISDRTG-----
+54	G	-2.69	 	FISDRTG------
+55	-	-1.13	 	ISDRTG-------
+56	-	0.35	 	SDRTG--------
+57	-	2.05	 	DRTG---------
+58	-	1.32	 	RTG----------
+59	-	0.52	 	TG-----------
+60	-	0.11	 	G------------

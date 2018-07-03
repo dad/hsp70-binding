@@ -1,0 +1,65 @@
+# Run started 2018-06-29 15:23:46 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YGR204C-A --report --out ../data/YGR204C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YGR204C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YGR204C-A-motifs-r10.txt
+# Found ORF YGR204C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.06	 	-----------MQ
+-3	-	-0.11	 	----------MQW
+-2	-	-0.09	 	---------MQWN
+-1	-	-0.96	 	--------MQWNA
+0	-	-3.05	 	-------MQWNAF
+1	M	-6.49	 	------MQWNAFS
+2	Q	-9.79	 	-----MQWNAFSF
+3	W	-10.48	 	----MQWNAFSFV
+4	N	-7.77	 	---MQWNAFSFVS
+5	A	-6.85	 	--MQWNAFSFVSY
+6	F	-2.16	 	-MQWNAFSFVSYV
+7	S	0.40	 	MQWNAFSFVSYVY
+8	F	-1.60	 	QWNAFSFVSYVYL
+9	V	0.15	 	WNAFSFVSYVYLR
+10	S	4.19	 	NAFSFVSYVYLRY
+11	Y	6.66	 	AFSFVSYVYLRYF
+12	V	9.19	 	FSFVSYVYLRYFI
+13	Y	8.06	 	SFVSYVYLRYFIS
+14	L	8.96	 	FVSYVYLRYFISF
+15	R	9.99	 	VSYVYLRYFISFR
+16	Y	10.43	*	SYVYLRYFISFRP
+17	F	3.21	 	YVYLRYFISFRPN
+18	I	8.04	 	VYLRYFISFRPNI
+19	S	4.03	 	YLRYFISFRPNIV
+20	F	0.81	 	LRYFISFRPNIVL
+21	R	-5.75	 	RYFISFRPNIVLA
+22	P	-2.23	 	YFISFRPNIVLAS
+23	N	-0.73	 	FISFRPNIVLASV
+24	I	4.47	 	ISFRPNIVLASVR
+25	V	5.98	 	SFRPNIVLASVRL
+26	L	5.57	 	FRPNIVLASVRLS
+27	A	5.76	 	RPNIVLASVRLSW
+28	S	2.71	 	PNIVLASVRLSWY
+29	V	0.41	 	NIVLASVRLSWYS
+30	R	0.65	 	IVLASVRLSWYSI
+31	L	-0.99	 	VLASVRLSWYSII
+32	S	1.69	 	LASVRLSWYSII-
+33	W	1.34	 	ASVRLSWYSII--
+34	Y	-3.41	 	SVRLSWYSII---
+35	S	0.58	 	VRLSWYSII----
+36	I	4.76	 	RLSWYSII-----
+37	I	2.50	 	LSWYSII------
+38	-	4.44	 	SWYSII-------
+39	-	0.63	 	WYSII--------
+40	-	-2.57	 	YSII---------
+41	-	-1.69	 	SII----------
+42	-	-1.03	 	II-----------
+43	-	-0.34	 	I------------

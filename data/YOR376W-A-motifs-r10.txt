@@ -1,0 +1,79 @@
+# Run started 2018-06-30 09:23:01 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOR376W-A --report --out ../data/YOR376W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOR376W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOR376W-A-motifs-r10.txt
+# Found ORF YOR376W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	-0.02	 	----------MTF
+-2	-	-0.16	 	---------MTFH
+-1	-	-0.95	 	--------MTFHL
+0	-	-2.25	 	-------MTFHLG
+1	M	-0.37	 	------MTFHLGW
+2	T	-1.86	 	-----MTFHLGWT
+3	F	1.79	 	----MTFHLGWTI
+4	H	0.95	 	---MTFHLGWTIL
+5	L	-0.52	 	--MTFHLGWTILW
+6	G	-3.79	 	-MTFHLGWTILWY
+7	W	0.01	 	MTFHLGWTILWYN
+8	T	-3.21	 	TFHLGWTILWYNQ
+9	I	-4.16	 	FHLGWTILWYNQA
+10	L	3.64	 	HLGWTILWYNQAY
+11	W	2.16	 	LGWTILWYNQAYL
+12	Y	-4.57	 	GWTILWYNQAYLE
+13	N	-12.23	 	WTILWYNQAYLEV
+14	Q	-4.55	 	TILWYNQAYLEVW
+15	A	-3.97	 	ILWYNQAYLEVWA
+16	Y	-4.92	 	LWYNQAYLEVWAT
+17	L	1.74	 	WYNQAYLEVWATV
+18	E	-1.53	 	YNQAYLEVWATVF
+19	V	-4.05	 	NQAYLEVWATVFQ
+20	W	-11.85	 	QAYLEVWATVFQD
+21	A	-6.49	 	AYLEVWATVFQDE
+22	T	-5.18	 	YLEVWATVFQDEM
+23	V	-2.69	 	LEVWATVFQDEMH
+24	F	-5.98	 	EVWATVFQDEMHK
+25	Q	-6.95	 	VWATVFQDEMHKY
+26	D	-9.83	 	WATVFQDEMHKYS
+27	E	-13.19	 	ATVFQDEMHKYSL
+28	M	-12.79	 	TVFQDEMHKYSLH
+29	H	-5.64	 	VFQDEMHKYSLHP
+30	K	-4.43	 	FQDEMHKYSLHPQ
+31	Y	0.89	 	QDEMHKYSLHPQS
+32	S	2.55	 	DEMHKYSLHPQSR
+33	L	3.31	 	EMHKYSLHPQSRD
+34	H	-0.25	 	MHKYSLHPQSRDA
+35	P	0.32	 	HKYSLHPQSRDAK
+36	Q	-7.83	 	KYSLHPQSRDAKT
+37	S	-8.85	 	YSLHPQSRDAKTK
+38	R	-6.20	 	SLHPQSRDAKTKF
+39	D	-4.06	 	LHPQSRDAKTKFC
+40	A	-3.42	 	HPQSRDAKTKFCC
+41	K	-5.45	 	PQSRDAKTKFCCC
+42	T	-0.51	 	QSRDAKTKFCCCI
+43	K	-6.37	 	SRDAKTKFCCCIP
+44	F	-11.22	 	RDAKTKFCCCIPF
+45	C	-16.04	 	DAKTKFCCCIPFK
+46	C	-12.46	 	AKTKFCCCIPFK-
+47	C	-16.82	 	KTKFCCCIPFK--
+48	I	-16.07	 	TKFCCCIPFK---
+49	P	-17.14	 	KFCCCIPFK----
+50	F	-14.24	 	FCCCIPFK-----
+51	K	-12.11	 	CCCIPFK------
+52	-	-5.31	 	CCIPFK-------
+53	-	-3.06	 	CIPFK--------
+54	-	0.70	 	IPFK---------
+55	-	0.71	 	PFK----------
+56	-	0.51	 	FK-----------
+57	-	0.28	 	K------------

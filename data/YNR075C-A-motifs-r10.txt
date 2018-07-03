@@ -1,0 +1,58 @@
+# Run started 2018-06-30 09:07:39 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YNR075C-A --report --out ../data/YNR075C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YNR075C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YNR075C-A-motifs-r10.txt
+# Found ORF YNR075C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.02	 	-----------MP
+-3	-	-0.03	 	----------MPI
+-2	-	-0.10	 	---------MPII
+-1	-	-0.88	 	--------MPIIG
+0	-	-3.26	 	-------MPIIGV
+1	M	-1.25	 	------MPIIGVP
+2	P	1.37	 	-----MPIIGVPR
+3	I	-0.29	 	----MPIIGVPRC
+4	I	4.14	 	---MPIIGVPRCL
+5	G	3.77	 	--MPIIGVPRCLE
+6	V	-2.09	 	-MPIIGVPRCLEN
+7	P	-11.46	 	MPIIGVPRCLENP
+8	R	-5.27	 	PIIGVPRCLENPF
+9	C	-8.73	 	IIGVPRCLENPFC
+10	L	-9.94	 	IGVPRCLENPFCA
+11	E	-11.20	 	GVPRCLENPFCAP
+12	N	-11.27	 	VPRCLENPFCAPA
+13	P	-21.34	 	PRCLENPFCAPAK
+14	F	-16.20	 	RCLENPFCAPAKF
+15	C	-14.43	 	CLENPFCAPAKFP
+16	A	-9.61	 	LENPFCAPAKFPL
+17	P	-11.73	 	ENPFCAPAKFPLS
+18	A	-9.87	 	NPFCAPAKFPLSV
+19	K	-8.02	 	PFCAPAKFPLSVK
+20	F	-0.73	 	FCAPAKFPLSVKK
+21	P	0.99	 	CAPAKFPLSVKKK
+22	L	8.28	 	APAKFPLSVKKKI
+23	S	5.90	 	PAKFPLSVKKKIR
+24	V	6.13	 	AKFPLSVKKKIRI
+25	K	-1.75	 	KFPLSVKKKIRI-
+26	K	3.42	 	FPLSVKKKIRI--
+27	K	0.82	 	PLSVKKKIRI---
+28	I	5.16	 	LSVKKKIRI----
+29	R	6.83	 	SVKKKIRI-----
+30	I	7.66	 	VKKKIRI------
+31	-	2.97	 	KKKIRI-------
+32	-	3.63	 	KKIRI--------
+33	-	-0.78	 	KIRI---------
+34	-	-0.60	 	IRI----------
+35	-	-0.30	 	RI-----------
+36	-	-0.34	 	I------------

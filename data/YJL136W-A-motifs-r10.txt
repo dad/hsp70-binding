@@ -1,0 +1,55 @@
+# Run started 2018-06-29 15:45:14 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YJL136W-A --report --out ../data/YJL136W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YJL136W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YJL136W-A-motifs-r10.txt
+# Found ORF YJL136W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.72	 	----------MTR
+-2	-	1.28	 	---------MTRC
+-1	-	1.15	 	--------MTRCI
+0	-	0.95	 	-------MTRCIS
+1	M	-0.55	 	------MTRCISK
+2	T	-5.80	 	-----MTRCISKK
+3	R	-2.81	 	----MTRCISKKM
+4	C	-2.57	 	---MTRCISKKML
+5	I	-2.43	 	--MTRCISKKMLL
+6	S	-4.50	 	-MTRCISKKMLLE
+7	K	-7.93	 	MTRCISKKMLLEV
+8	K	-7.10	 	TRCISKKMLLEVD
+9	M	-1.87	 	RCISKKMLLEVDA
+10	L	-1.98	 	CISKKMLLEVDAL
+11	L	3.72	 	ISKKMLLEVDALS
+12	E	-0.24	 	SKKMLLEVDALSL
+13	V	-7.02	 	KKMLLEVDALSLI
+14	D	-9.58	 	KMLLEVDALSLIY
+15	A	-7.44	 	MLLEVDALSLIYS
+16	L	-3.58	 	LLEVDALSLIYSP
+17	S	3.95	 	LEVDALSLIYSPH
+18	L	9.82	 	EVDALSLIYSPHL
+19	I	2.29	 	VDALSLIYSPHLY
+20	Y	2.13	 	DALSLIYSPHLYM
+21	S	-5.38	 	ALSLIYSPHLYMS
+22	P	-4.62	 	LSLIYSPHLYMS-
+23	H	-1.58	 	SLIYSPHLYMS--
+24	L	0.13	 	LIYSPHLYMS---
+25	Y	0.83	 	IYSPHLYMS----
+26	M	3.38	 	YSPHLYMS-----
+27	S	-2.85	 	SPHLYMS------
+28	-	-4.25	 	PHLYMS-------
+29	-	-2.62	 	HLYMS--------
+30	-	-0.57	 	LYMS---------
+31	-	0.02	 	YMS----------
+32	-	0.06	 	MS-----------
+33	-	0.04	 	S------------

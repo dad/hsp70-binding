@@ -1,0 +1,57 @@
+# Run started 2018-06-30 08:53:38 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR242W-A --report --out ../data/YMR242W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR242W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR242W-A-motifs-r10.txt
+# Found ORF YMR242W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.16	 	----------MFK
+-2	-	-0.14	 	---------MFKM
+-1	-	-0.56	 	--------MFKMK
+0	-	2.06	 	-------MFKMKF
+1	M	0.13	 	------MFKMKFG
+2	F	-0.48	 	-----MFKMKFGD
+3	K	-2.72	 	----MFKMKFGDT
+4	M	0.25	 	---MFKMKFGDTL
+5	K	-2.92	 	--MFKMKFGDTLP
+6	F	-4.60	 	-MFKMKFGDTLPR
+7	G	-4.23	 	MFKMKFGDTLPRS
+8	D	1.54	 	FKMKFGDTLPRSD
+9	T	-1.86	 	KMKFGDTLPRSDF
+10	L	-1.88	 	MKFGDTLPRSDFG
+11	P	0.19	 	KFGDTLPRSDFGT
+12	R	-2.82	 	FGDTLPRSDFGTG
+13	S	-7.26	 	GDTLPRSDFGTGG
+14	D	-6.85	 	DTLPRSDFGTGGN
+15	F	-5.95	 	TLPRSDFGTGGNK
+16	G	-6.18	 	LPRSDFGTGGNKQ
+17	T	-3.27	 	PRSDFGTGGNKQA
+18	G	-7.09	 	RSDFGTGGNKQAP
+19	G	-6.89	 	SDFGTGGNKQAPG
+20	N	-7.22	 	DFGTGGNKQAPGL
+21	K	-5.66	 	FGTGGNKQAPGLE
+22	Q	-6.35	 	GTGGNKQAPGLEL
+23	A	-8.26	 	TGGNKQAPGLELG
+24	P	-3.95	 	GGNKQAPGLELG-
+25	G	-3.73	 	GNKQAPGLELG--
+26	L	0.02	 	NKQAPGLELG---
+27	E	-0.93	 	KQAPGLELG----
+28	L	0.92	 	QAPGLELG-----
+29	G	-5.76	 	APGLELG------
+30	-	-2.08	 	PGLELG-------
+31	-	-6.98	 	GLELG--------
+32	-	-2.74	 	LELG---------
+33	-	-1.28	 	ELG----------
+34	-	-0.34	 	LG-----------
+35	-	0.11	 	G------------

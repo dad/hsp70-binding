@@ -1,0 +1,74 @@
+# Run started 2018-06-30 08:57:59 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YNL067W-B --report --out ../data/YNL067W-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YNL067W-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YNL067W-B-motifs-r10.txt
+# Found ORF YNL067W-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.19	 	-----------MC
+-3	-	0.03	 	----------MCK
+-2	-	0.21	 	---------MCKL
+-1	-	-0.44	 	--------MCKLM
+0	-	-5.96	 	-------MCKLMW
+1	M	-8.15	 	------MCKLMWC
+2	C	-4.61	 	-----MCKLMWCT
+3	K	-5.44	 	----MCKLMWCTG
+4	L	-7.98	 	---MCKLMWCTGV
+5	M	-15.09	 	--MCKLMWCTGVV
+6	W	-12.37	 	-MCKLMWCTGVVS
+7	C	-19.33	 	MCKLMWCTGVVSK
+8	T	-13.13	 	CKLMWCTGVVSKT
+9	G	-3.75	 	KLMWCTGVVSKTA
+10	V	-5.66	 	LMWCTGVVSKTAL
+11	V	-3.08	 	MWCTGVVSKTALL
+12	S	-0.60	 	WCTGVVSKTALLT
+13	K	-0.91	 	CTGVVSKTALLTG
+14	T	2.65	 	TGVVSKTALLTGN
+15	A	7.24	 	GVVSKTALLTGNF
+16	L	7.29	 	VVSKTALLTGNFF
+17	L	6.00	 	VSKTALLTGNFFF
+18	T	2.68	 	SKTALLTGNFFFS
+19	G	-2.48	 	KTALLTGNFFFSS
+20	N	-6.47	 	TALLTGNFFFSSS
+21	F	-2.06	 	ALLTGNFFFSSSE
+22	F	-1.08	 	LLTGNFFFSSSEF
+23	F	-1.61	 	LTGNFFFSSSEFF
+24	S	-5.42	 	TGNFFFSSSEFFF
+25	S	-9.82	 	GNFFFSSSEFFFK
+26	S	-9.23	 	NFFFSSSEFFFKA
+27	E	-5.27	 	FFFSSSEFFFKAT
+28	F	-1.26	 	FFSSSEFFFKATH
+29	F	-1.36	 	FSSSEFFFKATHR
+30	F	2.50	 	SSSEFFFKATHRK
+31	K	1.69	 	SSEFFFKATHRKS
+32	A	-0.05	 	SEFFFKATHRKSE
+33	T	-2.48	 	EFFFKATHRKSEN
+34	H	-2.91	 	FFFKATHRKSENY
+35	R	-5.00	 	FFKATHRKSENYL
+36	K	-6.42	 	FKATHRKSENYLN
+37	S	-8.30	 	KATHRKSENYLNG
+38	E	-3.78	 	ATHRKSENYLNGR
+39	N	1.26	 	THRKSENYLNGRQ
+40	Y	-0.52	 	HRKSENYLNGRQT
+41	L	0.74	 	RKSENYLNGRQT-
+42	N	0.45	 	KSENYLNGRQT--
+43	G	-2.74	 	SENYLNGRQT---
+44	R	-9.10	 	ENYLNGRQT----
+45	Q	-6.23	 	NYLNGRQT-----
+46	T	-2.50	 	YLNGRQT------
+47	-	-0.81	 	LNGRQT-------
+48	-	2.58	 	NGRQT--------
+49	-	3.38	 	GRQT---------
+50	-	2.04	 	RQT----------
+51	-	0.97	 	QT-----------
+52	-	0.30	 	T------------

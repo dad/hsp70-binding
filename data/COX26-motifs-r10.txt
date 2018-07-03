@@ -1,0 +1,94 @@
+# Run started 2018-06-29 14:45:20 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id COX26 --report --out ../data/COX26-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: COX26
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/COX26-motifs-r10.txt
+# Found gene COX26 = YDR119W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.69	 	----------MFF
+-2	-	-1.07	 	---------MFFS
+-1	-	-2.22	 	--------MFFSQ
+0	-	-0.62	 	-------MFFSQV
+1	M	1.28	 	------MFFSQVL
+2	F	0.07	 	-----MFFSQVLR
+3	F	-1.45	 	----MFFSQVLRS
+4	S	3.07	 	---MFFSQVLRSS
+5	Q	6.19	 	--MFFSQVLRSSA
+6	V	3.73	 	-MFFSQVLRSSAR
+7	L	4.10	 	MFFSQVLRSSARA
+8	R	5.88	 	FFSQVLRSSARAA
+9	S	4.55	 	FSQVLRSSARAAP
+10	S	-4.26	 	SQVLRSSARAAPI
+11	A	-2.84	 	QVLRSSARAAPIK
+12	R	-0.91	 	VLRSSARAAPIKR
+13	A	-0.99	 	LRSSARAAPIKRY
+14	A	3.09	 	RSSARAAPIKRYT
+15	P	2.16	 	SSARAAPIKRYTG
+16	I	0.13	 	SARAAPIKRYTGG
+17	K	4.92	 	ARAAPIKRYTGGR
+18	R	5.36	 	RAAPIKRYTGGRI
+19	Y	-0.01	 	AAPIKRYTGGRIG
+20	T	0.57	 	APIKRYTGGRIGE
+21	G	-0.83	 	PIKRYTGGRIGES
+22	G	-1.80	 	IKRYTGGRIGESW
+23	R	-3.33	 	KRYTGGRIGESWV
+24	I	-4.81	 	RYTGGRIGESWVI
+25	G	-4.94	 	YTGGRIGESWVIT
+26	E	-8.55	 	TGGRIGESWVITE
+27	S	-10.93	 	GGRIGESWVITEG
+28	W	-6.12	 	GRIGESWVITEGR
+29	V	-4.21	 	RIGESWVITEGRR
+30	I	-3.68	 	IGESWVITEGRRL
+31	T	0.62	 	GESWVITEGRRLI
+32	E	-1.49	 	ESWVITEGRRLIP
+33	G	-7.19	 	SWVITEGRRLIPE
+34	R	-2.28	 	WVITEGRRLIPEI
+35	R	1.90	 	VITEGRRLIPEIF
+36	L	2.02	 	ITEGRRLIPEIFQ
+37	I	0.48	 	TEGRRLIPEIFQW
+38	P	3.00	 	EGRRLIPEIFQWS
+39	E	-1.86	 	GRRLIPEIFQWSA
+40	I	-7.71	 	RRLIPEIFQWSAV
+41	F	-9.57	 	RLIPEIFQWSAVL
+42	Q	-8.07	 	LIPEIFQWSAVLS
+43	W	-10.57	 	IPEIFQWSAVLSV
+44	S	-7.96	 	PEIFQWSAVLSVC
+45	A	-0.32	 	EIFQWSAVLSVCL
+46	V	2.09	 	IFQWSAVLSVCLG
+47	L	5.97	 	FQWSAVLSVCLGW
+48	S	0.41	 	QWSAVLSVCLGWP
+49	V	2.06	 	WSAVLSVCLGWPG
+50	C	-6.45	 	SAVLSVCLGWPGA
+51	L	-7.87	 	AVLSVCLGWPGAV
+52	G	-11.67	 	VLSVCLGWPGAVY
+53	W	-15.23	 	LSVCLGWPGAVYF
+54	P	-19.73	 	SVCLGWPGAVYFF
+55	G	-12.98	 	VCLGWPGAVYFFS
+56	A	-3.30	 	CLGWPGAVYFFSK
+57	V	1.93	 	LGWPGAVYFFSKA
+58	Y	7.62	 	GWPGAVYFFSKAR
+59	F	7.84	 	WPGAVYFFSKARK
+60	F	4.77	 	PGAVYFFSKARKA
+61	S	3.37	 	GAVYFFSKARKA-
+62	K	0.45	 	AVYFFSKARKA--
+63	A	-3.16	 	VYFFSKARKA---
+64	R	-1.68	 	YFFSKARKA----
+65	K	0.08	 	FFSKARKA-----
+66	A	0.60	 	FSKARKA------
+67	-	1.26	 	SKARKA-------
+68	-	2.01	 	KARKA--------
+69	-	1.76	 	ARKA---------
+70	-	1.02	 	RKA----------
+71	-	0.33	 	KA-----------
+72	-	0.02	 	A------------

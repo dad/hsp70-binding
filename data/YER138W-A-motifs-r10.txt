@@ -1,0 +1,62 @@
+# Run started 2018-06-29 15:04:42 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YER138W-A --report --out ../data/YER138W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YER138W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YER138W-A-motifs-r10.txt
+# Found ORF YER138W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.29	 	----------MII
+-2	-	-0.49	 	---------MIII
+-1	-	-1.63	 	--------MIIIF
+0	-	0.28	 	-------MIIIFI
+1	M	1.68	 	------MIIIFIE
+2	I	3.07	 	-----MIIIFIEL
+3	I	4.33	 	----MIIIFIELC
+4	I	7.21	 	---MIIIFIELCR
+5	F	1.42	 	--MIIIFIELCRI
+6	I	2.22	 	-MIIIFIELCRIA
+7	E	-5.92	 	MIIIFIELCRIAD
+8	L	-8.10	 	IIIFIELCRIADS
+9	C	-8.64	 	IIFIELCRIADSL
+10	R	-4.65	 	IFIELCRIADSLL
+11	I	-13.64	 	FIELCRIADSLLW
+12	A	-14.52	 	IELCRIADSLLWI
+13	D	-6.08	 	ELCRIADSLLWIP
+14	S	-3.61	 	LCRIADSLLWIPK
+15	L	-3.30	 	CRIADSLLWIPKS
+16	L	5.37	 	RIADSLLWIPKSS
+17	W	6.21	 	IADSLLWIPKSSR
+18	I	-0.25	 	ADSLLWIPKSSRR
+19	P	-5.67	 	DSLLWIPKSSRRT
+20	K	0.04	 	SLLWIPKSSRRTS
+21	S	-3.31	 	LLWIPKSSRRTSS
+22	S	-1.82	 	LWIPKSSRRTSSI
+23	R	-0.09	 	WIPKSSRRTSSIS
+24	R	-0.08	 	IPKSSRRTSSIST
+25	T	-0.39	 	PKSSRRTSSISTY
+26	S	2.38	 	KSSRRTSSISTYL
+27	S	0.62	 	SSRRTSSISTYLI
+28	I	-0.44	 	SRRTSSISTYLIL
+29	S	3.33	 	RRTSSISTYLIL-
+30	T	7.18	 	RTSSISTYLIL--
+31	Y	5.00	 	TSSISTYLIL---
+32	L	10.19	*	SSISTYLIL----
+33	I	12.01	*	SISTYLIL-----
+34	L	9.66	 	ISTYLIL------
+35	-	3.58	 	STYLIL-------
+36	-	0.53	 	TYLIL--------
+37	-	-4.76	 	YLIL---------
+38	-	-2.95	 	LIL----------
+39	-	-1.46	 	IL-----------
+40	-	-0.56	 	L------------

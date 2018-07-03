@@ -68,7 +68,21 @@ glyc <- read_tsv("../../HeatShockQmRNA/src/scer-glycolytic-proteins.txt", commen
 rib <- read_tsv("../../HeatShockQmRNA/src/scer-ribosomal-proteins.txt", comment='#')
 #hs <- read_tsv("../src/scer-heat-shock-proteins.txt", comment='#')
 hs <- read_tsv("../../HeatShockQmRNA/src/heat-shock-42C-up-genes-auto.txt", comment='#')
+gtpase <- read_tsv("../../stress-ph/data/GTPase_activity_annotations.txt", comment='#') %>% mutate(orf=`Gene Systematic Name`)
 agg <- read_tsv("../../HeatShockQmRNA/src/heat_aggregators.txt", comment='#')
+
+gtpase.orf <- unique(gtpase$orf)
+agg.gtpase <- na.omit(agg[match(gtpase.orf,agg$orf),])
+agg.gtpase <- c('NOG1','SUP35','FUN12','NUG1','NOG2','LSG1','BMS1','DNM1','TUF1')
+ctrl.gtpase <- c('ARF1','TSR1','EFT1','EFT2','RAS2','GSP1')
+
+# fast
+# 
+# lsg1,nug1,nog2,nog1,bms1
+# slow
+# sup35,tuf1,dnm1,fun12
+# no
+# ARF1,TSR1,EFT1,EFT2,RAS2,GSP1
 
 h70$label <- NA
 h70[!is.na(match(h70$orf, agg$orf)),'label'] <- 'aggregator'
@@ -81,29 +95,77 @@ h70[!is.na(match(h70$orf, subset(agg, superaggregator)$orf)),'label'] <- 'supera
 h70 <- h70 %>% left_join(bg, by=c(orf='ORF'))
 ```
 
-```{r categories, dependson="load_data", echo=FALSE, warning=FALSE}
-score.thresh <- as.numeric(quantile(h70$max.score, probs=c(0.975)))
-g <- ggplot(h70, aes(x=max.score, colour=label)) + stat_ecdf()
-ggdraw(g)
-
-tops <- h70 %>% filter(max.score>=score.thresh)
+```{r weight_matrix, echo=FALSE, warning=FALSE}
+mat <- read_tsv("../data/rudiger-hsp70-pssm.txt", comment='#')
+matm <- mat %>% gather(res, score, -aa) %>% extract(res, "position", "p([[:alnum:]]+)")
+matm$position <- factor(as.numeric(matm$position))
+matm$aa <- factor(matm$aa, levels=strsplit("GAMVILFYWQNDESTPHRKC", split='')[[1]])
+ggplot(matm, aes(x=position, y=aa, fill=score)) + geom_tile() + scale_fill_gradient2(low = bluecol, high = orangecol, mid = "white", midpoint = 0, space = "Lab", name="Binding score") + ylab("Amino acid") + xlab("Residue position in peptide")
+```
+```{r sequence_logo, dependson="weight_matrix", echo=FALSE, warning=FALSE}
+library(ggseqlogo)
+matl <- as.matrix(mat %>% select(-aa))
+matl <- scale(exp(matl), center=FALSE, scale=colSums(exp(matl)))
+rownames(matl) <- mat$aa
+rudiger.logo <- ggseqlogo(matl)
+ggdraw(rudiger.logo)
 ```
 
-```{r profile, echo=FALSE, warning=FALSE}
-plot_profile <- function(x, cutoff=10) {
-  g <- ggplot(x, aes(pos, y=score)) + geom_hline(yintercept = cutoff, linetype='dotted') + geom_line()
-  y <- x %>% filter(score >= cutoff)
-  if (nrow(y)>0) {
-    keysite <-  y[y$score==max(y$score),]
-    g <- g + geom_label_repel(data=keysite, aes(label=window, y=1.3*score), segment.color = 'black')
-  }
+
+```{r categories, dependson="load_data", echo=FALSE, warning=FALSE}
+score.thresh <- as.numeric(quantile(h70$max.score, probs=c(0.5)))
+h70sub <- h70 %>% filter(!(label %in% c('glycolytic','ribosomal')))
+h70sub[!is.na(match(h70sub$orf, subset(agg, superaggregator)$orf)),'label'] <- 'aggregator'
+g <- ggplot(h70sub, aes(x=max.score, colour=label)) + stat_ecdf() + xlab('Maximum Hsp70 binding score') + ylab('Proportion')
+ggdraw(g)
+
+#tops <- h70 %>% filter(max.score>=score.thresh)
+y <- h70 %>% filter(max.score>=score.thresh & label=='aggregator')
+print(tops <- y[order(y$max.score,decreasing=T),c('orf','gene','max.score','num.motifs','label','mrna','prot')])
+```
+
+```{r profile, echo=FALSE, warning=FALSE, fig.asp=2, fig.width=4}
+
+# https://github.com/stas-g/findPeaks/blob/master/find_peaks.R
+find_peaks <- function (x, m = 3){
+    shape <- diff(sign(diff(x, na.pad = FALSE)))
+    pks <- sapply(which(shape < 0), FUN = function(i){
+       z <- i - m + 1
+       z <- ifelse(z > 0, z, 1)
+       w <- i + m + 1
+       w <- ifelse(w < length(x), w, length(x))
+       if(all(x[c(z : i, (i + 2) : w)] <= x[i + 1])) return(i + 1) else return(numeric(0))
+    })
+     pks <- unlist(pks)
+     pks
+}
+
+plot_profile <- function(gene, cutoff=10) {
+  compare.set <- h70 %>% filter(label %in% c('aggregator','superaggregator'))
+  x <- read_tsv(paste("../data/",tolower(gene),"-motifs-r10.txt",sep=''), comment='#')
+  g <- ggplot(x, aes(pos, y=score)) + #geom_hline(yintercept = cutoff, linetype='dotted') + 
+    geom_hline(yintercept=quantile(compare.set$max.score, probs=c(0.5,0.9,0.99),na.rm=T), colour=c(greencol,bluecol,orangecol)) +
+    geom_line() + coord_cartesian(ylim=c(-30,30)) +
+    xlab("Position (residue number)") + ylab("Hsp70 binding score") + ggtitle(gene)
+  xv <- read_tsv(paste("../data/",tolower(gene),"-motifs-r10.txt",sep=''), comment='#')
+  #g <- g + geom_line(data=xv, colour=graycol)
+  #y <- x %>% filter(score >= cutoff)
+  #if (nrow(y)>0) {
+    keysite <-  x[find_peaks(x$score),] %>% filter(score>=cutoff)
+    g <- g + geom_label_repel(data=keysite, aes(label=window, y=score), nudge_y=10, segment.color = 'red', segment.size=0.5, seed=111)
+  #}
   g
 }
 
-hsf <- read_tsv("../data/hsf1-motifs-r10.txt", comment='#')
-nug <- read_tsv("../data/nug1-motifs-r10.txt", comment='#')
+cutoff <- as.numeric(quantile(h70$max.score, probs=c(0.5)))
+
+hsf1 <- read_tsv("../data/hsf1-motifs-r10.txt", comment='#')
+#cdc39 <- read_tsv("../data/cdc39-motifs-r10.txt", comment='#')
+#nug1 <- read_tsv("../data/nug1-motifs-r10.txt", comment='#')
 ggdraw(g <- plot_grid(
-  ghsf <- plot_profile(hsf), 
-  gnug <- plot_profile(nug), 
+  ghsf <- plot_profile('hsf1', cutoff=cutoff), 
+  gnug <- plot_profile('nug1', cutoff=cutoff), 
+  gcdc <- plot_profile('nog1', cutoff=cutoff), 
+  gcdc <- plot_profile('nog2', cutoff=cutoff), 
   ncol=1))
 ```

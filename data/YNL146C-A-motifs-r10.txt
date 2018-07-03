@@ -1,0 +1,92 @@
+# Run started 2018-06-30 09:00:13 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YNL146C-A --report --out ../data/YNL146C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YNL146C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YNL146C-A-motifs-r10.txt
+# Found ORF YNL146C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.18	 	----------MIS
+-2	-	-0.45	 	---------MISV
+-1	-	-1.58	 	--------MISVC
+0	-	0.26	 	-------MISVCF
+1	M	-2.20	 	------MISVCFV
+2	I	-0.10	 	-----MISVCFVF
+3	S	-6.67	 	----MISVCFVFP
+4	V	-4.20	 	---MISVCFVFPH
+5	C	-5.09	 	--MISVCFVFPHS
+6	F	-0.91	 	-MISVCFVFPHSL
+7	V	-4.13	 	MISVCFVFPHSLA
+8	F	-6.50	 	ISVCFVFPHSLAL
+9	P	-7.13	 	SVCFVFPHSLALD
+10	H	-3.80	 	VCFVFPHSLALDF
+11	S	-3.77	 	CFVFPHSLALDFK
+12	L	2.92	 	FVFPHSLALDFKS
+13	A	1.49	 	VFPHSLALDFKSR
+14	L	5.91	 	FPHSLALDFKSRC
+15	D	-1.35	 	PHSLALDFKSRCK
+16	F	0.19	 	HSLALDFKSRCKK
+17	K	-6.65	 	SLALDFKSRCKKN
+18	S	-5.46	 	LALDFKSRCKKNR
+19	R	-6.17	 	ALDFKSRCKKNRT
+20	C	-4.50	 	LDFKSRCKKNRTK
+21	K	-4.12	 	DFKSRCKKNRTKL
+22	K	-4.56	 	FKSRCKKNRTKLC
+23	N	-6.83	 	KSRCKKNRTKLCS
+24	R	-5.63	 	SRCKKNRTKLCSA
+25	T	-0.13	 	RCKKNRTKLCSAY
+26	K	-5.19	 	CKKNRTKLCSAYY
+27	L	-5.62	 	KKNRTKLCSAYYV
+28	C	-6.12	 	KNRTKLCSAYYVS
+29	S	-2.42	 	NRTKLCSAYYVSQ
+30	A	-6.30	 	RTKLCSAYYVSQV
+31	Y	-4.65	 	TKLCSAYYVSQVL
+32	Y	-1.96	 	KLCSAYYVSQVLR
+33	V	-0.82	 	LCSAYYVSQVLRI
+34	S	2.36	 	CSAYYVSQVLRIC
+35	Q	6.53	 	SAYYVSQVLRICK
+36	V	3.13	 	AYYVSQVLRICKE
+37	L	6.44	 	YYVSQVLRICKEM
+38	R	3.74	 	YVSQVLRICKEMP
+39	I	-1.44	 	VSQVLRICKEMPY
+40	C	-10.72	 	SQVLRICKEMPYR
+41	K	-10.03	 	QVLRICKEMPYRD
+42	E	-16.26	 	VLRICKEMPYRDL
+43	M	-12.31	 	LRICKEMPYRDLI
+44	P	-9.67	 	RICKEMPYRDLIL
+45	Y	-10.13	 	ICKEMPYRDLILF
+46	R	-3.33	 	CKEMPYRDLILFS
+47	D	2.24	 	KEMPYRDLILFST
+48	L	3.72	 	EMPYRDLILFSTV
+49	I	7.94	 	MPYRDLILFSTVR
+50	L	11.08	*	PYRDLILFSTVRK
+51	F	4.41	 	YRDLILFSTVRKG
+52	S	5.25	 	RDLILFSTVRKGV
+53	T	-1.92	 	DLILFSTVRKGVY
+54	V	-4.13	 	LILFSTVRKGVYM
+55	R	-3.22	 	ILFSTVRKGVYMR
+56	K	2.03	 	LFSTVRKGVYMRL
+57	G	4.50	 	FSTVRKGVYMRLY
+58	V	4.32	 	STVRKGVYMRLYY
+59	Y	2.43	 	TVRKGVYMRLYY-
+60	M	6.27	 	VRKGVYMRLYY--
+61	R	7.01	 	RKGVYMRLYY---
+62	L	7.54	 	KGVYMRLYY----
+63	Y	8.14	 	GVYMRLYY-----
+64	Y	9.03	 	VYMRLYY------
+65	-	2.30	 	YMRLYY-------
+66	-	0.64	 	MRLYY--------
+67	-	-1.21	 	RLYY---------
+68	-	-0.88	 	LYY----------
+69	-	-0.19	 	YY-----------
+70	-	-0.06	 	Y------------

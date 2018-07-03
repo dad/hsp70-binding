@@ -1,0 +1,96 @@
+# Run started 2018-06-29 16:20:19 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YLR412C-A --report --out ../data/YLR412C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YLR412C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YLR412C-A-motifs-r10.txt
+# Found ORF YLR412C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.14	 	-----------MH
+-3	-	-0.22	 	----------MHL
+-2	-	-0.42	 	---------MHLC
+-1	-	-1.32	 	--------MHLCQ
+0	-	-2.86	 	-------MHLCQN
+1	M	0.74	 	------MHLCQNG
+2	H	-5.11	 	-----MHLCQNGH
+3	L	-7.20	 	----MHLCQNGHY
+4	C	-9.83	 	---MHLCQNGHYY
+5	Q	-10.03	 	--MHLCQNGHYYK
+6	N	-18.43	 	-MHLCQNGHYYKP
+7	G	-15.14	 	MHLCQNGHYYKPH
+8	H	-4.10	 	HLCQNGHYYKPHR
+9	Y	-2.77	 	LCQNGHYYKPHRA
+10	Y	0.24	 	CQNGHYYKPHRAS
+11	K	2.69	 	QNGHYYKPHRASA
+12	P	-2.48	 	NGHYYKPHRASAE
+13	H	-4.83	 	GHYYKPHRASAEK
+14	R	-5.46	 	HYYKPHRASAEKV
+15	A	-5.12	 	YYKPHRASAEKVP
+16	S	-5.76	 	YKPHRASAEKVPY
+17	A	-7.71	 	KPHRASAEKVPYL
+18	E	-4.80	 	PHRASAEKVPYLK
+19	K	-5.72	 	HRASAEKVPYLKK
+20	V	-0.68	 	RASAEKVPYLKKK
+21	P	6.95	 	ASAEKVPYLKKKK
+22	Y	8.88	 	SAEKVPYLKKKKK
+23	L	6.86	 	AEKVPYLKKKKKN
+24	K	7.37	 	EKVPYLKKKKKNS
+25	K	4.66	 	KVPYLKKKKKNSR
+26	K	-2.84	 	VPYLKKKKKNSRN
+27	K	-2.85	 	PYLKKKKKNSRNE
+28	K	-2.11	 	YLKKKKKNSRNEG
+29	N	-2.38	 	LKKKKKNSRNEGK
+30	S	-4.57	 	KKKKKNSRNEGKA
+31	R	-6.28	 	KKKKNSRNEGKAK
+32	N	-7.13	 	KKKNSRNEGKAKK
+33	E	-7.30	 	KKNSRNEGKAKKK
+34	G	-5.43	 	KNSRNEGKAKKKN
+35	K	-6.42	 	NSRNEGKAKKKNE
+36	A	-4.90	 	SRNEGKAKKKNEK
+37	K	-3.61	 	RNEGKAKKKNEKK
+38	K	-4.29	 	NEGKAKKKNEKKK
+39	K	-4.64	 	EGKAKKKNEKKKI
+40	N	-4.07	 	GKAKKKNEKKKIG
+41	E	-4.59	 	KAKKKNEKKKIGT
+42	K	-6.10	 	AKKKNEKKKIGTV
+43	K	-4.29	 	KKKNEKKKIGTVE
+44	K	-4.45	 	KKNEKKKIGTVEF
+45	I	-4.60	 	KNEKKKIGTVEFF
+46	G	-1.22	 	NEKKKIGTVEFFQ
+47	T	-2.53	 	EKKKIGTVEFFQQ
+48	V	-4.49	 	KKKIGTVEFFQQK
+49	E	0.42	 	KKIGTVEFFQQKK
+50	F	1.00	 	KIGTVEFFQQKKK
+51	F	-1.95	 	IGTVEFFQQKKKE
+52	Q	-0.54	 	GTVEFFQQKKKEK
+53	Q	-3.01	 	TVEFFQQKKKEKK
+54	K	-5.76	 	VEFFQQKKKEKKR
+55	K	-3.36	 	EFFQQKKKEKKRV
+56	K	-1.17	 	FFQQKKKEKKRVL
+57	E	-1.65	 	FQQKKKEKKRVLN
+58	K	-3.30	 	QQKKKEKKRVLNA
+59	K	-0.55	 	QKKKEKKRVLNAV
+60	R	4.27	 	KKKEKKRVLNAVC
+61	V	2.48	 	KKEKKRVLNAVCG
+62	L	3.13	 	KEKKRVLNAVCGL
+63	N	6.28	 	EKKRVLNAVCGL-
+64	A	-1.74	 	KKRVLNAVCGL--
+65	V	-10.89	 	KRVLNAVCGL---
+66	C	-5.98	 	RVLNAVCGL----
+67	G	-4.60	 	VLNAVCGL-----
+68	L	-5.27	 	LNAVCGL------
+69	-	-5.57	 	NAVCGL-------
+70	-	-0.56	 	AVCGL--------
+71	-	-5.34	 	VCGL---------
+72	-	-3.09	 	CGL----------
+73	-	-1.01	 	GL-----------
+74	-	-0.56	 	L------------

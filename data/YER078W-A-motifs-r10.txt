@@ -1,0 +1,82 @@
+# Run started 2018-06-29 15:02:50 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YER078W-A --report --out ../data/YER078W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YER078W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YER078W-A-motifs-r10.txt
+# Found ORF YER078W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.34	 	-----------MV
+-3	-	-0.06	 	----------MVR
+-2	-	0.19	 	---------MVRL
+-1	-	-0.35	 	--------MVRLS
+0	-	3.02	 	-------MVRLSY
+1	M	0.95	 	------MVRLSYL
+2	V	4.83	 	-----MVRLSYLR
+3	R	3.23	 	----MVRLSYLRL
+4	L	8.37	 	---MVRLSYLRLI
+5	S	11.48	*	--MVRLSYLRLIL
+6	Y	10.65	*	-MVRLSYLRLILP
+7	L	7.55	 	MVRLSYLRLILPP
+8	R	11.73	*	VRLSYLRLILPPC
+9	L	13.92	*	RLSYLRLILPPCR
+10	I	6.57	 	LSYLRLILPPCRL
+11	L	7.45	 	SYLRLILPPCRLS
+12	P	-4.26	 	YLRLILPPCRLSE
+13	P	-9.06	 	LRLILPPCRLSEL
+14	C	-10.74	 	RLILPPCRLSELS
+15	R	-10.24	 	LILPPCRLSELSS
+16	L	-9.76	 	ILPPCRLSELSSL
+17	S	-6.06	 	LPPCRLSELSSLA
+18	E	-3.66	 	PPCRLSELSSLAI
+19	L	-10.44	 	PCRLSELSSLAIL
+20	S	-3.94	 	CRLSELSSLAILY
+21	S	0.23	 	RLSELSSLAILYQ
+22	L	-3.08	 	LSELSSLAILYQP
+23	A	3.16	 	SELSSLAILYQPV
+24	I	9.10	 	ELSSLAILYQPVI
+25	L	2.01	 	LSSLAILYQPVIP
+26	Y	1.84	 	SSLAILYQPVIPI
+27	Q	1.49	 	SLAILYQPVIPIL
+28	P	-1.36	 	LAILYQPVIPILI
+29	V	-3.88	 	AILYQPVIPILIS
+30	I	2.86	 	ILYQPVIPILIST
+31	P	8.40	 	LYQPVIPILISTI
+32	I	9.96	 	YQPVIPILISTIT
+33	L	4.56	 	QPVIPILISTITF
+34	I	5.05	 	PVIPILISTITFQ
+35	S	4.13	 	VIPILISTITFQH
+36	T	-2.60	 	IPILISTITFQHF
+37	I	-2.98	 	PILISTITFQHFF
+38	T	-1.87	 	ILISTITFQHFFK
+39	F	-0.84	 	LISTITFQHFFKC
+40	Q	-2.27	 	ISTITFQHFFKCV
+41	H	2.01	 	STITFQHFFKCVH
+42	F	-2.06	 	TITFQHFFKCVHT
+43	F	-5.07	 	ITFQHFFKCVHTP
+44	K	-0.50	 	TFQHFFKCVHTPC
+45	C	-3.90	 	FQHFFKCVHTPCN
+46	V	-6.70	 	QHFFKCVHTPCNV
+47	H	-8.03	 	HFFKCVHTPCNVY
+48	T	-15.89	 	FFKCVHTPCNVYI
+49	P	-18.60	 	FKCVHTPCNVYI-
+50	C	-13.00	 	KCVHTPCNVYI--
+51	N	-6.72	 	CVHTPCNVYI---
+52	V	-2.10	 	VHTPCNVYI----
+53	Y	-3.45	 	HTPCNVYI-----
+54	I	-0.11	 	TPCNVYI------
+55	-	0.32	 	PCNVYI-------
+56	-	-0.08	 	CNVYI--------
+57	-	-1.83	 	NVYI---------
+58	-	-1.09	 	VYI----------
+59	-	-0.75	 	YI-----------
+60	-	-0.34	 	I------------

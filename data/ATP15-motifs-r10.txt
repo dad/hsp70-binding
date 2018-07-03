@@ -1,0 +1,90 @@
+# Run started 2018-06-30 09:31:22 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id ATP15 --report --out ../data/ATP15-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: ATP15
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/ATP15-motifs-r10.txt
+# Found gene ATP15 = YPL271W
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	-0.17	 	----------MSA
+-2	-	-0.37	 	---------MSAW
+-1	-	-0.73	 	--------MSAWR
+0	-	-1.68	 	-------MSAWRK
+1	M	-1.05	 	------MSAWRKA
+2	S	-3.30	 	-----MSAWRKAG
+3	A	-4.76	 	----MSAWRKAGI
+4	W	-6.01	 	---MSAWRKAGIS
+5	R	-4.95	 	--MSAWRKAGISY
+6	K	-6.50	 	-MSAWRKAGISYA
+7	A	-0.78	 	MSAWRKAGISYAA
+8	G	-2.93	 	SAWRKAGISYAAY
+9	I	0.80	 	AWRKAGISYAAYL
+10	S	0.07	 	WRKAGISYAAYLN
+11	Y	0.85	 	RKAGISYAAYLNV
+12	A	-0.28	 	KAGISYAAYLNVA
+13	A	4.49	 	AGISYAAYLNVAA
+14	Y	-0.94	 	GISYAAYLNVAAQ
+15	L	2.57	 	ISYAAYLNVAAQA
+16	N	3.31	 	SYAAYLNVAAQAI
+17	V	1.45	 	YAAYLNVAAQAIR
+18	A	-6.04	 	AAYLNVAAQAIRS
+19	A	-3.38	 	AYLNVAAQAIRSS
+20	Q	-0.48	 	YLNVAAQAIRSSL
+21	A	-0.08	 	LNVAAQAIRSSLK
+22	I	0.51	 	NVAAQAIRSSLKT
+23	R	2.29	 	VAAQAIRSSLKTE
+24	S	6.25	 	AAQAIRSSLKTEL
+25	S	-0.12	 	AQAIRSSLKTELQ
+26	L	-0.62	 	QAIRSSLKTELQT
+27	K	-2.39	 	AIRSSLKTELQTA
+28	T	2.67	 	IRSSLKTELQTAS
+29	E	-5.53	 	RSSLKTELQTASV
+30	L	-4.86	 	SSLKTELQTASVL
+31	Q	-3.30	 	SLKTELQTASVLN
+32	T	-1.89	 	LKTELQTASVLNR
+33	A	-3.79	 	KTELQTASVLNRS
+34	S	4.71	 	TELQTASVLNRSQ
+35	V	4.90	 	ELQTASVLNRSQT
+36	L	4.42	 	LQTASVLNRSQTD
+37	N	4.09	 	QTASVLNRSQTDA
+38	R	-0.04	 	TASVLNRSQTDAF
+39	S	-8.60	 	ASVLNRSQTDAFY
+40	Q	-11.69	 	SVLNRSQTDAFYT
+41	T	-10.41	 	VLNRSQTDAFYTQ
+42	D	-7.59	 	LNRSQTDAFYTQY
+43	A	-0.09	 	NRSQTDAFYTQYK
+44	F	-0.07	 	RSQTDAFYTQYKN
+45	Y	0.96	 	SQTDAFYTQYKNG
+46	T	5.75	 	QTDAFYTQYKNGT
+47	Q	1.94	 	TDAFYTQYKNGTA
+48	Y	-3.29	 	DAFYTQYKNGTAA
+49	K	-3.29	 	AFYTQYKNGTAAS
+50	N	-2.22	 	FYTQYKNGTAASE
+51	G	-5.85	 	YTQYKNGTAASEP
+52	T	-5.00	 	TQYKNGTAASEPT
+53	A	-6.88	 	QYKNGTAASEPTP
+54	A	-6.96	 	YKNGTAASEPTPI
+55	S	-7.05	 	KNGTAASEPTPIT
+56	E	-7.12	 	NGTAASEPTPITK
+57	P	-8.03	 	GTAASEPTPITK-
+58	T	-4.19	 	TAASEPTPITK--
+59	P	-2.15	 	AASEPTPITK---
+60	I	-2.11	 	ASEPTPITK----
+61	T	0.02	 	SEPTPITK-----
+62	K	1.48	 	EPTPITK------
+63	-	-1.83	 	PTPITK-------
+64	-	0.12	 	TPITK--------
+65	-	1.45	 	PITK---------
+66	-	1.11	 	ITK----------
+67	-	0.86	 	TK-----------
+68	-	0.28	 	K------------

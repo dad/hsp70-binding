@@ -1,0 +1,90 @@
+# Run started 2018-06-30 09:03:46 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YNL277W-A --report --out ../data/YNL277W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YNL277W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YNL277W-A-motifs-r10.txt
+# Found ORF YNL277W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.16	 	----------MTL
+-2	-	0.08	 	---------MTLA
+-1	-	-1.03	 	--------MTLAY
+0	-	-2.94	 	-------MTLAYY
+1	M	-0.36	 	------MTLAYYG
+2	T	-1.39	 	-----MTLAYYGQ
+3	L	1.77	 	----MTLAYYGQP
+4	A	6.25	 	---MTLAYYGQPV
+5	Y	6.32	 	--MTLAYYGQPVK
+6	Y	-1.89	 	-MTLAYYGQPVKM
+7	G	-2.60	 	MTLAYYGQPVKMC
+8	Q	-1.33	 	TLAYYGQPVKMCH
+9	P	-5.43	 	LAYYGQPVKMCHI
+10	V	-3.31	 	AYYGQPVKMCHIL
+11	K	-6.04	 	YYGQPVKMCHILP
+12	M	-6.65	 	YGQPVKMCHILPP
+13	C	-5.95	 	GQPVKMCHILPPL
+14	H	-0.43	 	QPVKMCHILPPLR
+15	I	-1.55	 	PVKMCHILPPLRS
+16	L	-4.16	 	VKMCHILPPLRSL
+17	P	4.67	 	KMCHILPPLRSLP
+18	P	0.52	 	MCHILPPLRSLPV
+19	L	-5.29	 	CHILPPLRSLPVL
+20	R	2.10	 	HILPPLRSLPVLV
+21	S	1.80	 	ILPPLRSLPVLVG
+22	L	-0.42	 	LPPLRSLPVLVGK
+23	P	6.01	 	PPLRSLPVLVGKK
+24	V	11.43	*	PLRSLPVLVGKKK
+25	L	4.77	 	LRSLPVLVGKKKL
+26	V	6.40	 	RSLPVLVGKKKLK
+27	G	4.49	 	SLPVLVGKKKLKK
+28	K	-2.16	 	LPVLVGKKKLKKK
+29	K	3.05	 	PVLVGKKKLKKKK
+30	K	5.22	 	VLVGKKKLKKKKS
+31	L	6.14	 	LVGKKKLKKKKSQ
+32	K	6.56	 	VGKKKLKKKKSQT
+33	K	5.79	 	GKKKLKKKKSQTT
+34	K	-2.60	 	KKKLKKKKSQTTN
+35	K	-2.15	 	KKLKKKKSQTTNN
+36	S	-1.47	 	KLKKKKSQTTNNH
+37	Q	-1.24	 	LKKKKSQTTNNHV
+38	T	-2.95	 	KKKKSQTTNNHVI
+39	T	-6.05	 	KKKSQTTNNHVIF
+40	N	-5.84	 	KKSQTTNNHVIFL
+41	N	-2.98	 	KSQTTNNHVIFLF
+42	H	-0.57	 	SQTTNNHVIFLFT
+43	V	1.46	 	QTTNNHVIFLFTL
+44	I	5.42	 	TTNNHVIFLFTLF
+45	F	9.56	 	TNNHVIFLFTLFI
+46	L	7.41	 	NNHVIFLFTLFIK
+47	F	7.74	 	NHVIFLFTLFIKL
+48	T	9.24	 	HVIFLFTLFIKLL
+49	L	6.46	 	VIFLFTLFIKLLK
+50	F	4.75	 	IFLFTLFIKLLKT
+51	I	11.51	*	FLFTLFIKLLKTH
+52	K	9.92	 	LFTLFIKLLKTHN
+53	L	8.53	 	FTLFIKLLKTHNR
+54	L	4.89	 	TLFIKLLKTHNRM
+55	K	6.54	 	LFIKLLKTHNRMS
+56	T	-1.01	 	FIKLLKTHNRMSL
+57	H	-8.02	 	IKLLKTHNRMSL-
+58	N	-5.58	 	KLLKTHNRMSL--
+59	R	-5.12	 	LLKTHNRMSL---
+60	M	0.96	 	LKTHNRMSL----
+61	S	2.04	 	KTHNRMSL-----
+62	L	2.75	 	THNRMSL------
+63	-	3.01	 	HNRMSL-------
+64	-	4.27	 	NRMSL--------
+65	-	-2.07	 	RMSL---------
+66	-	-1.64	 	MSL----------
+67	-	-1.08	 	SL-----------
+68	-	-0.56	 	L------------

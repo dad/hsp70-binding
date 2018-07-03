@@ -1,0 +1,94 @@
+# Run started 2018-06-29 14:48:50 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YDR246W-A --report --out ../data/YDR246W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YDR246W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YDR246W-A-motifs-r10.txt
+# Found ORF YDR246W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.46	 	-----------MR
+-3	-	1.54	 	----------MRR
+-2	-	2.61	 	---------MRRL
+-1	-	2.83	 	--------MRRLY
+0	-	2.10	 	-------MRRLYR
+1	M	0.47	 	------MRRLYRH
+2	R	4.04	 	-----MRRLYRHL
+3	R	8.33	 	----MRRLYRHLA
+4	L	7.41	 	---MRRLYRHLAS
+5	Y	6.59	 	--MRRLYRHLASF
+6	R	10.11	*	-MRRLYRHLASFF
+7	H	2.63	 	MRRLYRHLASFFL
+8	L	-1.51	 	RRLYRHLASFFLL
+9	A	1.18	 	RLYRHLASFFLLP
+10	S	5.07	 	LYRHLASFFLLPS
+11	F	2.70	 	YRHLASFFLLPSC
+12	F	7.85	 	RHLASFFLLPSCP
+13	L	7.44	 	HLASFFLLPSCPG
+14	L	4.91	 	LASFFLLPSCPGN
+15	P	-1.51	 	ASFFLLPSCPGNT
+16	S	-9.47	 	SFFLLPSCPGNTI
+17	C	-16.32	 	FFLLPSCPGNTIQ
+18	P	-15.86	 	FLLPSCPGNTIQS
+19	G	-14.10	 	LLPSCPGNTIQSI
+20	N	-11.46	 	LPSCPGNTIQSIT
+21	T	-8.56	 	PSCPGNTIQSITS
+22	I	-6.19	 	SCPGNTIQSITSY
+23	Q	-1.25	 	CPGNTIQSITSYP
+24	S	0.97	 	PGNTIQSITSYPA
+25	I	-5.04	 	GNTIQSITSYPAN
+26	T	2.12	 	NTIQSITSYPANA
+27	S	1.01	 	TIQSITSYPANAL
+28	Y	-3.11	 	IQSITSYPANALL
+29	P	-3.48	 	QSITSYPANALLR
+30	A	-1.97	 	SITSYPANALLRS
+31	N	-0.12	 	ITSYPANALLRSF
+32	A	6.31	 	TSYPANALLRSFR
+33	L	5.67	 	SYPANALLRSFRH
+34	L	5.40	 	YPANALLRSFRHV
+35	R	9.40	 	PANALLRSFRHVS
+36	S	1.64	 	ANALLRSFRHVST
+37	F	-5.74	 	NALLRSFRHVSTE
+38	R	-0.43	 	ALLRSFRHVSTET
+39	H	-0.10	 	LLRSFRHVSTETP
+40	V	-2.64	 	LRSFRHVSTETPV
+41	S	-3.43	 	RSFRHVSTETPVR
+42	T	-2.73	 	SFRHVSTETPVRN
+43	E	-5.79	 	FRHVSTETPVRNR
+44	T	-0.77	 	RHVSTETPVRNRV
+45	P	-1.09	 	HVSTETPVRNRVH
+46	V	-0.94	 	VSTETPVRNRVHN
+47	R	-0.52	 	STETPVRNRVHNR
+48	N	3.91	 	TETPVRNRVHNRD
+49	R	1.58	 	ETPVRNRVHNRDS
+50	V	0.75	 	TPVRNRVHNRDSQ
+51	H	-0.71	 	PVRNRVHNRDSQS
+52	N	-4.01	 	VRNRVHNRDSQSC
+53	R	-7.63	 	RNRVHNRDSQSCP
+54	D	-8.09	 	NRVHNRDSQSCPF
+55	S	-9.19	 	RVHNRDSQSCPFF
+56	Q	-14.49	 	VHNRDSQSCPFFP
+57	S	-13.12	 	HNRDSQSCPFFPL
+58	C	-9.95	 	NRDSQSCPFFPLM
+59	P	-4.78	 	RDSQSCPFFPLMD
+60	F	-6.48	 	DSQSCPFFPLMDD
+61	F	-4.53	 	SQSCPFFPLMDD-
+62	P	-2.28	 	QSCPFFPLMDD--
+63	L	-6.91	 	SCPFFPLMDD---
+64	M	-10.99	 	CPFFPLMDD----
+65	D	-7.80	 	PFFPLMDD-----
+66	D	-13.75	 	FFPLMDD------
+67	-	-11.79	 	FPLMDD-------
+68	-	-6.81	 	PLMDD--------
+69	-	-1.70	 	LMDD---------
+70	-	-0.76	 	MDD----------
+71	-	-0.43	 	DD-----------
+72	-	-0.14	 	D------------

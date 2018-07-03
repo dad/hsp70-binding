@@ -1,0 +1,91 @@
+# Run started 2018-06-30 09:17:39 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id RPS30B --report --out ../data/RPS30B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: RPS30B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/RPS30B-motifs-r10.txt
+# Found gene RPS30B = YOR182C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.26	 	-----------MA
+-3	-	-0.11	 	----------MAK
+-2	-	-0.24	 	---------MAKV
+-1	-	-1.20	 	--------MAKVH
+0	-	-1.04	 	-------MAKVHG
+1	M	-3.38	 	------MAKVHGS
+2	A	-0.54	 	-----MAKVHGSL
+3	K	-2.24	 	----MAKVHGSLA
+4	V	-2.62	 	---MAKVHGSLAR
+5	H	-3.02	 	--MAKVHGSLARA
+6	G	2.43	 	-MAKVHGSLARAG
+7	S	1.59	 	MAKVHGSLARAGK
+8	L	1.37	 	AKVHGSLARAGKV
+9	A	3.68	 	KVHGSLARAGKVK
+10	R	3.35	 	VHGSLARAGKVKS
+11	A	-5.02	 	HGSLARAGKVKSQ
+12	G	0.12	 	GSLARAGKVKSQT
+13	K	-0.12	 	SLARAGKVKSQTP
+14	V	-0.24	 	LARAGKVKSQTPK
+15	K	0.94	 	ARAGKVKSQTPKV
+16	S	0.76	 	RAGKVKSQTPKVE
+17	Q	-3.50	 	AGKVKSQTPKVEK
+18	T	-4.79	 	GKVKSQTPKVEKT
+19	P	-2.26	 	KVKSQTPKVEKTE
+20	K	-1.86	 	VKSQTPKVEKTEK
+21	V	-3.08	 	KSQTPKVEKTEKP
+22	E	-3.84	 	SQTPKVEKTEKPK
+23	K	-4.13	 	QTPKVEKTEKPKK
+24	T	-7.61	 	TPKVEKTEKPKKP
+25	E	-6.05	 	PKVEKTEKPKKPK
+26	K	-4.99	 	KVEKTEKPKKPKG
+27	P	-4.61	 	VEKTEKPKKPKGR
+28	K	-3.12	 	EKTEKPKKPKGRA
+29	K	-2.79	 	KTEKPKKPKGRAY
+30	P	-3.11	 	TEKPKKPKGRAYK
+31	K	-2.95	 	EKPKKPKGRAYKR
+32	G	-1.17	 	KPKKPKGRAYKRL
+33	R	4.03	 	PKKPKGRAYKRLL
+34	A	3.73	 	KKPKGRAYKRLLY
+35	Y	3.25	 	KPKGRAYKRLLYT
+36	K	7.49	 	PKGRAYKRLLYTR
+37	R	11.77	*	KGRAYKRLLYTRR
+38	L	13.60	*	GRAYKRLLYTRRF
+39	L	14.89	*	RAYKRLLYTRRFV
+40	Y	13.85	*	AYKRLLYTRRFVN
+41	T	4.43	 	YKRLLYTRRFVNV
+42	R	0.12	 	KRLLYTRRFVNVT
+43	R	1.58	 	RLLYTRRFVNVTL
+44	F	0.84	 	LLYTRRFVNVTLV
+45	V	5.49	 	LYTRRFVNVTLVN
+46	N	5.06	 	YTRRFVNVTLVNG
+47	V	6.13	 	TRRFVNVTLVNGK
+48	T	7.60	 	RRFVNVTLVNGKR
+49	L	6.67	 	RFVNVTLVNGKRR
+50	V	4.98	 	FVNVTLVNGKRRM
+51	N	6.16	 	VNVTLVNGKRRMN
+52	G	-1.19	 	NVTLVNGKRRMNP
+53	K	-3.56	 	VTLVNGKRRMNPG
+54	R	-2.76	 	TLVNGKRRMNPGP
+55	R	-2.27	 	LVNGKRRMNPGPS
+56	M	-2.16	 	VNGKRRMNPGPSV
+57	N	-3.41	 	NGKRRMNPGPSVQ
+58	P	-5.29	 	GKRRMNPGPSVQ-
+59	G	-7.61	 	KRRMNPGPSVQ--
+60	P	-4.54	 	RRMNPGPSVQ---
+61	S	-5.32	 	RMNPGPSVQ----
+62	V	-2.92	 	MNPGPSVQ-----
+63	Q	-1.36	 	NPGPSVQ------
+64	-	0.37	 	PGPSVQ-------
+65	-	-1.07	 	GPSVQ--------
+66	-	1.99	 	PSVQ---------
+67	-	1.34	 	SVQ----------
+68	-	0.82	 	VQ-----------
+69	-	0.37	 	Q------------

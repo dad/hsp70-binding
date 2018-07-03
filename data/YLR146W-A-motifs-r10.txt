@@ -1,0 +1,90 @@
+# Run started 2018-06-29 16:11:48 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YLR146W-A --report --out ../data/YLR146W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YLR146W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YLR146W-A-motifs-r10.txt
+# Found ORF YLR146W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.23	 	-----------MD
+-3	-	-0.24	 	----------MDT
+-2	-	-0.83	 	---------MDTE
+-1	-	-2.78	 	--------MDTEE
+0	-	-7.66	 	-------MDTEEK
+1	M	-9.33	 	------MDTEEKK
+2	D	-11.74	 	-----MDTEEKKK
+3	T	-12.99	 	----MDTEEKKKT
+4	E	-12.80	 	---MDTEEKKKTT
+5	E	-9.81	 	--MDTEEKKKTTA
+6	K	-9.63	 	-MDTEEKKKTTAS
+7	K	-8.05	 	MDTEEKKKTTASV
+8	K	-6.44	 	DTEEKKKTTASVE
+9	T	-4.49	 	TEEKKKTTASVEH
+10	T	-5.25	 	EEKKKTTASVEHA
+11	A	-0.94	 	EKKKTTASVEHAR
+12	S	-2.18	 	KKKTTASVEHARM
+13	V	-3.15	 	KKTTASVEHARML
+14	E	-2.82	 	KTTASVEHARMLQ
+15	H	-4.00	 	TTASVEHARMLQN
+16	A	-7.28	 	TASVEHARMLQNE
+17	R	-1.69	 	ASVEHARMLQNEI
+18	M	-1.22	 	SVEHARMLQNEIQ
+19	L	-3.63	 	VEHARMLQNEIQQ
+20	Q	-4.97	 	EHARMLQNEIQQL
+21	N	-2.02	 	HARMLQNEIQQLF
+22	E	-10.73	 	ARMLQNEIQQLFA
+23	I	-9.07	 	RMLQNEIQQLFAQ
+24	Q	-4.95	 	MLQNEIQQLFAQL
+25	Q	0.90	 	LQNEIQQLFAQLR
+26	L	-1.10	 	QNEIQQLFAQLRD
+27	F	1.90	 	NEIQQLFAQLRDT
+28	A	10.31	*	EIQQLFAQLRDTN
+29	Q	2.39	 	IQQLFAQLRDTNS
+30	L	-2.47	 	QQLFAQLRDTNSQ
+31	R	-2.42	 	QLFAQLRDTNSQI
+32	D	-1.04	 	LFAQLRDTNSQIR
+33	T	-8.26	 	FAQLRDTNSQIRC
+34	N	-8.30	 	AQLRDTNSQIRCD
+35	S	-1.55	 	QLRDTNSQIRCDL
+36	Q	-1.86	 	LRDTNSQIRCDLN
+37	I	-7.35	 	RDTNSQIRCDLNE
+38	R	-11.04	 	DTNSQIRCDLNEF
+39	C	-5.27	 	TNSQIRCDLNEFE
+40	D	-13.84	 	NSQIRCDLNEFEQ
+41	L	-16.00	 	SQIRCDLNEFEQI
+42	N	-16.09	 	QIRCDLNEFEQIK
+43	E	-12.65	 	IRCDLNEFEQIKE
+44	F	-18.98	 	RCDLNEFEQIKES
+45	E	-13.19	 	CDLNEFEQIKESS
+46	Q	-10.07	 	DLNEFEQIKESST
+47	I	-11.92	 	LNEFEQIKESSTT
+48	K	-8.96	 	NEFEQIKESSTTA
+49	E	-5.61	 	EFEQIKESSTTAD
+50	S	-9.70	 	FEQIKESSTTADS
+51	S	-8.46	 	EQIKESSTTADST
+52	T	-5.38	 	QIKESSTTADSTT
+53	T	-7.33	 	IKESSTTADSTTN
+54	A	-6.41	 	KESSTTADSTTNS
+55	D	-5.40	 	ESSTTADSTTNSA
+56	S	-4.64	 	SSTTADSTTNSAN
+57	T	-7.35	 	STTADSTTNSAN-
+58	T	-5.52	 	TTADSTTNSAN--
+59	N	-4.41	 	TADSTTNSAN---
+60	S	-5.83	 	ADSTTNSAN----
+61	A	-4.56	 	DSTTNSAN-----
+62	N	-3.99	 	STTNSAN------
+63	-	-2.79	 	TTNSAN-------
+64	-	-2.31	 	TNSAN--------
+65	-	-1.21	 	NSAN---------
+66	-	-0.65	 	SAN----------
+67	-	-0.47	 	AN-----------
+68	-	-0.25	 	N------------

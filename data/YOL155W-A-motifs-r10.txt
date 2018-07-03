@@ -1,0 +1,72 @@
+# Run started 2018-06-30 09:12:12 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOL155W-A --report --out ../data/YOL155W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOL155W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOL155W-A-motifs-r10.txt
+# Found ORF YOL155W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.90	 	----------MFY
+-2	-	-1.56	 	---------MFYG
+-1	-	-2.99	 	--------MFYGS
+0	-	-1.71	 	-------MFYGSF
+1	M	1.88	 	------MFYGSFN
+2	F	0.36	 	-----MFYGSFNK
+3	Y	-1.14	 	----MFYGSFNKC
+4	G	2.01	 	---MFYGSFNKCV
+5	S	-1.75	 	--MFYGSFNKCVT
+6	F	-6.05	 	-MFYGSFNKCVTG
+7	N	-9.99	 	MFYGSFNKCVTGY
+8	K	-5.83	 	FYGSFNKCVTGYS
+9	C	-8.68	 	YGSFNKCVTGYSC
+10	V	-9.37	 	GSFNKCVTGYSCR
+11	T	-3.28	 	SFNKCVTGYSCRM
+12	G	-5.76	 	FNKCVTGYSCRMA
+13	Y	-10.06	 	NKCVTGYSCRMAI
+14	S	-9.04	 	KCVTGYSCRMAIH
+15	C	-7.32	 	CVTGYSCRMAIHY
+16	R	-9.40	 	VTGYSCRMAIHYY
+17	M	-7.14	 	TGYSCRMAIHYYV
+18	A	-11.70	 	GYSCRMAIHYYVY
+19	I	-5.38	 	YSCRMAIHYYVYR
+20	H	0.08	 	SCRMAIHYYVYRI
+21	Y	4.89	 	CRMAIHYYVYRII
+22	Y	7.25	 	RMAIHYYVYRIIK
+23	V	8.03	 	MAIHYYVYRIIKS
+24	Y	8.54	 	AIHYYVYRIIKSA
+25	R	9.57	 	IHYYVYRIIKSAT
+26	I	7.29	 	HYYVYRIIKSATR
+27	I	4.02	 	YYVYRIIKSATRP
+28	K	5.85	 	YVYRIIKSATRPD
+29	S	1.15	 	VYRIIKSATRPDY
+30	A	-4.15	 	YRIIKSATRPDYK
+31	T	-4.13	 	RIIKSATRPDYKS
+32	R	-7.19	 	IIKSATRPDYKSN
+33	P	-1.48	 	IKSATRPDYKSNT
+34	D	-1.47	 	KSATRPDYKSNTQ
+35	Y	-2.57	 	SATRPDYKSNTQI
+36	K	-4.66	 	ATRPDYKSNTQIL
+37	S	-2.25	 	TRPDYKSNTQILV
+38	N	-6.94	 	RPDYKSNTQILVL
+39	T	-3.36	 	PDYKSNTQILVL-
+40	Q	1.19	 	DYKSNTQILVL--
+41	I	5.09	 	YKSNTQILVL---
+42	L	10.43	*	KSNTQILVL----
+43	V	13.19	*	SNTQILVL-----
+44	L	8.91	 	NTQILVL------
+45	-	2.83	 	TQILVL-------
+46	-	1.99	 	QILVL--------
+47	-	-3.74	 	ILVL---------
+48	-	-2.09	 	LVL----------
+49	-	-1.04	 	VL-----------
+50	-	-0.56	 	L------------

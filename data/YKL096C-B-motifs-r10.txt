@@ -1,0 +1,77 @@
+# Run started 2018-06-29 15:55:45 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YKL096C-B --report --out ../data/YKL096C-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YKL096C-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YKL096C-B-motifs-r10.txt
+# Found ORF YKL096C-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.55	 	----------MKL
+-2	-	0.66	 	---------MKLF
+-1	-	0.15	 	--------MKLFI
+0	-	-2.07	 	-------MKLFIL
+1	M	1.11	 	------MKLFILD
+2	K	2.53	 	-----MKLFILDY
+3	L	3.72	 	----MKLFILDYE
+4	F	7.53	 	---MKLFILDYEK
+5	I	4.44	 	--MKLFILDYEKK
+6	L	1.96	 	-MKLFILDYEKKR
+7	D	0.12	 	MKLFILDYEKKRT
+8	Y	-3.47	 	KLFILDYEKKRTK
+9	E	-9.47	 	LFILDYEKKRTKI
+10	K	-4.64	 	FILDYEKKRTKIG
+11	K	-5.76	 	ILDYEKKRTKIGK
+12	R	-3.44	 	LDYEKKRTKIGKG
+13	T	2.25	 	DYEKKRTKIGKGM
+14	K	2.64	 	YEKKRTKIGKGMA
+15	I	1.78	 	EKKRTKIGKGMAR
+16	G	1.73	 	KKRTKIGKGMARR
+17	K	1.53	 	KRTKIGKGMARRE
+18	G	-2.69	 	RTKIGKGMARREL
+19	M	-1.83	 	TKIGKGMARRELK
+20	A	-2.86	 	KIGKGMARRELKM
+21	R	-3.28	 	IGKGMARRELKMM
+22	R	1.59	 	GKGMARRELKMMN
+23	E	0.31	 	KGMARRELKMMNK
+24	L	0.78	 	GMARRELKMMNKK
+25	K	1.19	 	MARRELKMMNKKP
+26	M	1.19	 	ARRELKMMNKKPD
+27	M	-6.53	 	RRELKMMNKKPDL
+28	N	-6.67	 	RELKMMNKKPDLY
+29	K	-7.88	 	ELKMMNKKPDLYT
+30	K	-10.74	 	LKMMNKKPDLYTI
+31	P	-6.06	 	KMMNKKPDLYTII
+32	D	-0.67	 	MMNKKPDLYTIIV
+33	L	-0.37	 	MNKKPDLYTIIVS
+34	Y	2.21	 	NKKPDLYTIIVSY
+35	T	7.62	 	KKPDLYTIIVSYF
+36	I	3.57	 	KPDLYTIIVSYFS
+37	I	-0.17	 	PDLYTIIVSYFSI
+38	V	5.56	 	DLYTIIVSYFSIF
+39	S	4.19	 	LYTIIVSYFSIFS
+40	Y	-0.34	 	YTIIVSYFSIFSL
+41	F	0.80	 	TIIVSYFSIFSLF
+42	S	4.27	 	IIVSYFSIFSLFF
+43	I	0.50	 	IVSYFSIFSLFFF
+44	F	2.40	 	VSYFSIFSLFFF-
+45	S	5.39	 	SYFSIFSLFFF--
+46	L	3.49	 	YFSIFSLFFF---
+47	F	4.65	 	FSIFSLFFF----
+48	F	6.54	 	SIFSLFFF-----
+49	F	0.67	 	IFSLFFF------
+50	-	0.47	 	FSLFFF-------
+51	-	-0.26	 	SLFFF--------
+52	-	-1.00	 	LFFF---------
+53	-	-0.28	 	FFF----------
+54	-	-0.14	 	FF-----------
+55	-	-0.05	 	F------------

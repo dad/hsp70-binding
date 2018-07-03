@@ -1,0 +1,64 @@
+# Run started 2018-06-29 15:10:24 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YGL006W-A --report --out ../data/YGL006W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YGL006W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YGL006W-A-motifs-r10.txt
+# Found ORF YGL006W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	-0.20	 	----------MLI
+-2	-	-0.49	 	---------MLIF
+-1	-	-1.57	 	--------MLIFI
+0	-	1.70	 	-------MLIFII
+1	M	3.56	 	------MLIFIIH
+2	L	5.02	 	-----MLIFIIHY
+3	I	6.74	 	----MLIFIIHYH
+4	F	10.05	*	---MLIFIIHYHR
+5	I	2.25	 	--MLIFIIHYHRH
+6	I	3.64	 	-MLIFIIHYHRHL
+7	H	2.45	 	MLIFIIHYHRHLA
+8	Y	-2.11	 	LIFIIHYHRHLAL
+9	H	-6.03	 	IFIIHYHRHLALH
+10	R	0.68	 	FIIHYHRHLALHL
+11	H	-1.05	 	IIHYHRHLALHLM
+12	L	5.27	 	IHYHRHLALHLMG
+13	A	4.63	 	HYHRHLALHLMGA
+14	L	9.23	 	YHRHLALHLMGAF
+15	H	1.36	 	HRHLALHLMGAFQ
+16	L	0.65	 	RHLALHLMGAFQK
+17	M	-5.43	 	HLALHLMGAFQKH
+18	G	0.42	 	LALHLMGAFQKHS
+19	A	-5.89	 	ALHLMGAFQKHSN
+20	F	-5.43	 	LHLMGAFQKHSNS
+21	Q	-3.24	 	HLMGAFQKHSNSI
+22	K	-3.35	 	LMGAFQKHSNSIS
+23	H	-6.85	 	MGAFQKHSNSISP
+24	S	-5.00	 	GAFQKHSNSISPP
+25	N	-1.36	 	AFQKHSNSISPPP
+26	S	-0.76	 	FQKHSNSISPPPR
+27	I	-0.91	 	QKHSNSISPPPRK
+28	S	-1.46	 	KHSNSISPPPRKG
+29	P	-1.01	 	HSNSISPPPRKGF
+30	P	-6.05	 	SNSISPPPRKGFI
+31	P	-6.16	 	NSISPPPRKGFI-
+32	R	-6.46	 	SISPPPRKGFI--
+33	K	-2.81	 	ISPPPRKGFI---
+34	G	1.23	 	SPPPRKGFI----
+35	F	2.35	 	PPPRKGFI-----
+36	I	3.59	 	PPRKGFI------
+37	-	5.30	 	PRKGFI-------
+38	-	3.12	 	RKGFI--------
+39	-	-1.20	 	KGFI---------
+40	-	-1.02	 	GFI----------
+41	-	-0.74	 	FI-----------
+42	-	-0.34	 	I------------

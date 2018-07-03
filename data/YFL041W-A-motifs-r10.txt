@@ -1,0 +1,91 @@
+# Run started 2018-06-29 15:07:40 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YFL041W-A --report --out ../data/YFL041W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YFL041W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YFL041W-A-motifs-r10.txt
+# Found ORF YFL041W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.48	 	----------MKM
+-2	-	0.67	 	---------MKMW
+-1	-	0.26	 	--------MKMWG
+0	-	-1.81	 	-------MKMWGP
+1	M	-2.55	 	------MKMWGPS
+2	K	-5.66	 	-----MKMWGPSQ
+3	M	-6.72	 	----MKMWGPSQR
+4	W	-7.18	 	---MKMWGPSQRD
+5	G	-6.46	 	--MKMWGPSQRDS
+6	P	-7.05	 	-MKMWGPSQRDSF
+7	S	-4.64	 	MKMWGPSQRDSFR
+8	Q	-7.05	 	KMWGPSQRDSFRE
+9	R	-8.09	 	MWGPSQRDSFREI
+10	D	-4.40	 	WGPSQRDSFREIT
+11	S	-4.24	 	GPSQRDSFREITY
+12	F	-6.50	 	PSQRDSFREITYK
+13	R	-1.02	 	SQRDSFREITYKV
+14	E	-1.24	 	QRDSFREITYKVK
+15	I	0.79	 	RDSFREITYKVKF
+16	T	-0.25	 	DSFREITYKVKFK
+17	Y	5.35	 	SFREITYKVKFKY
+18	K	-0.34	 	FREITYKVKFKYD
+19	V	3.85	 	REITYKVKFKYDD
+20	K	-1.16	 	EITYKVKFKYDDG
+21	F	4.33	 	ITYKVKFKYDDGD
+22	K	-2.42	 	TYKVKFKYDDGDY
+23	Y	-6.22	 	YKVKFKYDDGDYS
+24	D	-10.72	 	KVKFKYDDGDYSL
+25	D	-14.66	 	VKFKYDDGDYSLA
+26	G	-14.03	 	KFKYDDGDYSLAI
+27	D	-12.12	 	FKYDDGDYSLAID
+28	Y	-4.59	 	KYDDGDYSLAIDL
+29	S	-2.33	 	YDDGDYSLAIDLM
+30	L	4.19	 	DDGDYSLAIDLMS
+31	A	-1.37	 	DGDYSLAIDLMSR
+32	I	4.41	 	GDYSLAIDLMSRD
+33	D	-2.06	 	DYSLAIDLMSRDC
+34	L	-1.14	 	YSLAIDLMSRDCI
+35	M	-6.20	 	SLAIDLMSRDCIN
+36	S	-5.59	 	LAIDLMSRDCINV
+37	R	-17.21	 	AIDLMSRDCINVY
+38	D	-13.70	 	IDLMSRDCINVYE
+39	C	-15.20	 	DLMSRDCINVYEL
+40	I	-11.93	 	LMSRDCINVYELI
+41	N	-4.80	 	MSRDCINVYELIT
+42	V	-8.62	 	SRDCINVYELITD
+43	Y	-5.93	 	RDCINVYELITDR
+44	E	0.18	 	DCINVYELITDRL
+45	L	0.70	 	CINVYELITDRLL
+46	I	-3.13	 	INVYELITDRLLV
+47	T	-1.74	 	NVYELITDRLLVD
+48	D	-3.86	 	VYELITDRLLVDF
+49	R	-3.19	 	YELITDRLLVDFL
+50	L	2.60	 	ELITDRLLVDFLS
+51	L	3.62	 	LITDRLLVDFLSK
+52	V	8.18	 	ITDRLLVDFLSKK
+53	D	6.05	 	TDRLLVDFLSKKL
+54	F	-0.52	 	DRLLVDFLSKKLL
+55	L	-1.82	 	RLLVDFLSKKLLK
+56	S	1.42	 	LLVDFLSKKLLKL
+57	K	5.82	 	LVDFLSKKLLKLR
+58	K	5.06	 	VDFLSKKLLKLR-
+59	L	6.06	 	DFLSKKLLKLR--
+60	L	12.88	*	FLSKKLLKLR---
+61	K	12.91	*	LSKKLLKLR----
+62	L	6.54	 	SKKLLKLR-----
+63	R	0.61	 	KKLLKLR------
+64	-	3.15	 	KLLKLR-------
+65	-	-2.58	 	LLKLR--------
+66	-	0.08	 	LKLR---------
+67	-	0.35	 	KLR----------
+68	-	0.22	 	LR-----------
+69	-	0.39	 	R------------

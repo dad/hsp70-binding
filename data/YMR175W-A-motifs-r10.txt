@@ -1,0 +1,92 @@
+# Run started 2018-06-30 08:51:32 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR175W-A --report --out ../data/YMR175W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR175W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR175W-A-motifs-r10.txt
+# Found ORF YMR175W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.01	 	-----------MN
+-3	-	-0.06	 	----------MNC
+-2	-	-0.12	 	---------MNCL
+-1	-	-0.98	 	--------MNCLC
+0	-	-3.96	 	-------MNCLCL
+1	M	-10.10	 	------MNCLCLC
+2	N	-6.63	 	-----MNCLCLCS
+3	C	-12.60	 	----MNCLCLCSL
+4	L	-8.45	 	---MNCLCLCSLY
+5	C	-13.34	 	--MNCLCLCSLYS
+6	L	-15.43	 	-MNCLCLCSLYSK
+7	C	-15.38	 	MNCLCLCSLYSKS
+8	S	-9.43	 	NCLCLCSLYSKSI
+9	L	-11.69	 	CLCLCSLYSKSIS
+10	Y	-9.98	 	LCLCSLYSKSISA
+11	S	-5.46	 	CLCSLYSKSISAY
+12	K	-6.24	 	LCSLYSKSISAYF
+13	S	-7.79	 	CSLYSKSISAYFS
+14	I	-5.40	 	SLYSKSISAYFSE
+15	S	-0.50	 	LYSKSISAYFSEF
+16	A	2.53	 	YSKSISAYFSEFS
+17	Y	-3.89	 	SKSISAYFSEFSS
+18	F	-4.87	 	KSISAYFSEFSST
+19	S	-1.61	 	SISAYFSEFSSTN
+20	E	-4.84	 	ISAYFSEFSSTNI
+21	F	-7.53	 	SAYFSEFSSTNIY
+22	S	-6.90	 	AYFSEFSSTNIYK
+23	S	-6.78	 	YFSEFSSTNIYKS
+24	T	-5.65	 	FSEFSSTNIYKSY
+25	N	0.25	 	SEFSSTNIYKSYL
+26	I	0.42	 	EFSSTNIYKSYLR
+27	Y	0.87	 	FSSTNIYKSYLRL
+28	K	5.91	 	SSTNIYKSYLRLP
+29	S	6.90	 	STNIYKSYLRLPS
+30	Y	3.33	 	TNIYKSYLRLPSV
+31	L	8.99	 	NIYKSYLRLPSVL
+32	R	8.13	 	IYKSYLRLPSVLY
+33	L	3.30	 	YKSYLRLPSVLYY
+34	P	-1.21	 	KSYLRLPSVLYYV
+35	S	2.66	 	SYLRLPSVLYYVC
+36	V	-0.83	 	YLRLPSVLYYVCM
+37	L	4.69	 	LRLPSVLYYVCMM
+38	Y	9.52	 	RLPSVLYYVCMMH
+39	Y	2.31	 	LPSVLYYVCMMHT
+40	V	-4.27	 	PSVLYYVCMMHTM
+41	C	-6.52	 	SVLYYVCMMHTMM
+42	M	-9.52	 	VLYYVCMMHTMMP
+43	M	-11.20	 	LYYVCMMHTMMPN
+44	H	-12.28	 	YYVCMMHTMMPNQ
+45	T	-9.37	 	YVCMMHTMMPNQL
+46	M	-8.69	 	VCMMHTMMPNQLD
+47	M	-7.97	 	CMMHTMMPNQLDA
+48	P	-7.12	 	MMHTMMPNQLDAV
+49	N	-3.61	 	MHTMMPNQLDAVG
+50	Q	-7.85	 	HTMMPNQLDAVGI
+51	L	-7.20	 	TMMPNQLDAVGIQ
+52	D	-3.27	 	MMPNQLDAVGIQS
+53	A	-1.26	 	MPNQLDAVGIQSS
+54	V	-5.74	 	PNQLDAVGIQSSE
+55	G	-2.85	 	NQLDAVGIQSSES
+56	I	-3.25	 	QLDAVGIQSSESL
+57	Q	-6.65	 	LDAVGIQSSESLL
+58	S	-6.25	 	DAVGIQSSESLLM
+59	S	-11.65	 	AVGIQSSESLLM-
+60	E	-4.52	 	VGIQSSESLLM--
+61	S	0.05	 	GIQSSESLLM---
+62	L	0.46	 	IQSSESLLM----
+63	L	3.24	 	QSSESLLM-----
+64	M	4.99	 	SSESLLM------
+65	-	-0.83	 	SESLLM-------
+66	-	-5.74	 	ESLLM--------
+67	-	-2.90	 	SLLM---------
+68	-	-1.76	 	LLM----------
+69	-	-0.61	 	LM-----------
+70	-	-0.03	 	M------------

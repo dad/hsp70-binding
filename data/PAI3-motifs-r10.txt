@@ -1,0 +1,96 @@
+# Run started 2018-06-30 08:51:29 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PAI3 --report --out ../data/PAI3-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: PAI3
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/PAI3-motifs-r10.txt
+# Found gene PAI3 = YMR174C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.01	 	-----------MN
+-3	-	0.18	 	----------MNT
+-2	-	0.23	 	---------MNTD
+-1	-	-0.36	 	--------MNTDQ
+0	-	-2.93	 	-------MNTDQQ
+1	M	-3.65	 	------MNTDQQK
+2	N	-7.79	 	-----MNTDQQKV
+3	T	-9.33	 	----MNTDQQKVS
+4	D	-10.33	 	---MNTDQQKVSE
+5	Q	-11.93	 	--MNTDQQKVSEI
+6	Q	-7.75	 	-MNTDQQKVSEIF
+7	K	-6.26	 	MNTDQQKVSEIFQ
+8	V	-5.59	 	NTDQQKVSEIFQS
+9	S	-0.60	 	TDQQKVSEIFQSS
+10	E	2.53	 	DQQKVSEIFQSSK
+11	I	-1.70	 	QQKVSEIFQSSKE
+12	F	-2.71	 	QKVSEIFQSSKEK
+13	Q	-1.87	 	KVSEIFQSSKEKL
+14	S	-7.57	 	VSEIFQSSKEKLQ
+15	S	-10.14	 	SEIFQSSKEKLQG
+16	K	-8.07	 	EIFQSSKEKLQGD
+17	E	-2.88	 	IFQSSKEKLQGDA
+18	K	-3.24	 	FQSSKEKLQGDAK
+19	L	-4.11	 	QSSKEKLQGDAKV
+20	Q	-6.78	 	SSKEKLQGDAKVV
+21	G	-4.70	 	SKEKLQGDAKVVS
+22	D	-13.76	 	KEKLQGDAKVVSD
+23	A	-7.44	 	EKLQGDAKVVSDA
+24	K	-2.29	 	KLQGDAKVVSDAF
+25	V	-0.08	 	LQGDAKVVSDAFK
+26	V	-2.97	 	QGDAKVVSDAFKK
+27	S	-1.36	 	GDAKVVSDAFKKM
+28	D	-0.46	 	DAKVVSDAFKKMA
+29	A	-3.75	 	AKVVSDAFKKMAS
+30	F	-4.94	 	KVVSDAFKKMASQ
+31	K	-2.27	 	VVSDAFKKMASQD
+32	K	-1.06	 	VSDAFKKMASQDK
+33	M	-3.89	 	SDAFKKMASQDKD
+34	A	-3.80	 	DAFKKMASQDKDG
+35	S	-6.00	 	AFKKMASQDKDGK
+36	Q	-7.42	 	FKKMASQDKDGKT
+37	D	-10.71	 	KKMASQDKDGKTT
+38	K	-10.97	 	KMASQDKDGKTTD
+39	D	-9.90	 	MASQDKDGKTTDA
+40	G	-7.38	 	ASQDKDGKTTDAD
+41	K	-7.94	 	SQDKDGKTTDADE
+42	T	-9.58	 	QDKDGKTTDADES
+43	T	-8.73	 	DKDGKTTDADESE
+44	D	-12.52	 	KDGKTTDADESEK
+45	A	-14.36	 	DGKTTDADESEKH
+46	D	-15.43	 	GKTTDADESEKHN
+47	E	-14.77	 	KTTDADESEKHNY
+48	S	-16.84	 	TTDADESEKHNYQ
+49	E	-15.41	 	TDADESEKHNYQE
+50	K	-16.28	 	DADESEKHNYQEQ
+51	H	-11.02	 	ADESEKHNYQEQY
+52	N	-10.41	 	DESEKHNYQEQYN
+53	Y	-9.94	 	ESEKHNYQEQYNK
+54	Q	-9.26	 	SEKHNYQEQYNKL
+55	E	-3.50	 	EKHNYQEQYNKLK
+56	Q	-7.07	 	KHNYQEQYNKLKG
+57	Y	-5.59	 	HNYQEQYNKLKGA
+58	N	0.95	 	NYQEQYNKLKGAG
+59	K	2.67	 	YQEQYNKLKGAGH
+60	L	-1.68	 	QEQYNKLKGAGHK
+61	K	-0.05	 	EQYNKLKGAGHKK
+62	G	0.43	 	QYNKLKGAGHKKE
+63	A	-7.46	 	YNKLKGAGHKKE-
+64	G	-6.97	 	NKLKGAGHKKE--
+65	H	-7.24	 	KLKGAGHKKE---
+66	K	-9.19	 	LKGAGHKKE----
+67	K	-6.61	 	KGAGHKKE-----
+68	E	-5.08	 	GAGHKKE------
+69	-	-3.78	 	AGHKKE-------
+70	-	-2.74	 	GHKKE--------
+71	-	-0.73	 	HKKE---------
+72	-	-0.64	 	KKE----------
+73	-	-0.70	 	KE-----------
+74	-	-0.49	 	E------------

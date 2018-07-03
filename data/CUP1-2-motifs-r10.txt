@@ -1,0 +1,89 @@
+# Run started 2018-06-29 15:29:50 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id CUP1-2 --report --out ../data/CUP1-2-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: CUP1-2
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/CUP1-2-motifs-r10.txt
+# Found gene CUP1-2 = YHR055C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.45	 	----------MFS
+-2	-	-1.18	 	---------MFSE
+-1	-	-2.74	 	--------MFSEL
+0	-	-1.27	 	-------MFSELI
+1	M	-3.63	 	------MFSELIN
+2	F	-6.40	 	-----MFSELINF
+3	S	-2.90	 	----MFSELINFQ
+4	E	0.42	 	---MFSELINFQN
+5	L	-4.38	 	--MFSELINFQNE
+6	I	-1.24	 	-MFSELINFQNEG
+7	N	-0.59	 	MFSELINFQNEGH
+8	F	-10.18	 	FSELINFQNEGHE
+9	Q	-15.80	 	SELINFQNEGHEC
+10	N	-15.54	 	ELINFQNEGHECQ
+11	E	-17.69	 	LINFQNEGHECQC
+12	G	-15.94	 	INFQNEGHECQCQ
+13	H	-20.66	 	NFQNEGHECQCQC
+14	E	-19.44	 	FQNEGHECQCQCG
+15	C	-22.26	 	QNEGHECQCQCGS
+16	Q	-21.90	 	NEGHECQCQCGSC
+17	C	-24.12	 	EGHECQCQCGSCK
+18	Q	-25.46	 	GHECQCQCGSCKN
+19	C	-20.60	 	HECQCQCGSCKNN
+20	G	-25.83	 	ECQCQCGSCKNNE
+21	S	-20.68	 	CQCQCGSCKNNEQ
+22	C	-22.53	 	QCQCGSCKNNEQC
+23	K	-20.41	 	CQCGSCKNNEQCQ
+24	N	-18.49	 	QCGSCKNNEQCQK
+25	N	-19.86	 	CGSCKNNEQCQKS
+26	E	-19.83	 	GSCKNNEQCQKSC
+27	Q	-18.73	 	SCKNNEQCQKSCS
+28	C	-17.84	 	CKNNEQCQKSCSC
+29	Q	-14.60	 	KNNEQCQKSCSCP
+30	K	-16.07	 	NNEQCQKSCSCPT
+31	S	-18.07	 	NEQCQKSCSCPTG
+32	C	-17.77	 	EQCQKSCSCPTGC
+33	S	-16.66	 	QCQKSCSCPTGCN
+34	C	-15.73	 	CQKSCSCPTGCNS
+35	P	-17.76	 	QKSCSCPTGCNSD
+36	T	-20.53	 	KSCSCPTGCNSDD
+37	G	-22.78	 	SCSCPTGCNSDDK
+38	C	-19.06	 	CSCPTGCNSDDKC
+39	N	-18.32	 	SCPTGCNSDDKCP
+40	S	-18.63	 	CPTGCNSDDKCPC
+41	D	-20.53	 	PTGCNSDDKCPCG
+42	D	-23.06	 	TGCNSDDKCPCGN
+43	K	-21.69	 	GCNSDDKCPCGNK
+44	C	-21.24	 	CNSDDKCPCGNKS
+45	P	-16.80	 	NSDDKCPCGNKSE
+46	C	-17.83	 	SDDKCPCGNKSEE
+47	G	-21.81	 	DDKCPCGNKSEET
+48	N	-20.44	 	DKCPCGNKSEETK
+49	K	-22.42	 	KCPCGNKSEETKK
+50	S	-17.80	 	CPCGNKSEETKKS
+51	E	-13.50	 	PCGNKSEETKKSC
+52	E	-11.46	 	CGNKSEETKKSCC
+53	T	-10.68	 	GNKSEETKKSCCS
+54	K	-9.74	 	NKSEETKKSCCSG
+55	K	-11.82	 	KSEETKKSCCSGK
+56	S	-14.81	 	SEETKKSCCSGK-
+57	C	-13.89	 	EETKKSCCSGK--
+58	C	-13.33	 	ETKKSCCSGK---
+59	S	-14.41	 	TKKSCCSGK----
+60	G	-16.30	 	KKSCCSGK-----
+61	K	-15.42	 	KSCCSGK------
+62	-	-10.19	 	SCCSGK-------
+63	-	-4.59	 	CCSGK--------
+64	-	0.09	 	CSGK---------
+65	-	1.11	 	SGK----------
+66	-	0.67	 	GK-----------
+67	-	0.28	 	K------------

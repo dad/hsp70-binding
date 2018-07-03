@@ -1,0 +1,74 @@
+# Run started 2018-06-29 15:15:26 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YGL188C-A --report --out ../data/YGL188C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YGL188C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YGL188C-A-motifs-r10.txt
+# Found ORF YGL188C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	0.00	 	----------MLT
+-2	-	0.24	 	---------MLTT
+-1	-	-0.22	 	--------MLTTQ
+0	-	4.19	 	-------MLTTQK
+1	M	3.76	 	------MLTTQKC
+2	L	2.58	 	-----MLTTQKCE
+3	T	0.73	 	----MLTTQKCES
+4	T	-0.34	 	---MLTTQKCESR
+5	Q	-13.15	 	--MLTTQKCESRE
+6	K	-13.19	 	-MLTTQKCESREG
+7	C	-12.37	 	MLTTQKCESREGK
+8	E	-11.42	 	LTTQKCESREGKN
+9	S	-12.70	 	TTQKCESREGKND
+10	R	-16.98	 	TQKCESREGKNDE
+11	E	-15.17	 	QKCESREGKNDEI
+12	G	-15.70	 	KCESREGKNDEIF
+13	K	-18.91	 	CESREGKNDEIFE
+14	N	-17.97	 	ESREGKNDEIFEL
+15	D	-13.36	 	SREGKNDEIFELG
+16	E	-11.18	 	REGKNDEIFELGE
+17	I	-13.53	 	EGKNDEIFELGES
+18	F	-5.61	 	GKNDEIFELGESN
+19	E	-5.10	 	KNDEIFELGESNS
+20	L	-10.36	 	NDEIFELGESNSD
+21	G	-11.45	 	DEIFELGESNSDK
+22	E	-9.98	 	EIFELGESNSDKI
+23	S	-15.96	 	IFELGESNSDKIL
+24	N	-15.65	 	FELGESNSDKILL
+25	S	-13.49	 	ELGESNSDKILLK
+26	D	-7.78	 	LGESNSDKILLKH
+27	K	-1.73	 	GESNSDKILLKHG
+28	I	4.91	 	ESNSDKILLKHGK
+29	L	7.99	 	SNSDKILLKHGKC
+30	L	8.80	 	NSDKILLKHGKCN
+31	K	3.76	 	SDKILLKHGKCNL
+32	H	-4.27	 	DKILLKHGKCNLF
+33	G	-15.31	 	KILLKHGKCNLFS
+34	K	-15.57	 	ILLKHGKCNLFSE
+35	C	-8.98	 	LLKHGKCNLFSER
+36	N	-3.39	 	LKHGKCNLFSERK
+37	L	-3.09	 	KHGKCNLFSERKP
+38	F	-6.52	 	HGKCNLFSERKPV
+39	S	-4.61	 	GKCNLFSERKPVN
+40	E	-11.18	 	KCNLFSERKPVNH
+41	R	-12.48	 	CNLFSERKPVNH-
+42	K	-5.59	 	NLFSERKPVNH--
+43	P	-4.72	 	LFSERKPVNH---
+44	V	-4.04	 	FSERKPVNH----
+45	N	-2.45	 	SERKPVNH-----
+46	H	-1.43	 	ERKPVNH------
+47	-	-2.91	 	RKPVNH-------
+48	-	-2.42	 	KPVNH--------
+49	-	-0.25	 	PVNH---------
+50	-	-0.17	 	VNH----------
+51	-	-0.09	 	NH-----------
+52	-	0.08	 	H------------

@@ -1,0 +1,78 @@
+# Run started 2018-06-30 09:08:22 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOL019W-A --report --out ../data/YOL019W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOL019W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOL019W-A-motifs-r10.txt
+# Found ORF YOL019W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	0.08	 	----------MSN
+-2	-	0.32	 	---------MSNT
+-1	-	-0.32	 	--------MSNTF
+0	-	-2.03	 	-------MSNTFV
+1	M	-5.14	 	------MSNTFVA
+2	S	-7.02	 	-----MSNTFVAV
+3	N	-6.34	 	----MSNTFVAVE
+4	T	-3.75	 	---MSNTFVAVEF
+5	F	-3.36	 	--MSNTFVAVEFS
+6	V	-0.32	 	-MSNTFVAVEFSW
+7	A	-1.21	 	MSNTFVAVEFSWL
+8	V	-1.16	 	SNTFVAVEFSWLY
+9	E	-4.74	 	NTFVAVEFSWLYA
+10	F	-7.86	 	TFVAVEFSWLYAI
+11	S	-6.73	 	FVAVEFSWLYAIS
+12	W	-0.56	 	VAVEFSWLYAISL
+13	L	-1.52	 	AVEFSWLYAISLI
+14	Y	2.72	 	VEFSWLYAISLIL
+15	A	5.71	 	EFSWLYAISLILP
+16	I	3.37	 	FSWLYAISLILPC
+17	S	3.61	 	SWLYAISLILPCE
+18	L	8.25	 	WLYAISLILPCET
+19	I	2.47	 	LYAISLILPCETI
+20	L	-1.04	 	YAISLILPCETIR
+21	P	-9.00	 	AISLILPCETIRV
+22	C	-12.34	 	ISLILPCETIRVA
+23	E	-14.46	 	SLILPCETIRVAW
+24	T	-13.83	 	LILPCETIRVAWA
+25	I	-10.75	 	ILPCETIRVAWAP
+26	R	-4.31	 	LPCETIRVAWAPK
+27	V	-2.20	 	PCETIRVAWAPKR
+28	A	-3.28	 	CETIRVAWAPKRA
+29	W	-1.44	 	ETIRVAWAPKRAY
+30	A	-4.58	 	TIRVAWAPKRAYH
+31	P	-6.62	 	IRVAWAPKRAYHG
+32	K	-3.22	 	RVAWAPKRAYHGT
+33	R	0.75	 	VAWAPKRAYHGTS
+34	A	-0.06	 	AWAPKRAYHGTSE
+35	Y	-1.16	 	WAPKRAYHGTSEE
+36	H	-2.36	 	APKRAYHGTSEEK
+37	G	-4.38	 	PKRAYHGTSEEKR
+38	T	-9.21	 	KRAYHGTSEEKRR
+39	S	-8.66	 	RAYHGTSEEKRRL
+40	E	-7.43	 	AYHGTSEEKRRLA
+41	E	-6.98	 	YHGTSEEKRRLAP
+42	K	-8.09	 	HGTSEEKRRLAPA
+43	R	-2.55	 	GTSEEKRRLAPAD
+44	R	0.39	 	TSEEKRRLAPADI
+45	L	0.52	 	SEEKRRLAPADI-
+46	A	1.72	 	EEKRRLAPADI--
+47	P	-1.63	 	EKRRLAPADI---
+48	A	-6.36	 	KRRLAPADI----
+49	D	-5.70	 	RRLAPADI-----
+50	I	-4.53	 	RLAPADI------
+51	-	-3.41	 	LAPADI-------
+52	-	1.39	 	APADI--------
+53	-	-2.00	 	PADI---------
+54	-	-1.31	 	ADI----------
+55	-	-0.83	 	DI-----------
+56	-	-0.34	 	I------------

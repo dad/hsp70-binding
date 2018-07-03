@@ -1,0 +1,78 @@
+# Run started 2018-06-30 09:35:11 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id TOM5 --report --out ../data/TOM5-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: TOM5
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/TOM5-motifs-r10.txt
+# Found gene TOM5 = YPR133W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.53	 	----------MFG
+-2	-	-0.80	 	---------MFGL
+-1	-	-1.82	 	--------MFGLP
+0	-	0.27	 	-------MFGLPQ
+1	M	-1.42	 	------MFGLPQQ
+2	F	1.87	 	-----MFGLPQQE
+3	G	-0.84	 	----MFGLPQQEV
+4	L	-2.33	 	---MFGLPQQEVS
+5	P	-7.01	 	--MFGLPQQEVSE
+6	Q	-8.49	 	-MFGLPQQEVSEE
+7	Q	-13.49	 	MFGLPQQEVSEEE
+8	E	-14.46	 	FGLPQQEVSEEEK
+9	V	-13.71	 	GLPQQEVSEEEKR
+10	S	-13.18	 	LPQQEVSEEEKRA
+11	E	-12.33	 	PQQEVSEEEKRAH
+12	E	-14.96	 	QQEVSEEEKRAHQ
+13	E	-16.40	 	QEVSEEEKRAHQE
+14	K	-14.11	 	EVSEEEKRAHQEQ
+15	R	-11.98	 	VSEEEKRAHQEQT
+16	A	-10.92	 	SEEEKRAHQEQTE
+17	H	-10.18	 	EEEKRAHQEQTEK
+18	Q	-9.76	 	EEKRAHQEQTEKT
+19	E	-10.04	 	EKRAHQEQTEKTL
+20	Q	-9.78	 	KRAHQEQTEKTLK
+21	T	-8.67	 	RAHQEQTEKTLKQ
+22	E	-7.53	 	AHQEQTEKTLKQA
+23	K	-0.11	 	HQEQTEKTLKQAA
+24	T	-1.63	 	QEQTEKTLKQAAY
+25	L	-2.25	 	EQTEKTLKQAAYV
+26	K	-1.12	 	QTEKTLKQAAYVA
+27	Q	-1.31	 	TEKTLKQAAYVAA
+28	A	-5.24	 	EKTLKQAAYVAAF
+29	A	-0.58	 	KTLKQAAYVAAFL
+30	Y	1.73	 	TLKQAAYVAAFLW
+31	V	1.42	 	LKQAAYVAAFLWV
+32	A	3.94	 	KQAAYVAAFLWVS
+33	A	4.53	 	QAAYVAAFLWVSP
+34	F	-0.71	 	AAYVAAFLWVSPM
+35	L	2.99	 	AYVAAFLWVSPMI
+36	W	2.20	 	YVAAFLWVSPMIW
+37	V	-1.51	 	VAAFLWVSPMIWH
+38	S	-8.69	 	AAFLWVSPMIWHL
+39	P	-1.80	 	AFLWVSPMIWHLV
+40	M	-6.00	 	FLWVSPMIWHLVK
+41	I	-5.32	 	LWVSPMIWHLVKK
+42	W	0.35	 	WVSPMIWHLVKKQ
+43	H	4.85	 	VSPMIWHLVKKQW
+44	L	0.09	 	SPMIWHLVKKQWK
+45	V	3.15	 	PMIWHLVKKQWK-
+46	K	3.96	 	MIWHLVKKQWK--
+47	K	-4.87	 	IWHLVKKQWK---
+48	Q	-7.30	 	WHLVKKQWK----
+49	W	-5.39	 	HLVKKQWK-----
+50	K	-3.75	 	LVKKQWK------
+51	-	-0.71	 	VKKQWK-------
+52	-	2.22	 	KKQWK--------
+53	-	2.73	 	KQWK---------
+54	-	1.51	 	QWK----------
+55	-	0.70	 	WK-----------
+56	-	0.28	 	K------------

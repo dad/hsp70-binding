@@ -1,0 +1,76 @@
+# Run started 2018-06-30 08:59:46 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id DGR1 --report --out ../data/DGR1-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: DGR1
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/DGR1-motifs-r10.txt
+# Found gene DGR1 = YNL130C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.06	 	-----------MQ
+-3	-	-0.30	 	----------MQV
+-2	-	-0.58	 	---------MQVG
+-1	-	-1.77	 	--------MQVGF
+0	-	-4.36	 	-------MQVGFV
+1	M	-1.92	 	------MQVGFVS
+2	Q	-4.19	 	-----MQVGFVSQ
+3	V	-2.29	 	----MQVGFVSQT
+4	G	1.91	 	---MQVGFVSQTN
+5	F	3.87	 	--MQVGFVSQTNC
+6	V	1.00	 	-MQVGFVSQTNCR
+7	S	2.65	 	MQVGFVSQTNCRS
+8	Q	-1.76	 	QVGFVSQTNCRSF
+9	T	-8.75	 	VGFVSQTNCRSFP
+10	N	-9.47	 	GFVSQTNCRSFPA
+11	C	-8.41	 	FVSQTNCRSFPAC
+12	R	-5.60	 	VSQTNCRSFPACI
+13	S	-7.97	 	SQTNCRSFPACIV
+14	F	-9.91	 	QTNCRSFPACIVF
+15	P	-13.36	 	TNCRSFPACIVFL
+16	A	-9.36	 	NCRSFPACIVFLF
+17	C	-6.95	 	CRSFPACIVFLFQ
+18	I	-2.51	 	RSFPACIVFLFQM
+19	V	1.47	 	SFPACIVFLFQMS
+20	F	2.63	 	FPACIVFLFQMSQ
+21	L	0.32	 	PACIVFLFQMSQR
+22	F	1.10	 	ACIVFLFQMSQRQ
+23	Q	1.18	 	CIVFLFQMSQRQR
+24	M	-3.31	 	IVFLFQMSQRQRS
+25	S	-4.78	 	VFLFQMSQRQRSF
+26	Q	-1.84	 	FLFQMSQRQRSFN
+27	R	-2.68	 	LFQMSQRQRSFNA
+28	Q	-2.78	 	FQMSQRQRSFNAN
+29	R	2.20	 	QMSQRQRSFNANL
+30	S	-0.12	 	MSQRQRSFNANLR
+31	F	2.57	 	SQRQRSFNANLRV
+32	N	-0.43	 	QRQRSFNANLRVF
+33	A	3.69	 	RQRSFNANLRVFK
+34	N	-0.83	 	QRSFNANLRVFKS
+35	L	3.03	 	RSFNANLRVFKSK
+36	R	6.77	 	SFNANLRVFKSKC
+37	V	6.96	 	FNANLRVFKSKCK
+38	F	1.00	 	NANLRVFKSKCKK
+39	K	1.84	 	ANLRVFKSKCKKI
+40	S	-4.80	 	NLRVFKSKCKKIY
+41	K	-7.84	 	LRVFKSKCKKIYI
+42	C	-8.53	 	RVFKSKCKKIYIG
+43	K	-6.32	 	VFKSKCKKIYIG-
+44	K	-1.50	 	FKSKCKKIYIG--
+45	I	-0.95	 	KSKCKKIYIG---
+46	Y	0.64	 	SKCKKIYIG----
+47	I	3.23	 	KCKKIYIG-----
+48	G	0.22	 	CKKIYIG------
+49	-	-0.39	 	KKIYIG-------
+50	-	-4.11	 	KIYIG--------
+51	-	-1.01	 	IYIG---------
+52	-	-0.42	 	YIG----------
+53	-	-0.12	 	IG-----------
+54	-	0.11	 	G------------

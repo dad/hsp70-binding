@@ -1,0 +1,89 @@
+# Run started 2018-06-30 09:09:16 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id DDR2 --report --out ../data/DDR2-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: DDR2
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/DDR2-motifs-r10.txt
+# Found gene DDR2 = YOL052C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.31	 	----------MKV
+-2	-	0.43	 	---------MKVS
+-1	-	0.02	 	--------MKVSQ
+0	-	-2.45	 	-------MKVSQV
+1	M	0.11	 	------MKVSQVF
+2	K	-1.89	 	-----MKVSQVFI
+3	V	-4.21	 	----MKVSQVFIS
+4	S	-0.79	 	---MKVSQVFISA
+5	Q	2.72	 	--MKVSQVFISAI
+6	V	3.16	 	-MKVSQVFISAIS
+7	F	2.21	 	MKVSQVFISAISV
+8	I	4.61	 	KVSQVFISAISVF
+9	S	4.18	 	VSQVFISAISVFG
+10	A	0.01	 	SQVFISAISVFGL
+11	I	-1.65	 	QVFISAISVFGLA
+12	S	1.89	 	VFISAISVFGLAT
+13	V	1.21	 	FISAISVFGLATS
+14	F	1.29	 	ISAISVFGLATSV
+15	G	3.65	 	SAISVFGLATSVN
+16	L	1.31	 	AISVFGLATSVNA
+17	A	-1.87	 	ISVFGLATSVNAQ
+18	T	3.79	 	SVFGLATSVNAQN
+19	S	-5.66	 	VFGLATSVNAQNA
+20	V	-4.08	 	FGLATSVNAQNAS
+21	N	-3.62	 	GLATSVNAQNASN
+22	A	-4.87	 	LATSVNAQNASNT
+23	Q	-5.65	 	ATSVNAQNASNTT
+24	N	-5.97	 	TSVNAQNASNTTS
+25	A	-7.34	 	SVNAQNASNTTSN
+26	S	-4.70	 	VNAQNASNTTSNA
+27	N	-4.97	 	NAQNASNTTSNAA
+28	T	-5.54	 	AQNASNTTSNAAP
+29	T	-7.50	 	QNASNTTSNAAPA
+30	S	-6.85	 	NASNTTSNAAPAL
+31	N	-4.81	 	ASNTTSNAAPALH
+32	A	-5.90	 	SNTTSNAAPALHA
+33	A	-5.21	 	NTTSNAAPALHAQ
+34	P	-0.86	 	TTSNAAPALHAQN
+35	A	-1.93	 	TSNAAPALHAQNG
+36	L	-1.06	 	SNAAPALHAQNGQ
+37	H	-1.13	 	NAAPALHAQNGQL
+38	A	-2.72	 	AAPALHAQNGQLL
+39	Q	-10.64	 	APALHAQNGQLLN
+40	N	-9.54	 	PALHAQNGQLLNA
+41	G	-4.63	 	ALHAQNGQLLNAG
+42	Q	2.42	 	LHAQNGQLLNAGV
+43	L	0.06	 	HAQNGQLLNAGVV
+44	L	1.79	 	AQNGQLLNAGVVG
+45	N	2.12	 	QNGQLLNAGVVGA
+46	A	-2.70	 	NGQLLNAGVVGAA
+47	G	-6.03	 	GQLLNAGVVGAAV
+48	V	-6.38	 	QLLNAGVVGAAVG
+49	V	-4.92	 	LLNAGVVGAAVGG
+50	G	-1.76	 	LNAGVVGAAVGGA
+51	A	0.12	 	NAGVVGAAVGGAL
+52	A	-3.49	 	AGVVGAAVGGALA
+53	V	-3.83	 	GVVGAAVGGALAF
+54	G	-3.81	 	VVGAAVGGALAFL
+55	G	-0.09	 	VGAAVGGALAFLI
+56	A	-2.09	 	GAAVGGALAFLI-
+57	L	2.01	 	AAVGGALAFLI--
+58	A	7.68	 	AVGGALAFLI---
+59	F	10.41	*	VGGALAFLI----
+60	L	3.91	 	GGALAFLI-----
+61	I	5.41	 	GALAFLI------
+62	-	4.43	 	ALAFLI-------
+63	-	-1.14	 	LAFLI--------
+64	-	-3.33	 	AFLI---------
+65	-	-2.21	 	FLI----------
+66	-	-1.25	 	LI-----------
+67	-	-0.34	 	I------------

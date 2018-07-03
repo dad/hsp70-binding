@@ -1,0 +1,87 @@
+# Run started 2018-06-29 14:36:34 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id COX9 --report --out ../data/COX9-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: COX9
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/COX9-motifs-r10.txt
+# Found gene COX9 = YDL067C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.11	 	----------MTI
+-2	-	-0.01	 	---------MTIA
+-1	-	-0.69	 	--------MTIAP
+0	-	-1.86	 	-------MTIAPI
+1	M	0.35	 	------MTIAPIT
+2	T	0.51	 	-----MTIAPITG
+3	I	-1.29	 	----MTIAPITGT
+4	A	2.27	 	---MTIAPITGTI
+5	P	3.40	 	--MTIAPITGTIK
+6	I	-1.39	 	-MTIAPITGTIKR
+7	T	0.19	 	MTIAPITGTIKRR
+8	G	5.32	 	TIAPITGTIKRRV
+9	T	0.96	 	IAPITGTIKRRVI
+10	I	2.20	 	APITGTIKRRVIM
+11	K	2.24	 	PITGTIKRRVIMD
+12	R	6.32	 	ITGTIKRRVIMDI
+13	R	3.93	 	TGTIKRRVIMDIV
+14	V	4.14	 	GTIKRRVIMDIVL
+15	I	-0.05	 	TIKRRVIMDIVLG
+16	M	1.81	 	IKRRVIMDIVLGF
+17	D	2.20	 	KRRVIMDIVLGFS
+18	I	0.86	 	RRVIMDIVLGFSL
+19	V	-0.60	 	RVIMDIVLGFSLG
+20	L	5.63	 	VIMDIVLGFSLGG
+21	G	0.68	 	IMDIVLGFSLGGV
+22	F	3.62	 	MDIVLGFSLGGVM
+23	S	-4.50	 	DIVLGFSLGGVMA
+24	L	-3.20	 	IVLGFSLGGVMAS
+25	G	-1.67	 	VLGFSLGGVMASY
+26	G	-1.17	 	LGFSLGGVMASYW
+27	V	-7.36	 	GFSLGGVMASYWW
+28	M	-6.49	 	FSLGGVMASYWWW
+29	A	-0.16	 	SLGGVMASYWWWG
+30	S	-4.87	 	LGGVMASYWWWGF
+31	Y	-7.27	 	GGVMASYWWWGFH
+32	W	-10.25	 	GVMASYWWWGFHM
+33	W	-11.35	 	VMASYWWWGFHMD
+34	W	-11.56	 	MASYWWWGFHMDK
+35	G	-8.87	 	ASYWWWGFHMDKI
+36	F	-5.55	 	SYWWWGFHMDKIN
+37	H	-5.16	 	YWWWGFHMDKINK
+38	M	-4.22	 	WWWGFHMDKINKR
+39	D	-3.43	 	WWGFHMDKINKRE
+40	K	-3.52	 	WGFHMDKINKREK
+41	I	-4.41	 	GFHMDKINKREKF
+42	N	-3.06	 	FHMDKINKREKFY
+43	K	-4.01	 	HMDKINKREKFYA
+44	R	-11.32	 	MDKINKREKFYAE
+45	E	-8.99	 	DKINKREKFYAEL
+46	K	-4.05	 	KINKREKFYAELA
+47	F	-4.77	 	INKREKFYAELAE
+48	Y	-4.95	 	NKREKFYAELAER
+49	A	0.76	 	KREKFYAELAERK
+50	E	-0.85	 	REKFYAELAERKK
+51	L	-4.18	 	EKFYAELAERKKQ
+52	A	-4.29	 	KFYAELAERKKQE
+53	E	-3.47	 	FYAELAERKKQEN
+54	R	-11.21	 	YAELAERKKQEN-
+55	K	-11.48	 	AELAERKKQEN--
+56	K	-10.07	 	ELAERKKQEN---
+57	Q	-10.11	 	LAERKKQEN----
+58	E	-7.99	 	AERKKQEN-----
+59	N	-6.68	 	ERKKQEN------
+60	-	-4.01	 	RKKQEN-------
+61	-	-2.61	 	KKQEN--------
+62	-	-1.58	 	KQEN---------
+63	-	-1.35	 	QEN----------
+64	-	-0.98	 	EN-----------
+65	-	-0.25	 	N------------

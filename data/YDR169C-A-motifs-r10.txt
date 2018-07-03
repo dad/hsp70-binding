@@ -1,0 +1,77 @@
+# Run started 2018-06-29 14:46:38 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YDR169C-A --report --out ../data/YDR169C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YDR169C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YDR169C-A-motifs-r10.txt
+# Found ORF YDR169C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.17	 	-----------MM
+-3	-	0.29	 	----------MMR
+-2	-	0.65	 	---------MMRM
+-1	-	0.32	 	--------MMRMS
+0	-	0.37	 	-------MMRMSL
+1	M	-1.07	 	------MMRMSLK
+2	M	-1.39	 	-----MMRMSLKQ
+3	R	-2.63	 	----MMRMSLKQM
+4	M	2.53	 	---MMRMSLKQMQ
+5	S	1.66	 	--MMRMSLKQMQS
+6	L	0.99	 	-MMRMSLKQMQSQ
+7	K	1.36	 	MMRMSLKQMQSQR
+8	Q	1.25	 	MRMSLKQMQSQRF
+9	M	-6.38	 	RMSLKQMQSQRFS
+10	Q	-5.48	 	MSLKQMQSQRFSA
+11	S	-4.02	 	SLKQMQSQRFSAT
+12	Q	-1.23	 	LKQMQSQRFSATS
+13	R	0.96	 	KQMQSQRFSATSR
+14	F	1.82	 	QMQSQRFSATSRV
+15	S	4.33	 	MQSQRFSATSRVR
+16	A	3.90	 	QSQRFSATSRVRM
+17	T	-0.48	 	SQRFSATSRVRML
+18	S	3.85	 	QRFSATSRVRMLL
+19	R	2.06	 	RFSATSRVRMLLI
+20	V	2.39	 	FSATSRVRMLLIG
+21	R	6.80	 	SATSRVRMLLIGA
+22	M	10.78	*	ATSRVRMLLIGAS
+23	L	10.58	*	TSRVRMLLIGASG
+24	L	8.63	 	SRVRMLLIGASGL
+25	I	9.07	 	RVRMLLIGASGLR
+26	G	1.08	 	VRMLLIGASGLRS
+27	A	-5.84	 	RMLLIGASGLRSS
+28	S	-3.72	 	MLLIGASGLRSSS
+29	G	-1.03	 	LLIGASGLRSSSS
+30	L	0.19	 	LIGASGLRSSSSK
+31	R	1.36	 	IGASGLRSSSSKL
+32	S	2.28	 	GASGLRSSSSKLE
+33	S	-5.92	 	ASGLRSSSSKLEC
+34	S	-6.83	 	SGLRSSSSKLECP
+35	S	-2.18	 	GLRSSSSKLECPR
+36	K	-3.03	 	LRSSSSKLECPRF
+37	L	-6.87	 	RSSSSKLECPRFS
+38	E	-7.14	 	SSSSKLECPRFSN
+39	C	-7.18	 	SSSKLECPRFSNK
+40	P	-11.41	 	SSKLECPRFSNKH
+41	R	-9.16	 	SKLECPRFSNKHG
+42	F	-10.84	 	KLECPRFSNKHGR
+43	S	-7.62	 	LECPRFSNKHGRN
+44	N	-4.81	 	ECPRFSNKHGRN-
+45	K	-5.58	 	CPRFSNKHGRN--
+46	H	-4.43	 	PRFSNKHGRN---
+47	G	-6.35	 	RFSNKHGRN----
+48	R	-4.68	 	FSNKHGRN-----
+49	N	-2.75	 	SNKHGRN------
+50	-	-0.52	 	NKHGRN-------
+51	-	0.19	 	KHGRN--------
+52	-	0.37	 	HGRN---------
+53	-	0.15	 	GRN----------
+54	-	-0.10	 	RN-----------
+55	-	-0.25	 	N------------
