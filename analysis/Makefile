@@ -34,4 +34,4 @@ seq:
 #	$(PY) motif-finder.py --sequence RYLLKNRANDSTSS --report
 
 test:
-	nosetests --verbosity=3 motif.py
+	$(PY) -m "nose" --verbosity=3 motif.py
