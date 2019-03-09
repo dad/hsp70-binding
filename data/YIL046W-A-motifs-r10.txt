@@ -1,0 +1,82 @@
+# Run started 2018-06-29 15:36:27 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YIL046W-A --report --out ../data/YIL046W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YIL046W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YIL046W-A-motifs-r10.txt
+# Found ORF YIL046W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.17	 	-----------MM
+-3	-	-0.36	 	----------MMC
+-2	-	-0.82	 	---------MMCV
+-1	-	-2.15	 	--------MMCVC
+0	-	-3.47	 	-------MMCVCI
+1	M	-9.84	 	------MMCVCIP
+2	M	-6.74	 	-----MMCVCIPK
+3	C	-11.97	 	----MMCVCIPKK
+4	V	-7.55	 	---MMCVCIPKKK
+5	C	-7.31	 	--MMCVCIPKKKL
+6	I	-9.36	 	-MMCVCIPKKKLM
+7	P	-9.88	 	MMCVCIPKKKLMD
+8	K	-11.47	 	MCVCIPKKKLMDW
+9	K	-7.20	 	CVCIPKKKLMDWR
+10	K	-2.81	 	VCIPKKKLMDWRV
+11	L	-3.65	 	CIPKKKLMDWRVY
+12	M	-3.85	 	IPKKKLMDWRVYY
+13	D	-5.45	 	PKKKLMDWRVYYI
+14	W	-11.15	 	KKKLMDWRVYYIY
+15	R	-7.49	 	KKLMDWRVYYIYS
+16	V	-0.31	 	KLMDWRVYYIYSY
+17	Y	5.46	 	LMDWRVYYIYSYV
+18	Y	9.83	 	MDWRVYYIYSYVV
+19	I	5.18	 	DWRVYYIYSYVVC
+20	Y	5.41	 	WRVYYIYSYVVCL
+21	S	4.70	 	RVYYIYSYVVCLY
+22	Y	3.02	 	VYYIYSYVVCLYM
+23	V	-5.07	 	YYIYSYVVCLYMC
+24	V	-0.16	 	YIYSYVVCLYMCG
+25	C	1.56	 	IYSYVVCLYMCGS
+26	L	-0.34	 	YSYVVCLYMCGSD
+27	Y	-7.87	 	SYVVCLYMCGSDC
+28	M	-11.15	 	YVVCLYMCGSDCA
+29	C	-17.11	 	VVCLYMCGSDCAC
+30	G	-21.73	 	VCLYMCGSDCACI
+31	S	-24.97	 	CLYMCGSDCACIC
+32	D	-24.21	 	LYMCGSDCACICV
+33	C	-25.02	 	YMCGSDCACICVL
+34	A	-20.27	 	MCGSDCACICVLA
+35	C	-21.11	 	CGSDCACICVLAC
+36	I	-18.05	 	GSDCACICVLACV
+37	C	-11.92	 	SDCACICVLACVV
+38	V	-11.78	 	DCACICVLACVVQ
+39	L	-17.84	 	CACICVLACVVQC
+40	A	-12.84	 	ACICVLACVVQCV
+41	C	-7.37	 	CICVLACVVQCVC
+42	V	-12.47	 	ICVLACVVQCVCF
+43	V	-15.38	 	CVLACVVQCVCFN
+44	Q	-11.91	 	VLACVVQCVCFNV
+45	C	-17.29	 	LACVVQCVCFNVE
+46	V	-15.33	 	ACVVQCVCFNVEM
+47	C	-13.87	 	CVVQCVCFNVEMR
+48	F	-11.45	 	VVQCVCFNVEMRL
+49	N	-13.12	 	VQCVCFNVEMRL-
+50	V	-12.96	 	QCVCFNVEMRL--
+51	E	-12.55	 	CVCFNVEMRL---
+52	M	-4.47	 	VCFNVEMRL----
+53	R	-3.88	 	CFNVEMRL-----
+54	L	0.81	 	FNVEMRL------
+55	-	2.73	 	NVEMRL-------
+56	-	4.42	 	VEMRL--------
+57	-	-1.89	 	EMRL---------
+58	-	-0.95	 	MRL----------
+59	-	-0.73	 	RL-----------
+60	-	-0.56	 	L------------

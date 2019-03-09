@@ -1,0 +1,56 @@
+# Run started 2018-06-29 15:22:59 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YGR174W-A --report --out ../data/YGR174W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YGR174W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YGR174W-A-motifs-r10.txt
+# Found ORF YGR174W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.01	 	-----------MN
+-3	-	0.03	 	----------MNL
+-2	-	0.14	 	---------MNLN
+-1	-	-0.60	 	--------MNLNA
+0	-	-3.82	 	-------MNLNAY
+1	M	-0.79	 	------MNLNAYF
+2	N	-4.93	 	-----MNLNAYFE
+3	L	-6.49	 	----MNLNAYFEA
+4	N	-3.25	 	---MNLNAYFEAY
+5	A	-1.32	 	--MNLNAYFEAYQ
+6	Y	-10.46	 	-MNLNAYFEAYQA
+7	F	-8.93	 	MNLNAYFEAYQAI
+8	E	-3.49	 	NLNAYFEAYQAIF
+9	A	-6.81	 	LNAYFEAYQAIFP
+10	Y	-7.73	 	NAYFEAYQAIFPF
+11	Q	-2.57	 	AYFEAYQAIFPFL
+12	A	1.10	 	YFEAYQAIFPFLL
+13	I	-3.35	 	FEAYQAIFPFLLE
+14	F	1.84	 	EAYQAIFPFLLEA
+15	P	5.42	 	AYQAIFPFLLEAF
+16	F	3.87	 	YQAIFPFLLEAFL
+17	L	0.17	 	QAIFPFLLEAFLR
+18	L	2.18	 	AIFPFLLEAFLRK
+19	E	3.61	 	IFPFLLEAFLRKE
+20	A	2.27	 	FPFLLEAFLRKEQ
+21	F	-4.30	 	PFLLEAFLRKEQK
+22	L	-2.54	 	FLLEAFLRKEQKV
+23	R	-2.17	 	LLEAFLRKEQKV-
+24	K	-3.49	 	LEAFLRKEQKV--
+25	E	-10.92	 	EAFLRKEQKV---
+26	Q	-5.78	 	AFLRKEQKV----
+27	K	-4.09	 	FLRKEQKV-----
+28	V	-1.40	 	LRKEQKV------
+29	-	2.51	 	RKEQKV-------
+30	-	3.46	 	KEQKV--------
+31	-	1.49	 	EQKV---------
+32	-	1.19	 	QKV----------
+33	-	0.45	 	KV-----------
+34	-	0.08	 	V------------

@@ -1,0 +1,77 @@
+# Run started 2018-06-29 16:20:04 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YLR406C-A --report --out ../data/YLR406C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YLR406C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YLR406C-A-motifs-r10.txt
+# Found ORF YLR406C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.20	 	----------MIQ
+-2	-	0.09	 	---------MIQK
+-1	-	-0.32	 	--------MIQKP
+0	-	2.39	 	-------MIQKPI
+1	M	1.18	 	------MIQKPIL
+2	I	-0.72	 	-----MIQKPILL
+3	Q	-2.75	 	----MIQKPILLS
+4	K	0.62	 	---MIQKPILLSS
+5	P	0.64	 	--MIQKPILLSSF
+6	I	8.09	 	-MIQKPILLSSFL
+7	L	7.73	 	MIQKPILLSSFLF
+8	L	6.67	 	IQKPILLSSFLFL
+9	S	4.22	 	QKPILLSSFLFLY
+10	S	0.90	 	KPILLSSFLFLYI
+11	F	-2.19	 	PILLSSFLFLYIR
+12	L	4.50	 	ILLSSFLFLYIRA
+13	F	11.37	*	LLSSFLFLYIRAL
+14	L	13.93	*	LSSFLFLYIRALL
+15	Y	6.27	 	SSFLFLYIRALLH
+16	I	5.65	 	SFLFLYIRALLHS
+17	R	3.75	 	FLFLYIRALLHSI
+18	A	6.64	 	LFLYIRALLHSIH
+19	L	2.84	 	FLYIRALLHSIHP
+20	L	3.03	 	LYIRALLHSIHPY
+21	H	6.18	 	YIRALLHSIHPYI
+22	S	-1.35	 	IRALLHSIHPYIR
+23	I	-8.67	 	RALLHSIHPYIRT
+24	H	-1.20	 	ALLHSIHPYIRTS
+25	P	4.35	 	LLHSIHPYIRTSV
+26	Y	-0.01	 	LHSIHPYIRTSVH
+27	I	1.91	 	HSIHPYIRTSVHL
+28	R	1.04	 	SIHPYIRTSVHLY
+29	T	1.72	 	IHPYIRTSVHLYT
+30	S	-2.95	 	HPYIRTSVHLYTK
+31	V	2.47	 	PYIRTSVHLYTKK
+32	H	8.52	 	YIRTSVHLYTKKI
+33	L	9.57	 	IRTSVHLYTKKIT
+34	Y	6.50	 	RTSVHLYTKKITS
+35	T	5.53	 	TSVHLYTKKITSY
+36	K	1.07	 	SVHLYTKKITSYN
+37	K	-1.83	 	VHLYTKKITSYNF
+38	I	-1.94	 	HLYTKKITSYNFL
+39	T	3.40	 	LYTKKITSYNFLG
+40	S	1.68	 	YTKKITSYNFLGV
+41	Y	-1.07	 	TKKITSYNFLGVP
+42	N	3.46	 	KKITSYNFLGVPF
+43	F	2.30	 	KITSYNFLGVPFK
+44	L	2.93	 	ITSYNFLGVPFK-
+45	G	2.33	 	TSYNFLGVPFK--
+46	V	3.54	 	SYNFLGVPFK---
+47	P	-4.29	 	YNFLGVPFK----
+48	F	-0.65	 	NFLGVPFK-----
+49	K	-1.31	 	FLGVPFK------
+50	-	0.47	 	LGVPFK-------
+51	-	-0.48	 	GVPFK--------
+52	-	1.12	 	VPFK---------
+53	-	0.71	 	PFK----------
+54	-	0.51	 	FK-----------
+55	-	0.28	 	K------------

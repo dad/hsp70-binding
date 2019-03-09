@@ -1,0 +1,64 @@
+# Run started 2018-06-29 14:55:01 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id MFA1 --report --out ../data/MFA1-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: MFA1
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/MFA1-motifs-r10.txt
+# Found gene MFA1 = YDR461W
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.06	 	-----------MQ
+-3	-	0.02	 	----------MQP
+-2	-	0.14	 	---------MQPS
+-1	-	-0.29	 	--------MQPST
+0	-	-1.88	 	-------MQPSTA
+1	M	-3.65	 	------MQPSTAT
+2	Q	-5.16	 	-----MQPSTATA
+3	P	-6.53	 	----MQPSTATAA
+4	S	-5.62	 	---MQPSTATAAP
+5	T	-3.23	 	--MQPSTATAAPK
+6	A	-2.77	 	-MQPSTATAAPKE
+7	T	-1.38	 	MQPSTATAAPKEK
+8	A	-1.67	 	QPSTATAAPKEKT
+9	A	-3.82	 	PSTATAAPKEKTS
+10	P	-4.36	 	STATAAPKEKTSS
+11	K	-6.42	 	TATAAPKEKTSSE
+12	E	-7.20	 	ATAAPKEKTSSEK
+13	K	-7.52	 	TAAPKEKTSSEKK
+14	T	-7.95	 	AAPKEKTSSEKKD
+15	S	-7.23	 	APKEKTSSEKKDN
+16	S	-6.96	 	PKEKTSSEKKDNY
+17	E	-8.01	 	KEKTSSEKKDNYI
+18	K	-11.77	 	EKTSSEKKDNYII
+19	K	-13.56	 	KTSSEKKDNYIIK
+20	D	-7.47	 	TSSEKKDNYIIKG
+21	N	-3.15	 	SSEKKDNYIIKGV
+22	Y	0.86	 	SEKKDNYIIKGVF
+23	I	2.35	 	EKKDNYIIKGVFW
+24	I	1.13	 	KKDNYIIKGVFWD
+25	K	1.41	 	KDNYIIKGVFWDP
+26	G	-0.25	 	DNYIIKGVFWDPA
+27	V	-6.53	 	NYIIKGVFWDPAC
+28	F	-8.37	 	YIIKGVFWDPACV
+29	W	-8.23	 	IIKGVFWDPACVI
+30	D	-10.01	 	IKGVFWDPACVIA
+31	P	-18.08	 	KGVFWDPACVIA-
+32	A	-11.77	 	GVFWDPACVIA--
+33	C	-5.89	 	VFWDPACVIA---
+34	V	-4.55	 	FWDPACVIA----
+35	I	-3.53	 	WDPACVIA-----
+36	A	-4.46	 	DPACVIA------
+37	-	-3.22	 	PACVIA-------
+38	-	-5.28	 	ACVIA--------
+39	-	-2.37	 	CVIA---------
+40	-	-0.54	 	VIA----------
+41	-	-0.29	 	IA-----------
+42	-	0.02	 	A------------

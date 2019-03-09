@@ -1,0 +1,73 @@
+# Run started 2018-06-30 08:50:58 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR158C-A --report --out ../data/YMR158C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR158C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR158C-A-motifs-r10.txt
+# Found ORF YMR158C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.48	 	----------MKM
+-2	-	0.81	 	---------MKMN
+-1	-	0.16	 	--------MKMNY
+0	-	-2.26	 	-------MKMNYH
+1	M	-3.36	 	------MKMNYHL
+2	K	-6.70	 	-----MKMNYHLS
+3	M	-2.88	 	----MKMNYHLST
+4	N	-3.19	 	---MKMNYHLSTS
+5	Y	2.54	 	--MKMNYHLSTSS
+6	H	1.54	 	-MKMNYHLSTSSY
+7	L	1.52	 	MKMNYHLSTSSYT
+8	S	-2.06	 	KMNYHLSTSSYTT
+9	T	-1.66	 	MNYHLSTSSYTTS
+10	S	-3.58	 	NYHLSTSSYTTSM
+11	S	-1.74	 	YHLSTSSYTTSML
+12	Y	-0.50	 	HLSTSSYTTSMLS
+13	T	-0.73	 	LSTSSYTTSMLSC
+14	T	0.20	 	STSSYTTSMLSCT
+15	S	1.12	 	TSSYTTSMLSCTV
+16	M	0.67	 	SSYTTSMLSCTVL
+17	L	-4.27	 	SYTTSMLSCTVLD
+18	S	-5.10	 	YTTSMLSCTVLDD
+19	C	-2.28	 	TTSMLSCTVLDDD
+20	T	-5.90	 	TSMLSCTVLDDDI
+21	V	-8.06	 	SMLSCTVLDDDIR
+22	L	-12.92	 	MLSCTVLDDDIRY
+23	D	-13.09	 	LSCTVLDDDIRYE
+24	D	-10.23	 	SCTVLDDDIRYEK
+25	D	-17.84	 	CTVLDDDIRYEKL
+26	I	-8.29	 	TVLDDDIRYEKLS
+27	R	-5.71	 	VLDDDIRYEKLSW
+28	Y	-2.22	 	LDDDIRYEKLSWK
+29	E	-0.74	 	DDDIRYEKLSWKL
+30	K	-0.20	 	DDIRYEKLSWKLD
+31	L	-5.74	 	DIRYEKLSWKLDE
+32	S	-5.47	 	IRYEKLSWKLDEA
+33	W	-0.88	 	RYEKLSWKLDEAE
+34	K	-13.26	 	YEKLSWKLDEAEM
+35	L	-14.15	 	EKLSWKLDEAEMQ
+36	D	-10.23	 	KLSWKLDEAEMQG
+37	E	-11.24	 	LSWKLDEAEMQGL
+38	A	-18.28	 	SWKLDEAEMQGLI
+39	E	-15.59	 	WKLDEAEMQGLIM
+40	M	-14.27	 	KLDEAEMQGLIM-
+41	Q	-8.73	 	LDEAEMQGLIM--
+42	G	-2.51	 	DEAEMQGLIM---
+43	L	-1.02	 	EAEMQGLIM----
+44	I	3.27	 	AEMQGLIM-----
+45	M	5.66	 	EMQGLIM------
+46	-	-0.55	 	MQGLIM-------
+47	-	-3.77	 	QGLIM--------
+48	-	-2.17	 	GLIM---------
+49	-	-1.33	 	LIM----------
+50	-	-0.39	 	IM-----------
+51	-	-0.03	 	M------------

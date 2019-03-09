@@ -1,0 +1,92 @@
+# Run started 2018-06-29 16:16:17 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id TMA7 --report --out ../data/TMA7-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: TMA7
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/TMA7-motifs-r10.txt
+# Found gene TMA7 = YLR262C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	0.05	 	----------MSS
+-2	-	0.69	 	---------MSSR
+-1	-	0.66	 	--------MSSRQ
+0	-	-0.22	 	-------MSSRQG
+1	M	-0.94	 	------MSSRQGG
+2	S	-2.32	 	-----MSSRQGGK
+3	S	-3.88	 	----MSSRQGGKM
+4	R	-4.14	 	---MSSRQGGKMK
+5	Q	-3.61	 	--MSSRQGGKMKP
+6	G	-3.82	 	-MSSRQGGKMKPL
+7	G	-2.76	 	MSSRQGGKMKPLK
+8	K	-1.59	 	SSRQGGKMKPLKQ
+9	M	-1.46	 	SRQGGKMKPLKQK
+10	K	4.89	 	RQGGKMKPLKQKK
+11	P	4.66	 	QGGKMKPLKQKKK
+12	L	4.11	 	GGKMKPLKQKKKQ
+13	K	4.31	 	GKMKPLKQKKKQQ
+14	Q	3.60	 	KMKPLKQKKKQQQ
+15	K	-5.01	 	MKPLKQKKKQQQD
+16	K	-4.49	 	KPLKQKKKQQQDL
+17	K	-3.27	 	PLKQKKKQQQDLD
+18	Q	-3.84	 	LKQKKKQQQDLDP
+19	Q	-7.64	 	KQKKKQQQDLDPE
+20	Q	-4.49	 	QKKKQQQDLDPED
+21	D	-7.52	 	KKKQQQDLDPEDI
+22	L	-8.82	 	KKQQQDLDPEDIA
+23	D	-10.24	 	KQQQDLDPEDIAF
+24	P	-12.00	 	QQQDLDPEDIAFK
+25	E	-17.46	 	QQDLDPEDIAFKE
+26	D	-13.13	 	QDLDPEDIAFKEK
+27	I	-8.81	 	DLDPEDIAFKEKQ
+28	A	-7.03	 	LDPEDIAFKEKQK
+29	F	-3.15	 	DPEDIAFKEKQKA
+30	K	-7.71	 	PEDIAFKEKQKAD
+31	E	-7.30	 	EDIAFKEKQKADA
+32	K	-10.40	 	DIAFKEKQKADAA
+33	Q	-8.92	 	IAFKEKQKADAAA
+34	K	-10.63	 	AFKEKQKADAAAK
+35	A	-8.26	 	FKEKQKADAAAKK
+36	D	-4.89	 	KEKQKADAAAKKA
+37	A	-3.18	 	EKQKADAAAKKAL
+38	A	-4.59	 	KQKADAAAKKALM
+39	A	-3.75	 	QKADAAAKKALMA
+40	K	-3.51	 	KADAAAKKALMAN
+41	K	0.56	 	ADAAAKKALMANM
+42	A	0.87	 	DAAAKKALMANMK
+43	L	3.01	 	AAAKKALMANMKS
+44	M	1.74	 	AAKKALMANMKSG
+45	A	2.00	 	AKKALMANMKSGK
+46	N	-6.27	 	KKALMANMKSGKP
+47	M	-6.19	 	KALMANMKSGKPL
+48	K	-6.47	 	ALMANMKSGKPLV
+49	S	-6.81	 	LMANMKSGKPLVG
+50	G	-7.19	 	MANMKSGKPLVGG
+51	K	-2.01	 	ANMKSGKPLVGGG
+52	P	2.00	 	NMKSGKPLVGGGI
+53	L	2.75	 	MKSGKPLVGGGIK
+54	V	2.73	 	KSGKPLVGGGIKK
+55	G	2.10	 	SGKPLVGGGIKKS
+56	G	-1.23	 	GKPLVGGGIKKSG
+57	G	-3.14	 	KPLVGGGIKKSGK
+58	I	-1.68	 	PLVGGGIKKSGKK
+59	K	0.21	 	LVGGGIKKSGKK-
+60	K	1.86	 	VGGGIKKSGKK--
+61	S	-3.70	 	GGGIKKSGKK---
+62	G	-3.85	 	GGIKKSGKK----
+63	K	-2.47	 	GIKKSGKK-----
+64	K	-1.48	 	IKKSGKK------
+65	-	0.67	 	KKSGKK-------
+66	-	1.58	 	KSGKK--------
+67	-	2.39	 	SGKK---------
+68	-	1.52	 	GKK----------
+69	-	0.84	 	KK-----------
+70	-	0.28	 	K------------

@@ -1,0 +1,83 @@
+# Run started 2018-06-29 14:49:41 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PMP3 --report --out ../data/PMP3-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: PMP3
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/PMP3-motifs-r10.txt
+# Found gene PMP3 = YDR276C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.23	 	-----------MD
+-3	-	-0.33	 	----------MDS
+-2	-	-0.61	 	---------MDSA
+-1	-	-1.34	 	--------MDSAK
+0	-	-5.46	 	-------MDSAKI
+1	M	-7.01	 	------MDSAKII
+2	D	-6.54	 	-----MDSAKIIN
+3	S	-8.60	 	----MDSAKIINI
+4	A	-5.44	 	---MDSAKIINII
+5	K	1.17	 	--MDSAKIINIIL
+6	I	0.06	 	-MDSAKIINIILS
+7	I	3.32	 	MDSAKIINIILSL
+8	N	7.24	 	DSAKIINIILSLF
+9	I	6.81	 	SAKIINIILSLFL
+10	I	1.67	 	AKIINIILSLFLP
+11	L	7.00	 	KIINIILSLFLPP
+12	S	6.12	 	IINIILSLFLPPV
+13	L	7.42	 	INIILSLFLPPVA
+14	F	0.18	 	NIILSLFLPPVAV
+15	L	0.48	 	IILSLFLPPVAVF
+16	P	-2.32	 	ILSLFLPPVAVFL
+17	P	-2.78	 	LSLFLPPVAVFLA
+18	V	-4.81	 	SLFLPPVAVFLAR
+19	A	0.38	 	LFLPPVAVFLARG
+20	V	6.93	 	FLPPVAVFLARGW
+21	F	7.00	 	LPPVAVFLARGWG
+22	L	6.73	 	PPVAVFLARGWGT
+23	A	3.42	 	PVAVFLARGWGTD
+24	R	-1.52	 	VAVFLARGWGTDC
+25	G	-9.70	 	AVFLARGWGTDCI
+26	W	-9.56	 	VFLARGWGTDCIV
+27	G	-12.95	 	FLARGWGTDCIVD
+28	T	-16.93	 	LARGWGTDCIVDI
+29	D	-11.17	 	ARGWGTDCIVDII
+30	C	-6.90	 	RGWGTDCIVDIIL
+31	I	-10.39	 	GWGTDCIVDIILT
+32	V	-4.66	 	WGTDCIVDIILTI
+33	D	-3.60	 	GTDCIVDIILTIL
+34	I	-1.38	 	TDCIVDIILTILA
+35	I	-1.95	 	DCIVDIILTILAW
+36	L	6.13	 	CIVDIILTILAWF
+37	T	7.83	 	IVDIILTILAWFP
+38	I	4.89	 	VDIILTILAWFPG
+39	L	-3.88	 	DIILTILAWFPGM
+40	A	1.48	 	IILTILAWFPGML
+41	W	-3.82	 	ILTILAWFPGMLY
+42	F	-11.38	 	LTILAWFPGMLYA
+43	P	-10.39	 	TILAWFPGMLYAL
+44	G	-3.19	 	ILAWFPGMLYALY
+45	M	-0.94	 	LAWFPGMLYALYI
+46	L	0.18	 	AWFPGMLYALYIV
+47	Y	5.34	 	WFPGMLYALYIVL
+48	A	9.46	 	FPGMLYALYIVLQ
+49	L	5.14	 	PGMLYALYIVLQD
+50	Y	6.53	 	GMLYALYIVLQD-
+51	I	11.56	*	MLYALYIVLQD--
+52	V	4.01	 	LYALYIVLQD---
+53	L	-1.09	 	YALYIVLQD----
+54	Q	-3.99	 	ALYIVLQD-----
+55	D	-4.23	 	LYIVLQD------
+56	-	-9.54	 	YIVLQD-------
+57	-	-5.09	 	IVLQD--------
+58	-	-0.56	 	VLQD---------
+59	-	-0.26	 	LQD----------
+60	-	0.08	 	QD-----------
+61	-	-0.14	 	D------------

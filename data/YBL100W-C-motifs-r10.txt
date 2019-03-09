@@ -1,0 +1,67 @@
+# Run started 2018-06-29 14:20:36 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBL100W-C --report --out ../data/YBL100W-C-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBL100W-C
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBL100W-C-motifs-r10.txt
+# Found ORF YBL100W-C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	0.55	 	----------MSR
+-2	-	1.18	 	---------MSRS
+-1	-	1.07	 	--------MSRSI
+0	-	0.19	 	-------MSRSIF
+1	M	-1.87	 	------MSRSIFF
+2	S	-4.07	 	-----MSRSIFFF
+3	R	-2.40	 	----MSRSIFFFS
+4	S	0.25	 	---MSRSIFFFSS
+5	I	3.63	 	--MSRSIFFFSSL
+6	F	6.56	 	-MSRSIFFFSSLF
+7	F	5.76	 	MSRSIFFFSSLFL
+8	F	-0.06	 	SRSIFFFSSLFLS
+9	S	2.12	 	RSIFFFSSLFLSP
+10	S	2.87	 	SIFFFSSLFLSPL
+11	L	5.82	 	IFFFSSLFLSPLN
+12	F	6.78	 	FFFSSLFLSPLNK
+13	L	6.69	 	FFSSLFLSPLNKI
+14	S	5.15	 	FSSLFLSPLNKIR
+15	P	2.95	 	SSLFLSPLNKIRN
+16	L	-4.10	 	SLFLSPLNKIRNI
+17	N	1.91	 	LFLSPLNKIRNIG
+18	K	2.74	 	FLSPLNKIRNIGG
+19	I	-5.30	 	LSPLNKIRNIGGK
+20	R	-0.35	 	SPLNKIRNIGGKV
+21	N	-0.02	 	PLNKIRNIGGKVE
+22	I	-5.25	 	LNKIRNIGGKVEN
+23	G	-5.98	 	NKIRNIGGKVENP
+24	G	-2.88	 	KIRNIGGKVENPW
+25	K	-8.55	 	IRNIGGKVENPWK
+26	V	-7.66	 	RNIGGKVENPWKS
+27	E	-6.78	 	NIGGKVENPWKSQ
+28	N	-7.47	 	IGGKVENPWKSQI
+29	P	-10.47	 	GGKVENPWKSQIR
+30	W	-9.31	 	GKVENPWKSQIRD
+31	K	-9.26	 	KVENPWKSQIRDW
+32	S	-4.06	 	VENPWKSQIRDWK
+33	Q	-0.75	 	ENPWKSQIRDWKN
+34	I	-2.48	 	NPWKSQIRDWKN-
+35	R	-3.96	 	PWKSQIRDWKN--
+36	D	-3.00	 	WKSQIRDWKN---
+37	W	-10.43	 	KSQIRDWKN----
+38	K	-9.64	 	SQIRDWKN-----
+39	N	-6.03	 	QIRDWKN------
+40	-	-2.11	 	IRDWKN-------
+41	-	-0.55	 	RDWKN--------
+42	-	-0.12	 	DWKN---------
+43	-	-0.04	 	WKN----------
+44	-	-0.21	 	KN-----------
+45	-	-0.25	 	N------------

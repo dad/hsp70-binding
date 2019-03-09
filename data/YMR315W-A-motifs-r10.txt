@@ -1,0 +1,63 @@
+# Run started 2018-06-30 08:55:50 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR315W-A --report --out ../data/YMR315W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR315W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR315W-A-motifs-r10.txt
+# Found ORF YMR315W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	-0.39	 	----------MTE
+-2	-	-0.30	 	---------MTER
+-1	-	-0.52	 	--------MTERK
+0	-	-1.40	 	-------MTERKL
+1	M	-2.83	 	------MTERKLL
+2	T	-4.02	 	-----MTERKLLQ
+3	E	-5.96	 	----MTERKLLQL
+4	R	-1.32	 	---MTERKLLQLL
+5	K	4.59	 	--MTERKLLQLLR
+6	L	6.43	 	-MTERKLLQLLRR
+7	L	12.71	*	MTERKLLQLLRRP
+8	Q	18.98	*	TERKLLQLLRRPF
+9	L	11.12	*	ERKLLQLLRRPFI
+10	L	3.81	 	RKLLQLLRRPFIS
+11	R	5.60	 	KLLQLLRRPFISL
+12	R	1.79	 	LLQLLRRPFISLS
+13	P	-0.37	 	LQLLRRPFISLSL
+14	F	0.54	 	QLLRRPFISLSLF
+15	I	5.40	 	LLRRPFISLSLFT
+16	S	5.16	 	LRRPFISLSLFTA
+17	L	6.96	 	RRPFISLSLFTAL
+18	S	5.31	 	RPFISLSLFTALR
+19	L	6.21	 	PFISLSLFTALRA
+20	F	0.68	 	FISLSLFTALRAC
+21	T	7.65	 	ISLSLFTALRACP
+22	A	0.28	 	SLSLFTALRACPL
+23	L	0.67	 	LSLFTALRACPLR
+24	R	-1.71	 	SLFTALRACPLRP
+25	A	-1.70	 	LFTALRACPLRPK
+26	C	-2.64	 	FTALRACPLRPKS
+27	P	-2.27	 	TALRACPLRPKSL
+28	L	-3.18	 	ALRACPLRPKSLI
+29	R	-6.13	 	LRACPLRPKSLIA
+30	P	-3.92	 	RACPLRPKSLIA-
+31	K	-5.40	 	ACPLRPKSLIA--
+32	S	0.05	 	CPLRPKSLIA---
+33	L	3.01	 	PLRPKSLIA----
+34	I	4.96	 	LRPKSLIA-----
+35	A	6.22	 	RPKSLIA------
+36	-	-0.64	 	PKSLIA-------
+37	-	-3.68	 	KSLIA--------
+38	-	-2.01	 	SLIA---------
+39	-	-1.18	 	LIA----------
+40	-	-0.29	 	IA-----------
+41	-	0.02	 	A------------

@@ -1,0 +1,73 @@
+# Run started 2018-06-29 15:40:42 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YIR018C-A --report --out ../data/YIR018C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YIR018C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YIR018C-A-motifs-r10.txt
+# Found ORF YIR018C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.02	 	-----------MP
+-3	-	0.08	 	----------MPS
+-2	-	0.05	 	---------MPSD
+-1	-	-1.06	 	--------MPSDY
+0	-	-3.34	 	-------MPSDYT
+1	M	-5.29	 	------MPSDYTS
+2	P	-10.04	 	-----MPSDYTSH
+3	S	-6.51	 	----MPSDYTSHY
+4	D	-6.74	 	---MPSDYTSHYP
+5	Y	-7.47	 	--MPSDYTSHYPV
+6	T	-8.26	 	-MPSDYTSHYPVI
+7	S	-0.52	 	MPSDYTSHYPVIL
+8	H	-4.91	 	PSDYTSHYPVILI
+9	Y	0.04	 	SDYTSHYPVILIK
+10	P	4.14	 	DYTSHYPVILIKK
+11	V	10.69	*	YTSHYPVILIKKK
+12	I	11.95	*	TSHYPVILIKKKK
+13	L	12.63	*	SHYPVILIKKKKK
+14	I	10.88	*	HYPVILIKKKKKK
+15	K	6.38	 	YPVILIKKKKKKI
+16	K	-0.54	 	PVILIKKKKKKIA
+17	K	-4.67	 	VILIKKKKKKIAG
+18	K	-3.93	 	ILIKKKKKKIAGM
+19	K	0.12	 	LIKKKKKKIAGMY
+20	K	2.00	 	IKKKKKKIAGMYR
+21	I	1.18	 	KKKKKKIAGMYRH
+22	A	0.78	 	KKKKKIAGMYRHS
+23	G	6.06	 	KKKKIAGMYRHSK
+24	M	0.34	 	KKKIAGMYRHSKR
+25	Y	-0.03	 	KKIAGMYRHSKRY
+26	R	1.31	 	KIAGMYRHSKRYL
+27	H	0.08	 	IAGMYRHSKRYLE
+28	S	-4.80	 	AGMYRHSKRYLEI
+29	K	-0.85	 	GMYRHSKRYLEIM
+30	R	3.40	 	MYRHSKRYLEIMS
+31	Y	1.88	 	YRHSKRYLEIMST
+32	L	5.30	 	RHSKRYLEIMSTA
+33	E	4.70	 	HSKRYLEIMSTAS
+34	I	-0.07	 	SKRYLEIMSTASA
+35	M	-8.11	 	KRYLEIMSTASAQ
+36	S	-5.23	 	RYLEIMSTASAQF
+37	T	-10.04	 	YLEIMSTASAQFV
+38	A	-7.87	 	LEIMSTASAQFVG
+39	S	-7.19	 	EIMSTASAQFVGN
+40	A	-3.07	 	IMSTASAQFVGN-
+41	Q	0.58	 	MSTASAQFVGN--
+42	F	-0.07	 	STASAQFVGN---
+43	V	-2.40	 	TASAQFVGN----
+44	G	0.48	 	ASAQFVGN-----
+45	N	-1.55	 	SAQFVGN------
+46	-	-3.30	 	AQFVGN-------
+47	-	-1.32	 	QFVGN--------
+48	-	-0.67	 	FVGN---------
+49	-	-0.44	 	VGN----------
+50	-	-0.38	 	GN-----------
+51	-	-0.25	 	N------------

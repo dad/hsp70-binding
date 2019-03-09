@@ -1,0 +1,89 @@
+# Run started 2018-06-30 09:13:53 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id TOM6 --report --out ../data/TOM6-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: TOM6
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/TOM6-motifs-r10.txt
+# Found gene TOM6 = YOR045W
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.23	 	-----------MD
+-3	-	-0.41	 	----------MDG
+-2	-	-0.69	 	---------MDGM
+-1	-	-1.94	 	--------MDGMF
+0	-	-6.73	 	-------MDGMFA
+1	M	-9.11	 	------MDGMFAM
+2	D	-10.33	 	-----MDGMFAMP
+3	G	-8.58	 	----MDGMFAMPG
+4	M	-7.85	 	---MDGMFAMPGA
+5	F	-4.56	 	--MDGMFAMPGAA
+6	A	-4.40	 	-MDGMFAMPGAAA
+7	M	-5.87	 	MDGMFAMPGAAAG
+8	P	-7.79	 	DGMFAMPGAAAGA
+9	G	-7.40	 	GMFAMPGAAAGAA
+10	A	-6.86	 	MFAMPGAAAGAAS
+11	A	-7.48	 	FAMPGAAAGAASP
+12	A	-5.02	 	AMPGAAAGAASPQ
+13	G	-4.03	 	MPGAAAGAASPQQ
+14	A	-4.48	 	PGAAAGAASPQQP
+15	A	-5.18	 	GAAAGAASPQQPK
+16	S	-4.16	 	AAAGAASPQQPKS
+17	P	-4.16	 	AAGAASPQQPKSR
+18	Q	-4.49	 	AGAASPQQPKSRF
+19	Q	-4.67	 	GAASPQQPKSRFQ
+20	P	-4.52	 	AASPQQPKSRFQA
+21	K	-3.57	 	ASPQQPKSRFQAF
+22	S	1.19	 	SPQQPKSRFQAFK
+23	R	-0.76	 	PQQPKSRFQAFKE
+24	F	-0.19	 	QQPKSRFQAFKES
+25	Q	2.27	 	QPKSRFQAFKESP
+26	A	-0.08	 	PKSRFQAFKESPL
+27	F	-5.16	 	KSRFQAFKESPLY
+28	K	-4.22	 	SRFQAFKESPLYT
+29	E	-6.57	 	RFQAFKESPLYTI
+30	S	-5.75	 	FQAFKESPLYTIA
+31	P	-0.65	 	QAFKESPLYTIAL
+32	L	0.37	 	AFKESPLYTIALN
+33	Y	4.39	 	FKESPLYTIALNG
+34	T	5.85	 	KESPLYTIALNGA
+35	I	3.34	 	ESPLYTIALNGAF
+36	A	-0.83	 	SPLYTIALNGAFF
+37	L	-1.23	 	PLYTIALNGAFFV
+38	N	-5.54	 	LYTIALNGAFFVA
+39	G	-2.50	 	YTIALNGAFFVAG
+40	A	-7.38	 	TIALNGAFFVAGV
+41	F	-3.09	 	IALNGAFFVAGVA
+42	F	-0.05	 	ALNGAFFVAGVAF
+43	V	-1.16	 	LNGAFFVAGVAFI
+44	A	0.51	 	NGAFFVAGVAFIQ
+45	G	-0.95	 	GAFFVAGVAFIQS
+46	V	-0.21	 	AFFVAGVAFIQSP
+47	A	3.10	 	FFVAGVAFIQSPL
+48	F	3.84	 	FVAGVAFIQSPLM
+49	I	0.62	 	VAGVAFIQSPLMD
+50	Q	-1.10	 	AGVAFIQSPLMDM
+51	S	0.60	 	GVAFIQSPLMDML
+52	P	-4.39	 	VAFIQSPLMDMLA
+53	L	-5.16	 	AFIQSPLMDMLAP
+54	M	-4.73	 	FIQSPLMDMLAPQ
+55	D	0.14	 	IQSPLMDMLAPQL
+56	M	-5.93	 	QSPLMDMLAPQL-
+57	L	-6.45	 	SPLMDMLAPQL--
+58	A	-3.37	 	PLMDMLAPQL---
+59	P	2.05	 	LMDMLAPQL----
+60	Q	-3.34	 	MDMLAPQL-----
+61	L	-1.39	 	DMLAPQL------
+62	-	0.72	 	MLAPQL-------
+63	-	4.65	 	LAPQL--------
+64	-	-1.49	 	APQL---------
+65	-	-1.01	 	PQL----------
+66	-	-0.75	 	QL-----------
+67	-	-0.56	 	L------------

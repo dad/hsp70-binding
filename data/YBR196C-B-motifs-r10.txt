@@ -1,0 +1,62 @@
+# Run started 2018-06-29 14:26:43 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR196C-B --report --out ../data/YBR196C-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR196C-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR196C-B-motifs-r10.txt
+# Found ORF YBR196C-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MW
+-3	-	-0.48	 	----------MWV
+-2	-	-1.07	 	---------MWVV
+-1	-	-2.42	 	--------MWVVL
+0	-	-6.26	 	-------MWVVLS
+1	M	-3.36	 	------MWVVLSK
+2	W	-0.66	 	-----MWVVLSKE
+3	V	3.22	 	----MWVVLSKEK
+4	V	2.88	 	---MWVVLSKEKI
+5	L	4.56	 	--MWVVLSKEKIL
+6	S	0.86	 	-MWVVLSKEKILL
+7	K	-2.46	 	MWVVLSKEKILLK
+8	E	-6.01	 	WVVLSKEKILLKK
+9	K	0.15	 	VVLSKEKILLKKA
+10	I	6.14	 	VLSKEKILLKKAY
+11	L	6.67	 	LSKEKILLKKAYY
+12	L	6.14	 	SKEKILLKKAYYA
+13	K	1.42	 	KEKILLKKAYYAK
+14	K	-0.92	 	EKILLKKAYYAKT
+15	A	-1.81	 	KILLKKAYYAKTI
+16	Y	1.93	 	ILLKKAYYAKTIL
+17	Y	2.69	 	LLKKAYYAKTILF
+18	A	2.83	 	LKKAYYAKTILFS
+19	K	2.59	 	KKAYYAKTILFSA
+20	T	3.21	 	KAYYAKTILFSAL
+21	I	5.64	 	AYYAKTILFSALV
+22	L	5.34	 	YYAKTILFSALVL
+23	F	6.89	 	YAKTILFSALVLR
+24	S	6.38	 	AKTILFSALVLRG
+25	A	3.28	 	KTILFSALVLRGV
+26	L	7.29	 	TILFSALVLRGVR
+27	V	7.97	 	ILFSALVLRGVRG
+28	L	7.53	 	LFSALVLRGVRGE
+29	R	4.99	 	FSALVLRGVRGE-
+30	G	2.08	 	SALVLRGVRGE--
+31	V	-6.42	 	ALVLRGVRGE---
+32	R	-6.81	 	LVLRGVRGE----
+33	G	-3.90	 	VLRGVRGE-----
+34	E	-5.36	 	LRGVRGE------
+35	-	-4.44	 	RGVRGE-------
+36	-	-3.17	 	GVRGE--------
+37	-	-1.03	 	VRGE---------
+38	-	-0.87	 	RGE----------
+39	-	-0.87	 	GE-----------
+40	-	-0.49	 	E------------

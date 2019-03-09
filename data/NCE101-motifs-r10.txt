@@ -1,0 +1,81 @@
+# Run started 2018-06-29 15:46:56 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id NCE101 --report --out ../data/NCE101-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: NCE101
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/NCE101-motifs-r10.txt
+# Found gene NCE101 = YJL205C
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.34	 	-----------MV
+-3	-	-0.58	 	----------MVQ
+-2	-	-1.24	 	---------MVQY
+-1	-	-2.91	 	--------MVQYA
+0	-	-0.49	 	-------MVQYAP
+1	M	-3.13	 	------MVQYAPF
+2	V	0.18	 	-----MVQYAPFL
+3	Q	0.05	 	----MVQYAPFLL
+4	Y	-1.28	 	---MVQYAPFLLG
+5	A	-0.27	 	--MVQYAPFLLGK
+6	P	6.69	 	-MVQYAPFLLGKF
+7	F	7.72	 	MVQYAPFLLGKFS
+8	L	6.69	 	VQYAPFLLGKFSD
+9	L	5.45	 	QYAPFLLGKFSDP
+10	G	5.87	 	YAPFLLGKFSDPL
+11	K	-1.82	 	APFLLGKFSDPLL
+12	F	-11.44	 	PFLLGKFSDPLLA
+13	S	-9.70	 	FLLGKFSDPLLAI
+14	D	-3.66	 	LLGKFSDPLLAIM
+15	P	-1.41	 	LGKFSDPLLAIMV
+16	L	-0.17	 	GKFSDPLLAIMVG
+17	L	5.48	 	KFSDPLLAIMVGC
+18	A	5.55	 	FSDPLLAIMVGCL
+19	I	2.37	 	SDPLLAIMVGCLS
+20	M	-5.10	 	DPLLAIMVGCLSY
+21	V	-9.24	 	PLLAIMVGCLSYY
+22	G	-9.00	 	LLAIMVGCLSYYV
+23	C	-9.59	 	LAIMVGCLSYYVY
+24	L	-8.16	 	AIMVGCLSYYVYE
+25	S	-2.59	 	IMVGCLSYYVYER
+26	Y	-0.85	 	MVGCLSYYVYERK
+27	Y	-1.09	 	VGCLSYYVYERKM
+28	V	1.19	 	GCLSYYVYERKMG
+29	Y	0.27	 	CLSYYVYERKMGR
+30	E	-1.13	 	LSYYVYERKMGRP
+31	R	-1.96	 	SYYVYERKMGRPQ
+32	K	-5.07	 	YYVYERKMGRPQG
+33	M	-3.65	 	YVYERKMGRPQGH
+34	G	-3.94	 	VYERKMGRPQGHH
+35	R	-4.25	 	YERKMGRPQGHHL
+36	P	-5.56	 	ERKMGRPQGHHLH
+37	Q	-5.47	 	RKMGRPQGHHLHE
+38	G	-7.46	 	KMGRPQGHHLHEL
+39	H	-4.06	 	MGRPQGHHLHELI
+40	H	-3.29	 	GRPQGHHLHELIK
+41	L	-3.83	 	RPQGHHLHELIKK
+42	H	2.20	 	PQGHHLHELIKKR
+43	E	7.41	 	QGHHLHELIKKRW
+44	L	-0.50	 	GHHLHELIKKRWD
+45	I	0.75	 	HHLHELIKKRWDD
+46	K	2.46	 	HLHELIKKRWDDR
+47	K	-5.25	 	LHELIKKRWDDRK
+48	R	-10.67	 	HELIKKRWDDRK-
+49	W	-10.63	 	ELIKKRWDDRK--
+50	D	-9.23	 	LIKKRWDDRK---
+51	D	-10.07	 	IKKRWDDRK----
+52	R	-6.75	 	KKRWDDRK-----
+53	K	-3.68	 	KRWDDRK------
+54	-	-0.02	 	RWDDRK-------
+55	-	0.79	 	WDDRK--------
+56	-	2.04	 	DDRK---------
+57	-	1.49	 	DRK----------
+58	-	0.95	 	RK-----------
+59	-	0.28	 	K------------

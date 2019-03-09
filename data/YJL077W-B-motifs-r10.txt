@@ -1,0 +1,60 @@
+# Run started 2018-06-29 15:43:32 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YJL077W-B --report --out ../data/YJL077W-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YJL077W-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YJL077W-B-motifs-r10.txt
+# Found ORF YJL077W-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.02	 	-----------MP
+-3	-	-0.03	 	----------MPI
+-2	-	-0.05	 	---------MPIL
+-1	-	-1.01	 	--------MPILV
+0	-	-3.38	 	-------MPILVW
+1	M	-1.38	 	------MPILVWQ
+2	P	1.88	 	-----MPILVWQL
+3	I	4.77	 	----MPILVWQLP
+4	L	2.96	 	---MPILVWQLPK
+5	V	3.12	 	--MPILVWQLPKS
+6	W	4.15	 	-MPILVWQLPKSK
+7	Q	-2.14	 	MPILVWQLPKSKK
+8	L	-3.41	 	PILVWQLPKSKKL
+9	P	1.24	 	ILVWQLPKSKKLK
+10	K	4.16	 	LVWQLPKSKKLKT
+11	S	-3.70	 	VWQLPKSKKLKTL
+12	K	2.58	 	WQLPKSKKLKTLK
+13	K	2.61	 	QLPKSKKLKTLKY
+14	L	3.46	 	LPKSKKLKTLKYR
+15	K	9.66	 	PKSKKLKTLKYRI
+16	T	8.50	 	KSKKLKTLKYRIC
+17	L	5.48	 	SKKLKTLKYRICF
+18	K	5.84	 	KKLKTLKYRICFR
+19	Y	9.01	 	KLKTLKYRICFRE
+20	R	-3.99	 	LKTLKYRICFREF
+21	I	0.41	 	KTLKYRICFREFF
+22	C	-5.28	 	TLKYRICFREFFD
+23	F	-6.87	 	LKYRICFREFFDR
+24	R	-8.81	 	KYRICFREFFDRV
+25	E	-8.27	 	YRICFREFFDRVE
+26	F	-11.35	 	RICFREFFDRVET
+27	F	-11.21	 	ICFREFFDRVET-
+28	D	-4.75	 	CFREFFDRVET--
+29	R	-6.57	 	FREFFDRVET---
+30	V	-8.72	 	REFFDRVET----
+31	E	-4.24	 	EFFDRVET-----
+32	T	-2.46	 	FFDRVET------
+33	-	-4.17	 	FDRVET-------
+34	-	-1.59	 	DRVET--------
+35	-	0.44	 	RVET---------
+36	-	0.01	 	VET----------
+37	-	0.11	 	ET-----------
+38	-	0.30	 	T------------

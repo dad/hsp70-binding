@@ -1,0 +1,93 @@
+# Run started 2018-06-29 14:25:40 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YSY6 --report --out ../data/YSY6-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YSY6
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YSY6-motifs-r10.txt
+# Found gene YSY6 = YBR162W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.26	 	-----------MA
+-3	-	-0.70	 	----------MAV
+-2	-	-1.13	 	---------MAVQ
+-1	-	-2.23	 	--------MAVQT
+0	-	-2.38	 	-------MAVQTP
+1	M	1.31	 	------MAVQTPR
+2	A	0.46	 	-----MAVQTPRQ
+3	V	0.80	 	----MAVQTPRQR
+4	Q	1.22	 	---MAVQTPRQRL
+5	T	0.87	 	--MAVQTPRQRLA
+6	P	-1.50	 	-MAVQTPRQRLAN
+7	R	-0.34	 	MAVQTPRQRLANA
+8	Q	4.31	 	AVQTPRQRLANAK
+9	R	4.84	 	VQTPRQRLANAKF
+10	L	2.40	 	QTPRQRLANAKFN
+11	A	5.19	 	TPRQRLANAKFNK
+12	N	3.23	 	PRQRLANAKFNKN
+13	A	-1.58	 	RQRLANAKFNKNN
+14	K	-3.62	 	QRLANAKFNKNNE
+15	F	-4.56	 	RLANAKFNKNNEK
+16	N	-6.37	 	LANAKFNKNNEKY
+17	K	-7.01	 	ANAKFNKNNEKYR
+18	N	-10.21	 	NAKFNKNNEKYRK
+19	N	-11.02	 	AKFNKNNEKYRKY
+20	E	-4.76	 	KFNKNNEKYRKYG
+21	K	-5.23	 	FNKNNEKYRKYGK
+22	Y	-5.51	 	NKNNEKYRKYGKK
+23	R	2.68	 	KNNEKYRKYGKKK
+24	K	4.13	 	NNEKYRKYGKKKE
+25	Y	0.85	 	NEKYRKYGKKKEG
+26	G	0.70	 	EKYRKYGKKKEGK
+27	K	-0.28	 	KYRKYGKKKEGKT
+28	K	-6.20	 	YRKYGKKKEGKTE
+29	K	-5.66	 	RKYGKKKEGKTEK
+30	E	-6.58	 	KYGKKKEGKTEKT
+31	G	-7.09	 	YGKKKEGKTEKTA
+32	K	-8.21	 	GKKKEGKTEKTAP
+33	T	-8.47	 	KKKEGKTEKTAPV
+34	E	-7.53	 	KKEGKTEKTAPVI
+35	K	-6.25	 	KEGKTEKTAPVIS
+36	T	-6.94	 	EGKTEKTAPVISK
+37	A	-1.05	 	GKTEKTAPVISKT
+38	P	3.49	 	KTEKTAPVISKTW
+39	V	3.67	 	TEKTAPVISKTWL
+40	I	2.20	 	EKTAPVISKTWLG
+41	S	2.38	 	KTAPVISKTWLGI
+42	K	-2.86	 	TAPVISKTWLGIL
+43	T	-3.33	 	APVISKTWLGILL
+44	W	-3.52	 	PVISKTWLGILLF
+45	L	0.47	 	VISKTWLGILLFL
+46	G	5.33	 	ISKTWLGILLFLL
+47	I	12.13	*	SKTWLGILLFLLV
+48	L	6.86	 	KTWLGILLFLLVG
+49	L	12.77	*	TWLGILLFLLVGG
+50	F	12.33	*	WLGILLFLLVGGG
+51	L	9.53	 	LGILLFLLVGGGV
+52	L	2.86	 	GILLFLLVGGGVL
+53	V	1.03	 	ILLFLLVGGGVLQ
+54	G	-5.76	 	LLFLLVGGGVLQL
+55	G	-7.09	 	LFLLVGGGVLQLI
+56	G	-2.73	 	FLLVGGGVLQLIS
+57	V	-1.36	 	LLVGGGVLQLISY
+58	L	5.14	 	LVGGGVLQLISYI
+59	Q	9.69	 	VGGGVLQLISYIL
+60	L	5.64	 	GGGVLQLISYIL-
+61	I	2.58	 	GGVLQLISYIL--
+62	S	8.63	 	GVLQLISYIL---
+63	Y	5.88	 	VLQLISYIL----
+64	I	3.20	 	LQLISYIL-----
+65	L	5.96	 	QLISYIL------
+66	-	4.26	 	LISYIL-------
+67	-	1.62	 	ISYIL--------
+68	-	-3.67	 	SYIL---------
+69	-	-2.45	 	YIL----------
+70	-	-1.46	 	IL-----------
+71	-	-0.56	 	L------------

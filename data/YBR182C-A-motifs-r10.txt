@@ -1,0 +1,92 @@
+# Run started 2018-06-29 14:26:15 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR182C-A --report --out ../data/YBR182C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR182C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR182C-A-motifs-r10.txt
+# Found ORF YBR182C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.50	 	----------MKI
+-2	-	0.57	 	---------MKIF
+-1	-	0.22	 	--------MKIFT
+0	-	-1.87	 	-------MKIFTL
+1	M	-0.13	 	------MKIFTLY
+2	K	1.87	 	-----MKIFTLYT
+3	I	0.59	 	----MKIFTLYTM
+4	F	4.65	 	---MKIFTLYTMI
+5	T	10.18	*	--MKIFTLYTMIQ
+6	L	5.15	 	-MKIFTLYTMIQQ
+7	Y	2.84	 	MKIFTLYTMIQQY
+8	T	6.43	 	KIFTLYTMIQQYF
+9	M	-2.55	 	IFTLYTMIQQYFF
+10	I	-6.69	 	FTLYTMIQQYFFD
+11	Q	-1.47	 	TLYTMIQQYFFDN
+12	Q	1.04	 	LYTMIQQYFFDNG
+13	Y	-0.35	 	YTMIQQYFFDNGG
+14	F	-1.23	 	TMIQQYFFDNGGV
+15	F	-1.87	 	MIQQYFFDNGGVY
+16	D	-7.08	 	IQQYFFDNGGVYS
+17	N	-11.38	 	QQYFFDNGGVYSI
+18	G	-10.75	 	QYFFDNGGVYSIK
+19	G	-2.53	 	YFFDNGGVYSIKN
+20	V	-2.31	 	FFDNGGVYSIKNF
+21	Y	3.06	 	FDNGGVYSIKNFY
+22	S	3.43	 	DNGGVYSIKNFYS
+23	I	-1.35	 	NGGVYSIKNFYSA
+24	K	-2.54	 	GGVYSIKNFYSAV
+25	N	2.14	 	GVYSIKNFYSAVP
+26	F	-3.31	 	VYSIKNFYSAVPK
+27	Y	-1.70	 	YSIKNFYSAVPKE
+28	S	2.59	 	SIKNFYSAVPKEK
+29	A	-0.17	 	IKNFYSAVPKEKM
+30	V	-4.38	 	KNFYSAVPKEKMN
+31	P	-4.94	 	NFYSAVPKEKMNI
+32	K	-5.85	 	FYSAVPKEKMNII
+33	E	-7.92	 	YSAVPKEKMNIIL
+34	K	-9.77	 	SAVPKEKMNIILV
+35	M	-6.17	 	AVPKEKMNIILVS
+36	N	-1.66	 	VPKEKMNIILVSL
+37	I	3.64	 	PKEKMNIILVSLD
+38	I	7.19	 	KEKMNIILVSLDC
+39	L	6.05	 	EKMNIILVSLDCE
+40	V	5.84	 	KMNIILVSLDCEL
+41	S	-2.27	 	MNIILVSLDCELQ
+42	L	-13.67	 	NIILVSLDCELQK
+43	D	-15.49	 	IILVSLDCELQKL
+44	C	-9.00	 	ILVSLDCELQKLA
+45	E	-15.83	 	LVSLDCELQKLAL
+46	L	-12.11	 	VSLDCELQKLALK
+47	Q	-8.67	 	SLDCELQKLALKL
+48	K	-2.30	 	LDCELQKLALKLS
+49	L	-0.77	 	DCELQKLALKLSK
+50	A	4.38	 	CELQKLALKLSKK
+51	L	12.76	*	ELQKLALKLSKKT
+52	K	6.36	 	LQKLALKLSKKTS
+53	L	6.75	 	QKLALKLSKKTSG
+54	S	-1.06	 	KLALKLSKKTSGT
+55	K	0.95	 	LALKLSKKTSGTH
+56	K	-5.87	 	ALKLSKKTSGTHT
+57	T	-4.67	 	LKLSKKTSGTHTT
+58	S	-2.95	 	KLSKKTSGTHTTH
+59	G	-2.69	 	LSKKTSGTHTTH-
+60	T	-2.05	 	SKKTSGTHTTH--
+61	H	-2.68	 	KKTSGTHTTH---
+62	T	-2.78	 	KTSGTHTTH----
+63	T	-1.94	 	TSGTHTTH-----
+64	H	-0.74	 	SGTHTTH------
+65	-	0.30	 	GTHTTH-------
+66	-	0.99	 	THTTH--------
+67	-	1.96	 	HTTH---------
+68	-	1.14	 	TTH----------
+69	-	0.46	 	TH-----------
+70	-	0.08	 	H------------

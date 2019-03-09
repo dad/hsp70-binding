@@ -1,0 +1,85 @@
+# Run started 2018-06-29 16:18:23 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YLR342W-A --report --out ../data/YLR342W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YLR342W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YLR342W-A-motifs-r10.txt
+# Found ORF YLR342W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.01	 	-----------MN
+-3	-	-0.21	 	----------MNV
+-2	-	-0.60	 	---------MNVF
+-1	-	-1.77	 	--------MNVFM
+0	-	-5.06	 	-------MNVFMP
+1	M	-2.53	 	------MNVFMPI
+2	N	-0.03	 	-----MNVFMPIR
+3	V	-0.42	 	----MNVFMPIRV
+4	F	-1.37	 	---MNVFMPIRVF
+5	M	2.58	 	--MNVFMPIRVFL
+6	P	-1.07	 	-MNVFMPIRVFLY
+7	I	-0.07	 	MNVFMPIRVFLYS
+8	R	2.44	 	NVFMPIRVFLYSY
+9	V	6.58	 	VFMPIRVFLYSYV
+10	F	6.09	 	FMPIRVFLYSYVI
+11	L	5.21	 	MPIRVFLYSYVII
+12	Y	6.98	 	PIRVFLYSYVIIN
+13	S	8.33	 	IRVFLYSYVIINS
+14	Y	4.45	 	RVFLYSYVIINSL
+15	V	5.15	 	VFLYSYVIINSLL
+16	I	4.65	 	FLYSYVIINSLLS
+17	I	1.64	 	LYSYVIINSLLSS
+18	N	4.56	 	YSYVIINSLLSSF
+19	S	4.32	 	SYVIINSLLSSFF
+20	L	-0.72	 	YVIINSLLSSFFH
+21	L	-0.67	 	VIINSLLSSFFHQ
+22	S	3.14	 	IINSLLSSFFHQY
+23	S	0.01	 	INSLLSSFFHQYR
+24	F	-6.04	 	NSLLSSFFHQYRP
+25	F	-4.67	 	SLLSSFFHQYRPL
+26	H	2.23	 	LLSSFFHQYRPLF
+27	Q	-0.00	 	LSSFFHQYRPLFI
+28	Y	-2.74	 	SSFFHQYRPLFIK
+29	R	3.15	 	SFFHQYRPLFIKN
+30	P	8.71	 	FFHQYRPLFIKNG
+31	L	8.69	 	FHQYRPLFIKNGA
+32	F	7.18	 	HQYRPLFIKNGAA
+33	I	4.31	 	QYRPLFIKNGAAF
+34	K	-4.97	 	YRPLFIKNGAAFG
+35	N	-6.54	 	RPLFIKNGAAFGV
+36	G	-10.37	 	PLFIKNGAAFGVS
+37	A	-5.63	 	LFIKNGAAFGVSN
+38	A	-5.88	 	FIKNGAAFGVSNS
+39	F	-0.39	 	IKNGAAFGVSNSE
+40	G	-0.92	 	KNGAAFGVSNSEK
+41	V	-3.15	 	NGAAFGVSNSEKI
+42	S	-6.63	 	GAAFGVSNSEKIC
+43	N	-6.74	 	AAFGVSNSEKICV
+44	S	-10.51	 	AFGVSNSEKICVT
+45	E	-7.23	 	FGVSNSEKICVTL
+46	K	-12.42	 	GVSNSEKICVTLI
+47	I	-8.02	 	VSNSEKICVTLIV
+48	C	-6.20	 	SNSEKICVTLIVN
+49	V	-0.78	 	NSEKICVTLIVNE
+50	T	-2.69	 	SEKICVTLIVNEL
+51	L	-0.61	 	EKICVTLIVNELI
+52	I	-2.63	 	KICVTLIVNELI-
+53	V	-2.09	 	ICVTLIVNELI--
+54	N	-3.32	 	CVTLIVNELI---
+55	E	-2.66	 	VTLIVNELI----
+56	L	-3.30	 	TLIVNELI-----
+57	I	-1.58	 	LIVNELI------
+58	-	2.54	 	IVNELI-------
+59	-	-2.38	 	VNELI--------
+60	-	-4.49	 	NELI---------
+61	-	-2.65	 	ELI----------
+62	-	-1.25	 	LI-----------
+63	-	-0.34	 	I------------

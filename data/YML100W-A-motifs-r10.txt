@@ -1,0 +1,85 @@
+# Run started 2018-06-30 08:45:28 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YML100W-A --report --out ../data/YML100W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YML100W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YML100W-A-motifs-r10.txt
+# Found ORF YML100W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.49	 	-----------MY
+-3	-	-0.57	 	----------MYK
+-2	-	-0.78	 	---------MYKC
+-1	-	-2.14	 	--------MYKCV
+0	-	1.78	 	-------MYKCVP
+1	M	-0.44	 	------MYKCVPS
+2	Y	-6.97	 	-----MYKCVPSY
+3	K	-4.71	 	----MYKCVPSYY
+4	C	-6.37	 	---MYKCVPSYYS
+5	V	-10.64	 	--MYKCVPSYYSK
+6	P	-5.52	 	-MYKCVPSYYSKA
+7	S	-2.89	 	MYKCVPSYYSKAG
+8	Y	-3.09	 	YKCVPSYYSKAGT
+9	Y	-2.51	 	KCVPSYYSKAGTI
+10	S	0.03	 	CVPSYYSKAGTIV
+11	K	-2.78	 	VPSYYSKAGTIVV
+12	A	-6.29	 	PSYYSKAGTIVVT
+13	G	-3.25	 	SYYSKAGTIVVTY
+14	T	0.60	 	YYSKAGTIVVTYC
+15	I	3.20	 	YSKAGTIVVTYCE
+16	V	3.07	 	SKAGTIVVTYCEI
+17	V	7.15	 	KAGTIVVTYCEIS
+18	T	-4.23	 	AGTIVVTYCEISA
+19	Y	-8.30	 	GTIVVTYCEISAL
+20	C	-7.67	 	TIVVTYCEISALL
+21	E	-8.27	 	IVVTYCEISALLV
+22	I	-10.97	 	VVTYCEISALLVS
+23	S	-8.85	 	VTYCEISALLVSL
+24	A	-0.14	 	TYCEISALLVSLK
+25	L	1.79	 	YCEISALLVSLKN
+26	L	5.37	 	CEISALLVSLKNR
+27	V	13.22	*	EISALLVSLKNRV
+28	S	6.35	 	ISALLVSLKNRVQ
+29	L	-0.84	 	SALLVSLKNRVQG
+30	K	-2.59	 	ALLVSLKNRVQGK
+31	N	3.65	 	LLVSLKNRVQGKR
+32	R	-2.46	 	LVSLKNRVQGKRG
+33	V	-0.84	 	VSLKNRVQGKRGE
+34	Q	-1.14	 	SLKNRVQGKRGET
+35	G	-2.29	 	LKNRVQGKRGETE
+36	K	-6.83	 	KNRVQGKRGETEG
+37	R	-7.06	 	NRVQGKRGETEGQ
+38	G	-7.22	 	RVQGKRGETEGQI
+39	E	-9.80	 	VQGKRGETEGQIE
+40	T	-12.25	 	QGKRGETEGQIEI
+41	E	-13.57	 	GKRGETEGQIEIS
+42	G	-9.60	 	KRGETEGQIEISR
+43	Q	-9.73	 	RGETEGQIEISRK
+44	I	-4.15	 	GETEGQIEISRKA
+45	E	-1.43	 	ETEGQIEISRKAG
+46	I	0.93	 	TEGQIEISRKAGH
+47	S	-5.36	 	EGQIEISRKAGHP
+48	R	-2.14	 	GQIEISRKAGHPA
+49	K	-7.04	 	QIEISRKAGHPAP
+50	A	-6.26	 	IEISRKAGHPAPA
+51	G	-6.66	 	EISRKAGHPAPAF
+52	H	-5.07	 	ISRKAGHPAPAF-
+53	P	-7.18	 	SRKAGHPAPAF--
+54	A	-5.85	 	RKAGHPAPAF---
+55	P	-2.64	 	KAGHPAPAF----
+56	A	-1.78	 	AGHPAPAF-----
+57	F	-1.02	 	GHPAPAF------
+58	-	0.21	 	HPAPAF-------
+59	-	1.13	 	PAPAF--------
+60	-	-0.22	 	APAF---------
+61	-	-0.14	 	PAF----------
+62	-	-0.07	 	AF-----------
+63	-	-0.05	 	F------------

@@ -1,0 +1,84 @@
+# Run started 2018-06-29 16:06:19 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YLL066W-B --report --out ../data/YLL066W-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YLL066W-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YLL066W-B-motifs-r10.txt
+# Found ORF YLL066W-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	-0.01	 	----------MSL
+-2	-	0.55	 	---------MSLR
+-1	-	0.49	 	--------MSLRP
+0	-	-0.52	 	-------MSLRPC
+1	M	3.96	 	------MSLRPCL
+2	S	2.38	 	-----MSLRPCLT
+3	L	0.47	 	----MSLRPCLTP
+4	R	-4.20	 	---MSLRPCLTPS
+5	P	1.40	 	--MSLRPCLTPSS
+6	C	-5.56	 	-MSLRPCLTPSSM
+7	L	-5.61	 	MSLRPCLTPSSMQ
+8	T	-6.12	 	SLRPCLTPSSMQY
+9	P	-8.85	 	LRPCLTPSSMQYS
+10	S	-13.56	 	RPCLTPSSMQYSD
+11	S	-12.24	 	PCLTPSSMQYSDI
+12	M	-5.87	 	CLTPSSMQYSDIY
+13	Q	-4.71	 	LTPSSMQYSDIYI
+14	Y	-7.90	 	TPSSMQYSDIYIH
+15	S	-5.73	 	PSSMQYSDIYIHH
+16	D	1.21	 	SSMQYSDIYIHHT
+17	I	0.70	 	SMQYSDIYIHHTH
+18	Y	0.50	 	MQYSDIYIHHTHT
+19	I	3.27	 	QYSDIYIHHTHTP
+20	H	-1.29	 	YSDIYIHHTHTPH
+21	H	-3.98	 	SDIYIHHTHTPHP
+22	T	-7.86	 	DIYIHHTHTPHPH
+23	H	-6.73	 	IYIHHTHTPHPHH
+24	T	-5.36	 	YIHHTHTPHPHHT
+25	P	-5.52	 	IHHTHTPHPHHTH
+26	H	-5.04	 	HHTHTPHPHHTHT
+27	P	-5.27	 	HTHTPHPHHTHTH
+28	H	-5.52	 	THTPHPHHTHTHT
+29	H	-5.29	 	HTPHPHHTHTHTH
+30	T	-5.28	 	TPHPHHTHTHTHH
+31	H	-4.69	 	PHPHHTHTHTHHT
+32	T	-3.51	 	HPHHTHTHTHHTP
+33	H	-3.36	 	PHHTHTHTHHTPT
+34	T	-2.94	 	HHTHTHTHHTPTH
+35	H	-2.57	 	HTHTHTHHTPTHS
+36	H	-3.11	 	THTHTHHTPTHSL
+37	T	-3.10	 	HTHTHHTPTHSLT
+38	P	-3.16	 	THTHHTPTHSLTS
+39	T	-3.07	 	HTHHTPTHSLTST
+40	H	1.88	 	THHTPTHSLTSTF
+41	S	1.63	 	HHTPTHSLTSTFT
+42	L	1.49	 	HTPTHSLTSTFTL
+43	T	1.57	 	TPTHSLTSTFTLA
+44	S	4.19	 	PTHSLTSTFTLAV
+45	T	-3.59	 	THSLTSTFTLAVT
+46	F	1.83	 	HSLTSTFTLAVTP
+47	T	2.72	 	SLTSTFTLAVTPY
+48	L	7.35	 	LTSTFTLAVTPYP
+49	A	4.43	 	TSTFTLAVTPYPA
+50	V	2.62	 	STFTLAVTPYPAF
+51	T	-0.87	 	TFTLAVTPYPAF-
+52	P	-2.16	 	FTLAVTPYPAF--
+53	Y	-3.59	 	TLAVTPYPAF---
+54	P	0.11	 	LAVTPYPAF----
+55	A	1.51	 	AVTPYPAF-----
+56	F	-1.01	 	VTPYPAF------
+57	-	0.17	 	TPYPAF-------
+58	-	0.95	 	PYPAF--------
+59	-	-0.30	 	YPAF---------
+60	-	-0.14	 	PAF----------
+61	-	-0.07	 	AF-----------
+62	-	-0.05	 	F------------

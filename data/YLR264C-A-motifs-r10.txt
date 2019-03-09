@@ -1,0 +1,66 @@
+# Run started 2018-06-29 16:16:21 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YLR264C-A --report --out ../data/YLR264C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YLR264C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YLR264C-A-motifs-r10.txt
+# Found ORF YLR264C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.01	 	-----------MN
+-3	-	-0.21	 	----------MNV
+-2	-	-0.47	 	---------MNVI
+-1	-	-1.61	 	--------MNVIF
+0	-	-4.61	 	-------MNVIFK
+1	M	-1.69	 	------MNVIFKL
+2	N	0.26	 	-----MNVIFKLY
+3	V	2.40	 	----MNVIFKLYL
+4	I	1.14	 	---MNVIFKLYLT
+5	F	5.56	 	--MNVIFKLYLTI
+6	K	8.23	 	-MNVIFKLYLTID
+7	L	8.31	 	MNVIFKLYLTIDA
+8	Y	6.39	 	NVIFKLYLTIDAP
+9	L	10.98	*	VIFKLYLTIDAPK
+10	T	0.91	 	IFKLYLTIDAPKK
+11	I	0.79	 	FKLYLTIDAPKKK
+12	D	-5.35	 	KLYLTIDAPKKKK
+13	A	-3.53	 	LYLTIDAPKKKKV
+14	P	-7.56	 	YLTIDAPKKKKVT
+15	K	-4.26	 	LTIDAPKKKKVTV
+16	K	-4.41	 	TIDAPKKKKVTVR
+17	K	0.42	 	IDAPKKKKVTVRD
+18	K	1.59	 	DAPKKKKVTVRDF
+19	V	6.37	 	APKKKKVTVRDFL
+20	T	5.28	 	PKKKKVTVRDFLS
+21	V	1.42	 	KKKKVTVRDFLSI
+22	R	1.36	 	KKKVTVRDFLSIR
+23	D	5.87	 	KKVTVRDFLSIRY
+24	F	2.01	 	KVTVRDFLSIRYS
+25	L	4.90	 	VTVRDFLSIRYSM
+26	S	5.85	 	TVRDFLSIRYSMP
+27	I	7.25	 	VRDFLSIRYSMPY
+28	R	-0.57	 	RDFLSIRYSMPYR
+29	Y	1.04	 	DFLSIRYSMPYRL
+30	S	-4.08	 	FLSIRYSMPYRLA
+31	M	2.40	 	LSIRYSMPYRLAS
+32	P	-1.26	 	SIRYSMPYRLASN
+33	Y	3.74	 	IRYSMPYRLASN-
+34	R	4.77	 	RYSMPYRLASN--
+35	L	4.40	 	YSMPYRLASN---
+36	A	-0.46	 	SMPYRLASN----
+37	S	0.66	 	MPYRLASN-----
+38	N	-5.95	 	PYRLASN------
+39	-	-4.50	 	YRLASN-------
+40	-	-2.82	 	RLASN--------
+41	-	-1.50	 	LASN---------
+42	-	-0.63	 	ASN----------
+43	-	-0.45	 	SN-----------
+44	-	-0.25	 	N------------

@@ -1,0 +1,56 @@
+# Run started 2018-06-30 08:51:46 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR182W-A --report --out ../data/YMR182W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR182W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR182W-A-motifs-r10.txt
+# Found ORF YMR182W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.46	 	-----------MR
+-3	-	1.33	 	----------MRK
+-2	-	2.26	 	---------MRKP
+-1	-	2.81	 	--------MRKPS
+0	-	1.59	 	-------MRKPSA
+1	M	-0.53	 	------MRKPSAF
+2	R	-2.84	 	-----MRKPSAFH
+3	K	-5.04	 	----MRKPSAFHA
+4	P	-4.68	 	---MRKPSAFHAC
+5	S	-1.87	 	--MRKPSAFHACN
+6	A	-2.63	 	-MRKPSAFHACNI
+7	F	-2.24	 	MRKPSAFHACNII
+8	H	-7.42	 	RKPSAFHACNIIF
+9	A	-10.27	 	KPSAFHACNIIFL
+10	C	-9.89	 	PSAFHACNIIFLP
+11	N	-5.66	 	SAFHACNIIFLPL
+12	I	-3.07	 	AFHACNIIFLPLV
+13	I	-0.25	 	FHACNIIFLPLVK
+14	F	1.36	 	HACNIIFLPLVKC
+15	L	3.06	 	ACNIIFLPLVKCA
+16	P	4.97	 	CNIIFLPLVKCAS
+17	L	3.94	 	NIIFLPLVKCASA
+18	V	-7.32	 	IIFLPLVKCASAT
+19	K	-4.36	 	IFLPLVKCASATI
+20	C	-11.27	 	FLPLVKCASATIM
+21	A	-11.05	 	LPLVKCASATIML
+22	S	-9.33	 	PLVKCASATIMLN
+23	A	-7.96	 	LVKCASATIMLN-
+24	T	-5.18	 	VKCASATIMLN--
+25	I	1.29	 	KCASATIMLN---
+26	M	0.62	 	CASATIMLN----
+27	L	3.75	 	ASATIMLN-----
+28	N	-0.40	 	SATIMLN------
+29	-	0.72	 	ATIMLN-------
+30	-	-5.37	 	TIMLN--------
+31	-	-3.21	 	IMLN---------
+32	-	-1.89	 	MLN----------
+33	-	-1.05	 	LN-----------
+34	-	-0.25	 	N------------

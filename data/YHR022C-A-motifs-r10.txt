@@ -1,0 +1,57 @@
+# Run started 2018-06-29 15:28:40 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YHR022C-A --report --out ../data/YHR022C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YHR022C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YHR022C-A-motifs-r10.txt
+# Found ORF YHR022C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.50	 	----------MKI
+-2	-	1.10	 	---------MKIK
+-1	-	0.95	 	--------MKIKF
+0	-	-0.87	 	-------MKIKFS
+1	M	2.36	 	------MKIKFSR
+2	K	0.72	 	-----MKIKFSRG
+3	I	3.21	 	----MKIKFSRGA
+4	K	3.85	 	---MKIKFSRGAR
+5	F	4.00	 	--MKIKFSRGARF
+6	S	-1.67	 	-MKIKFSRGARFS
+7	R	0.77	 	MKIKFSRGARFSA
+8	G	-2.90	 	KIKFSRGARFSAT
+9	A	0.32	 	IKFSRGARFSATF
+10	R	-0.44	 	KFSRGARFSATFS
+11	F	1.02	 	FSRGARFSATFSF
+12	S	-0.14	 	SRGARFSATFSFD
+13	A	2.41	 	RGARFSATFSFDK
+14	T	-2.10	 	GARFSATFSFDKY
+15	F	0.75	 	ARFSATFSFDKYP
+16	S	-3.09	 	RFSATFSFDKYPF
+17	F	-4.56	 	FSATFSFDKYPFL
+18	D	-2.83	 	SATFSFDKYPFLL
+19	K	-4.35	 	ATFSFDKYPFLLY
+20	Y	-5.01	 	TFSFDKYPFLLYE
+21	P	1.45	 	FSFDKYPFLLYEV
+22	F	5.38	 	SFDKYPFLLYEVV
+23	L	5.82	 	FDKYPFLLYEVVR
+24	L	4.55	 	DKYPFLLYEVVR-
+25	Y	6.19	 	KYPFLLYEVVR--
+26	E	3.60	 	YPFLLYEVVR---
+27	V	-3.35	 	PFLLYEVVR----
+28	V	-4.01	 	FLLYEVVR-----
+29	R	0.20	 	LLYEVVR------
+30	-	0.76	 	LYEVVR-------
+31	-	0.40	 	YEVVR--------
+32	-	1.72	 	EVVR---------
+33	-	1.44	 	VVR----------
+34	-	0.86	 	VR-----------
+35	-	0.39	 	R------------

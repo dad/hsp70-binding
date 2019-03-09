@@ -1,0 +1,71 @@
+# Run started 2018-06-29 14:57:51 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PMP2 --report --out ../data/PMP2-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: PMP2
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/PMP2-motifs-r10.txt
+# Found gene PMP2 = YEL017C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	-0.22	 	----------MLM
+-2	-	-0.28	 	---------MLMS
+-1	-	-0.93	 	--------MLMST
+0	-	2.82	 	-------MLMSTL
+1	M	2.34	 	------MLMSTLP
+2	L	1.07	 	-----MLMSTLPG
+3	M	0.16	 	----MLMSTLPGG
+4	S	4.62	 	---MLMSTLPGGV
+5	T	-3.85	 	--MLMSTLPGGVI
+6	L	-4.19	 	-MLMSTLPGGVIL
+7	P	-4.59	 	MLMSTLPGGVILV
+8	G	-0.06	 	LMSTLPGGVILVF
+9	G	-4.36	 	MSTLPGGVILVFI
+10	V	0.59	 	STLPGGVILVFIL
+11	I	5.63	 	TLPGGVILVFILV
+12	L	9.89	 	LPGGVILVFILVG
+13	V	10.85	*	PGGVILVFILVGL
+14	F	10.02	*	GGVILVFILVGLA
+15	I	6.63	 	GVILVFILVGLAC
+16	L	4.09	 	VILVFILVGLACI
+17	V	6.51	 	ILVFILVGLACIA
+18	G	3.34	 	LVFILVGLACIAI
+19	L	-8.06	 	VFILVGLACIAII
+20	A	-6.28	 	FILVGLACIAIIS
+21	C	-2.93	 	ILVGLACIAIIST
+22	I	-6.09	 	LVGLACIAIISTI
+23	A	-1.58	 	VGLACIAIISTII
+24	I	-3.99	 	GLACIAIISTIIY
+25	I	-5.64	 	LACIAIISTIIYR
+26	S	0.67	 	ACIAIISTIIYRK
+27	T	1.48	 	CIAIISTIIYRKW
+28	I	5.18	 	IAIISTIIYRKWQ
+29	I	6.44	 	AIISTIIYRKWQA
+30	Y	7.08	 	IISTIIYRKWQAR
+31	R	0.88	 	ISTIIYRKWQARQ
+32	K	-3.08	 	STIIYRKWQARQR
+33	W	-3.35	 	TIIYRKWQARQRG
+34	Q	-3.00	 	IIYRKWQARQRGL
+35	A	-2.08	 	IYRKWQARQRGLQ
+36	R	0.45	 	YRKWQARQRGLQR
+37	Q	1.46	 	RKWQARQRGLQRF
+38	R	5.05	 	KWQARQRGLQRF-
+39	G	4.04	 	WQARQRGLQRF--
+40	L	4.16	 	QARQRGLQRF---
+41	Q	5.74	 	ARQRGLQRF----
+42	R	6.80	 	RQRGLQRF-----
+43	F	-0.70	 	QRGLQRF------
+44	-	2.56	 	RGLQRF-------
+45	-	3.07	 	GLQRF--------
+46	-	1.16	 	LQRF---------
+47	-	1.01	 	QRF----------
+48	-	0.30	 	RF-----------
+49	-	-0.05	 	F------------

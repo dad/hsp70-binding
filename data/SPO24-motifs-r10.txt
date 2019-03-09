@@ -1,0 +1,95 @@
+# Run started 2018-06-30 09:32:44 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id SPO24 --report --out ../data/SPO24-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: SPO24
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/SPO24-motifs-r10.txt
+# Found gene SPO24 = YPR036W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.34	 	-----------MV
+-3	-	-0.78	 	----------MVA
+-2	-	-1.43	 	---------MVAF
+-1	-	-2.95	 	--------MVAFL
+0	-	-1.10	 	-------MVAFLE
+1	M	-1.99	 	------MVAFLEL
+2	V	-0.42	 	-----MVAFLELT
+3	A	2.59	 	----MVAFLELTS
+4	F	1.03	 	---MVAFLELTSD
+5	L	3.29	 	--MVAFLELTSDV
+6	E	2.92	 	-MVAFLELTSDVS
+7	L	-0.47	 	MVAFLELTSDVSQ
+8	T	-11.15	 	VAFLELTSDVSQP
+9	S	-4.57	 	AFLELTSDVSQPF
+10	D	-11.24	 	FLELTSDVSQPFV
+11	V	-9.79	 	LELTSDVSQPFVI
+12	S	-9.64	 	ELTSDVSQPFVIP
+13	Q	-2.97	 	LTSDVSQPFVIPS
+14	P	-0.97	 	TSDVSQPFVIPSL
+15	F	2.68	 	SDVSQPFVIPSLS
+16	V	4.16	 	DVSQPFVIPSLSP
+17	I	3.36	 	VSQPFVIPSLSPV
+18	P	5.17	 	SQPFVIPSLSPVS
+19	S	1.94	 	QPFVIPSLSPVSQ
+20	L	-4.25	 	PFVIPSLSPVSQP
+21	S	0.80	 	FVIPSLSPVSQPS
+22	P	1.36	 	VIPSLSPVSQPSS
+23	V	-5.50	 	IPSLSPVSQPSSR
+24	S	-3.77	 	PSLSPVSQPSSRK
+25	Q	-2.32	 	SLSPVSQPSSRKN
+26	P	-3.35	 	LSPVSQPSSRKNS
+27	S	-2.64	 	SPVSQPSSRKNSD
+28	S	-1.55	 	PVSQPSSRKNSDA
+29	R	-3.64	 	VSQPSSRKNSDAN
+30	K	-4.71	 	SQPSSRKNSDANV
+31	N	-8.53	 	QPSSRKNSDANVD
+32	S	-8.39	 	PSSRKNSDANVDD
+33	D	-10.71	 	SSRKNSDANVDDL
+34	A	-7.80	 	SRKNSDANVDDLN
+35	N	-11.12	 	RKNSDANVDDLNL
+36	V	-11.77	 	KNSDANVDDLNLA
+37	D	-7.18	 	NSDANVDDLNLAI
+38	D	-8.77	 	SDANVDDLNLAIA
+39	L	-6.38	 	DANVDDLNLAIAN
+40	N	-2.27	 	ANVDDLNLAIANA
+41	L	4.12	 	NVDDLNLAIANAA
+42	A	-1.77	 	VDDLNLAIANAAL
+43	I	-2.65	 	DDLNLAIANAALL
+44	A	-8.00	 	DLNLAIANAALLD
+45	N	-5.65	 	LNLAIANAALLDA
+46	A	-4.52	 	NLAIANAALLDAS
+47	A	0.87	 	LAIANAALLDASA
+48	L	-1.66	 	AIANAALLDASAS
+49	L	-0.07	 	IANAALLDASASS
+50	D	0.24	 	ANAALLDASASSR
+51	A	-5.03	 	NAALLDASASSRS
+52	S	-11.02	 	AALLDASASSRSH
+53	A	-6.02	 	ALLDASASSRSHS
+54	S	-4.85	 	LLDASASSRSHSR
+55	S	-2.79	 	LDASASSRSHSRK
+56	R	-1.74	 	DASASSRSHSRKN
+57	S	-0.46	 	ASASSRSHSRKNS
+58	H	-0.21	 	SASSRSHSRKNSL
+59	S	-1.12	 	ASSRSHSRKNSLS
+60	R	-2.94	 	SSRSHSRKNSLSL
+61	K	-2.91	 	SRSHSRKNSLSLL
+62	N	1.67	 	RSHSRKNSLSLL-
+63	S	0.48	 	SHSRKNSLSLL--
+64	L	5.01	 	HSRKNSLSLL---
+65	S	8.87	 	SRKNSLSLL----
+66	L	10.00	*	RKNSLSLL-----
+67	L	3.35	 	KNSLSLL------
+68	-	5.58	 	NSLSLL-------
+69	-	0.13	 	SLSLL--------
+70	-	-4.71	 	LSLL---------
+71	-	-2.78	 	SLL----------
+72	-	-1.68	 	LL-----------
+73	-	-0.56	 	L------------

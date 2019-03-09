@@ -1,0 +1,80 @@
+# Run started 2018-06-29 14:34:28 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YCR095W-A --report --out ../data/YCR095W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YCR095W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YCR095W-A-motifs-r10.txt
+# Found ORF YCR095W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	-0.08	 	----------MTV
+-2	-	-0.23	 	---------MTVL
+-1	-	-1.10	 	--------MTVLI
+0	-	-2.12	 	-------MTVLIK
+1	M	1.02	 	------MTVLIKL
+2	T	4.91	 	-----MTVLIKLG
+3	V	7.68	 	----MTVLIKLGL
+4	L	7.21	 	---MTVLIKLGLR
+5	I	12.99	*	--MTVLIKLGLRI
+6	K	9.87	 	-MTVLIKLGLRIL
+7	L	7.68	 	MTVLIKLGLRILH
+8	G	2.45	 	TVLIKLGLRILHV
+9	L	6.43	 	VLIKLGLRILHVY
+10	R	3.96	 	LIKLGLRILHVYK
+11	I	5.86	 	IKLGLRILHVYKG
+12	L	2.58	 	KLGLRILHVYKGF
+13	H	8.37	 	LGLRILHVYKGFF
+14	V	3.37	 	GLRILHVYKGFFR
+15	Y	-3.64	 	LRILHVYKGFFRK
+16	K	2.23	 	RILHVYKGFFRKV
+17	G	4.20	 	ILHVYKGFFRKVI
+18	F	1.20	 	LHVYKGFFRKVIL
+19	F	1.33	 	HVYKGFFRKVILK
+20	R	5.96	 	VYKGFFRKVILKY
+21	K	6.16	 	YKGFFRKVILKYF
+22	V	7.91	 	KGFFRKVILKYFF
+23	I	5.50	 	GFFRKVILKYFFF
+24	L	9.63	 	FFRKVILKYFFFS
+25	K	9.19	 	FRKVILKYFFFSS
+26	Y	6.14	 	RKVILKYFFFSSE
+27	F	1.31	 	KVILKYFFFSSEH
+28	F	1.88	 	VILKYFFFSSEHT
+29	F	-1.81	 	ILKYFFFSSEHTK
+30	S	-4.91	 	LKYFFFSSEHTKV
+31	S	-7.00	 	KYFFFSSEHTKVN
+32	E	-8.72	 	YFFFSSEHTKVNK
+33	H	-8.59	 	FFFSSEHTKVNKK
+34	T	-3.31	 	FFSSEHTKVNKKS
+35	K	-2.15	 	FSSEHTKVNKKSS
+36	V	-0.72	 	SSEHTKVNKKSSM
+37	N	-0.72	 	SEHTKVNKKSSMH
+38	K	-0.86	 	EHTKVNKKSSMHA
+39	K	-4.60	 	HTKVNKKSSMHAF
+40	S	-5.37	 	TKVNKKSSMHAFL
+41	S	-6.08	 	KVNKKSSMHAFLC
+42	M	-5.02	 	VNKKSSMHAFLCK
+43	H	-1.92	 	NKKSSMHAFLCKI
+44	A	2.58	 	KKSSMHAFLCKIY
+45	F	-2.60	 	KSSMHAFLCKIYK
+46	L	-2.37	 	SSMHAFLCKIYKR
+47	C	0.92	 	SMHAFLCKIYKR-
+48	K	4.13	 	MHAFLCKIYKR--
+49	I	-3.19	 	HAFLCKIYKR---
+50	Y	-5.15	 	AFLCKIYKR----
+51	K	-0.44	 	FLCKIYKR-----
+52	R	-2.21	 	LCKIYKR------
+53	-	-1.99	 	CKIYKR-------
+54	-	1.47	 	KIYKR--------
+55	-	2.16	 	IYKR---------
+56	-	1.69	 	YKR----------
+57	-	1.06	 	KR-----------
+58	-	0.39	 	R------------

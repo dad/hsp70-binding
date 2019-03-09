@@ -1,0 +1,89 @@
+# Run started 2018-06-30 09:10:34 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOL097W-A --report --out ../data/YOL097W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOL097W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOL097W-A-motifs-r10.txt
+# Found ORF YOL097W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.06	 	-----------MQ
+-3	-	0.00	 	----------MQS
+-2	-	-0.02	 	---------MQSM
+-1	-	-0.80	 	--------MQSMI
+0	-	-2.69	 	-------MQSMIC
+1	M	-4.43	 	------MQSMICS
+2	Q	-5.27	 	-----MQSMICSS
+3	S	-3.55	 	----MQSMICSSE
+4	M	-8.94	 	---MQSMICSSEH
+5	I	-8.24	 	--MQSMICSSEHE
+6	C	-10.21	 	-MQSMICSSEHEN
+7	S	-12.84	 	MQSMICSSEHENL
+8	S	-18.96	 	QSMICSSEHENLT
+9	E	-22.21	 	SMICSSEHENLTC
+10	H	-20.33	 	MICSSEHENLTCK
+11	E	-13.17	 	ICSSEHENLTCKY
+12	N	-9.59	 	CSSEHENLTCKYW
+13	L	-11.00	 	SSEHENLTCKYWP
+14	T	-10.58	 	SEHENLTCKYWPV
+15	C	-4.73	 	EHENLTCKYWPVS
+16	K	-13.11	 	HENLTCKYWPVSF
+17	Y	-12.47	 	ENLTCKYWPVSFL
+18	W	-9.98	 	NLTCKYWPVSFLA
+19	P	-7.31	 	LTCKYWPVSFLAS
+20	V	-6.14	 	TCKYWPVSFLASW
+21	S	2.43	 	CKYWPVSFLASWC
+22	F	4.36	 	KYWPVSFLASWCE
+23	L	0.52	 	YWPVSFLASWCEN
+24	A	-2.10	 	WPVSFLASWCENG
+25	S	-10.37	 	PVSFLASWCENGS
+26	W	-19.00	 	VSFLASWCENGSG
+27	C	-19.93	 	SFLASWCENGSGT
+28	E	-19.55	 	FLASWCENGSGTL
+29	N	-16.42	 	LASWCENGSGTLM
+30	G	-18.74	 	ASWCENGSGTLMQ
+31	S	-14.24	 	SWCENGSGTLMQK
+32	G	-7.01	 	WCENGSGTLMQKD
+33	T	-2.74	 	CENGSGTLMQKDG
+34	L	-0.43	 	ENGSGTLMQKDGS
+35	M	0.45	 	NGSGTLMQKDGSL
+36	Q	-2.30	 	GSGTLMQKDGSLL
+37	K	-11.34	 	SGTLMQKDGSLLY
+38	D	-12.10	 	GTLMQKDGSLLYA
+39	G	-5.77	 	TLMQKDGSLLYAV
+40	S	-1.38	 	LMQKDGSLLYAVK
+41	L	6.23	 	MQKDGSLLYAVKN
+42	L	8.10	 	QKDGSLLYAVKNF
+43	Y	12.23	*	KDGSLLYAVKNFS
+44	A	3.76	 	DGSLLYAVKNFSH
+45	V	-4.62	 	GSLLYAVKNFSHI
+46	K	-3.70	 	SLLYAVKNFSHIF
+47	N	-4.00	 	LLYAVKNFSHIFE
+48	F	-6.26	 	LYAVKNFSHIFEK
+49	S	-1.99	 	YAVKNFSHIFEKK
+50	H	0.58	 	AVKNFSHIFEKKI
+51	I	-2.79	 	VKNFSHIFEKKIF
+52	F	-3.08	 	KNFSHIFEKKIFH
+53	E	-3.16	 	NFSHIFEKKIFHT
+54	K	-4.46	 	FSHIFEKKIFHTN
+55	K	-3.22	 	SHIFEKKIFHTNL
+56	I	-1.26	 	HIFEKKIFHTNL-
+57	F	0.64	 	IFEKKIFHTNL--
+58	H	-0.02	 	FEKKIFHTNL---
+59	T	-0.22	 	EKKIFHTNL----
+60	N	-1.16	 	KKIFHTNL-----
+61	L	0.81	 	KIFHTNL------
+62	-	2.43	 	IFHTNL-------
+63	-	3.52	 	FHTNL--------
+64	-	-2.60	 	HTNL---------
+65	-	-1.89	 	TNL----------
+66	-	-1.37	 	NL-----------
+67	-	-0.56	 	L------------

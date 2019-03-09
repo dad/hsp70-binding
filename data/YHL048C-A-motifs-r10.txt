@@ -1,0 +1,72 @@
+# Run started 2018-06-29 15:27:47 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YHL048C-A --report --out ../data/YHL048C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YHL048C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YHL048C-A-motifs-r10.txt
+# Found ORF YHL048C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.14	 	-----------MH
+-3	-	-0.35	 	----------MHD
+-2	-	-0.62	 	---------MHDI
+-1	-	-1.70	 	--------MHDIW
+0	-	-3.79	 	-------MHDIWV
+1	M	-8.54	 	------MHDIWVI
+2	H	-6.49	 	-----MHDIWVIT
+3	D	-9.87	 	----MHDIWVITT
+4	I	-5.76	 	---MHDIWVITTS
+5	W	-0.81	 	--MHDIWVITTSP
+6	V	2.62	 	-MHDIWVITTSPA
+7	I	-1.86	 	MHDIWVITTSPAC
+8	T	1.02	 	HDIWVITTSPACF
+9	T	-3.23	 	DIWVITTSPACFE
+10	S	-7.61	 	IWVITTSPACFEI
+11	P	-12.19	 	WVITTSPACFEIL
+12	A	-10.16	 	VITTSPACFEILY
+13	C	-11.92	 	ITTSPACFEILYK
+14	F	-9.04	 	TTSPACFEILYKY
+15	E	-5.79	 	TSPACFEILYKYC
+16	I	-3.04	 	SPACFEILYKYCK
+17	L	-4.29	 	PACFEILYKYCKQ
+18	Y	4.65	 	ACFEILYKYCKQK
+19	K	-1.64	 	CFEILYKYCKQKG
+20	Y	-6.15	 	FEILYKYCKQKGR
+21	C	-7.46	 	EILYKYCKQKGRA
+22	K	-5.30	 	ILYKYCKQKGRAR
+23	Q	-7.63	 	LYKYCKQKGRARM
+24	K	-9.64	 	YKYCKQKGRARMG
+25	G	-5.01	 	KYCKQKGRARMGG
+26	R	-2.59	 	YCKQKGRARMGGL
+27	A	-1.01	 	CKQKGRARMGGLI
+28	R	-0.23	 	KQKGRARMGGLIV
+29	M	-2.14	 	QKGRARMGGLIVK
+30	G	1.01	 	KGRARMGGLIVKI
+31	G	3.32	 	GRARMGGLIVKII
+32	L	7.03	 	RARMGGLIVKIIR
+33	I	6.98	 	ARMGGLIVKIIRF
+34	V	11.54	*	RMGGLIVKIIRFN
+35	K	7.69	 	MGGLIVKIIRFNH
+36	I	2.60	 	GGLIVKIIRFNHA
+37	I	4.12	 	GLIVKIIRFNHAS
+38	R	3.32	 	LIVKIIRFNHASV
+39	F	-1.89	 	IVKIIRFNHASV-
+40	N	-5.25	 	VKIIRFNHASV--
+41	H	-5.71	 	KIIRFNHASV---
+42	A	-4.46	 	IIRFNHASV----
+43	S	-2.87	 	IRFNHASV-----
+44	V	-0.38	 	RFNHASV------
+45	-	0.29	 	FNHASV-------
+46	-	1.93	 	NHASV--------
+47	-	0.65	 	HASV---------
+48	-	0.37	 	ASV----------
+49	-	0.21	 	SV-----------
+50	-	0.08	 	V------------

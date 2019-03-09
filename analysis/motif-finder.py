@@ -28,7 +28,7 @@ def realignSequence(seq, aligned_seq, gap='-'):
 # DAD: need more comments here!
 
 if __name__=='__main__':
-	parser = argparse.ArgumentParser(description="Detection of Hsp70 binding sites using position-specific scoring matrices")
+	parser = argparse.ArgumentParser(description="Detection of motifs using position-specific scoring matrices")
 	parser.add_argument("-d", "--database", dest="fasta_fname", default=None, help="filename of FASTA database containing proteins to score")
 	parser.add_argument("--id", dest="protein_id", default=None, help="particular protein identifier to score")
 	parser.add_argument("-s", "--sequence", dest="sequence", default=None, help="particular protein sequence to score")
@@ -36,6 +36,7 @@ if __name__=='__main__':
 	parser.add_argument("--translate", dest="translate",action="store_true", default=False, help="translate incoming sequences?")
 	parser.add_argument("-t", "--threshold", type=float, dest="score_threshold", default=5.0, help="score threshold defining a putative binding site")
 	parser.add_argument("--max-frequency-bin", dest="maximum_frequency_bin", default=10, help="maximum number of sequential binding sites to count")
+	parser.add_argument("--degap", dest="degap", action='store_true', default=False, help="remove gaps from input FASTA file?")
 	parser.add_argument("-r", "--report", dest="write_report", action="store_true", default=False, help="write out specific report for each protein?")
 	parser.add_argument("-m", "--mask", dest="mask_sequences", action="store_true", default=False, help="mask input sequences?")
 	parser.add_argument("-o", "--out", dest="out_fname", default=None, help="output (summary) filename")
@@ -44,41 +45,59 @@ if __name__=='__main__':
 	# Set up some output
 	info_outs = util.OutStreams(sys.stdout)
 	outs = util.OutStreams()
+	params_outs = util.OutStreams([outs])
 	if not options.out_fname is None:
-		outf = file(os.path.expanduser(options.out_fname),'w')
+		outf = open(os.path.expanduser(options.out_fname),'w')
 		outs.addStream(outf)
 	else:
 		outs.addStream(sys.stdout)
 
 	orf_dict = None
+	gene_orf_map = None
 	if not options.fasta_fname is None:
 		fname = os.path.expanduser(options.fasta_fname)
 		(headers, sequences) = biofile.readFASTA(fname)
 		orf_dict = dict(zip([biofile.firstField(h) for h in headers], sequences))
+		gene_orf_map = dict([(biofile.secondField(h), biofile.firstField(h)) for h in headers])
+
 	
 	# Set the weight matrix
 	try:
 		matrix = motif.weight_matrices[options.pssm_name]
-	except KeyError, ke:
+	except KeyError as ke:
 		outs.write("# Unable to find weight matrix {}; try one of {}\n".format(options.pssm_name, ','.join(motif.weight_matrices.keys())))
-	window_size = len(matrix.values()[0])
+	window_size = len(matrix['A']) #len(matrix.values()[0])
 	# for associating windows with residues, center them
 	mid_window = int(math.floor(window_size/2.0))
 	
-	# Write out
-	for (k,v) in vars(options).items():
-		outs.write("# {} = {}\n".format(k,v))
+	# Write out parameters
+	params_outs.write("# Run started {}\n".format(util.timestamp()))
+	params_outs.write("# Command: {}\n".format(' '.join(sys.argv)))
+	params_outs.write("# Parameters:\n")
+	optdict = vars(options)
+	for (k,v) in optdict.items():
+		params_outs.write("#\t{k}: {v}\n".format(k=k, v=v))
 	
 	seq = None
-	if not options.protein_id is None and not orf_dict is None: # analyze specific protein pulled from DB
+	if not orf_dict is None and not options.protein_id is None:
 		try:
 			seq = orf_dict[options.protein_id]
-		except KeyError, ke:
-			raise KeyError, "# No protein found for ID {}".format(options.protein_id)
+			outs.write("# Found ORF {}\n".format(options.protein_id))
+		except KeyError as ke:
+			# Maybe the user passed in a gene name.
+			try:
+				orf = gene_orf_map[options.protein_id]
+				outs.write("# Found gene {} = {}\n".format(options.protein_id, orf))
+				seq = orf_dict[orf]
+			except KeyError:
+				raise KeyError("# No protein found for ID {}".format(protein_id))
 	
 	if not options.sequence is None:
 		seq = options.sequence
 	
+	if options.degap and not seq is None:
+		seq = seq.replace('-','')
+
 	if options.write_report and not seq is None:
 		score_res = motif.score(seq, matrix, return_windows=True)
 		header = 'pos\tresidue\tscore\tabove.threshold\twindow\n'
@@ -124,7 +143,8 @@ if __name__=='__main__':
 		# Detect sites
 		# Restore alignment, masking all but binding sites
 		for (hdr, rawseq) in zip(headers,sequences):
-			seq = rawseq.replace('-','')
+			if options.degap:
+				seq = rawseq.replace('-','')
 			if options.translate:
 				seq = translate.translate(seq)
 				if seq is None:

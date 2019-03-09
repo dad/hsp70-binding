@@ -1,0 +1,84 @@
+# Run started 2018-06-29 15:29:40 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YHR050W-A --report --out ../data/YHR050W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YHR050W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YHR050W-A-motifs-r10.txt
+# Found ORF YHR050W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	1.11	 	----------MKR
+-2	-	1.84	 	---------MKRD
+-1	-	2.02	 	--------MKRDL
+0	-	0.70	 	-------MKRDLI
+1	M	-1.31	 	------MKRDLIG
+2	K	-5.63	 	-----MKRDLIGP
+3	R	-2.25	 	----MKRDLIGPV
+4	D	1.16	 	---MKRDLIGPVK
+5	L	1.08	 	--MKRDLIGPVKA
+6	I	-0.50	 	-MKRDLIGPVKAL
+7	G	6.04	 	MKRDLIGPVKALI
+8	P	-2.49	 	KRDLIGPVKALIK
+9	V	-5.59	 	RDLIGPVKALIKI
+10	K	1.68	 	DLIGPVKALIKIN
+11	A	6.89	 	LIGPVKALIKINN
+12	L	4.43	 	IGPVKALIKINNC
+13	I	8.72	 	GPVKALIKINNCS
+14	K	6.30	 	PVKALIKINNCSC
+15	I	-3.14	 	VKALIKINNCSCL
+16	N	-12.18	 	KALIKINNCSCLS
+17	N	-10.78	 	ALIKINNCSCLSR
+18	C	-19.33	 	LIKINNCSCLSRC
+19	S	-12.70	 	IKINNCSCLSRCQ
+20	C	-11.50	 	KINNCSCLSRCQI
+21	L	-13.58	 	INNCSCLSRCQIS
+22	S	-14.14	 	NNCSCLSRCQISR
+23	R	-14.23	 	NCSCLSRCQISRL
+24	C	-13.15	 	CSCLSRCQISRLP
+25	Q	-8.30	 	SCLSRCQISRLPH
+26	I	-7.12	 	CLSRCQISRLPHF
+27	S	-3.18	 	LSRCQISRLPHFF
+28	R	0.35	 	SRCQISRLPHFFT
+29	L	-4.65	 	RCQISRLPHFFTF
+30	P	-0.19	 	CQISRLPHFFTFH
+31	H	4.41	 	QISRLPHFFTFHP
+32	F	-3.63	 	ISRLPHFFTFHPH
+33	F	0.32	 	SRLPHFFTFHPHF
+34	T	1.04	 	RLPHFFTFHPHFS
+35	F	-2.28	 	LPHFFTFHPHFST
+36	H	-4.68	 	PHFFTFHPHFSTL
+37	P	-0.77	 	HFFTFHPHFSTLI
+38	H	-4.36	 	FFTFHPHFSTLIY
+39	F	-4.18	 	FTFHPHFSTLIYY
+40	S	-0.72	 	TFHPHFSTLIYYY
+41	T	2.09	 	FHPHFSTLIYYYN
+42	L	3.34	 	HPHFSTLIYYYNL
+43	I	8.26	 	PHFSTLIYYYNLK
+44	Y	14.06	*	HFSTLIYYYNLKN
+45	Y	4.96	 	FSTLIYYYNLKNC
+46	Y	5.99	 	STLIYYYNLKNCI
+47	N	2.74	 	TLIYYYNLKNCIT
+48	L	-1.44	 	LIYYYNLKNCITS
+49	K	-8.88	 	IYYYNLKNCITSE
+50	N	-4.91	 	YYYNLKNCITSET
+51	C	-11.79	 	YYNLKNCITSET-
+52	I	-11.16	 	YNLKNCITSET--
+53	T	-11.89	 	NLKNCITSET---
+54	S	-12.94	 	LKNCITSET----
+55	E	-13.59	 	KNCITSET-----
+56	T	-9.82	 	NCITSET------
+57	-	-6.60	 	CITSET-------
+58	-	-2.10	 	ITSET--------
+59	-	0.27	 	TSET---------
+60	-	-0.03	 	SET----------
+61	-	0.11	 	ET-----------
+62	-	0.30	 	T------------

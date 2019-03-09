@@ -1,0 +1,75 @@
+# Run started 2018-06-30 08:53:48 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR247W-A --report --out ../data/YMR247W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR247W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR247W-A-motifs-r10.txt
+# Found ORF YMR247W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.26	 	-----------MA
+-3	-	-0.50	 	----------MAH
+-2	-	-0.42	 	---------MAHK
+-1	-	-1.25	 	--------MAHKC
+0	-	-1.25	 	-------MAHKCA
+1	M	-2.49	 	------MAHKCAS
+2	A	-4.86	 	-----MAHKCASA
+3	H	-10.78	 	----MAHKCASAK
+4	K	-9.59	 	---MAHKCASAKL
+5	C	-10.11	 	--MAHKCASAKLL
+6	A	-7.49	 	-MAHKCASAKLLS
+7	S	-7.87	 	MAHKCASAKLLSG
+8	A	-5.70	 	AHKCASAKLLSGI
+9	K	0.83	 	HKCASAKLLSGIM
+10	L	1.70	 	KCASAKLLSGIMA
+11	L	1.67	 	CASAKLLSGIMAL
+12	S	6.83	 	ASAKLLSGIMALL
+13	G	-1.08	 	SAKLLSGIMALLF
+14	I	-6.92	 	AKLLSGIMALLFN
+15	M	-0.83	 	KLLSGIMALLFNG
+16	A	6.19	 	LLSGIMALLFNGK
+17	L	6.01	 	LSGIMALLFNGKS
+18	L	5.55	 	SGIMALLFNGKSL
+19	F	5.42	 	GIMALLFNGKSLL
+20	N	-1.84	 	IMALLFNGKSLLR
+21	G	-7.75	 	MALLFNGKSLLRP
+22	K	-3.48	 	ALLFNGKSLLRPI
+23	S	3.38	 	LLFNGKSLLRPIC
+24	L	5.63	 	LFNGKSLLRPICL
+25	L	5.76	 	FNGKSLLRPICLH
+26	R	8.83	 	NGKSLLRPICLHV
+27	P	-3.81	 	GKSLLRPICLHVH
+28	I	-6.18	 	KSLLRPICLHVHN
+29	C	-6.03	 	SLLRPICLHVHNH
+30	L	-1.27	 	LLRPICLHVHNHL
+31	H	-5.82	 	LRPICLHVHNHLV
+32	V	-9.02	 	RPICLHVHNHLVS
+33	H	-14.40	 	PICLHVHNHLVSN
+34	N	-5.91	 	ICLHVHNHLVSNS
+35	H	-1.91	 	CLHVHNHLVSNSD
+36	L	0.83	 	LHVHNHLVSNSDT
+37	V	-0.22	 	HVHNHLVSNSDTN
+38	S	0.44	 	VHNHLVSNSDTNI
+39	N	-10.06	 	HNHLVSNSDTNIV
+40	S	-11.65	 	NHLVSNSDTNIVW
+41	D	-12.61	 	HLVSNSDTNIVWP
+42	T	-9.13	 	LVSNSDTNIVWP-
+43	N	-4.00	 	VSNSDTNIVWP--
+44	I	-2.87	 	SNSDTNIVWP---
+45	V	-2.92	 	NSDTNIVWP----
+46	W	-1.78	 	SDTNIVWP-----
+47	P	-5.21	 	DTNIVWP------
+48	-	-5.96	 	TNIVWP-------
+49	-	-1.66	 	NIVWP--------
+50	-	0.04	 	IVWP---------
+51	-	0.22	 	VWP----------
+52	-	0.04	 	WP-----------
+53	-	-0.05	 	P------------

@@ -1,0 +1,56 @@
+# Run started 2018-06-29 15:10:25 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YGL007C-A --report --out ../data/YGL007C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YGL007C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YGL007C-A-motifs-r10.txt
+# Found ORF YGL007C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	-0.07	 	----------MLP
+-2	-	0.01	 	---------MLPS
+-1	-	-0.68	 	--------MLPSI
+0	-	3.16	 	-------MLPSIS
+1	M	1.10	 	------MLPSISF
+2	L	-0.79	 	-----MLPSISFD
+3	P	0.87	 	----MLPSISFDY
+4	S	-0.56	 	---MLPSISFDYI
+5	I	-4.97	 	--MLPSISFDYIK
+6	S	-6.76	 	-MLPSISFDYIKR
+7	F	-0.04	 	MLPSISFDYIKRP
+8	D	0.45	 	LPSISFDYIKRPN
+9	Y	2.00	 	PSISFDYIKRPNI
+10	I	-0.92	 	SISFDYIKRPNIV
+11	K	1.53	 	ISFDYIKRPNIVL
+12	R	-3.36	 	SFDYIKRPNIVLF
+13	P	-4.95	 	FDYIKRPNIVLFS
+14	N	0.32	 	DYIKRPNIVLFSN
+15	I	4.71	 	YIKRPNIVLFSNV
+16	V	7.60	 	IKRPNIVLFSNVL
+17	L	6.93	 	KRPNIVLFSNVLS
+18	F	0.03	 	RPNIVLFSNVLSL
+19	S	2.06	 	PNIVLFSNVLSLS
+20	N	0.27	 	NIVLFSNVLSLSS
+21	V	-1.10	 	IVLFSNVLSLSSN
+22	L	5.10	 	VLFSNVLSLSSNI
+23	S	5.36	 	LFSNVLSLSSNI-
+24	L	3.45	 	FSNVLSLSSNI--
+25	S	-5.45	 	SNVLSLSSNI---
+26	S	-0.81	 	NVLSLSSNI----
+27	N	-6.30	 	VLSLSSNI-----
+28	I	-3.55	 	LSLSSNI------
+29	-	-1.06	 	SLSSNI-------
+30	-	0.59	 	LSSNI--------
+31	-	-2.17	 	SSNI---------
+32	-	-1.49	 	SNI----------
+33	-	-0.94	 	NI-----------
+34	-	-0.34	 	I------------

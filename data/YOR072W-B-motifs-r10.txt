@@ -1,0 +1,81 @@
+# Run started 2018-06-30 09:14:36 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOR072W-B --report --out ../data/YOR072W-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOR072W-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOR072W-B-motifs-r10.txt
+# Found ORF YOR072W-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.24	 	----------MIL
+-2	-	-0.51	 	---------MILA
+-1	-	-1.54	 	--------MILAL
+0	-	0.52	 	-------MILALG
+1	M	3.76	 	------MILALGD
+2	I	3.38	 	-----MILALGDF
+3	L	6.66	 	----MILALGDFL
+4	A	5.54	 	---MILALGDFLT
+5	L	-2.40	 	--MILALGDFLTN
+6	G	-5.22	 	-MILALGDFLTNR
+7	D	1.76	 	MILALGDFLTNRK
+8	F	-3.24	 	ILALGDFLTNRKT
+9	L	-0.12	 	LALGDFLTNRKTK
+10	T	4.31	 	ALGDFLTNRKTKH
+11	N	1.99	 	LGDFLTNRKTKHA
+12	R	-3.57	 	GDFLTNRKTKHAR
+13	K	-2.67	 	DFLTNRKTKHARG
+14	T	-2.30	 	FLTNRKTKHARGP
+15	K	0.20	 	LTNRKTKHARGPG
+16	H	-0.09	 	TNRKTKHARGPGF
+17	A	-1.21	 	NRKTKHARGPGFN
+18	R	-2.50	 	RKTKHARGPGFNS
+19	G	-3.73	 	KTKHARGPGFNSQ
+20	P	-1.58	 	TKHARGPGFNSQL
+21	G	-4.08	 	KHARGPGFNSQLA
+22	F	-4.19	 	HARGPGFNSQLAP
+23	N	-5.52	 	ARGPGFNSQLAPF
+24	S	-0.28	 	RGPGFNSQLAPFI
+25	Q	-2.63	 	GPGFNSQLAPFIF
+26	L	-4.13	 	PGFNSQLAPFIFD
+27	A	-1.06	 	GFNSQLAPFIFDY
+28	P	3.81	 	FNSQLAPFIFDYL
+29	F	-1.44	 	NSQLAPFIFDYLF
+30	I	-4.93	 	SQLAPFIFDYLFP
+31	F	0.10	 	QLAPFIFDYLFPI
+32	D	2.34	 	LAPFIFDYLFPIG
+33	Y	2.01	 	APFIFDYLFPIGR
+34	L	-0.55	 	PFIFDYLFPIGRV
+35	F	6.93	 	FIFDYLFPIGRVT
+36	P	4.18	 	IFDYLFPIGRVTD
+37	I	-3.61	 	FDYLFPIGRVTDF
+38	G	-1.31	 	DYLFPIGRVTDFF
+39	R	-0.96	 	YLFPIGRVTDFFY
+40	V	-9.20	 	LFPIGRVTDFFYF
+41	T	-4.62	 	FPIGRVTDFFYFF
+42	D	-2.28	 	PIGRVTDFFYFFQ
+43	F	-0.73	 	IGRVTDFFYFFQG
+44	F	2.42	 	GRVTDFFYFFQGP
+45	Y	7.58	 	RVTDFFYFFQGPF
+46	F	3.47	 	VTDFFYFFQGPFV
+47	F	-0.23	 	TDFFYFFQGPFVL
+48	Q	-4.98	 	DFFYFFQGPFVL-
+49	G	-4.41	 	FFYFFQGPFVL--
+50	P	-2.76	 	FYFFQGPFVL---
+51	F	4.36	 	YFFQGPFVL----
+52	V	6.40	 	FFQGPFVL-----
+53	L	7.34	 	FQGPFVL------
+54	-	5.60	 	QGPFVL-------
+55	-	3.88	 	GPFVL--------
+56	-	-2.42	 	PFVL---------
+57	-	-1.58	 	FVL----------
+58	-	-1.04	 	VL-----------
+59	-	-0.56	 	L------------

@@ -1,0 +1,77 @@
+# Run started 2018-06-29 14:26:41 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR196C-A --report --out ../data/YBR196C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR196C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR196C-A-motifs-r10.txt
+# Found ORF YBR196C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	0.55	 	----------MSR
+-2	-	0.88	 	---------MSRV
+-1	-	0.12	 	--------MSRVY
+0	-	-1.29	 	-------MSRVYI
+1	M	-4.24	 	------MSRVYIY
+2	S	-2.34	 	-----MSRVYIYP
+3	R	0.92	 	----MSRVYIYPL
+4	V	3.80	 	---MSRVYIYPLT
+5	Y	9.00	 	--MSRVYIYPLTV
+6	I	7.67	 	-MSRVYIYPLTVF
+7	Y	8.74	 	MSRVYIYPLTVFY
+8	P	3.93	 	SRVYIYPLTVFYF
+9	L	1.70	 	RVYIYPLTVFYFF
+10	T	0.50	 	VYIYPLTVFYFFA
+11	V	5.33	 	YIYPLTVFYFFAI
+12	F	0.67	 	IYPLTVFYFFAIE
+13	Y	4.69	 	YPLTVFYFFAIEM
+14	F	2.87	 	PLTVFYFFAIEMS
+15	F	2.85	 	LTVFYFFAIEMSV
+16	A	-2.16	 	TVFYFFAIEMSVF
+17	I	-5.01	 	VFYFFAIEMSVFC
+18	E	-8.90	 	FYFFAIEMSVFCY
+19	M	-6.07	 	YFFAIEMSVFCYY
+20	S	-8.40	 	FFAIEMSVFCYYN
+21	V	-11.79	 	FAIEMSVFCYYNW
+22	F	-6.78	 	AIEMSVFCYYNWF
+23	C	-1.28	 	IEMSVFCYYNWFY
+24	Y	-4.69	 	EMSVFCYYNWFYR
+25	Y	-8.56	 	MSVFCYYNWFYRR
+26	N	-6.92	 	SVFCYYNWFYRRN
+27	W	-1.77	 	VFCYYNWFYRRNF
+28	F	-3.14	 	FCYYNWFYRRNFP
+29	Y	-2.20	 	CYYNWFYRRNFPY
+30	R	0.73	 	YYNWFYRRNFPYL
+31	R	1.05	 	YNWFYRRNFPYLF
+32	N	-3.12	 	NWFYRRNFPYLFR
+33	F	2.22	 	WFYRRNFPYLFRP
+34	P	6.54	 	FYRRNFPYLFRPI
+35	Y	9.61	 	YRRNFPYLFRPIF
+36	L	6.10	 	RRNFPYLFRPIFP
+37	F	4.68	 	RNFPYLFRPIFPF
+38	R	4.37	 	NFPYLFRPIFPFL
+39	P	0.53	 	FPYLFRPIFPFLI
+40	I	-2.42	 	PYLFRPIFPFLIV
+41	F	1.06	 	YLFRPIFPFLIVL
+42	P	5.80	 	LFRPIFPFLIVLI
+43	F	4.36	 	FRPIFPFLIVLIS
+44	L	6.07	 	RPIFPFLIVLIS-
+45	I	11.17	*	PIFPFLIVLIS--
+46	V	12.64	*	IFPFLIVLIS---
+47	L	5.37	 	FPFLIVLIS----
+48	I	2.75	 	PFLIVLIS-----
+49	S	2.58	 	FLIVLIS------
+50	-	-2.75	 	LIVLIS-------
+51	-	-4.70	 	IVLIS--------
+52	-	-1.88	 	VLIS---------
+53	-	-1.12	 	LIS----------
+54	-	-0.25	 	IS-----------
+55	-	0.04	 	S------------

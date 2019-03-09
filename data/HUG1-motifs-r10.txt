@@ -1,0 +1,96 @@
+# Run started 2018-06-30 08:45:02 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HUG1 --report --out ../data/HUG1-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: HUG1
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/HUG1-motifs-r10.txt
+# Found gene HUG1 = YML058W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.09	 	----------MTM
+-2	-	-0.01	 	---------MTMD
+-1	-	-0.72	 	--------MTMDQ
+0	-	-1.89	 	-------MTMDQG
+1	M	-2.86	 	------MTMDQGL
+2	T	-7.08	 	-----MTMDQGLN
+3	M	-8.73	 	----MTMDQGLNP
+4	D	-9.09	 	---MTMDQGLNPK
+5	Q	-3.18	 	--MTMDQGLNPKQ
+6	G	-5.03	 	-MTMDQGLNPKQF
+7	L	-2.83	 	MTMDQGLNPKQFF
+8	N	-1.87	 	TMDQGLNPKQFFL
+9	P	-2.49	 	MDQGLNPKQFFLD
+10	K	-7.55	 	DQGLNPKQFFLDD
+11	Q	-4.30	 	QGLNPKQFFLDDV
+12	F	0.42	 	GLNPKQFFLDDVV
+13	F	-2.15	 	LNPKQFFLDDVVL
+14	L	-3.36	 	NPKQFFLDDVVLQ
+15	D	-2.90	 	PKQFFLDDVVLQD
+16	D	-1.92	 	KQFFLDDVVLQDT
+17	V	-4.90	 	QFFLDDVVLQDTL
+18	V	-2.00	 	FFLDDVVLQDTLC
+19	L	-0.99	 	FLDDVVLQDTLCS
+20	Q	-2.44	 	LDDVVLQDTLCSM
+21	D	0.50	 	DDVVLQDTLCSMS
+22	T	-11.34	 	DVVLQDTLCSMSN
+23	L	-8.21	 	VVLQDTLCSMSNR
+24	C	-4.39	 	VLQDTLCSMSNRV
+25	S	-3.47	 	LQDTLCSMSNRVN
+26	M	-11.47	 	QDTLCSMSNRVNK
+27	S	-13.73	 	DTLCSMSNRVNKS
+28	N	-6.24	 	TLCSMSNRVNKSV
+29	R	-5.46	 	LCSMSNRVNKSVK
+30	V	-3.47	 	CSMSNRVNKSVKT
+31	N	-2.15	 	SMSNRVNKSVKTG
+32	K	2.27	 	MSNRVNKSVKTGY
+33	S	-1.60	 	SNRVNKSVKTGYL
+34	V	-2.28	 	NRVNKSVKTGYLF
+35	K	-3.01	 	RVNKSVKTGYLFP
+36	T	1.69	 	VNKSVKTGYLFPK
+37	G	3.79	 	NKSVKTGYLFPKD
+38	Y	7.60	 	KSVKTGYLFPKDH
+39	L	6.49	 	SVKTGYLFPKDHV
+40	F	5.70	 	VKTGYLFPKDHVP
+41	P	-1.81	 	KTGYLFPKDHVPS
+42	K	-10.49	 	TGYLFPKDHVPSA
+43	D	-8.41	 	GYLFPKDHVPSAN
+44	H	-8.44	 	YLFPKDHVPSANI
+45	V	-7.84	 	LFPKDHVPSANII
+46	P	-3.53	 	FPKDHVPSANIIA
+47	S	-4.67	 	PKDHVPSANIIAV
+48	A	-5.01	 	KDHVPSANIIAVE
+49	N	-2.17	 	DHVPSANIIAVER
+50	I	-0.53	 	HVPSANIIAVERR
+51	I	3.30	 	VPSANIIAVERRG
+52	A	3.18	 	PSANIIAVERRGG
+53	V	-1.01	 	SANIIAVERRGGL
+54	E	-5.67	 	ANIIAVERRGGLS
+55	R	-5.63	 	NIIAVERRGGLSD
+56	R	-8.04	 	IIAVERRGGLSDI
+57	G	-1.05	 	IAVERRGGLSDIG
+58	G	-0.57	 	AVERRGGLSDIGK
+59	L	-3.78	 	VERRGGLSDIGKN
+60	S	0.90	 	ERRGGLSDIGKNT
+61	D	1.84	 	RRGGLSDIGKNTS
+62	I	-6.91	 	RGGLSDIGKNTSN
+63	G	-7.59	 	GGLSDIGKNTSN-
+64	K	-3.83	 	GLSDIGKNTSN--
+65	N	-8.28	 	LSDIGKNTSN---
+66	T	-7.45	 	SDIGKNTSN----
+67	S	-5.48	 	DIGKNTSN-----
+68	N	-4.29	 	IGKNTSN------
+69	-	-2.34	 	GKNTSN-------
+70	-	-1.46	 	KNTSN--------
+71	-	-0.64	 	NTSN---------
+72	-	-0.35	 	TSN----------
+73	-	-0.45	 	SN-----------
+74	-	-0.25	 	N------------

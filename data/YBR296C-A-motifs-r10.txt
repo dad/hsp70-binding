@@ -1,0 +1,67 @@
+# Run started 2018-06-29 14:29:46 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR296C-A --report --out ../data/YBR296C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR296C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR296C-A-motifs-r10.txt
+# Found ORF YBR296C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.31	 	----------MKV
+-2	-	0.37	 	---------MKVL
+-1	-	-0.29	 	--------MKVLD
+0	-	-2.88	 	-------MKVLDD
+1	M	-0.34	 	------MKVLDDW
+2	K	2.74	 	-----MKVLDDWF
+3	V	-1.97	 	----MKVLDDWFS
+4	L	-4.95	 	---MKVLDDWFSR
+5	D	-5.80	 	--MKVLDDWFSRK
+6	D	-4.73	 	-MKVLDDWFSRKF
+7	W	-11.78	 	MKVLDDWFSRKFS
+8	F	-8.01	 	KVLDDWFSRKFSK
+9	S	-5.33	 	VLDDWFSRKFSKA
+10	R	1.71	 	LDDWFSRKFSKAV
+11	K	-0.52	 	DDWFSRKFSKAVH
+12	F	-1.36	 	DWFSRKFSKAVHG
+13	S	-0.79	 	WFSRKFSKAVHGN
+14	K	3.10	 	FSRKFSKAVHGNN
+15	A	-0.59	 	SRKFSKAVHGNNH
+16	V	-1.46	 	RKFSKAVHGNNHG
+17	H	-3.00	 	KFSKAVHGNNHGT
+18	G	-5.54	 	FSKAVHGNNHGTI
+19	N	-8.67	 	SKAVHGNNHGTIS
+20	N	-8.62	 	KAVHGNNHGTISL
+21	H	-7.61	 	AVHGNNHGTISLS
+22	G	-4.15	 	VHGNNHGTISLST
+23	T	-4.15	 	HGNNHGTISLSTL
+24	I	2.33	 	GNNHGTISLSTLS
+25	S	3.38	 	NNHGTISLSTLSY
+26	L	3.92	 	NHGTISLSTLSYI
+27	S	3.76	 	HGTISLSTLSYIR
+28	T	3.37	 	GTISLSTLSYIRV
+29	L	0.95	 	TISLSTLSYIRVH
+30	S	6.44	 	ISLSTLSYIRVHK
+31	Y	7.06	 	SLSTLSYIRVHKL
+32	I	3.83	 	LSTLSYIRVHKLV
+33	R	5.41	 	STLSYIRVHKLVK
+34	V	1.51	 	TLSYIRVHKLVK-
+35	H	1.83	 	LSYIRVHKLVK--
+36	K	7.25	 	SYIRVHKLVK---
+37	L	3.66	 	YIRVHKLVK----
+38	V	5.64	 	IRVHKLVK-----
+39	K	7.05	 	RVHKLVK------
+40	-	-0.10	 	VHKLVK-------
+41	-	-1.07	 	HKLVK--------
+42	-	0.70	 	KLVK---------
+43	-	0.46	 	LVK----------
+44	-	0.64	 	VK-----------
+45	-	0.28	 	K------------

@@ -1,0 +1,83 @@
+# Run started 2018-06-30 09:23:32 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOR394C-A --report --out ../data/YOR394C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOR394C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOR394C-A-motifs-r10.txt
+# Found ORF YOR394C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.48	 	----------MIV
+-2	-	-0.73	 	---------MIVN
+-1	-	-1.68	 	--------MIVNN
+0	-	0.54	 	-------MIVNNT
+1	M	3.72	 	------MIVNNTH
+2	I	1.16	 	-----MIVNNTHI
+3	V	-1.45	 	----MIVNNTHIL
+4	N	-1.38	 	---MIVNNTHILT
+5	N	-6.44	 	--MIVNNTHILTL
+6	T	-4.77	 	-MIVNNTHILTLP
+7	H	0.74	 	MIVNNTHILTLPP
+8	I	1.82	 	IVNNTHILTLPPH
+9	L	7.98	 	VNNTHILTLPPHA
+10	T	7.73	 	NNTHILTLPPHAV
+11	L	1.76	 	NTHILTLPPHAVS
+12	P	-5.85	 	THILTLPPHAVST
+13	P	-3.61	 	HILTLPPHAVSTL
+14	H	-6.14	 	ILTLPPHAVSTLT
+15	A	-4.57	 	LTLPPHAVSTLTC
+16	V	-3.20	 	TLPPHAVSTLTCI
+17	S	3.01	 	LPPHAVSTLTCIL
+18	T	3.25	 	PPHAVSTLTCILI
+19	L	-4.24	 	PHAVSTLTCILIW
+20	T	-0.82	 	HAVSTLTCILIWH
+21	C	4.57	 	AVSTLTCILIWHR
+22	I	0.49	 	VSTLTCILIWHRH
+23	L	-0.13	 	STLTCILIWHRHT
+24	I	-2.03	 	TLTCILIWHRHTD
+25	W	-5.19	 	LTCILIWHRHTDA
+26	H	-10.38	 	TCILIWHRHTDAT
+27	R	-12.91	 	CILIWHRHTDATV
+28	H	-10.77	 	ILIWHRHTDATVY
+29	T	-8.14	 	LIWHRHTDATVYI
+30	D	-8.33	 	IWHRHTDATVYII
+31	A	-4.48	 	WHRHTDATVYIIS
+32	T	0.06	 	HRHTDATVYIISS
+33	V	5.26	 	RHTDATVYIISSY
+34	Y	7.71	 	HTDATVYIISSYP
+35	I	7.43	 	TDATVYIISSYPT
+36	I	3.53	 	DATVYIISSYPTL
+37	S	5.10	 	ATVYIISSYPTLT
+38	S	-0.62	 	TVYIISSYPTLTF
+39	Y	-5.08	 	VYIISSYPTLTFH
+40	P	0.95	 	YIISSYPTLTFHS
+41	T	1.84	 	IISSYPTLTFHSM
+42	L	2.05	 	ISSYPTLTFHSMA
+43	T	2.07	 	SSYPTLTFHSMAH
+44	F	1.86	 	SYPTLTFHSMAHL
+45	H	-5.70	 	YPTLTFHSMAHLS
+46	S	-3.47	 	PTLTFHSMAHLSL
+47	M	-6.52	 	TLTFHSMAHLSLH
+48	A	-0.66	 	LTFHSMAHLSLHQ
+49	H	-0.97	 	TFHSMAHLSLHQY
+50	L	2.82	 	FHSMAHLSLHQY-
+51	S	1.76	 	HSMAHLSLHQY--
+52	L	1.33	 	SMAHLSLHQY---
+53	H	-1.39	 	MAHLSLHQY----
+54	Q	0.84	 	AHLSLHQY-----
+55	Y	-4.91	 	HLSLHQY------
+56	-	-1.52	 	LSLHQY-------
+57	-	2.73	 	SLHQY--------
+58	-	0.44	 	LHQY---------
+59	-	0.63	 	HQY----------
+60	-	0.24	 	QY-----------
+61	-	-0.06	 	Y------------

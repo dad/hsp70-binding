@@ -1,0 +1,53 @@
+# Run started 2018-06-30 09:21:00 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOR302W --report --out ../data/YOR302W-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOR302W
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOR302W-motifs-r10.txt
+# Found ORF YOR302W
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.45	 	----------MFS
+-2	-	-0.63	 	---------MFSL
+-1	-	-1.58	 	--------MFSLS
+0	-	0.68	 	-------MFSLSN
+1	M	-0.68	 	------MFSLSNS
+2	F	3.25	 	-----MFSLSNSQ
+3	S	1.54	 	----MFSLSNSQY
+4	L	-0.34	 	---MFSLSNSQYT
+5	S	-3.53	 	--MFSLSNSQYTC
+6	N	-4.23	 	-MFSLSNSQYTCQ
+7	S	-6.69	 	MFSLSNSQYTCQD
+8	Q	-5.91	 	FSLSNSQYTCQDY
+9	Y	-10.61	 	SLSNSQYTCQDYI
+10	T	-10.64	 	LSNSQYTCQDYIS
+11	C	-11.69	 	SNSQYTCQDYISD
+12	Q	-10.77	 	NSQYTCQDYISDH
+13	D	-7.09	 	SQYTCQDYISDHI
+14	Y	-10.74	 	QYTCQDYISDHIW
+15	I	-9.76	 	YTCQDYISDHIWK
+16	S	-5.84	 	TCQDYISDHIWKT
+17	D	-4.12	 	CQDYISDHIWKTS
+18	H	-8.71	 	QDYISDHIWKTSS
+19	I	-8.52	 	DYISDHIWKTSSH
+20	W	-4.61	 	YISDHIWKTSSH-
+21	K	-3.45	 	ISDHIWKTSSH--
+22	T	-8.40	 	SDHIWKTSSH---
+23	S	-5.32	 	DHIWKTSSH----
+24	S	-3.45	 	HIWKTSSH-----
+25	H	-2.12	 	IWKTSSH------
+26	-	-1.20	 	WKTSSH-------
+27	-	-0.53	 	KTSSH--------
+28	-	0.89	 	TSSH---------
+29	-	0.37	 	SSH----------
+30	-	0.20	 	SH-----------
+31	-	0.08	 	H------------

@@ -1,0 +1,94 @@
+# Run started 2018-06-29 15:24:49 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YGR240C-A --report --out ../data/YGR240C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YGR240C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YGR240C-A-motifs-r10.txt
+# Found ORF YGR240C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.24	 	----------MIL
+-2	-	-0.29	 	---------MILS
+-1	-	-0.74	 	--------MILSK
+0	-	1.89	 	-------MILSKH
+1	M	5.70	 	------MILSKHV
+2	I	4.47	 	-----MILSKHVN
+3	L	2.09	 	----MILSKHVNF
+4	S	1.19	 	---MILSKHVNFT
+5	K	0.17	 	--MILSKHVNFTY
+6	H	-8.75	 	-MILSKHVNFTYH
+7	V	-4.12	 	MILSKHVNFTYHT
+8	N	-3.38	 	ILSKHVNFTYHTY
+9	F	2.61	 	LSKHVNFTYHTYN
+10	T	-0.31	 	SKHVNFTYHTYNL
+11	Y	-1.12	 	KHVNFTYHTYNLI
+12	H	0.78	 	HVNFTYHTYNLIY
+13	T	-0.54	 	VNFTYHTYNLIYN
+14	Y	0.11	 	NFTYHTYNLIYNF
+15	N	3.48	 	FTYHTYNLIYNFY
+16	L	8.08	 	TYHTYNLIYNFYP
+17	I	1.67	 	YHTYNLIYNFYPD
+18	Y	4.06	 	HTYNLIYNFYPDL
+19	N	1.75	 	TYNLIYNFYPDLT
+20	F	-2.96	 	YNLIYNFYPDLTN
+21	Y	-8.02	 	NLIYNFYPDLTNF
+22	P	-1.77	 	LIYNFYPDLTNFG
+23	D	-2.90	 	IYNFYPDLTNFGM
+24	L	-7.37	 	YNFYPDLTNFGMP
+25	T	-3.55	 	NFYPDLTNFGMPG
+26	N	-0.70	 	FYPDLTNFGMPGS
+27	F	-7.15	 	YPDLTNFGMPGSI
+28	G	-6.83	 	PDLTNFGMPGSIY
+29	M	-7.47	 	DLTNFGMPGSIYG
+30	P	-10.14	 	LTNFGMPGSIYGL
+31	G	-5.43	 	TNFGMPGSIYGLQ
+32	S	-0.91	 	NFGMPGSIYGLQS
+33	I	-0.97	 	FGMPGSIYGLQSS
+34	Y	5.35	 	GMPGSIYGLQSSL
+35	G	5.34	 	MPGSIYGLQSSLK
+36	L	0.65	 	PGSIYGLQSSLKT
+37	Q	-2.23	 	GSIYGLQSSLKTM
+38	S	4.21	 	SIYGLQSSLKTME
+39	S	-3.77	 	IYGLQSSLKTMEK
+40	L	-0.67	 	YGLQSSLKTMEKH
+41	K	-0.78	 	GLQSSLKTMEKHV
+42	T	-2.25	 	LQSSLKTMEKHVE
+43	M	-11.22	 	QSSLKTMEKHVEI
+44	E	-11.63	 	SSLKTMEKHVEIP
+45	K	-7.85	 	SLKTMEKHVEIPQ
+46	H	-9.60	 	LKTMEKHVEIPQS
+47	V	-4.22	 	KTMEKHVEIPQSI
+48	E	-4.32	 	TMEKHVEIPQSIH
+49	I	-4.22	 	MEKHVEIPQSIHH
+50	P	-7.59	 	EKHVEIPQSIHHY
+51	Q	-2.83	 	KHVEIPQSIHHYS
+52	S	-8.02	 	HVEIPQSIHHYSP
+53	I	-7.95	 	VEIPQSIHHYSPF
+54	H	-0.57	 	EIPQSIHHYSPFY
+55	H	-0.75	 	IPQSIHHYSPFYQ
+56	Y	-7.07	 	PQSIHHYSPFYQL
+57	S	-3.28	 	QSIHHYSPFYQLP
+58	P	2.42	 	SIHHYSPFYQLPL
+59	F	-1.40	 	IHHYSPFYQLPLI
+60	Y	3.88	 	HHYSPFYQLPLIF
+61	Q	2.87	 	HYSPFYQLPLIF-
+62	L	4.86	 	YSPFYQLPLIF--
+63	P	4.78	 	SPFYQLPLIF---
+64	L	10.19	*	PFYQLPLIF----
+65	I	3.62	 	FYQLPLIF-----
+66	F	5.60	 	YQLPLIF------
+67	-	-0.22	 	QLPLIF-------
+68	-	-2.75	 	LPLIF--------
+69	-	-2.42	 	PLIF---------
+70	-	-1.39	 	LIF----------
+71	-	-0.43	 	IF-----------
+72	-	-0.05	 	F------------

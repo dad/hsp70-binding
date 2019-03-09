@@ -1,0 +1,94 @@
+# Run started 2018-06-29 14:56:45 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YDR524C-B --report --out ../data/YDR524C-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YDR524C-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YDR524C-B-motifs-r10.txt
+# Found ORF YDR524C-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.06	 	-----------MQ
+-3	-	-0.24	 	----------MQF
+-2	-	-0.10	 	---------MQFK
+-1	-	-0.54	 	--------MQFKT
+0	-	-2.13	 	-------MQFKTI
+1	M	0.26	 	------MQFKTIV
+2	Q	-1.92	 	-----MQFKTIVA
+3	F	-3.52	 	----MQFKTIVAA
+4	K	-1.15	 	---MQFKTIVAAF
+5	T	4.26	 	--MQFKTIVAAFA
+6	I	1.85	 	-MQFKTIVAAFAT
+7	V	2.64	 	MQFKTIVAAFATV
+8	A	5.06	 	QFKTIVAAFATVA
+9	A	-0.01	 	FKTIVAAFATVAA
+10	F	-3.28	 	KTIVAAFATVAAV
+11	A	-0.51	 	TIVAAFATVAAVQ
+12	T	-0.36	 	IVAAFATVAAVQA
+13	V	-2.25	 	VAAFATVAAVQAA
+14	A	1.25	 	AAFATVAAVQAAN
+15	A	0.49	 	AFATVAAVQAANV
+16	V	-1.71	 	FATVAAVQAANVS
+17	Q	-1.18	 	ATVAAVQAANVST
+18	A	-3.54	 	TVAAVQAANVSTN
+19	A	-2.20	 	VAAVQAANVSTNG
+20	N	-0.37	 	AAVQAANVSTNGS
+21	V	-0.85	 	AVQAANVSTNGSN
+22	S	-2.57	 	VQAANVSTNGSNR
+23	T	-2.80	 	QAANVSTNGSNRT
+24	N	-4.82	 	AANVSTNGSNRTN
+25	G	-4.98	 	ANVSTNGSNRTNG
+26	S	-4.67	 	NVSTNGSNRTNGS
+27	N	-4.44	 	VSTNGSNRTNGSN
+28	R	-4.54	 	STNGSNRTNGSNT
+29	T	-4.70	 	TNGSNRTNGSNTT
+30	N	-4.77	 	NGSNRTNGSNTTS
+31	G	-5.45	 	GSNRTNGSNTTST
+32	S	-4.47	 	SNRTNGSNTTSTK
+33	N	-4.31	 	NRTNGSNTTSTKI
+34	T	-2.89	 	RTNGSNTTSTKIS
+35	T	-2.28	 	TNGSNTTSTKIST
+36	S	-3.13	 	NGSNTTSTKISTG
+37	T	1.31	 	GSNTTSTKISTGA
+38	K	0.91	 	SNTTSTKISTGAA
+39	I	0.34	 	NTTSTKISTGAAA
+40	S	-0.83	 	TTSTKISTGAAAS
+41	T	-0.55	 	TSTKISTGAAASN
+42	G	-5.56	 	STKISTGAAASNA
+43	A	-4.23	 	TKISTGAAASNAL
+44	A	-4.53	 	KISTGAAASNALG
+45	A	-5.68	 	ISTGAAASNALGA
+46	S	-5.23	 	STGAAASNALGAG
+47	N	-1.65	 	TGAAASNALGAGV
+48	A	-3.76	 	GAAASNALGAGVF
+49	L	-3.04	 	AAASNALGAGVFG
+50	G	-4.53	 	AASNALGAGVFGA
+51	A	-1.11	 	ASNALGAGVFGAA
+52	G	-5.73	 	SNALGAGVFGAAV
+53	V	-4.93	 	NALGAGVFGAAVA
+54	F	-4.27	 	ALGAGVFGAAVAA
+55	G	-2.20	 	LGAGVFGAAVAAG
+56	A	-1.13	 	GAGVFGAAVAAGV
+57	A	-3.61	 	AGVFGAAVAAGVA
+58	V	-1.99	 	GVFGAAVAAGVAF
+59	A	-3.99	 	VFGAAVAAGVAFL
+60	A	-1.06	 	FGAAVAAGVAFLF
+61	G	-3.07	 	GAAVAAGVAFLF-
+62	V	-0.67	 	AAVAAGVAFLF--
+63	A	3.38	 	AVAAGVAFLF---
+64	F	7.62	 	VAAGVAFLF----
+65	L	5.96	 	AAGVAFLF-----
+66	F	6.57	 	AGVAFLF------
+67	-	4.93	 	GVAFLF-------
+68	-	-1.38	 	VAFLF--------
+69	-	-1.98	 	AFLF---------
+70	-	-1.31	 	FLF----------
+71	-	-0.65	 	LF-----------
+72	-	-0.05	 	F------------

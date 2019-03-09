@@ -1,0 +1,68 @@
+# Run started 2018-06-30 08:58:53 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YNL097C-B --report --out ../data/YNL097C-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YNL097C-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YNL097C-B-motifs-r10.txt
+# Found ORF YNL097C-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.00	 	----------MTA
+-2	-	0.28	 	---------MTAK
+-1	-	0.04	 	--------MTAKT
+0	-	-0.30	 	-------MTAKTK
+1	M	0.70	 	------MTAKTKQ
+2	T	-0.58	 	-----MTAKTKQS
+3	A	-0.95	 	----MTAKTKQSW
+4	K	-1.78	 	---MTAKTKQSWN
+5	T	-1.41	 	--MTAKTKQSWNK
+6	K	-2.15	 	-MTAKTKQSWNKG
+7	Q	-3.65	 	MTAKTKQSWNKGI
+8	S	-5.09	 	TAKTKQSWNKGIW
+9	W	-7.13	 	AKTKQSWNKGIWE
+10	N	-7.33	 	KTKQSWNKGIWEN
+11	K	-5.60	 	TKQSWNKGIWENG
+12	G	-6.19	 	KQSWNKGIWENGK
+13	I	-7.99	 	QSWNKGIWENGKQ
+14	W	-8.90	 	SWNKGIWENGKQG
+15	E	-8.07	 	WNKGIWENGKQGS
+16	N	-13.95	 	NKGIWENGKQGSH
+17	G	-11.17	 	KGIWENGKQGSHQ
+18	K	-10.23	 	GIWENGKQGSHQQ
+19	Q	-9.54	 	IWENGKQGSHQQT
+20	G	-7.52	 	WENGKQGSHQQTF
+21	S	-7.17	 	ENGKQGSHQQTFL
+22	H	-5.35	 	NGKQGSHQQTFLP
+23	Q	-4.41	 	GKQGSHQQTFLPK
+24	Q	-1.51	 	KQGSHQQTFLPKI
+25	T	3.79	 	QGSHQQTFLPKIW
+26	F	4.62	 	GSHQQTFLPKIWV
+27	L	4.86	 	SHQQTFLPKIWVN
+28	P	7.40	 	HQQTFLPKIWVNI
+29	K	0.74	 	QQTFLPKIWVNIY
+30	I	-3.79	 	QTFLPKIWVNIYS
+31	W	-5.17	 	TFLPKIWVNIYST
+32	V	-1.13	 	FLPKIWVNIYSTP
+33	N	-0.38	 	LPKIWVNIYSTPT
+34	I	3.57	 	PKIWVNIYSTPTS
+35	Y	1.49	 	KIWVNIYSTPTS-
+36	S	0.81	 	IWVNIYSTPTS--
+37	T	-3.21	 	WVNIYSTPTS---
+38	P	-6.45	 	VNIYSTPTS----
+39	T	-4.37	 	NIYSTPTS-----
+40	S	-2.15	 	IYSTPTS------
+41	-	-0.82	 	YSTPTS-------
+42	-	0.58	 	STPTS--------
+43	-	1.31	 	TPTS---------
+44	-	0.68	 	PTS----------
+45	-	0.39	 	TS-----------
+46	-	0.04	 	S------------

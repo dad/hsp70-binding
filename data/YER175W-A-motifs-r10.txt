@@ -1,0 +1,82 @@
+# Run started 2018-06-29 15:05:50 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YER175W-A --report --out ../data/YER175W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YER175W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YER175W-A-motifs-r10.txt
+# Found ORF YER175W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.46	 	-----------MR
+-3	-	0.98	 	----------MRL
+-2	-	1.44	 	---------MRLH
+-1	-	1.80	 	--------MRLHK
+0	-	0.50	 	-------MRLHKT
+1	M	4.41	 	------MRLHKTF
+2	R	3.28	 	-----MRLHKTFI
+3	L	1.21	 	----MRLHKTFIC
+4	H	0.65	 	---MRLHKTFICF
+5	K	3.38	 	--MRLHKTFICFS
+6	T	-1.29	 	-MRLHKTFICFSQ
+7	F	-4.74	 	MRLHKTFICFSQN
+8	I	-0.40	 	RLHKTFICFSQNK
+9	C	0.37	 	LHKTFICFSQNKR
+10	F	-2.01	 	HKTFICFSQNKRG
+11	S	-7.99	 	KTFICFSQNKRGC
+12	Q	-9.63	 	TFICFSQNKRGCR
+13	N	-9.72	 	FICFSQNKRGCRN
+14	K	-7.51	 	ICFSQNKRGCRNI
+15	R	-7.35	 	CFSQNKRGCRNIL
+16	G	-6.68	 	FSQNKRGCRNILQ
+17	C	-8.35	 	SQNKRGCRNILQE
+18	R	-6.12	 	QNKRGCRNILQEN
+19	N	-1.42	 	NKRGCRNILQENS
+20	I	-4.87	 	KRGCRNILQENSR
+21	L	-4.16	 	RGCRNILQENSRM
+22	Q	-4.55	 	GCRNILQENSRMI
+23	E	-7.72	 	CRNILQENSRMIF
+24	N	-14.52	 	RNILQENSRMIFE
+25	S	-11.72	 	NILQENSRMIFEN
+26	R	-6.33	 	ILQENSRMIFENK
+27	M	-2.29	 	LQENSRMIFENKI
+28	I	-1.93	 	QENSRMIFENKIL
+29	F	-2.97	 	ENSRMIFENKILI
+30	E	-4.06	 	NSRMIFENKILIM
+31	N	-5.73	 	SRMIFENKILIMI
+32	K	-3.55	 	RMIFENKILIMIL
+33	I	2.09	 	MIFENKILIMILR
+34	L	4.23	 	IFENKILIMILRQ
+35	I	10.02	*	FENKILIMILRQG
+36	M	11.22	*	ENKILIMILRQGI
+37	I	4.08	 	NKILIMILRQGIF
+38	L	-0.59	 	KILIMILRQGIFF
+39	R	-0.66	 	ILIMILRQGIFFN
+40	Q	-1.15	 	LIMILRQGIFFNI
+41	G	-4.02	 	IMILRQGIFFNIS
+42	I	0.45	 	MILRQGIFFNISV
+43	F	1.17	 	ILRQGIFFNISVS
+44	F	5.88	 	LRQGIFFNISVST
+45	N	0.52	 	RQGIFFNISVSTK
+46	I	2.17	 	QGIFFNISVSTKI
+47	S	-0.23	 	GIFFNISVSTKIS
+48	V	0.79	 	IFFNISVSTKISF
+49	S	-4.19	 	FFNISVSTKISF-
+50	T	0.29	 	FNISVSTKISF--
+51	K	-2.37	 	NISVSTKISF---
+52	I	1.49	 	ISVSTKISF----
+53	S	3.25	 	SVSTKISF-----
+54	F	4.31	 	VSTKISF------
+55	-	-0.17	 	STKISF-------
+56	-	1.19	 	TKISF--------
+57	-	-0.49	 	KISF---------
+58	-	-0.39	 	ISF----------
+59	-	-0.05	 	SF-----------
+60	-	-0.05	 	F------------

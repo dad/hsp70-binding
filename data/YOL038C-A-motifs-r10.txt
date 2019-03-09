@@ -1,0 +1,59 @@
+# Run started 2018-06-30 09:08:52 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOL038C-A --report --out ../data/YOL038C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOL038C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOL038C-A-motifs-r10.txt
+# Found ORF YOL038C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.16	 	----------MKY
+-2	-	0.00	 	---------MKYM
+-1	-	-0.75	 	--------MKYMG
+0	-	-3.35	 	-------MKYMGS
+1	M	0.07	 	------MKYMGSF
+2	K	-0.88	 	-----MKYMGSFL
+3	Y	-2.28	 	----MKYMGSFLR
+4	M	-2.23	 	---MKYMGSFLRK
+5	G	2.24	 	--MKYMGSFLRKA
+6	S	4.19	 	-MKYMGSFLRKAA
+7	F	3.60	 	MKYMGSFLRKAAT
+8	L	3.81	 	KYMGSFLRKAATT
+9	R	5.02	 	YMGSFLRKAATTN
+10	K	3.95	 	MGSFLRKAATTNL
+11	A	-3.08	 	GSFLRKAATTNLF
+12	A	-2.28	 	SFLRKAATTNLFN
+13	T	-3.42	 	FLRKAATTNLFNS
+14	T	0.72	 	LRKAATTNLFNSI
+15	N	3.97	 	RKAATTNLFNSIK
+16	L	2.86	 	KAATTNLFNSIKK
+17	F	3.33	 	AATTNLFNSIKKR
+18	N	7.82	 	ATTNLFNSIKKRK
+19	S	0.63	 	TTNLFNSIKKRKV
+20	I	-1.23	 	TNLFNSIKKRKVQ
+21	K	-0.74	 	NLFNSIKKRKVQN
+22	K	0.31	 	LFNSIKKRKVQNR
+23	R	0.87	 	FNSIKKRKVQNRA
+24	K	2.02	 	NSIKKRKVQNRAM
+25	V	1.74	 	SIKKRKVQNRAMS
+26	Q	0.32	 	IKKRKVQNRAMS-
+27	N	1.07	 	KKRKVQNRAMS--
+28	R	-2.42	 	KRKVQNRAMS---
+29	A	-1.83	 	RKVQNRAMS----
+30	M	-1.91	 	KVQNRAMS-----
+31	S	-1.30	 	VQNRAMS------
+32	-	-1.19	 	QNRAMS-------
+33	-	-0.79	 	NRAMS--------
+34	-	0.56	 	RAMS---------
+35	-	0.10	 	AMS----------
+36	-	0.06	 	MS-----------
+37	-	0.04	 	S------------

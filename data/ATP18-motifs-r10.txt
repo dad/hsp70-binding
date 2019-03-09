@@ -1,0 +1,87 @@
+# Run started 2018-06-30 08:45:14 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id ATP18 --report --out ../data/ATP18-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: ATP18
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/ATP18-motifs-r10.txt
+# Found gene ATP18 = YML081C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	0.20	 	----------MLK
+-2	-	1.04	 	---------MLKR
+-1	-	0.98	 	--------MLKRF
+0	-	5.60	 	-------MLKRFP
+1	M	4.51	 	------MLKRFPT
+2	L	2.81	 	-----MLKRFPTP
+3	K	5.12	 	----MLKRFPTPI
+4	R	4.37	 	---MLKRFPTPIL
+5	F	-2.28	 	--MLKRFPTPILK
+6	P	-1.71	 	-MLKRFPTPILKV
+7	T	1.44	 	MLKRFPTPILKVY
+8	P	3.24	 	LKRFPTPILKVYW
+9	I	1.88	 	KRFPTPILKVYWP
+10	L	5.06	 	RFPTPILKVYWPF
+11	K	9.03	 	FPTPILKVYWPFF
+12	V	1.51	 	PTPILKVYWPFFV
+13	Y	-7.20	 	TPILKVYWPFFVA
+14	W	-3.28	 	PILKVYWPFFVAG
+15	P	-2.80	 	ILKVYWPFFVAGA
+16	F	-2.23	 	LKVYWPFFVAGAA
+17	F	1.54	 	KVYWPFFVAGAAV
+18	V	-0.48	 	VYWPFFVAGAAVY
+19	A	-3.27	 	YWPFFVAGAAVYY
+20	G	-5.85	 	WPFFVAGAAVYYG
+21	A	-5.42	 	PFFVAGAAVYYGM
+22	A	-1.47	 	FFVAGAAVYYGMS
+23	V	4.91	 	FVAGAAVYYGMSK
+24	Y	3.87	 	VAGAAVYYGMSKA
+25	Y	3.85	 	AGAAVYYGMSKAA
+26	G	0.80	 	GAAVYYGMSKAAD
+27	M	-4.17	 	AAVYYGMSKAADL
+28	S	-6.76	 	AVYYGMSKAADLS
+29	K	-4.38	 	VYYGMSKAADLSS
+30	A	-7.63	 	YYGMSKAADLSSN
+31	A	-2.07	 	YGMSKAADLSSNT
+32	D	-1.36	 	GMSKAADLSSNTK
+33	L	-2.51	 	MSKAADLSSNTKE
+34	S	-4.86	 	SKAADLSSNTKEF
+35	S	-2.22	 	KAADLSSNTKEFI
+36	N	-11.46	 	AADLSSNTKEFIN
+37	T	-12.04	 	ADLSSNTKEFIND
+38	K	-7.95	 	DLSSNTKEFINDP
+39	E	-3.21	 	LSSNTKEFINDPR
+40	F	-2.94	 	SSNTKEFINDPRN
+41	I	-5.03	 	SNTKEFINDPRNP
+42	N	-3.08	 	NTKEFINDPRNPR
+43	D	-5.20	 	TKEFINDPRNPRF
+44	P	-11.23	 	KEFINDPRNPRFA
+45	R	-10.37	 	EFINDPRNPRFAK
+46	N	-6.72	 	FINDPRNPRFAKG
+47	P	-2.37	 	INDPRNPRFAKGG
+48	R	0.20	 	NDPRNPRFAKGGK
+49	F	-0.57	 	DPRNPRFAKGGKF
+50	A	-0.96	 	PRNPRFAKGGKFV
+51	K	-2.30	 	RNPRFAKGGKFVE
+52	G	-7.67	 	NPRFAKGGKFVEV
+53	G	-6.11	 	PRFAKGGKFVEVD
+54	K	-3.13	 	RFAKGGKFVEVD-
+55	F	-4.62	 	FAKGGKFVEVD--
+56	V	0.01	 	AKGGKFVEVD---
+57	E	-3.27	 	KGGKFVEVD----
+58	V	-5.58	 	GGKFVEVD-----
+59	D	-7.38	 	GKFVEVD------
+60	-	-4.93	 	KFVEVD-------
+61	-	-5.88	 	FVEVD--------
+62	-	-1.29	 	VEVD---------
+63	-	-0.76	 	EVD----------
+64	-	-0.21	 	VD-----------
+65	-	-0.14	 	D------------

@@ -1,0 +1,62 @@
+# Run started 2018-06-29 14:27:33 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR221W-A --report --out ../data/YBR221W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR221W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR221W-A-motifs-r10.txt
+# Found ORF YBR221W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.45	 	----------MFS
+-2	-	-0.67	 	---------MFSH
+-1	-	-1.89	 	--------MFSHF
+0	-	-0.57	 	-------MFSHFE
+1	M	-3.18	 	------MFSHFEV
+2	F	-5.77	 	-----MFSHFEVS
+3	S	-5.33	 	----MFSHFEVSE
+4	H	-7.74	 	---MFSHFEVSEN
+5	F	-6.07	 	--MFSHFEVSENR
+6	E	-6.17	 	-MFSHFEVSENRP
+7	V	-5.34	 	MFSHFEVSENRPR
+8	S	-7.73	 	FSHFEVSENRPRK
+9	E	-5.49	 	SHFEVSENRPRKQ
+10	N	-6.86	 	HFEVSENRPRKQP
+11	R	-5.60	 	FEVSENRPRKQPR
+12	P	-3.01	 	EVSENRPRKQPRR
+13	R	-0.84	 	VSENRPRKQPRRK
+14	K	1.21	 	SENRPRKQPRRKR
+15	Q	2.70	 	ENRPRKQPRRKRI
+16	P	3.44	 	NRPRKQPRRKRIS
+17	R	3.34	 	RPRKQPRRKRISL
+18	R	3.67	 	PRKQPRRKRISLG
+19	K	6.16	 	RKQPRRKRISLGM
+20	R	4.46	 	KQPRRKRISLGMI
+21	I	7.83	 	QPRRKRISLGMIN
+22	S	6.42	 	PRRKRISLGMINT
+23	L	5.36	 	RRKRISLGMINTV
+24	G	2.16	 	RKRISLGMINTVV
+25	M	0.12	 	KRISLGMINTVVS
+26	I	-7.93	 	RISLGMINTVVSL
+27	N	-2.31	 	ISLGMINTVVSLD
+28	T	2.75	 	SLGMINTVVSLDR
+29	V	-1.56	 	LGMINTVVSLDR-
+30	V	4.67	 	GMINTVVSLDR--
+31	S	3.42	 	MINTVVSLDR---
+32	L	0.45	 	INTVVSLDR----
+33	D	-0.77	 	NTVVSLDR-----
+34	R	0.43	 	TVVSLDR------
+35	-	-6.28	 	VVSLDR-------
+36	-	-1.39	 	VSLDR--------
+37	-	0.26	 	SLDR---------
+38	-	0.34	 	LDR----------
+39	-	0.64	 	DR-----------
+40	-	0.39	 	R------------

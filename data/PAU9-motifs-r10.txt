@@ -1,0 +1,70 @@
+# Run started 2018-06-29 14:20:51 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PAU9 --report --out ../data/PAU9-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: PAU9
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/PAU9-motifs-r10.txt
+# Found gene PAU9 = YBL108C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.10	 	-----------ML
+-3	-	0.00	 	----------MLT
+-2	-	0.07	 	---------MLTG
+-1	-	-0.65	 	--------MLTGI
+0	-	2.99	 	-------MLTGIA
+1	M	1.88	 	------MLTGIAP
+2	L	-0.27	 	-----MLTGIAPD
+3	T	1.76	 	----MLTGIAPDQ
+4	G	2.48	 	---MLTGIAPDQV
+5	I	-5.89	 	--MLTGIAPDQVT
+6	A	-7.21	 	-MLTGIAPDQVTR
+7	P	-6.11	 	MLTGIAPDQVTRM
+8	D	-6.07	 	LTGIAPDQVTRMI
+9	Q	-4.58	 	TGIAPDQVTRMIT
+10	V	-5.03	 	GIAPDQVTRMITG
+11	T	-1.46	 	IAPDQVTRMITGV
+12	R	4.72	 	APDQVTRMITGVP
+13	M	1.77	 	PDQVTRMITGVPW
+14	I	0.51	 	DQVTRMITGVPWY
+15	T	3.32	 	QVTRMITGVPWYS
+16	G	0.60	 	VTRMITGVPWYSS
+17	V	-6.93	 	TRMITGVPWYSSR
+18	P	-1.06	 	RMITGVPWYSSRL
+19	W	0.36	 	MITGVPWYSSRLK
+20	Y	-1.40	 	ITGVPWYSSRLKP
+21	S	-1.66	 	TGVPWYSSRLKPA
+22	S	6.09	 	GVPWYSSRLKPAI
+23	R	1.54	 	VPWYSSRLKPAIS
+24	L	0.78	 	PWYSSRLKPAISS
+25	K	1.99	 	WYSSRLKPAISSA
+26	P	5.07	 	YSSRLKPAISSAL
+27	A	-3.30	 	SSRLKPAISSALS
+28	I	-2.67	 	SRLKPAISSALSK
+29	S	-1.32	 	RLKPAISSALSKD
+30	S	3.48	 	LKPAISSALSKDG
+31	A	-1.08	 	KPAISSALSKDGI
+32	L	-1.97	 	PAISSALSKDGIY
+33	S	-4.85	 	AISSALSKDGIYT
+34	K	-5.96	 	ISSALSKDGIYTI
+35	D	-10.30	 	SSALSKDGIYTIA
+36	G	-4.32	 	SALSKDGIYTIAN
+37	I	-3.33	 	ALSKDGIYTIAN-
+38	Y	3.09	 	LSKDGIYTIAN--
+39	T	6.02	 	SKDGIYTIAN---
+40	I	-0.73	 	KDGIYTIAN----
+41	A	-2.62	 	DGIYTIAN-----
+42	N	-0.51	 	GIYTIAN------
+43	-	-4.27	 	IYTIAN-------
+44	-	-2.75	 	YTIAN--------
+45	-	-1.44	 	TIAN---------
+46	-	-1.03	 	IAN----------
+47	-	-0.47	 	AN-----------
+48	-	-0.25	 	N------------

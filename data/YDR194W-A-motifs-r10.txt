@@ -1,0 +1,78 @@
+# Run started 2018-06-29 14:47:22 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YDR194W-A --report --out ../data/YDR194W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YDR194W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YDR194W-A-motifs-r10.txt
+# Found ORF YDR194W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.59	 	----------MKQ
+-2	-	0.86	 	---------MKQM
+-1	-	0.50	 	--------MKQMM
+0	-	-1.60	 	-------MKQMMI
+1	M	-4.15	 	------MKQMMIE
+2	K	-5.81	 	-----MKQMMIEA
+3	Q	-7.35	 	----MKQMMIEAS
+4	M	-5.09	 	---MKQMMIEASI
+5	M	-6.16	 	--MKQMMIEASIS
+6	I	-2.85	 	-MKQMMIEASISK
+7	E	-4.06	 	MKQMMIEASISKD
+8	A	-0.93	 	KQMMIEASISKDT
+9	S	-6.14	 	QMMIEASISKDTL
+10	I	-4.49	 	MMIEASISKDTLR
+11	S	-5.99	 	MIEASISKDTLRL
+12	K	-4.08	 	IEASISKDTLRLL
+13	D	-2.53	 	EASISKDTLRLLI
+14	T	-2.01	 	ASISKDTLRLLIC
+15	L	3.20	 	SISKDTLRLLICF
+16	R	10.39	*	ISKDTLRLLICFF
+17	L	13.43	*	SKDTLRLLICFFE
+18	L	-0.36	 	KDTLRLLICFFEI
+19	I	2.49	 	DTLRLLICFFEIK
+20	C	-2.33	 	TLRLLICFFEIKQ
+21	F	-10.19	 	LRLLICFFEIKQC
+22	F	-9.51	 	RLLICFFEIKQCH
+23	E	-11.30	 	LLICFFEIKQCHI
+24	I	-10.72	 	LICFFEIKQCHIS
+25	K	-15.42	 	ICFFEIKQCHISL
+26	Q	-11.98	 	CFFEIKQCHISLQ
+27	C	-10.67	 	FFEIKQCHISLQP
+28	H	-9.18	 	FEIKQCHISLQPT
+29	I	-1.59	 	EIKQCHISLQPTC
+30	S	-4.53	 	IKQCHISLQPTCY
+31	L	-2.97	 	KQCHISLQPTCYY
+32	Q	-7.54	 	QCHISLQPTCYYQ
+33	P	-11.20	 	CHISLQPTCYYQN
+34	T	-12.42	 	HISLQPTCYYQNW
+35	C	-4.55	 	ISLQPTCYYQNWV
+36	Y	-4.20	 	SLQPTCYYQNWVR
+37	Y	-5.27	 	LQPTCYYQNWVRY
+38	Q	-9.83	 	QPTCYYQNWVRYS
+39	N	-6.78	 	PTCYYQNWVRYSS
+40	W	-9.69	 	TCYYQNWVRYSSI
+41	V	-1.56	 	CYYQNWVRYSSIY
+42	R	-1.43	 	YYQNWVRYSSIYY
+43	Y	0.44	 	YQNWVRYSSIYYQ
+44	S	0.11	 	QNWVRYSSIYYQL
+45	S	3.78	 	NWVRYSSIYYQL-
+46	I	4.72	 	WVRYSSIYYQL--
+47	Y	3.84	 	VRYSSIYYQL---
+48	Y	8.42	 	RYSSIYYQL----
+49	Q	4.38	 	YSSIYYQL-----
+50	L	2.70	 	SSIYYQL------
+51	-	0.89	 	SIYYQL-------
+52	-	4.65	 	IYYQL--------
+53	-	-1.60	 	YYQL---------
+54	-	-1.02	 	YQL----------
+55	-	-0.75	 	QL-----------
+56	-	-0.56	 	L------------

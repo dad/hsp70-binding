@@ -1,0 +1,68 @@
+# Run started 2018-06-29 14:41:52 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YDR003W-A --report --out ../data/YDR003W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YDR003W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YDR003W-A-motifs-r10.txt
+# Found ORF YDR003W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.05	 	-----------MT
+-3	-	0.07	 	----------MTC
+-2	-	0.05	 	---------MTCG
+-1	-	-0.68	 	--------MTCGI
+0	-	-2.39	 	-------MTCGIE
+1	M	-8.87	 	------MTCGIEN
+2	T	-11.23	 	-----MTCGIENS
+3	C	-10.03	 	----MTCGIENSY
+4	G	-11.51	 	---MTCGIENSYK
+5	I	-12.50	 	--MTCGIENSYKS
+6	E	-15.76	 	-MTCGIENSYKSA
+7	N	-7.63	 	MTCGIENSYKSAE
+8	S	-12.28	 	TCGIENSYKSAEK
+9	Y	-9.34	 	CGIENSYKSAEKK
+10	K	-5.35	 	GIENSYKSAEKKK
+11	S	-3.81	 	IENSYKSAEKKKK
+12	A	-6.11	 	ENSYKSAEKKKKY
+13	E	-4.56	 	NSYKSAEKKKKYR
+14	K	-4.49	 	SYKSAEKKKKYRS
+15	K	-6.03	 	YKSAEKKKKYRSF
+16	K	1.53	 	KSAEKKKKYRSFR
+17	K	2.14	 	SAEKKKKYRSFRF
+18	Y	2.18	 	AEKKKKYRSFRFF
+19	R	5.53	 	EKKKKYRSFRFFE
+20	S	3.99	 	KKKKYRSFRFFES
+21	F	2.33	 	KKKYRSFRFFESR
+22	R	4.24	 	KKYRSFRFFESRD
+23	F	2.15	 	KYRSFRFFESRDY
+24	F	-1.10	 	YRSFRFFESRDYS
+25	E	-3.23	 	RSFRFFESRDYSE
+26	S	-11.01	 	SFRFFESRDYSEL
+27	R	-9.65	 	FRFFESRDYSELC
+28	D	-9.49	 	RFFESRDYSELCI
+29	Y	-10.41	 	FFESRDYSELCII
+30	S	-5.73	 	FESRDYSELCIIV
+31	E	-7.87	 	ESRDYSELCIIVG
+32	L	-7.73	 	SRDYSELCIIVGT
+33	C	-4.80	 	RDYSELCIIVGTY
+34	I	0.05	 	DYSELCIIVGTYY
+35	I	-7.62	 	YSELCIIVGTYY-
+36	V	-9.19	 	SELCIIVGTYY--
+37	G	-6.31	 	ELCIIVGTYY---
+38	T	-3.08	 	LCIIVGTYY----
+39	Y	-1.41	 	CIIVGTYY-----
+40	Y	3.22	 	IIVGTYY------
+41	-	5.28	 	IVGTYY-------
+42	-	2.80	 	VGTYY--------
+43	-	0.23	 	GTYY---------
+44	-	-0.02	 	TYY----------
+45	-	-0.19	 	YY-----------
+46	-	-0.06	 	Y------------

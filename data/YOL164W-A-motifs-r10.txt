@@ -1,0 +1,88 @@
+# Run started 2018-06-30 09:12:30 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOL164W-A --report --out ../data/YOL164W-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOL164W-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOL164W-A-motifs-r10.txt
+# Found ORF YOL164W-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.28	 	-----------MF
+-3	-	-0.67	 	----------MFA
+-2	-	-0.73	 	---------MFAK
+-1	-	-1.63	 	--------MFAKL
+0	-	0.09	 	-------MFAKLY
+1	M	0.73	 	------MFAKLYR
+2	F	-1.11	 	-----MFAKLYRG
+3	A	2.48	 	----MFAKLYRGL
+4	K	8.08	 	---MFAKLYRGLT
+5	L	4.72	 	--MFAKLYRGLTY
+6	Y	3.38	 	-MFAKLYRGLTYV
+7	R	8.47	 	MFAKLYRGLTYVT
+8	G	0.37	 	FAKLYRGLTYVTN
+9	L	2.64	 	AKLYRGLTYVTNK
+10	T	7.47	 	KLYRGLTYVTNKI
+11	Y	9.16	 	LYRGLTYVTNKIL
+12	V	0.83	 	YRGLTYVTNKILS
+13	T	1.03	 	RGLTYVTNKILST
+14	N	0.97	 	GLTYVTNKILSTL
+15	K	3.72	 	LTYVTNKILSTLL
+16	I	4.26	 	TYVTNKILSTLLS
+17	L	3.80	 	YVTNKILSTLLSH
+18	S	9.14	 	VTNKILSTLLSHH
+19	T	8.68	 	TNKILSTLLSHHS
+20	L	1.05	 	NKILSTLLSHHSI
+21	L	2.04	 	KILSTLLSHHSIH
+22	S	2.31	 	ILSTLLSHHSIHY
+23	H	-5.60	 	LSTLLSHHSIHYC
+24	H	-9.05	 	STLLSHHSIHYCI
+25	S	-8.72	 	TLLSHHSIHYCIN
+26	I	-2.22	 	LLSHHSIHYCINS
+27	H	-5.19	 	LSHHSIHYCINSF
+28	Y	-0.79	 	SHHSIHYCINSFK
+29	C	-7.10	 	HHSIHYCINSFKP
+30	I	-5.92	 	HSIHYCINSFKPT
+31	N	-5.08	 	SIHYCINSFKPTT
+32	S	-7.25	 	IHYCINSFKPTTL
+33	F	-9.90	 	HYCINSFKPTTLA
+34	K	-7.42	 	YCINSFKPTTLAI
+35	P	-4.79	 	CINSFKPTTLAII
+36	T	-0.78	 	INSFKPTTLAIII
+37	T	1.29	 	NSFKPTTLAIIIL
+38	L	4.66	 	SFKPTTLAIIILL
+39	A	8.21	 	FKPTTLAIIILLH
+40	I	11.51	*	KPTTLAIIILLHP
+41	I	7.94	 	PTTLAIIILLHPC
+42	I	12.61	*	TTLAIIILLHPCC
+43	L	7.87	 	TLAIIILLHPCCR
+44	L	3.25	 	LAIIILLHPCCRC
+45	H	-4.46	 	AIIILLHPCCRCN
+46	P	-14.77	 	IIILLHPCCRCNV
+47	C	-21.47	 	IILLHPCCRCNVY
+48	C	-23.74	 	ILLHPCCRCNVYI
+49	R	-24.60	 	LLHPCCRCNVYII
+50	C	-21.72	 	LHPCCRCNVYIIR
+51	N	-15.70	 	HPCCRCNVYIIRC
+52	V	-8.03	 	PCCRCNVYIIRCI
+53	Y	-3.34	 	CCRCNVYIIRCIH
+54	I	1.13	 	CRCNVYIIRCIHH
+55	I	-3.07	 	RCNVYIIRCIHH-
+56	R	-1.76	 	CNVYIIRCIHH--
+57	C	-5.16	 	NVYIIRCIHH---
+58	I	-9.64	 	VYIIRCIHH----
+59	H	-7.79	 	YIIRCIHH-----
+60	H	-8.57	 	IIRCIHH------
+61	-	-9.47	 	IRCIHH-------
+62	-	-5.23	 	RCIHH--------
+63	-	-1.69	 	CIHH---------
+64	-	0.06	 	IHH----------
+65	-	0.24	 	HH-----------
+66	-	0.08	 	H------------

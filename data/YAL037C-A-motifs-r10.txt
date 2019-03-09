@@ -1,0 +1,58 @@
+# Run started 2018-06-29 14:15:49 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YAL037C-A --report --out ../data/YAL037C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YAL037C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YAL037C-A-motifs-r10.txt
+# Found ORF YAL037C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	-0.06	 	----------MSI
+-2	-	-0.04	 	---------MSIS
+-1	-	-0.89	 	--------MSISF
+0	-	-2.57	 	-------MSISFP
+1	M	0.03	 	------MSISFPK
+2	S	-1.45	 	-----MSISFPKM
+3	I	1.02	 	----MSISFPKMQ
+4	S	0.45	 	---MSISFPKMQH
+5	F	-0.12	 	--MSISFPKMQHL
+6	P	-4.61	 	-MSISFPKMQHLI
+7	K	-4.76	 	MSISFPKMQHLIV
+8	M	-7.80	 	SISFPKMQHLIVM
+9	Q	-2.65	 	ISFPKMQHLIVMT
+10	H	1.57	 	SFPKMQHLIVMTT
+11	L	5.16	 	FPKMQHLIVMTTI
+12	I	7.82	 	PKMQHLIVMTTIG
+13	V	8.26	 	KMQHLIVMTTIGD
+14	M	0.50	 	MQHLIVMTTIGDK
+15	T	0.10	 	QHLIVMTTIGDKK
+16	T	-2.20	 	HLIVMTTIGDKKV
+17	I	-4.12	 	LIVMTTIGDKKVN
+18	G	-3.16	 	IVMTTIGDKKVNN
+19	D	-3.78	 	VMTTIGDKKVNNN
+20	K	-5.11	 	MTTIGDKKVNNNI
+21	K	-5.35	 	TTIGDKKVNNNII
+22	V	-4.22	 	TIGDKKVNNNIIL
+23	N	-5.45	 	IGDKKVNNNIILF
+24	N	-1.82	 	GDKKVNNNIILFL
+25	N	-1.81	 	DKKVNNNIILFL-
+26	I	2.21	 	KKVNNNIILFL--
+27	I	5.15	 	KVNNNIILFL---
+28	L	10.24	*	VNNNIILFL----
+29	F	7.42	 	NNNIILFL-----
+30	L	5.07	 	NNIILFL------
+31	-	0.27	 	NIILFL-------
+32	-	0.68	 	IILFL--------
+33	-	-4.14	 	ILFL---------
+34	-	-2.35	 	LFL----------
+35	-	-1.17	 	FL-----------
+36	-	-0.56	 	L------------

@@ -1,0 +1,77 @@
+# Run started 2018-06-30 09:20:43 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YOR293C-A --report --out ../data/YOR293C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YOR293C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YOR293C-A-motifs-r10.txt
+# Found ORF YOR293C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.25	 	-----------MK
+-3	-	0.55	 	----------MKL
+-2	-	0.84	 	---------MKLL
+-1	-	0.38	 	--------MKLLF
+0	-	-1.79	 	-------MKLLFL
+1	M	1.73	 	------MKLLFLN
+2	K	5.12	 	-----MKLLFLNI
+3	L	7.11	 	----MKLLFLNII
+4	L	11.53	*	---MKLLFLNIIV
+5	F	9.90	 	--MKLLFLNIIVV
+6	L	5.60	 	-MKLLFLNIIVVR
+7	N	2.78	 	MKLLFLNIIVVRR
+8	I	6.14	 	KLLFLNIIVVRRH
+9	I	5.13	 	LLFLNIIVVRRHL
+10	V	7.39	 	LFLNIIVVRRHLH
+11	V	3.41	 	FLNIIVVRRHLHC
+12	R	-0.17	 	LNIIVVRRHLHCK
+13	R	4.02	 	NIIVVRRHLHCKS
+14	H	1.82	 	IIVVRRHLHCKSY
+15	L	-1.89	 	IVVRRHLHCKSYR
+16	H	-3.05	 	VVRRHLHCKSYRL
+17	C	-3.65	 	VRRHLHCKSYRLS
+18	K	-6.17	 	RRHLHCKSYRLSP
+19	S	-5.73	 	RHLHCKSYRLSPW
+20	Y	-3.32	 	HLHCKSYRLSPWY
+21	R	-0.74	 	LHCKSYRLSPWYI
+22	L	-0.47	 	HCKSYRLSPWYIY
+23	S	-5.83	 	CKSYRLSPWYIYI
+24	P	-0.71	 	KSYRLSPWYIYIY
+25	W	-6.51	 	SYRLSPWYIYIYG
+26	Y	-1.55	 	YRLSPWYIYIYGD
+27	I	1.18	 	RLSPWYIYIYGDY
+28	Y	8.62	 	LSPWYIYIYGDYL
+29	I	4.33	 	SPWYIYIYGDYLL
+30	Y	-4.64	 	PWYIYIYGDYLLY
+31	G	-2.92	 	WYIYIYGDYLLYT
+32	D	-2.62	 	YIYIYGDYLLYTT
+33	Y	-1.01	 	IYIYGDYLLYTTE
+34	L	5.73	 	YIYGDYLLYTTEI
+35	L	9.03	 	IYGDYLLYTTEIP
+36	Y	5.23	 	YGDYLLYTTEIPY
+37	T	-3.38	 	GDYLLYTTEIPYK
+38	T	-6.19	 	DYLLYTTEIPYKP
+39	E	-9.07	 	YLLYTTEIPYKPF
+40	I	-1.91	 	LLYTTEIPYKPFT
+41	P	-0.88	 	LYTTEIPYKPFTR
+42	Y	0.38	 	YTTEIPYKPFTRQ
+43	K	-0.11	 	TTEIPYKPFTRQP
+44	P	1.72	 	TEIPYKPFTRQP-
+45	F	-1.46	 	EIPYKPFTRQP--
+46	T	-0.47	 	IPYKPFTRQP---
+47	R	-1.09	 	PYKPFTRQP----
+48	Q	-2.57	 	YKPFTRQP-----
+49	P	-1.04	 	KPFTRQP------
+50	-	-0.68	 	PFTRQP-------
+51	-	1.80	 	FTRQP--------
+52	-	1.99	 	TRQP---------
+53	-	0.98	 	RQP----------
+54	-	0.27	 	QP-----------
+55	-	-0.05	 	P------------

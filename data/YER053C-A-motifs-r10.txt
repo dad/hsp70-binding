@@ -1,0 +1,65 @@
+# Run started 2018-06-29 15:01:55 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YER053C-A --report --out ../data/YER053C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YER053C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YER053C-A-motifs-r10.txt
+# Found ORF YER053C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.06	 	-----------MQ
+-3	-	-0.19	 	----------MQD
+-2	-	-0.33	 	---------MQDL
+-1	-	-1.76	 	--------MQDLE
+0	-	-4.34	 	-------MQDLEI
+1	M	-9.48	 	------MQDLEIF
+2	Q	-6.91	 	-----MQDLEIFL
+3	D	-9.75	 	----MQDLEIFLS
+4	L	-6.76	 	---MQDLEIFLSI
+5	E	-1.59	 	--MQDLEIFLSIF
+6	I	5.48	 	-MQDLEIFLSIFA
+7	F	-3.01	 	MQDLEIFLSIFAF
+8	L	2.14	 	QDLEIFLSIFAFI
+9	S	0.97	 	DLEIFLSIFAFIF
+10	I	0.51	 	LEIFLSIFAFIFV
+11	F	-2.86	 	EIFLSIFAFIFVF
+12	A	1.50	 	IFLSIFAFIFVFY
+13	F	-0.34	 	FLSIFAFIFVFYF
+14	I	1.33	 	LSIFAFIFVFYFG
+15	F	4.20	 	SIFAFIFVFYFGA
+16	V	6.30	 	IFAFIFVFYFGAH
+17	F	5.44	 	FAFIFVFYFGAHR
+18	Y	3.22	 	AFIFVFYFGAHRT
+19	F	2.67	 	FIFVFYFGAHRTV
+20	G	0.73	 	IFVFYFGAHRTVM
+21	A	-2.81	 	FVFYFGAHRTVMN
+22	H	-4.83	 	VFYFGAHRTVMNR
+23	R	1.19	 	FYFGAHRTVMNRN
+24	T	2.43	 	YFGAHRTVMNRNK
+25	V	3.07	 	FGAHRTVMNRNKS
+26	M	2.54	 	GAHRTVMNRNKSD
+27	N	0.84	 	AHRTVMNRNKSDV
+28	R	-3.65	 	HRTVMNRNKSDVP
+29	N	-5.90	 	RTVMNRNKSDVPY
+30	K	-10.40	 	TVMNRNKSDVPYL
+31	S	-6.79	 	VMNRNKSDVPYLQ
+32	D	-8.52	 	MNRNKSDVPYLQ-
+33	V	-2.93	 	NRNKSDVPYLQ--
+34	P	1.88	 	RNKSDVPYLQ---
+35	Y	3.81	 	NKSDVPYLQ----
+36	L	2.59	 	KSDVPYLQ-----
+37	Q	3.69	 	SDVPYLQ------
+38	-	1.61	 	DVPYLQ-------
+39	-	-4.35	 	VPYLQ--------
+40	-	-0.19	 	PYLQ---------
+41	-	-0.05	 	YLQ----------
+42	-	0.18	 	LQ-----------
+43	-	0.37	 	Q------------

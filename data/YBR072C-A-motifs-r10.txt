@@ -1,0 +1,81 @@
+# Run started 2018-06-29 14:23:03 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YBR072C-A --report --out ../data/YBR072C-A-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YBR072C-A
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YBR072C-A-motifs-r10.txt
+# Found ORF YBR072C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.14	 	-----------MH
+-3	-	-0.27	 	----------MHI
+-2	-	-0.42	 	---------MHIL
+-1	-	-1.17	 	--------MHILT
+0	-	-2.10	 	-------MHILTR
+1	M	0.93	 	------MHILTRS
+2	H	5.50	 	-----MHILTRSS
+3	I	5.88	 	----MHILTRSSK
+4	L	5.71	 	---MHILTRSSKN
+5	T	6.67	 	--MHILTRSSKNA
+6	R	1.67	 	-MHILTRSSKNAF
+7	S	-6.15	 	MHILTRSSKNAFP
+8	S	-5.93	 	HILTRSSKNAFPR
+9	K	-4.16	 	ILTRSSKNAFPRS
+10	N	0.64	 	LTRSSKNAFPRSR
+11	A	1.42	 	TRSSKNAFPRSRS
+12	F	1.85	 	RSSKNAFPRSRSR
+13	P	2.13	 	SSKNAFPRSRSRQ
+14	R	1.86	 	SKNAFPRSRSRQD
+15	S	-0.48	 	KNAFPRSRSRQDI
+16	R	-0.97	 	NAFPRSRSRQDIH
+17	S	-1.74	 	AFPRSRSRQDIHI
+18	R	-5.23	 	FPRSRSRQDIHIS
+19	Q	-2.32	 	PRSRSRQDIHISS
+20	D	-3.36	 	RSRSRQDIHISSH
+21	I	-0.95	 	SRSRQDIHISSHI
+22	H	-0.32	 	RSRQDIHISSHIH
+23	I	1.39	 	SRQDIHISSHIHR
+24	S	-4.08	 	RQDIHISSHIHRD
+25	S	0.75	 	QDIHISSHIHRDT
+26	H	-3.50	 	DIHISSHIHRDTS
+27	I	-2.73	 	IHISSHIHRDTSN
+28	H	-4.61	 	HISSHIHRDTSNS
+29	R	-3.20	 	ISSHIHRDTSNSA
+30	D	-8.21	 	SSHIHRDTSNSAL
+31	T	-8.59	 	SHIHRDTSNSALL
+32	S	-8.97	 	HIHRDTSNSALLK
+33	N	-4.88	 	IHRDTSNSALLKI
+34	S	0.75	 	HRDTSNSALLKIL
+35	A	5.32	 	RDTSNSALLKILV
+36	L	3.60	 	DTSNSALLKILVI
+37	L	7.36	 	TSNSALLKILVIT
+38	K	12.03	*	SNSALLKILVITR
+39	I	9.62	 	NSALLKILVITRT
+40	L	8.26	 	SALLKILVITRTR
+41	V	11.89	*	ALLKILVITRTRL
+42	I	7.89	 	LLKILVITRTRLD
+43	T	2.91	 	LKILVITRTRLDS
+44	R	1.03	 	KILVITRTRLDSF
+45	T	1.02	 	ILVITRTRLDSFV
+46	R	-0.34	 	LVITRTRLDSFVK
+47	L	-0.58	 	VITRTRLDSFVKT
+48	D	2.56	 	ITRTRLDSFVKT-
+49	S	6.23	 	TRTRLDSFVKT--
+50	F	-3.29	 	RTRLDSFVKT---
+51	V	-0.29	 	TRLDSFVKT----
+52	K	1.28	 	RLDSFVKT-----
+53	T	0.15	 	LDSFVKT------
+54	-	-0.47	 	DSFVKT-------
+55	-	1.22	 	SFVKT--------
+56	-	2.33	 	FVKT---------
+57	-	1.55	 	VKT----------
+58	-	0.88	 	KT-----------
+59	-	0.30	 	T------------

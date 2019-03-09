@@ -1,0 +1,63 @@
+# Run started 2018-06-30 08:54:31 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YMR272W-B --report --out ../data/YMR272W-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YMR272W-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YMR272W-B-motifs-r10.txt
+# Found ORF YMR272W-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.46	 	-----------MR
+-3	-	1.04	 	----------MRS
+-2	-	1.62	 	---------MRSL
+-1	-	1.49	 	--------MRSLV
+0	-	-0.58	 	-------MRSLVF
+1	M	-2.83	 	------MRSLVFV
+2	R	0.05	 	-----MRSLVFVQ
+3	S	2.41	 	----MRSLVFVQL
+4	L	5.12	 	---MRSLVFVQLS
+5	V	9.12	 	--MRSLVFVQLSL
+6	F	8.31	 	-MRSLVFVQLSLL
+7	V	5.47	 	MRSLVFVQLSLLS
+8	Q	3.00	 	RSLVFVQLSLLSW
+9	L	4.73	 	SLVFVQLSLLSWE
+10	S	6.94	 	LVFVQLSLLSWEI
+11	L	8.19	 	VFVQLSLLSWEIF
+12	L	-3.09	 	FVQLSLLSWEIFC
+13	S	-4.21	 	VQLSLLSWEIFCG
+14	W	-8.99	 	QLSLLSWEIFCGE
+15	E	-12.31	 	LSLLSWEIFCGER
+16	I	-14.83	 	SLLSWEIFCGERS
+17	F	-11.89	 	LLSWEIFCGERSF
+18	C	-10.25	 	LSWEIFCGERSFV
+19	G	-14.77	 	SWEIFCGERSFVS
+20	E	-17.41	 	WEIFCGERSFVSM
+21	R	-15.59	 	EIFCGERSFVSMK
+22	S	-6.77	 	IFCGERSFVSMKA
+23	F	-3.50	 	FCGERSFVSMKAI
+24	V	-0.90	 	CGERSFVSMKAIF
+25	S	-0.41	 	GERSFVSMKAIFS
+26	M	-2.23	 	ERSFVSMKAIFSC
+27	K	-1.56	 	RSFVSMKAIFSCM
+28	A	0.94	 	SFVSMKAIFSCMY
+29	I	-0.64	 	FVSMKAIFSCMYV
+30	F	-5.69	 	VSMKAIFSCMYV-
+31	S	-6.98	 	SMKAIFSCMYV--
+32	C	-7.68	 	MKAIFSCMYV---
+33	M	-6.01	 	KAIFSCMYV----
+34	Y	-4.43	 	AIFSCMYV-----
+35	V	-5.07	 	IFSCMYV------
+36	-	-1.32	 	FSCMYV-------
+37	-	-1.79	 	SCMYV--------
+38	-	-1.46	 	CMYV---------
+39	-	0.10	 	MYV----------
+40	-	0.11	 	YV-----------
+41	-	0.08	 	V------------

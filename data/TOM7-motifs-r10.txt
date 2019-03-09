@@ -1,0 +1,88 @@
+# Run started 2018-06-30 08:58:05 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id TOM7 --report --out ../data/TOM7-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: TOM7
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/TOM7-motifs-r10.txt
+# Found gene TOM7 = YNL070W
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.04	 	-----------MS
+-3	-	-0.19	 	----------MSF
+-2	-	-0.37	 	---------MSFL
+-1	-	-1.19	 	--------MSFLP
+0	-	-2.89	 	-------MSFLPS
+1	M	-0.91	 	------MSFLPSF
+2	S	2.68	 	-----MSFLPSFI
+3	F	0.53	 	----MSFLPSFIL
+4	L	-0.32	 	---MSFLPSFILS
+5	P	3.06	 	--MSFLPSFILSD
+6	S	3.30	 	-MSFLPSFILSDE
+7	F	0.29	 	MSFLPSFILSDES
+8	I	0.66	 	SFLPSFILSDESK
+9	L	-2.53	 	FLPSFILSDESKE
+10	S	-5.49	 	LPSFILSDESKER
+11	D	-9.56	 	PSFILSDESKERI
+12	E	-17.38	 	SFILSDESKERIS
+13	S	-16.12	 	FILSDESKERISK
+14	K	-12.41	 	ILSDESKERISKI
+15	E	-5.75	 	LSDESKERISKIL
+16	R	-3.82	 	SDESKERISKILT
+17	I	-3.50	 	DESKERISKILTL
+18	S	2.13	 	ESKERISKILTLT
+19	K	7.99	 	SKERISKILTLTH
+20	I	3.21	 	KERISKILTLTHN
+21	L	8.67	 	ERISKILTLTHNV
+22	T	9.41	 	RISKILTLTHNVA
+23	L	3.41	 	ISKILTLTHNVAH
+24	T	-5.95	 	SKILTLTHNVAHY
+25	H	-1.30	 	KILTLTHNVAHYG
+26	N	-7.84	 	ILTLTHNVAHYGW
+27	V	-7.06	 	LTLTHNVAHYGWI
+28	A	-0.96	 	TLTHNVAHYGWIP
+29	H	-1.96	 	LTHNVAHYGWIPF
+30	Y	-6.45	 	THNVAHYGWIPFV
+31	G	-3.85	 	HNVAHYGWIPFVL
+32	W	-4.64	 	NVAHYGWIPFVLY
+33	I	-5.55	 	VAHYGWIPFVLYL
+34	P	-0.78	 	AHYGWIPFVLYLG
+35	F	6.12	 	HYGWIPFVLYLGW
+36	V	5.59	 	YGWIPFVLYLGWA
+37	L	10.68	*	GWIPFVLYLGWAH
+38	Y	7.48	 	WIPFVLYLGWAHT
+39	L	3.10	 	IPFVLYLGWAHTS
+40	G	-2.55	 	PFVLYLGWAHTSN
+41	W	-4.50	 	FVLYLGWAHTSNR
+42	A	-10.15	 	VLYLGWAHTSNRP
+43	H	-7.01	 	LYLGWAHTSNRPN
+44	T	-3.75	 	YLGWAHTSNRPNF
+45	S	-4.28	 	LGWAHTSNRPNFL
+46	N	-3.88	 	GWAHTSNRPNFLN
+47	R	-5.61	 	WAHTSNRPNFLNL
+48	P	-2.76	 	AHTSNRPNFLNLL
+49	N	1.82	 	HTSNRPNFLNLLS
+50	F	0.16	 	TSNRPNFLNLLSP
+51	L	4.66	 	SNRPNFLNLLSPL
+52	N	9.65	 	NRPNFLNLLSPLP
+53	L	7.26	 	RPNFLNLLSPLPS
+54	L	-1.01	 	PNFLNLLSPLPSV
+55	S	4.99	 	NFLNLLSPLPSV-
+56	P	-2.10	 	FLNLLSPLPSV--
+57	L	-8.52	 	LNLLSPLPSV---
+58	P	-2.03	 	NLLSPLPSV----
+59	S	0.70	 	LLSPLPSV-----
+60	V	-4.31	 	LSPLPSV------
+61	-	-1.50	 	SPLPSV-------
+62	-	0.63	 	PLPSV--------
+63	-	-0.14	 	LPSV---------
+64	-	0.30	 	PSV----------
+65	-	0.21	 	SV-----------
+66	-	0.08	 	V------------

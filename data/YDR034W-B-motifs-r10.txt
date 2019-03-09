@@ -1,0 +1,79 @@
+# Run started 2018-06-29 14:42:50 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YDR034W-B --report --out ../data/YDR034W-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YDR034W-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YDR034W-B-motifs-r10.txt
+# Found ORF YDR034W-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	0.46	 	-----------MR
+-3	-	0.94	 	----------MRH
+-2	-	1.37	 	---------MRHH
+-1	-	1.38	 	--------MRHHQ
+0	-	-0.33	 	-------MRHHQN
+1	M	-1.90	 	------MRHHQNM
+2	R	-3.42	 	-----MRHHQNMH
+3	H	-5.56	 	----MRHHQNMHY
+4	H	-8.03	 	---MRHHQNMHYA
+5	Q	-8.33	 	--MRHHQNMHYAP
+6	N	-8.99	 	-MRHHQNMHYAPQ
+7	M	-3.82	 	MRHHQNMHYAPQQ
+8	H	-0.91	 	RHHQNMHYAPQQQ
+9	Y	-2.57	 	HHQNMHYAPQQQP
+10	A	-3.60	 	HQNMHYAPQQQPV
+11	P	-3.91	 	QNMHYAPQQQPVY
+12	Q	-8.84	 	NMHYAPQQQPVYV
+13	Q	-10.62	 	MHYAPQQQPVYVQ
+14	Q	-7.16	 	HYAPQQQPVYVQQ
+15	P	-0.38	 	YAPQQQPVYVQQP
+16	V	5.53	 	APQQQPVYVQQPP
+17	Y	6.43	 	PQQQPVYVQQPPP
+18	V	5.65	 	QQQPVYVQQPPPR
+19	Q	2.56	 	QQPVYVQQPPPRR
+20	Q	-1.73	 	QPVYVQQPPPRRE
+21	P	-4.49	 	PVYVQQPPPRRES
+22	P	-2.73	 	VYVQQPPPRRESG
+23	P	-2.65	 	YVQQPPPRRESGG
+24	R	-4.88	 	VQQPPPRRESGGC
+25	R	-6.04	 	QQPPPRRESGGCC
+26	E	-6.77	 	QPPPRRESGGCCR
+27	S	-7.36	 	PPPRRESGGCCRT
+28	G	-12.25	 	PPRRESGGCCRTC
+29	G	-15.35	 	PRRESGGCCRTCC
+30	C	-15.63	 	RRESGGCCRTCCH
+31	C	-14.94	 	RESGGCCRTCCHF
+32	R	-18.90	 	ESGGCCRTCCHFL
+33	T	-25.97	 	SGGCCRTCCHFLC
+34	C	-26.77	 	GGCCRTCCHFLCC
+35	C	-20.10	 	GCCRTCCHFLCCL
+36	H	-12.61	 	CCRTCCHFLCCLC
+37	F	-17.37	 	CRTCCHFLCCLCL
+38	L	-21.08	 	RTCCHFLCCLCLI
+39	C	-12.03	 	TCCHFLCCLCLIN
+40	C	-16.48	 	CCHFLCCLCLINL
+41	L	-15.89	 	CHFLCCLCLINLC
+42	C	-12.20	 	HFLCCLCLINLCC
+43	L	-13.26	 	FLCCLCLINLCCD
+44	I	-11.68	 	LCCLCLINLCCDV
+45	N	-14.59	 	CCLCLINLCCDVF
+46	L	-21.11	 	CLCLINLCCDVF-
+47	C	-24.96	 	LCLINLCCDVF--
+48	C	-17.92	 	CLINLCCDVF---
+49	D	-19.22	 	LINLCCDVF----
+50	V	-18.17	 	INLCCDVF-----
+51	F	-15.53	 	NLCCDVF------
+52	-	-6.37	 	LCCDVF-------
+53	-	-3.70	 	CCDVF--------
+54	-	-1.85	 	CDVF---------
+55	-	-0.11	 	DVF----------
+56	-	-0.01	 	VF-----------
+57	-	-0.05	 	F------------

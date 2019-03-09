@@ -1,0 +1,80 @@
+# Run started 2018-06-29 15:44:56 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id YJL127C-B --report --out ../data/YJL127C-B-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: YJL127C-B
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/YJL127C-B-motifs-r10.txt
+# Found ORF YJL127C-B
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.15	 	-----------MI
+-3	-	-0.42	 	----------MIF
+-2	-	-0.89	 	---------MIFF
+-1	-	-2.32	 	--------MIFFF
+0	-	-0.62	 	-------MIFFFN
+1	M	1.04	 	------MIFFFNQ
+2	I	2.85	 	-----MIFFFNQI
+3	F	5.54	 	----MIFFFNQIR
+4	F	4.40	 	---MIFFFNQIRS
+5	F	-0.43	 	--MIFFFNQIRSI
+6	N	1.69	 	-MIFFFNQIRSIF
+7	Q	-0.98	 	MIFFFNQIRSIFT
+8	I	-3.70	 	IFFFNQIRSIFTA
+9	R	0.02	 	FFFNQIRSIFTAL
+10	S	5.85	 	FFNQIRSIFTALH
+11	I	0.93	 	FNQIRSIFTALHT
+12	F	2.47	 	NQIRSIFTALHTP
+13	T	7.54	 	QIRSIFTALHTPT
+14	A	2.38	 	IRSIFTALHTPTQ
+15	L	0.83	 	RSIFTALHTPTQQ
+16	H	0.70	 	SIFTALHTPTQQI
+17	T	0.64	 	IFTALHTPTQQIQ
+18	P	-7.21	 	FTALHTPTQQIQL
+19	T	-6.29	 	TALHTPTQQIQLS
+20	Q	-1.59	 	ALHTPTQQIQLSR
+21	Q	-0.76	 	LHTPTQQIQLSRR
+22	I	5.81	 	HTPTQQIQLSRRA
+23	Q	7.83	 	TPTQQIQLSRRAF
+24	L	8.56	 	PTQQIQLSRRAFF
+25	S	1.42	 	TQQIQLSRRAFFQ
+26	R	3.51	 	QQIQLSRRAFFQF
+27	R	-2.02	 	QIQLSRRAFFQFL
+28	A	1.72	 	IQLSRRAFFQFLG
+29	F	0.73	 	QLSRRAFFQFLGY
+30	F	2.87	 	LSRRAFFQFLGYL
+31	Q	6.45	 	SRRAFFQFLGYLG
+32	F	1.78	 	RRAFFQFLGYLGS
+33	L	3.28	 	RAFFQFLGYLGSC
+34	G	9.61	 	AFFQFLGYLGSCV
+35	Y	5.40	 	FFQFLGYLGSCVV
+36	L	-3.23	 	FQFLGYLGSCVVI
+37	G	-6.75	 	QFLGYLGSCVVIS
+38	S	-6.33	 	FLGYLGSCVVISL
+39	C	-9.22	 	LGYLGSCVVISLA
+40	V	-3.38	 	GYLGSCVVISLAA
+41	V	-3.40	 	YLGSCVVISLAAQ
+42	I	-0.59	 	LGSCVVISLAAQS
+43	S	1.05	 	GSCVVISLAAQSK
+44	L	1.08	 	SCVVISLAAQSKY
+45	A	-3.14	 	CVVISLAAQSKYV
+46	A	-1.36	 	VVISLAAQSKYVQ
+47	Q	-10.20	 	VISLAAQSKYVQ-
+48	S	-4.92	 	ISLAAQSKYVQ--
+49	K	-0.32	 	SLAAQSKYVQ---
+50	Y	1.61	 	LAAQSKYVQ----
+51	V	3.03	 	AAQSKYVQ-----
+52	Q	4.20	 	AQSKYVQ------
+53	-	1.17	 	QSKYVQ-------
+54	-	-0.80	 	SKYVQ--------
+55	-	2.10	 	KYVQ---------
+56	-	1.24	 	YVQ----------
+57	-	0.82	 	VQ-----------
+58	-	0.37	 	Q------------

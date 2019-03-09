@@ -1,0 +1,87 @@
+# Run started 2018-06-29 15:09:26 
+# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id RPL29 --report --out ../data/RPL29-motifs-r10.txt
+# Parameters:
+#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	protein_id: RPL29
+#	sequence: None
+#	pssm_name: rudiger
+#	translate: False
+#	score_threshold: 10.0
+#	maximum_frequency_bin: 10
+#	degap: False
+#	write_report: True
+#	mask_sequences: False
+#	out_fname: ../data/RPL29-motifs-r10.txt
+# Found gene RPL29 = YFR032C-A
+pos	residue	score	above.threshold	window
+-5	-	-0.06	 	------------M
+-4	-	-0.26	 	-----------MA
+-3	-	-0.11	 	----------MAK
+-2	-	0.06	 	---------MAKS
+-1	-	-0.20	 	--------MAKSK
+0	-	0.77	 	-------MAKSKN
+1	M	-0.71	 	------MAKSKNH
+2	A	-1.55	 	-----MAKSKNHT
+3	K	-3.44	 	----MAKSKNHTA
+4	S	-5.32	 	---MAKSKNHTAH
+5	K	-5.83	 	--MAKSKNHTAHN
+6	N	-5.28	 	-MAKSKNHTAHNQ
+7	H	-4.07	 	MAKSKNHTAHNQT
+8	T	-3.43	 	AKSKNHTAHNQTR
+9	A	-4.60	 	KSKNHTAHNQTRK
+10	H	-3.52	 	SKNHTAHNQTRKA
+11	N	-2.04	 	KNHTAHNQTRKAH
+12	Q	-2.58	 	NHTAHNQTRKAHR
+13	T	-2.26	 	HTAHNQTRKAHRN
+14	R	-1.03	 	TAHNQTRKAHRNG
+15	K	1.53	 	AHNQTRKAHRNGI
+16	A	1.42	 	HNQTRKAHRNGIK
+17	H	-0.41	 	NQTRKAHRNGIKK
+18	R	-0.90	 	QTRKAHRNGIKKP
+19	N	2.07	 	TRKAHRNGIKKPK
+20	G	2.29	 	RKAHRNGIKKPKT
+21	I	0.73	 	KAHRNGIKKPKTY
+22	K	-0.38	 	AHRNGIKKPKTYK
+23	K	-0.25	 	HRNGIKKPKTYKY
+24	P	-5.75	 	RNGIKKPKTYKYP
+25	K	0.11	 	NGIKKPKTYKYPS
+26	T	-0.56	 	GIKKPKTYKYPSL
+27	Y	4.56	 	IKKPKTYKYPSLK
+28	K	4.49	 	KKPKTYKYPSLKG
+29	Y	3.71	 	KPKTYKYPSLKGV
+30	P	4.34	 	PKTYKYPSLKGVD
+31	S	3.28	 	KTYKYPSLKGVDP
+32	L	-1.76	 	TYKYPSLKGVDPK
+33	K	2.13	 	YKYPSLKGVDPKF
+34	G	0.03	 	KYPSLKGVDPKFR
+35	V	-6.91	 	YPSLKGVDPKFRR
+36	D	-5.35	 	PSLKGVDPKFRRN
+37	P	0.71	 	SLKGVDPKFRRNH
+38	K	-1.09	 	LKGVDPKFRRNHK
+39	F	1.86	 	KGVDPKFRRNHKH
+40	R	0.35	 	GVDPKFRRNHKHA
+41	R	0.81	 	VDPKFRRNHKHAL
+42	N	-3.13	 	DPKFRRNHKHALH
+43	H	-4.04	 	PKFRRNHKHALHG
+44	K	-3.79	 	KFRRNHKHALHGT
+45	H	-0.24	 	FRRNHKHALHGTA
+46	A	0.24	 	RRNHKHALHGTAK
+47	L	-0.35	 	RNHKHALHGTAKA
+48	H	0.10	 	NHKHALHGTAKAL
+49	G	0.88	 	HKHALHGTAKALA
+50	T	-8.30	 	KHALHGTAKALAA
+51	A	-6.28	 	HALHGTAKALAAA
+52	K	-0.08	 	ALHGTAKALAAAK
+53	A	2.06	 	LHGTAKALAAAKK
+54	L	3.27	 	HGTAKALAAAKK-
+55	A	5.22	 	GTAKALAAAKK--
+56	A	3.78	 	TAKALAAAKK---
+57	A	-5.06	 	AKALAAAKK----
+58	K	-3.64	 	KALAAAKK-----
+59	K	-2.51	 	ALAAAKK------
+60	-	-1.13	 	LAAAKK-------
+61	-	1.02	 	AAAKK--------
+62	-	2.20	 	AAKK---------
+63	-	1.43	 	AKK----------
+64	-	0.84	 	KK-----------
+65	-	0.28	 	K------------
