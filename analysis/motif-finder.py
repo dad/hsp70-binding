@@ -38,19 +38,29 @@ if __name__=='__main__':
 	parser.add_argument("--max-frequency-bin", dest="maximum_frequency_bin", default=10, help="maximum number of sequential binding sites to count")
 	parser.add_argument("--degap", dest="degap", action='store_true', default=False, help="remove gaps from input FASTA file?")
 	parser.add_argument("-r", "--report", dest="write_report", action="store_true", default=False, help="write out specific report for each protein?")
+	parser.add_argument("--distribution", dest="write_distribution", action="store_true", default=False, help="write out complete distribution of scores for all windows?")
 	parser.add_argument("-m", "--mask", dest="mask_sequences", action="store_true", default=False, help="mask input sequences?")
 	parser.add_argument("-o", "--out", dest="out_fname", default=None, help="output (summary) filename")
 	options = parser.parse_args()
-	
-	# Set up some output
+
 	info_outs = util.OutStreams(sys.stdout)
-	outs = util.OutStreams()
-	params_outs = util.OutStreams([outs])
+	data_outs = util.OutStreams()
+
+	# Start up output
 	if not options.out_fname is None:
-		outf = open(os.path.expanduser(options.out_fname),'w')
-		outs.addStream(outf)
+		outf = open(options.out_fname,'w')
+		data_outs.addStream(outf)
 	else:
-		outs.addStream(sys.stdout)
+		# By default, write to stdout
+		data_outs.addStream(sys.stdout)
+
+	# Write out parameters
+	data_outs.write("# Run started {}\n".format(util.timestamp()))
+	data_outs.write("# Command: {}\n".format(' '.join(sys.argv)))
+	data_outs.write("# Parameters:\n")
+	optdict = vars(options)
+	for (k,v) in list(optdict.items()):
+		data_outs.write("#\t{k}: {v}\n".format(k=k, v=v))
 
 	orf_dict = None
 	gene_orf_map = None
@@ -60,7 +70,6 @@ if __name__=='__main__':
 		orf_dict = dict(zip([biofile.firstField(h) for h in headers], sequences))
 		gene_orf_map = dict([(biofile.secondField(h), biofile.firstField(h)) for h in headers])
 
-	
 	# Set the weight matrix
 	try:
 		matrix = motif.weight_matrices[options.pssm_name]
@@ -70,27 +79,19 @@ if __name__=='__main__':
 	# for associating windows with residues, center them
 	mid_window = int(math.floor(window_size/2.0))
 	
-	# Write out parameters
-	params_outs.write("# Run started {}\n".format(util.timestamp()))
-	params_outs.write("# Command: {}\n".format(' '.join(sys.argv)))
-	params_outs.write("# Parameters:\n")
-	optdict = vars(options)
-	for (k,v) in optdict.items():
-		params_outs.write("#\t{k}: {v}\n".format(k=k, v=v))
-	
 	seq = None
 	if not orf_dict is None and not options.protein_id is None:
 		try:
 			seq = orf_dict[options.protein_id]
-			outs.write("# Found ORF {}\n".format(options.protein_id))
+			data_outs.write("# Found ORF {}\n".format(options.protein_id))
 		except KeyError as ke:
 			# Maybe the user passed in a gene name.
 			try:
 				orf = gene_orf_map[options.protein_id]
-				outs.write("# Found gene {} = {}\n".format(options.protein_id, orf))
+				data_outs.write("# Found gene {} = {}\n".format(options.protein_id, orf))
 				seq = orf_dict[orf]
 			except KeyError:
-				raise KeyError("# No protein found for ID {}".format(protein_id))
+				raise KeyError("# No protein found for ID {}".format(options.protein_id))
 	
 	if not options.sequence is None:
 		seq = options.sequence
@@ -101,26 +102,65 @@ if __name__=='__main__':
 	if options.write_report and not seq is None:
 		score_res = motif.score(seq, matrix, return_windows=True)
 		header = 'pos\tresidue\tscore\tabove.threshold\twindow\n'
-		outs.write(header)
+		data_outs.write(header)
 		for sentry in score_res.results:
 			resthresh_out = ' '
 			if sentry.score >= options.score_threshold and sentry.residue != '-':
 				resthresh_out = "*"
 			line = "{pos}\t{aa}\t{resscore}\t{resthresh}\t{win}\n".format(
 				pos=sentry.pos+1, aa=sentry.residue, resscore=na.formatNA(sentry.score,"{:1.2f}"), resthresh=resthresh_out, win=sentry.window)
-			outs.write(line)
+			data_outs.write(line)
 		sys.exit()
-		
-	if options.write_report and not orf_dict is None:
-		header = "orf\tnum.sites\tnum.motifs\tprop.sites\tmax.score\t" + \
-			'\t'.join(['num.motifs.{:d}'.format(i+1) for i in range(options.maximum_frequency_bin)]) + '\tnum.motifs.longer\n'
-		outs.write(header)
+
+	# Write output
+	dout_dist = util.DelimitedOutput()
+	dout_dist.addHeader('orf','systematic ORF identifier','s')
+	dout_dist.addHeader('pos','position (1-based) of window','d')
+	dout_dist.addHeader('score','score of windowed sequence','f')
+
+	n_written = 0
+	if options.write_distribution:
+		# Write the header descriptions
+		dout_dist.describeHeader(data_outs)
+		# Write the header fields
+		dout_dist.writeHeader(data_outs)
+
+		# Write entire distribution of scores
 		for (hdr,rawseq) in zip(headers,sequences):
 			orf = biofile.firstField(hdr)
 			if options.translate:
 				seq = translate.translate(rawseq)
 				if seq is None:
 					outs.write("# Skipping {} -- bad translation\n".format(orf))
+					continue
+			else:
+				seq = rawseq
+			# Remove trailing '*' (stop codon) if present
+			if seq[-1] == '*':
+				seq = seq[0:-1]
+			score_res = motif.score(seq, matrix)
+			L = len(seq)
+
+			result = dout_dist.createResult(default=None)
+			for (aai, score) in enumerate(score_res.scores):
+				if aai>=window_size and aai<L-window_size: # Select for complete windows only.
+					result['pos'] = aai+1 # 1-based indexing
+					result['score'] = score
+					result['orf'] = orf
+					line = dout_dist.formatLine(result)
+					data_outs.write(line)
+					n_written += 1
+		
+	if options.write_report and not orf_dict is None:
+		header = "orf\tnum.sites\tnum.motifs\tprop.sites\tmax.score\t" + \
+			'\t'.join(['num.motifs.{:d}'.format(i+1) for i in range(options.maximum_frequency_bin)]) + '\tnum.motifs.longer\n'
+		data_outs.write(header)
+		for (hdr,rawseq) in zip(headers,sequences):
+			orf = biofile.firstField(hdr)
+			if options.translate:
+				seq = translate.translate(rawseq)
+				if seq is None:
+					data_outs.write("# Skipping {} -- bad translation\n".format(orf))
 					continue
 			else:
 				seq = rawseq
@@ -135,7 +175,7 @@ if __name__=='__main__':
 				freq = '\t'.join(["{:d}".format(score_summary.run_frequency[i]) for i in range(options.maximum_frequency_bin)]),
 				nlonger = score_summary.num_longer_runs
 				)
-			outs.write(line)
+			data_outs.write(line)
 			
 	if options.mask_sequences:
 		# To accept gapped alignments;
@@ -148,13 +188,13 @@ if __name__=='__main__':
 			if options.translate:
 				seq = translate.translate(seq)
 				if seq is None:
-					outs.write("# Skipping due to bad translation: {}\n".format(hdr))
+					data_outs.write("# Skipping due to bad translation: {}\n".format(hdr))
 					continue
 			score_res = motif.score(seq, matrix)
 			masked_seq = score_res.maskSequence(options.score_threshold, mask_char='x')
 			realigned_seq = realignSequence(masked_seq, rawseq)
 			line = ">{}\n{}\n".format(hdr, realigned_seq)
-			outs.write(line)
+			data_outs.write(line)
 			
 	
 

@@ -1,9 +1,7 @@
-PY = $$PYTHONEXE
+PY = python3
 
-DROPBOX = $$DROPBOX
 DATA = ../data
-GENOMES = ../../gtpase-sensor/data
-CUPR = ../../cupr/data
+GENOMES = ../data
 
 all: motif
 
@@ -19,10 +17,12 @@ testmotif:
 	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id OLA1 --report --out $(DATA)/ola1-motifs-r10.txt
 
 motif:
-	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HSF1 --report --out $(DATA)/hsf1-motifs-r10.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HSF1 --report --out $(DATA)/HSF1-motifs-r10.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id NUG1 --report --out $(DATA)/NUG1-motifs-r10.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id OLA1 --report --out $(DATA)/OLA1-motifs-r10.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PAB1 --report --out $(DATA)/PAB1-motifs-r10.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HSF1 --report --out $(DATA)/hsf1-motifs-r10.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id SSA1 --report --out $(DATA)/ssa1-motifs-r10.txt
-#	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id NUG1 --report --out $(DATA)/nug1-motifs-r10.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id NOG1 --report --out $(DATA)/nog1-motifs-r10.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id NOG2 --report --out $(DATA)/nog2-motifs-r10.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id CDC39 --report --out $(DATA)/cdc39-motifs-r10.txt
@@ -67,7 +67,11 @@ summary:
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 5.0 --out $(DATA)/scer-motifs-summary-vd5.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 7.0 --out $(DATA)/scer-motifs-summary-7.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 10.0 --out $(DATA)/scer-motifs-summary-10.txt
-	
+
+dist:
+#	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --distribution
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --distribution --out $(DATA)/scer-motifs-distribution.txt
+
 mask:
 	$(PY) motif-finder.py --database $(CUPR)/hsf-alignment/hsf-all-manual.fa --pssm rudiger --mask --threshold 10.0 --out $(DATA)/hsf-hsp70-binding-sites-r10.fa
 #	$(PY) motif-finder.py --database $(CUPR)/hsf-alignment/hsf-all-manual.fa --pssm vandurme --mask --threshold 0.0 --out $(DATA)/hsf-hsp70-binding-sites-vd0.fa

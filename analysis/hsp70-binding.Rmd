@@ -29,7 +29,7 @@ library(reshape2) # data manipulation
 library(tidyverse) # more data manipulation
 library(stringr)
 library(ggrepel)
-library(plotly) # interactive graphics
+#library(plotly) # interactive graphics
 library(lmodel2)
 
 library(cowplot) # extensions and nice defaults
@@ -47,6 +47,8 @@ bluecol <- "#0000aacc"
 greencol <- "#22cc00cc"
 purplecol <- "#cc22cccc"
 cyancol <- "#2aa198cc"
+redcol <- "#dc322fcc"
+violetcol <- "#6c71c4cc"
 
 ```
 
@@ -169,3 +171,36 @@ ggdraw(g <- plot_grid(
   gcdc <- plot_profile('nog2', cutoff=cutoff), 
   ncol=1))
 ```
+
+```{r full_distribution}
+#d <- read_tsv("../data/scer-motifs-distribution.txt", comment='#')
+x <- read_tsv("~/research/hsp70-binding/data/scer-motifs-summary-r12_15.txt", comment='#')
+agg <- read_tsv("../data/heat_aggregators.txt", comment='#')
+
+hsf1 <- read_tsv("../data/hsf1-motifs-r10.txt", comment='#')
+nug1 <- read_tsv("../data/nug1-motifs-r10.txt", comment='#')
+
+addAnnotation <- function(the_plot, gene, color, nudge) {
+  x <- read_tsv(paste("../data/",gene,"-motifs-r10.txt",sep=''), comment='#')
+  max.x <- x %>% filter(score==max(x$score))
+  the_plot <- the_plot + geom_density(data=x, colour=color, kernel='r') + 
+    geom_point(data=max.x, aes(y=0.005), shape=25, size=5, fill=color, colour=color) +
+    geom_text_repel(data=max.x, aes(y=0.005, label=gene), colour=color, nudge_y=nudge)
+  the_plot
+}
+
+g <- ggplot(d, aes(x=score, y=..density..)) + geom_density(kernel='r', size=1) + 
+  geom_density(data=x, aes(x=max.score), kernel='r', colour='gray', linetype=2) + 
+  scale_x_continuous(limits = c(-25,25))
+g <- addAnnotation(g, "PAB1", "darkgreen", nudge=0)
+g <- addAnnotation(g, "NUG1", purplecol, nudge=0.02)
+g <- addAnnotation(g, "HSF1", orangecol, nudge=0.04)
+g <- addAnnotation(g, "DED1", redcol, nudge=0.06)
+g <- addAnnotation(g, "OLA1", violetcol, nudge=0.08)
+print(g)
+```
+
+
+
+
+

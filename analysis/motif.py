@@ -159,6 +159,12 @@ rudiger_hsp70_weight_matrix = {
 
 # From http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000475
 # van Durme et al. PLoS Computational Biology 2009
+# Brief description (from paper):
+# "The binding energy for each residue at every position was calculated and subtracted from the
+# binding energy of alanine at the same position, resulting in the corresponding DDG for each 
+# residue and position. The more negative the DDG, the better the residue fits DnaK binding. To
+# convert each DDG into a PSSM score, we took the negative of each DDG and filled the 
+# structure-based PSSM accordingly."
 van_durme_hsp70_weight_matrix = {
 	'A':[-1.60,-8.43,-0.67,-8.43,-0.37,0.11,-0.14],
 	'C':[-6.13,-6.23,-5.81,-5.30,-4.75,-6.35,-6.26],

@@ -1,7 +1,7 @@
-# Run started 2018-06-29 15:12:18 
-# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HSF1 --report --out ../data/HSF1-motifs-r10.txt
+# Run started 2020-09-23 18:07:01 
+# Command: motif-finder.py --database ../data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id HSF1 --report --out ../data/HSF1-motifs-r10.txt
 # Parameters:
-#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	fasta_fname: ../data/scer_orf_trans_all.fasta
 #	protein_id: HSF1
 #	sequence: None
 #	pssm_name: rudiger
@@ -10,6 +10,7 @@
 #	maximum_frequency_bin: 10
 #	degap: False
 #	write_report: True
+#	write_distribution: False
 #	mask_sequences: False
 #	out_fname: ../data/HSF1-motifs-r10.txt
 # Found gene HSF1 = YGL073W
@@ -847,15 +848,16 @@ pos	residue	score	above.threshold	window
 825	H	-3.33	 	PTEYNDHRLPKRA
 826	R	-2.46	 	TEYNDHRLPKRAK
 827	L	1.82	 	EYNDHRLPKRAKK
-828	P	3.65	 	YNDHRLPKRAKK-
-829	K	5.77	 	NDHRLPKRAKK--
-830	R	-2.14	 	DHRLPKRAKK---
-831	A	-2.26	 	HRLPKRAKK----
-832	K	-0.40	 	RLPKRAKK-----
-833	K	0.38	 	LPKRAKK------
-834	-	1.01	 	PKRAKK-------
-835	-	2.01	 	KRAKK--------
-836	-	2.57	 	RAKK---------
-837	-	1.43	 	AKK----------
-838	-	0.84	 	KK-----------
-839	-	0.28	 	K------------
+828	P	3.65	 	YNDHRLPKRAKK*
+829	K	5.77	 	NDHRLPKRAKK*-
+830	R	-2.14	 	DHRLPKRAKK*--
+831	A	-2.26	 	HRLPKRAKK*---
+832	K	-0.40	 	RLPKRAKK*----
+833	K	0.38	 	LPKRAKK*-----
+834	*	1.01	 	PKRAKK*------
+835	-	2.01	 	KRAKK*-------
+836	-	2.57	 	RAKK*--------
+837	-	1.43	 	AKK*---------
+838	-	0.84	 	KK*----------
+839	-	0.28	 	K*-----------
+840	-	0.00	 	*------------

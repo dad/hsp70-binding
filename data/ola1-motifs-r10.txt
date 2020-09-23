@@ -1,7 +1,7 @@
-# Run started 2018-06-29 14:21:43 
-# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id OLA1 --report --out ../data/OLA1-motifs-r10.txt
+# Run started 2020-09-23 18:07:02 
+# Command: motif-finder.py --database ../data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id OLA1 --report --out ../data/OLA1-motifs-r10.txt
 # Parameters:
-#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	fasta_fname: ../data/scer_orf_trans_all.fasta
 #	protein_id: OLA1
 #	sequence: None
 #	pssm_name: rudiger
@@ -10,6 +10,7 @@
 #	maximum_frequency_bin: 10
 #	degap: False
 #	write_report: True
+#	write_distribution: False
 #	mask_sequences: False
 #	out_fname: ../data/OLA1-motifs-r10.txt
 # Found gene OLA1 = YBR025C
@@ -408,15 +409,16 @@ pos	residue	score	above.threshold	window
 386	Y	5.81	 	EDGDIIYFRAGAG
 387	F	3.01	 	DGDIIYFRAGAGK
 388	R	-1.59	 	GDIIYFRAGAGKN
-389	A	-2.51	 	DIIYFRAGAGKN-
-390	G	-4.21	 	IIYFRAGAGKN--
-391	A	-4.27	 	IYFRAGAGKN---
-392	G	-6.30	 	YFRAGAGKN----
-393	K	-4.20	 	FRAGAGKN-----
-394	N	-3.83	 	RAGAGKN------
-395	-	-1.95	 	AGAGKN-------
-396	-	-0.59	 	GAGKN--------
-397	-	-0.03	 	AGKN---------
-398	-	-0.07	 	GKN----------
-399	-	-0.21	 	KN-----------
-400	-	-0.25	 	N------------
+389	A	-2.51	 	DIIYFRAGAGKN*
+390	G	-4.21	 	IIYFRAGAGKN*-
+391	A	-4.27	 	IYFRAGAGKN*--
+392	G	-6.30	 	YFRAGAGKN*---
+393	K	-4.20	 	FRAGAGKN*----
+394	N	-3.83	 	RAGAGKN*-----
+395	*	-1.95	 	AGAGKN*------
+396	-	-0.59	 	GAGKN*-------
+397	-	-0.03	 	AGKN*--------
+398	-	-0.07	 	GKN*---------
+399	-	-0.21	 	KN*----------
+400	-	-0.25	 	N*-----------
+401	-	0.00	 	*------------

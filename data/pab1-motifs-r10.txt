@@ -1,7 +1,7 @@
-# Run started 2018-06-29 15:05:31 
-# Command: motif-finder.py --database ../../gtpase-sensor/data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PAB1 --report --out ../data/PAB1-motifs-r10.txt
+# Run started 2020-09-23 18:07:02 
+# Command: motif-finder.py --database ../data/scer_orf_trans_all.fasta --pssm rudiger --threshold 10.0 --id PAB1 --report --out ../data/PAB1-motifs-r10.txt
 # Parameters:
-#	fasta_fname: ../../gtpase-sensor/data/scer_orf_trans_all.fasta
+#	fasta_fname: ../data/scer_orf_trans_all.fasta
 #	protein_id: PAB1
 #	sequence: None
 #	pssm_name: rudiger
@@ -10,6 +10,7 @@
 #	maximum_frequency_bin: 10
 #	degap: False
 #	write_report: True
+#	write_distribution: False
 #	mask_sequences: False
 #	out_fname: ../data/PAB1-motifs-r10.txt
 # Found gene PAB1 = YER165W
@@ -591,15 +592,16 @@ pos	residue	score	above.threshold	window
 569	E	-13.65	 	YESFKKEQEQQTE
 570	Q	-13.48	 	ESFKKEQEQQTEQ
 571	E	-13.97	 	SFKKEQEQQTEQA
-572	Q	-13.69	 	FKKEQEQQTEQA-
-573	Q	-12.94	 	KKEQEQQTEQA--
-574	T	-12.69	 	KEQEQQTEQA---
-575	E	-8.94	 	EQEQQTEQA----
-576	Q	-5.59	 	QEQQTEQA-----
-577	A	-4.79	 	EQQTEQA------
-578	-	-2.59	 	QQTEQA-------
-579	-	0.39	 	QTEQA--------
-580	-	0.56	 	TEQA---------
-581	-	0.32	 	EQA----------
-582	-	0.42	 	QA-----------
-583	-	0.02	 	A------------
+572	Q	-13.69	 	FKKEQEQQTEQA*
+573	Q	-12.94	 	KKEQEQQTEQA*-
+574	T	-12.69	 	KEQEQQTEQA*--
+575	E	-8.94	 	EQEQQTEQA*---
+576	Q	-5.59	 	QEQQTEQA*----
+577	A	-4.79	 	EQQTEQA*-----
+578	*	-2.59	 	QQTEQA*------
+579	-	0.39	 	QTEQA*-------
+580	-	0.56	 	TEQA*--------
+581	-	0.32	 	EQA*---------
+582	-	0.42	 	QA*----------
+583	-	0.02	 	A*-----------
+584	-	0.00	 	*------------
