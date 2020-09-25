@@ -62,6 +62,7 @@ summary:
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_coding.fasta --translate --report --threshold 0.0 --out $(DATA)/scer-motifs-summary-0.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --report --threshold 3.0 --out $(DATA)/scer-motifs-summary-3.txt
 	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --report --threshold 12.15 --out $(DATA)/scer-motifs-summary-r12_15.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --report --threshold 12.15 --randomize --out $(DATA)/scer-motifs-summary-r12_15-shuffled.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm vandurme --report --threshold 10 --out $(DATA)/scer-motifs-summary-v12_15.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 0.0 --out $(DATA)/scer-motifs-summary-vd0.txt
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans.fasta --pssm vandurme --report --threshold 5.0 --out $(DATA)/scer-motifs-summary-vd5.txt
@@ -70,7 +71,8 @@ summary:
 
 dist:
 #	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --distribution
-	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --distribution --out $(DATA)/scer-motifs-distribution.txt
+#	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --distribution --out $(DATA)/scer-motifs-distribution.txt
+	$(PY) motif-finder.py --database $(GENOMES)/scer_orf_trans_all.fasta --pssm rudiger --distribution --randomize --out $(DATA)/scer-motifs-distribution-shuffled.txt
 
 mask:
 	$(PY) motif-finder.py --database $(CUPR)/hsf-alignment/hsf-all-manual.fa --pssm rudiger --mask --threshold 10.0 --out $(DATA)/hsf-hsp70-binding-sites-r10.fa

@@ -72,7 +72,7 @@ glyc <- read_tsv("../../HeatShockQmRNA/src/scer-glycolytic-proteins.txt", commen
 rib <- read_tsv("../../HeatShockQmRNA/src/scer-ribosomal-proteins.txt", comment='#')
 #hs <- read_tsv("../src/scer-heat-shock-proteins.txt", comment='#')
 hs <- read_tsv("../../HeatShockQmRNA/src/heat-shock-42C-up-genes-auto.txt", comment='#')
-gtpase <- read_tsv("../../stress-ph/data/GTPase_activity_annotations.txt", comment='#') %>% mutate(orf=`Gene Systematic Name`)
+gtpase <- read_tsv("../data/GTPase_activity_annotations.txt", comment='#') %>% mutate(orf=`Gene Systematic Name`)
 agg <- read_tsv("../../HeatShockQmRNA/src/heat_aggregators.txt", comment='#')
 
 gtpase.orf <- unique(gtpase$orf)
@@ -88,7 +88,7 @@ ctrl.gtpase <- c('ARF1','TSR1','EFT1','EFT2','RAS2','GSP1')
 # no
 # ARF1,TSR1,EFT1,EFT2,RAS2,GSP1
 
-h70$label <- NA
+h70$label <- as.character(NA)
 h70[!is.na(match(h70$orf, agg$orf)),'label'] <- 'aggregator'
 h70[!is.na(match(h70$orf, rib$orf)),'label'] <- 'ribosomal'
 h70[!is.na(match(h70$orf, glyc$orf)),'label'] <- 'glycolytic'
@@ -175,11 +175,15 @@ ggdraw(g <- plot_grid(
 ```
 
 ```{r full_distribution}
-#d <- read_tsv("../data/scer-motifs-distribution.txt", comment='#')
+d <- read_tsv("../data/scer-motifs-distribution.txt", comment='#')
+d.rand <- read_tsv("../data/scer-motifs-distribution-randomized.txt", comment='#')
 x <- read_tsv("~/research/hsp70-binding/data/scer-motifs-summary-r12_15.txt", comment='#')
 agg <- read_tsv("../data/heat_aggregators.txt", comment='#')
+smpae <- read_tsv("../../HeatShockQmRNA/src/scer-mrna-protein-absolute-estimate.txt",comment="#") %>%
+    dplyr::rename(ORF=orf)
 
 agg_annotated <- agg %>% left_join(x %>% select(orf, max.score, num.motifs), by='orf')
+agg_annotated <- agg_annotated %>% left_join(smpae %>% select(mrna, prot, ORF), by=c(orf="ORF") )
 
 addAnnotations <- function(the_plot, genes, nudge) {
   gene_list <- lapply(genes, function(g) {
@@ -205,6 +209,16 @@ g <- ggplot(d, aes(x=score, y=..scaled..)) + geom_density(kernel='r', size=1) +
   ylab("Density") +
   scale_x_continuous("Hsp70 binding score", limits = c(-25,25)) + no.legend
 g <- addAnnotations(g, c("PAB1",'NUG1','HSF1','DED1','OLA1'), nudge=0)
+print(g)
+```
+
+```{r selection, dependson="full_distribution"}
+#d <- read_tsv("../data/scer-motifs-distribution.txt", comment='#')
+#d.rand <- read_tsv("../data/scer-motifs-distribution-shuffled.txt", comment='#')
+
+g <- ggplot(data=d, aes(x=score)) + geom_density(kernel='r') + 
+  stat_function(fun=dnorm, args=list(mean=mean(d$score), sd=sd(d$score)), linetype=3) +
+  geom_density(data=d.rand, kernel='r', colour=redcol) + stat_function(fun=dnorm, args=list(mean=mean(d.rand$score), sd=sd(d$score)), linetype=3, colour=redcol)
 print(g)
 ```
 

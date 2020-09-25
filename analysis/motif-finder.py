@@ -1,4 +1,4 @@
-import sys, os, math, argparse
+import sys, os, math, argparse, random
 import stats, util, biofile, na, translate
 import motif
 import scipy as sp
@@ -37,8 +37,9 @@ if __name__=='__main__':
 	parser.add_argument("-t", "--threshold", type=float, dest="score_threshold", default=5.0, help="score threshold defining a putative binding site")
 	parser.add_argument("--max-frequency-bin", dest="maximum_frequency_bin", default=10, help="maximum number of sequential binding sites to count")
 	parser.add_argument("--degap", dest="degap", action='store_true', default=False, help="remove gaps from input FASTA file?")
-	parser.add_argument("-r", "--report", dest="write_report", action="store_true", default=False, help="write out specific report for each protein?")
+	parser.add_argument("--report", dest="write_report", action="store_true", default=False, help="write out specific report for each protein?")
 	parser.add_argument("--distribution", dest="write_distribution", action="store_true", default=False, help="write out complete distribution of scores for all windows?")
+	parser.add_argument("--randomize", dest="randomize", action="store_true", default=False, help="shuffle sequences before calculation?")
 	parser.add_argument("-m", "--mask", dest="mask_sequences", action="store_true", default=False, help="mask input sequences?")
 	parser.add_argument("-o", "--out", dest="out_fname", default=None, help="output (summary) filename")
 	options = parser.parse_args()
@@ -67,6 +68,13 @@ if __name__=='__main__':
 	if not options.fasta_fname is None:
 		fname = os.path.expanduser(options.fasta_fname)
 		(headers, sequences) = biofile.readFASTA(fname)
+		if options.randomize:
+			shuffled_seqs = []
+			for seq in sequences:
+				shuf = [x for x in seq]
+				random.shuffle(shuf)
+				shuffled_seqs.append(''.join(shuf))
+			sequences = shuffled_seqs
 		orf_dict = dict(zip([biofile.firstField(h) for h in headers], sequences))
 		gene_orf_map = dict([(biofile.secondField(h), biofile.firstField(h)) for h in headers])
 
